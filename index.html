@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Xuanning "Jeff" Jin — Engineering &amp; Making</title>
+<meta name="description" content="Portfolio of Xuanning (Jeff) Jin — high-school engineer building robots, embedded systems, and games end to end." />
+
+<!-- Fonts load from the public internet once the site is deployed -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --ground:#E9EDF1;
+    --panel:#F6F8FB;
+    --panel-2:#FCFDFF;
+    --ink:#141B27;
+    --ink-soft:#4F5A6B;
+    --ink-faint:#8b94a3;
+    --line:#C5CEDA;
+    --line-strong:#9CA9BA;
+    --accent:#C83C24;
+    --accent-soft:rgba(200,60,36,0.09);
+    --grid:rgba(20,27,39,0.045);
+    --display:"Space Grotesk", "Segoe UI", system-ui, sans-serif;
+    --body:"IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    --mono:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    --maxw:1080px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--body);
+    color:var(--ink);
+    background-color:var(--ground);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size:28px 28px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+
+  /* ---- mono utility label ---- */
+  .label{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+  }
+
+  /* ---- top bar ---- */
+  .topbar{
+    position:sticky; top:0; z-index:20;
+    backdrop-filter:blur(6px);
+    background:rgba(233,237,241,0.82);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar .wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    height:54px;
+  }
+  .brandmark{
+    font-family:var(--mono); font-weight:600; font-size:13px;
+    letter-spacing:0.04em; color:var(--ink); text-decoration:none;
+    display:flex; align-items:center; gap:9px;
+  }
+  .brandmark .dot{width:8px; height:8px; background:var(--accent); display:inline-block;}
+  .nav{display:flex; gap:26px;}
+  .nav a{
+    font-family:var(--mono); font-size:12px; letter-spacing:0.06em;
+    text-transform:uppercase; color:var(--ink-soft); text-decoration:none;
+    position:relative; padding:4px 0;
+  }
+  .nav a:hover{color:var(--accent);}
+  .nav a::after{
+    content:""; position:absolute; left:0; bottom:0; height:1px; width:0;
+    background:var(--accent); transition:width .25s ease;
+  }
+  .nav a:hover::after{width:100%;}
+
+  /* ---- hero / title block ---- */
+  .hero{padding:84px 0 64px;}
+  .hero-grid{
+    display:grid; grid-template-columns:1.45fr 1fr; gap:48px; align-items:start;
+  }
+  .eyebrow{
+    display:flex; align-items:center; gap:10px;
+    font-family:var(--mono); font-size:12px; letter-spacing:0.18em;
+    text-transform:uppercase; color:var(--accent); margin:0 0 22px;
+  }
+  .eyebrow .tick{width:22px; height:1px; background:var(--accent);}
+  .name{
+    font-family:var(--display); font-weight:700;
+    font-size:clamp(2.7rem, 7vw, 4.6rem);
+    line-height:1.02; letter-spacing:-0.02em; margin:0;
+  }
+  .name .nick{color:var(--accent); font-weight:500;}
+  .lede{
+    font-size:1.12rem; color:var(--ink-soft); max-width:34ch;
+    margin:24px 0 0;
+  }
+  .dimline{margin-top:34px;}
+  .dimline svg{display:block; width:100%; max-width:340px; height:26px; color:var(--line-strong);}
+  .dimline text{font-family:var(--mono); fill:var(--ink-faint); font-size:10px; letter-spacing:0.1em;}
+
+  /* drawing title block */
+  .titleblock{
+    border:1px solid var(--line-strong); background:var(--panel-2);
+    position:relative;
+  }
+  .titleblock::before{
+    content:"TITLE BLOCK";
+    position:absolute; top:-9px; left:14px; padding:0 7px;
+    background:var(--panel-2); font-family:var(--mono); font-size:10px;
+    letter-spacing:0.16em; color:var(--ink-faint);
+  }
+  .tb-row{
+    display:grid; grid-template-columns:96px 1fr;
+    border-bottom:1px solid var(--line);
+  }
+  .tb-row:last-child{border-bottom:none;}
+  .tb-row dt{
+    font-family:var(--mono); font-size:10px; letter-spacing:0.1em;
+    text-transform:uppercase; color:var(--ink-faint);
+    padding:11px 12px; border-right:1px solid var(--line);
+    display:flex; align-items:center;
+  }
+  .tb-row dd{
+    margin:0; padding:11px 14px; font-size:14px; font-weight:500;
+    display:flex; align-items:center;
+  }
+
+  /* ---- generic section ---- */
+  section{padding:64px 0; border-top:1px solid var(--line);}
+  .sec-head{
+    display:flex; align-items:baseline; gap:16px; margin-bottom:38px;
+  }
+  .sec-ref{
+    font-family:var(--mono); font-size:12px; color:var(--accent);
+    letter-spacing:0.1em;
+  }
+  .sec-title{
+    font-family:var(--display); font-weight:600; font-size:1.7rem;
+    margin:0; letter-spacing:-0.01em;
+  }
+  .sec-rule{flex:1; height:1px; background:var(--line); align-self:center;}
+
+  /* ---- about ---- */
+  .about-body{
+    max-width:64ch; font-size:1.06rem; color:var(--ink-soft);
+  }
+  .about-body strong{color:var(--ink); font-weight:600;}
+
+  /* ---- work / manifest ---- */
+  .manifest{display:flex; flex-direction:column; gap:18px;}
+  .item{
+    position:relative; background:var(--panel-2);
+    border:1px solid var(--line); padding:26px 28px;
+    display:grid; grid-template-columns:74px 1fr; gap:24px;
+    transition:border-color .25s ease, transform .25s ease, box-shadow .25s ease;
+  }
+  .item:hover{
+    border-color:var(--accent); transform:translateY(-2px);
+    box-shadow:0 10px 28px -16px rgba(20,27,39,0.4);
+  }
+  /* registration ticks */
+  .item::before, .item::after{
+    content:""; position:absolute; width:9px; height:9px;
+    border:1px solid var(--line-strong);
+  }
+  .item::before{top:8px; left:8px; border-right:none; border-bottom:none;}
+  .item::after{bottom:8px; right:8px; border-left:none; border-top:none;}
+
+  .item-ref{
+    font-family:var(--mono); font-size:12px; color:var(--accent);
+    letter-spacing:0.04em; padding-top:4px;
+  }
+  .item-yr{
+    display:block; color:var(--ink-faint); font-size:11px; margin-top:6px;
+    letter-spacing:0.05em;
+  }
+  .item-title{
+    font-family:var(--display); font-weight:600; font-size:1.28rem;
+    margin:0 0 6px; letter-spacing:-0.01em;
+  }
+  .item-sum{
+    font-family:var(--mono); font-size:12px; color:var(--ink-faint);
+    text-transform:uppercase; letter-spacing:0.08em; margin:0 0 14px;
+  }
+  .item-body{margin:0 0 16px; color:var(--ink-soft); font-size:1rem; max-width:60ch;}
+  .specs{display:flex; flex-wrap:wrap; gap:7px;}
+  .spec{
+    font-family:var(--mono); font-size:11px; letter-spacing:0.03em;
+    color:var(--ink-soft); background:var(--accent-soft);
+    border:1px solid var(--line); padding:3px 9px;
+  }
+
+  /* ---- capabilities matrix ---- */
+  .matrix{
+    display:grid; grid-template-columns:repeat(2,1fr);
+    border:1px solid var(--line); background:var(--panel-2);
+  }
+  .cap{padding:22px 24px; border-bottom:1px solid var(--line);}
+  .cap:nth-child(odd){border-right:1px solid var(--line);}
+  .cap:nth-last-child(-n+2){border-bottom:none;}
+  .cap h3{
+    font-family:var(--mono); font-size:11px; letter-spacing:0.12em;
+    text-transform:uppercase; color:var(--accent); margin:0 0 12px;
+  }
+  .cap p{margin:0; color:var(--ink-soft); font-size:0.98rem;}
+
+  /* ---- contact ---- */
+  .contact-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:0;
+    border:1px solid var(--line-strong); background:var(--panel-2);
+  }
+  .contact-cell{padding:24px 26px; border-right:1px solid var(--line);}
+  .contact-cell:last-child{border-right:none;}
+  .contact-cell .label{margin-bottom:9px; display:block;}
+  .contact-cell a, .contact-cell span{
+    font-family:var(--display); font-weight:500; font-size:1.16rem;
+    color:var(--ink); text-decoration:none; word-break:break-word;
+  }
+  .contact-cell a:hover{color:var(--accent);}
+
+  /* ---- footer ---- */
+  footer{
+    border-top:1px solid var(--line); padding:26px 0 60px;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+  }
+  footer .label{color:var(--ink-faint);}
+
+  /* ---- reveal animation ---- */
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease;}
+  .reveal.in{opacity:1; transform:none;}
+
+  /* ---- responsive ---- */
+  @media (max-width:760px){
+    .hero{padding:54px 0 44px;}
+    .hero-grid{grid-template-columns:1fr; gap:36px;}
+    .matrix{grid-template-columns:1fr;}
+    .cap:nth-child(odd){border-right:none;}
+    .cap{border-bottom:1px solid var(--line)!important;}
+    .cap:last-child{border-bottom:none!important;}
+    .contact-grid{grid-template-columns:1fr;}
+    .contact-cell{border-right:none; border-bottom:1px solid var(--line);}
+    .contact-cell:last-child{border-bottom:none;}
+    .item{grid-template-columns:1fr; gap:12px;}
+    .nav{display:none;}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1; transform:none; transition:none;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a href="#top" class="brandmark"><span class="dot"></span>X. JIN</a>
+    <nav class="nav">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- HERO / TITLE BLOCK -->
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-main reveal">
+        <p class="eyebrow"><span class="tick"></span>Portfolio — Engineering &amp; Making</p>
+        <h1 class="name">Xuanning <span class="nick">"Jeff"</span> Jin</h1>
+        <p class="lede">High-school engineer who builds working machines end to end — mechanical design, electronics, and the code that ties them together.</p>
+        <div class="dimline" aria-hidden="true">
+          <svg viewBox="0 0 340 26" xmlns="http://www.w3.org/2000/svg">
+            <line x1="2" y1="13" x2="338" y2="13" stroke="currentColor" stroke-width="1"/>
+            <line x1="2" y1="6" x2="2" y2="20" stroke="currentColor" stroke-width="1"/>
+            <line x1="338" y1="6" x2="338" y2="20" stroke="currentColor" stroke-width="1"/>
+            <rect x="138" y="3" width="64" height="20" fill="var(--ground)"/>
+            <text x="170" y="17" text-anchor="middle">ROBOTS → GAMES</text>
+          </svg>
+        </div>
+      </div>
+
+      <aside class="titleblock reveal">
+        <dl style="margin:0;">
+          <div class="tb-row"><dt>Discipline</dt><dd>Robotics &amp; Embedded</dd></div>
+          <div class="tb-row"><dt>Based</dt><dd>Pittsburgh, PA</dd></div>
+          <div class="tb-row"><dt>School</dt><dd>Shady Side Academy</dd></div>
+          <div class="tb-row"><dt>Focus</dt><dd>CAD · Electronics · Code</dd></div>
+          <div class="tb-row"><dt>Languages</dt><dd>EN · 中文 · FR</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-ref">00</span>
+        <h2 class="sec-title">About</h2>
+        <span class="sec-rule"></span>
+      </div>
+      <p class="about-body reveal">
+        I design and build things that actually run. Most of my projects start in CAD, move
+        through a 3D printer and a soldering iron, and end as something I can hold or drive —
+        a competition robot, a remote-controlled prop, a board that moves its own pieces. I
+        compete in <strong>VEX Robotics</strong> and spend the rest of my time on personal
+        builds that let me practice mechanical design, embedded electronics, and the firmware
+        in between. I like problems that don't fit neatly into one field.
+      </p>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-ref">01</span>
+        <h2 class="sec-title">Selected Work</h2>
+        <span class="sec-rule"></span>
+      </div>
+
+      <div class="manifest">
+
+        <article class="item reveal">
+          <div class="item-ref">PRJ-001<span class="item-yr">2023—25</span></div>
+          <div>
+            <h3 class="item-title">VEX Robotics — V5RC Competition</h3>
+            <p class="item-sum">Mechanical design · drivetrain · autonomous code</p>
+            <p class="item-body">
+              Competing on teams 555286A and 55288A, I work across the full build cycle:
+              designing drivetrains and scoring mechanisms, machining and assembling them, then
+              tuning autonomous routines and driver controls for match play.
+            </p>
+            <div class="specs">
+              <span class="spec">V5RC</span><span class="spec">Drivetrain</span>
+              <span class="spec">PID tuning</span><span class="spec">Autonomous</span>
+              <span class="spec">Team build</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="item reveal">
+          <div class="item-ref">PRJ-002<span class="item-yr">2025—26</span></div>
+          <div>
+            <h3 class="item-title">Remote-Controlled Dalek</h3>
+            <p class="item-sum">4-motor drivetrain · custom mounts · ESP32 control</p>
+            <p class="item-body">
+              A drivable Dalek prop built from the ground up: a four-motor drivetrain on custom
+              3D-printed mounts, driven by an Arduino Nano ESP32 generating PWM into separate
+              motor-driver ICs, with a buck-converter power stage off a switched 12&nbsp;V supply.
+              Schematic designed in KiCad.
+            </p>
+            <div class="specs">
+              <span class="spec">ESP32</span><span class="spec">KiCad</span>
+              <span class="spec">PWM motor control</span><span class="spec">3D printing</span>
+              <span class="spec">Power electronics</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="item reveal">
+          <div class="item-ref">PRJ-003<span class="item-yr">2025</span></div>
+          <div>
+            <h3 class="item-title">Automated Magnetic Chessboard</h3>
+            <p class="item-sum">Hall-effect sensing · shift registers · piece tracking</p>
+            <p class="item-body">
+              A chessboard that senses and moves its own pieces: a grid of Hall-effect sensors
+              read through shift registers detects piece positions, paired with a magnet
+              mechanism beneath the board to relocate them. A tight mix of sensing, multiplexing,
+              and mechanical design.
+            </p>
+            <div class="specs">
+              <span class="spec">Hall sensors</span><span class="spec">Shift registers</span>
+              <span class="spec">Embedded C</span><span class="spec">Mechanism design</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="item reveal">
+          <div class="item-ref">PRJ-004<span class="item-yr">2024—25</span></div>
+          <div>
+            <h3 class="item-title">"The Cruelest Years" — Tabletop Wargame</h3>
+            <p class="item-sum">Original WWII game design · rules · production</p>
+            <p class="item-body">
+              An original WWII tabletop wargame, from systems and balance through to a fully
+              produced rulebook and annexes. I laid out the rules as print-ready half-letter
+              booklets for saddle-stitch printing — game design plus the unglamorous work of
+              shipping something playable.
+            </p>
+            <div class="specs">
+              <span class="spec">Game design</span><span class="spec">Systems</span>
+              <span class="spec">Rules writing</span><span class="spec">Print production</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="item reveal">
+          <div class="item-ref">PRJ-005<span class="item-yr">2024</span></div>
+          <div>
+            <h3 class="item-title">iOS App Switcher Gesture Proposal</h3>
+            <p class="item-sum">Interaction design · submitted to Apple</p>
+            <p class="item-body">
+              A proposed gesture for the iOS app switcher — swipe down to send an app to the
+              back of the stack — submitted through Apple's Feedback Assistant. I built an
+              interactive web prototype with spring physics to demonstrate exactly how the
+              motion would feel.
+            </p>
+            <div class="specs">
+              <span class="spec">Interaction design</span><span class="spec">Prototyping</span>
+              <span class="spec">JavaScript</span><span class="spec">Spring physics</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section id="capabilities">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-ref">02</span>
+        <h2 class="sec-title">Capabilities</h2>
+        <span class="sec-rule"></span>
+      </div>
+      <div class="matrix reveal">
+        <div class="cap">
+          <h3>CAD &amp; Design</h3>
+          <p>SolidWorks — multi-body parts, assemblies, surfacing and reference geometry.</p>
+        </div>
+        <div class="cap">
+          <h3>Fabrication</h3>
+          <p>3D printing in PLA, PETG, and ABS; Bambu Studio &amp; Orca Slicer; hand fabrication.</p>
+        </div>
+        <div class="cap">
+          <h3>Electronics</h3>
+          <p>Arduino &amp; ESP32, motor control, KiCad schematics, power and sensor circuits.</p>
+        </div>
+        <div class="cap">
+          <h3>Programming</h3>
+          <p>Embedded C/C++, VEX robotics code, control logic, interactive web prototypes.</p>
+        </div>
+        <div class="cap">
+          <h3>Game Design</h3>
+          <p>Original tabletop systems, rules writing, balance, and print-ready production.</p>
+        </div>
+        <div class="cap">
+          <h3>Languages</h3>
+          <p>English (native), Chinese (native), French — comfortable working across all three.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-ref">03</span>
+        <h2 class="sec-title">Contact</h2>
+        <span class="sec-rule"></span>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-cell">
+          <span class="label">Email</span>
+          <a href="mailto:you@example.com">you@example.com</a>
+        </div>
+        <div class="contact-cell">
+          <span class="label">GitHub</span>
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a>
+        </div>
+        <div class="contact-cell">
+          <span class="label">Location</span>
+          <span>Pittsburgh, Pennsylvania</span>
+        </div>
+        <div class="contact-cell">
+          <span class="label">Status</span>
+          <span>Open to internships &amp; collaboration</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; width:100%;">
+      <span class="label">Drawn by — X. Jin</span>
+      <span class="label">Sheet 1 of 1 · Rev A</span>
+      <span class="label">© 2026</span>
+    </div>
+  </footer>
+
+</main>
+
+<script>
+  // Scroll-reveal, staggered, reduced-motion aware
+  (function(){
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) {
+      els.forEach(function(el){ el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>
