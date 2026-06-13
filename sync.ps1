@@ -21,12 +21,45 @@ function Format-Size($bytes) {
   return "{0:N1} MB" -f ($bytes / 1MB)
 }
 
+function Export-SWToSTL($mapping) {
+  $src = $mapping.source
+  if (-not (Test-Path $src)) { return }
+  $parts = Get-ChildItem $src -Recurse -Include "*.sldprt","*.sldasm" -ErrorAction SilentlyContinue
+  if (-not $parts -or $parts.Count -eq 0) { return }
+
+  $sw = $null
+  try { $sw = [System.Runtime.InteropServices.Marshal]::GetActiveObject("SldWorks.Application") } catch {}
+  if (-not $sw) { return }  # only run if SolidWorks is already open
+
+  $destDir = Join-Path $repoRoot "library\cad"
+  foreach ($part in $parts) {
+    $rel     = $part.FullName.Substring($src.Length).TrimStart('\/')
+    $stlRel  = $rel -replace '\.(sldprt|sldasm)$','.stl'
+    $stlPath = Join-Path $destDir $stlRel
+    if (Test-Path $stlPath) { continue }
+    $stlDir  = Split-Path $stlPath
+    if (-not (Test-Path $stlDir)) { New-Item -ItemType Directory -Force $stlDir | Out-Null }
+    try {
+      $errors = 0; $warnings = 0
+      $doc = $sw.OpenDoc6($part.FullName, 1, 1, "", [ref]$errors, [ref]$warnings)
+      if ($doc) {
+        $null = $doc.Extension.SaveAs($stlPath, 0, 1, $null, [ref]$errors, [ref]$null)
+        $sw.CloseDoc($part.FullName)
+        Write-Host "  SW export: $($part.Name) → STL" -ForegroundColor DarkCyan
+      }
+    } catch {}
+  }
+}
+
 function Sync-Library {
   $cfg = Get-Content "$repoRoot\config.json" -Raw | ConvertFrom-Json
   $maxBytes = $cfg.maxFileSizeMB * 1MB
   $files = [System.Collections.Generic.List[object]]::new()
   $copied = 0
   $skipped = 0
+
+  # Auto-export SolidWorks parts to STL if SW is already open
+  $cfg.mappings | Where-Object { $_.category -eq 'cad' } | ForEach-Object { Export-SWToSTL $_ }
 
   foreach ($mapping in $cfg.mappings) {
     $src = $mapping.source
