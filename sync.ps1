@@ -41,10 +41,11 @@ function Sync-Library {
     $destDir = Join-Path $repoRoot "library\$cat"
     if (-not (Test-Path $destDir)) { New-Item -ItemType Directory -Force $destDir | Out-Null }
 
+    $excludeDirs = @('node_modules','.git','.history','FurMark_win64','__pycache__','.vs','bin','obj','build','dist','.cache')
+    $excludePattern = '\\(' + ($excludeDirs -join '|') + ')(\\'
     Get-ChildItem $src -Recurse -File | Where-Object {
       $exts -contains $_.Extension.ToLower() -and
-      $_.FullName -notmatch '\\node_modules\\' -and
-      $_.FullName -notmatch '\\.git\\'
+      $_.FullName -notmatch $excludePattern
     } | ForEach-Object {
       $file = $_
 
