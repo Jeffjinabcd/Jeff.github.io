@@ -116,7 +116,7 @@ function Sync-Library {
     $ts = Get-Date -Format "yyyy-MM-dd HH:mm"
     $result = git commit -m "auto: sync library $ts" 2>&1
     if ($LASTEXITCODE -eq 0) {
-      git push 2>&1 | Out-Null
+      $null = git push 2>&1
       Write-Host "  Pushed to GitHub" -ForegroundColor Cyan
     } else {
       Write-Host "  Nothing new to push" -ForegroundColor DarkGray
