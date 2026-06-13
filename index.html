@@ -6,10 +6,10 @@
 <title>Xuanning "Jeff" Jin — Engineering &amp; Making</title>
 <meta name="description" content="Portfolio of Xuanning (Jeff) Jin — high-school engineer building robots, embedded systems, and games end to end." />
 
-<!-- Fonts load from the public internet once the site is deployed -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 
 <style>
   :root{
@@ -47,7 +47,6 @@
 
   .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
 
-  /* ---- mono utility label ---- */
   .label{
     font-family:var(--mono);
     font-size:11px;
@@ -86,7 +85,7 @@
   }
   .nav a:hover::after{width:100%;}
 
-  /* ---- hero / title block ---- */
+  /* ---- hero ---- */
   .hero{padding:84px 0 64px;}
   .hero-grid{
     display:grid; grid-template-columns:1.45fr 1fr; gap:48px; align-items:start;
@@ -111,7 +110,6 @@
   .dimline svg{display:block; width:100%; max-width:340px; height:26px; color:var(--line-strong);}
   .dimline text{font-family:var(--mono); fill:var(--ink-faint); font-size:10px; letter-spacing:0.1em;}
 
-  /* drawing title block */
   .titleblock{
     border:1px solid var(--line-strong); background:var(--panel-2);
     position:relative;
@@ -171,7 +169,6 @@
     border-color:var(--accent); transform:translateY(-2px);
     box-shadow:0 10px 28px -16px rgba(20,27,39,0.4);
   }
-  /* registration ticks */
   .item::before, .item::after{
     content:""; position:absolute; width:9px; height:9px;
     border:1px solid var(--line-strong);
@@ -217,6 +214,94 @@
   }
   .cap p{margin:0; color:var(--ink-soft); font-size:0.98rem;}
 
+  /* ---- LIBRARY ---- */
+  .lib-toolbar{
+    display:flex; align-items:center; gap:0; margin-bottom:28px;
+    border:1px solid var(--line); background:var(--panel-2);
+  }
+  .lib-tab{
+    font-family:var(--mono); font-size:11px; letter-spacing:0.1em;
+    text-transform:uppercase; color:var(--ink-soft);
+    padding:10px 20px; border:none; background:none;
+    cursor:pointer; border-right:1px solid var(--line);
+    transition:background .2s, color .2s;
+  }
+  .lib-tab:last-child{border-right:none;}
+  .lib-tab:hover{background:var(--accent-soft); color:var(--accent);}
+  .lib-tab.active{background:var(--accent); color:#fff;}
+
+  .lib-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+    gap:14px;
+  }
+
+  .file-card{
+    position:relative; background:var(--panel-2);
+    border:1px solid var(--line); padding:20px 22px;
+    display:flex; flex-direction:column; gap:12px;
+    transition:border-color .25s, transform .25s, box-shadow .25s;
+    cursor:default;
+  }
+  .file-card:hover{
+    border-color:var(--accent); transform:translateY(-2px);
+    box-shadow:0 8px 24px -14px rgba(20,27,39,0.35);
+  }
+  .file-card::before,.file-card::after{
+    content:""; position:absolute; width:7px; height:7px;
+    border:1px solid var(--line-strong);
+  }
+  .file-card::before{top:6px; left:6px; border-right:none; border-bottom:none;}
+  .file-card::after{bottom:6px; right:6px; border-left:none; border-top:none;}
+
+  .file-card-header{display:flex; align-items:flex-start; gap:14px;}
+  .file-icon{
+    flex-shrink:0; width:40px; height:40px;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--accent-soft); border:1px solid var(--line);
+  }
+  .file-icon svg{width:22px; height:22px; color:var(--accent);}
+
+  .file-card-img{
+    width:100%; aspect-ratio:16/9; object-fit:cover;
+    border:1px solid var(--line); display:block;
+  }
+
+  .file-name{
+    font-family:var(--mono); font-size:13px; font-weight:600;
+    color:var(--ink); word-break:break-all; line-height:1.3;
+  }
+  .file-meta{
+    font-family:var(--mono); font-size:10px; letter-spacing:0.07em;
+    color:var(--ink-faint); text-transform:uppercase; margin-top:3px;
+  }
+  .file-label{
+    font-family:var(--mono); font-size:10px; letter-spacing:0.06em;
+    color:var(--accent); text-transform:uppercase;
+  }
+
+  .file-actions{display:flex; gap:8px; flex-wrap:wrap;}
+  .btn{
+    font-family:var(--mono); font-size:11px; letter-spacing:0.08em;
+    text-transform:uppercase; padding:7px 14px; border:1px solid var(--line);
+    background:var(--panel-2); color:var(--ink-soft); cursor:pointer;
+    text-decoration:none; transition:background .2s, color .2s, border-color .2s;
+    display:inline-flex; align-items:center; gap:6px;
+  }
+  .btn:hover{background:var(--accent-soft); color:var(--accent); border-color:var(--accent);}
+  .btn-primary{background:var(--accent); color:#fff; border-color:var(--accent);}
+  .btn-primary:hover{background:#a8301b; color:#fff; border-color:#a8301b;}
+
+  .lib-empty{
+    grid-column:1/-1; padding:48px 32px; text-align:center;
+    border:1px dashed var(--line); color:var(--ink-faint);
+    font-family:var(--mono); font-size:13px; letter-spacing:0.06em;
+  }
+  .lib-count{
+    font-family:var(--mono); font-size:11px; color:var(--ink-faint);
+    letter-spacing:0.08em; text-transform:uppercase; margin-bottom:14px;
+  }
+
   /* ---- contact ---- */
   .contact-grid{
     display:grid; grid-template-columns:1fr 1fr; gap:0;
@@ -238,6 +323,64 @@
   }
   footer .label{color:var(--ink-faint);}
 
+  /* ---- MODALS ---- */
+  .modal-overlay{
+    display:none; position:fixed; inset:0; z-index:100;
+    background:rgba(14,20,31,0.82); backdrop-filter:blur(4px);
+    align-items:center; justify-content:center;
+  }
+  .modal-overlay.open{display:flex;}
+
+  .modal-box{
+    position:relative; background:var(--panel-2);
+    border:1px solid var(--line-strong);
+    width:90vw; max-width:960px; max-height:90vh;
+    display:flex; flex-direction:column;
+  }
+  .modal-box.modal-stl{max-width:820px;}
+  .modal-box.modal-code{max-width:780px;}
+  .modal-box.modal-img{max-width:900px; background:transparent; border:none;}
+
+  .modal-header{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 18px; border-bottom:1px solid var(--line);
+    flex-shrink:0;
+  }
+  .modal-title{
+    font-family:var(--mono); font-size:12px; letter-spacing:0.1em;
+    text-transform:uppercase; color:var(--ink-soft);
+  }
+  .modal-close{
+    font-family:var(--mono); font-size:18px; line-height:1;
+    border:none; background:none; color:var(--ink-faint);
+    cursor:pointer; padding:4px 8px;
+  }
+  .modal-close:hover{color:var(--accent);}
+  .modal-body{flex:1; overflow:auto; position:relative;}
+
+  /* STL viewer canvas */
+  #stl-canvas{display:block; width:100%; height:500px; background:#1a1f2b;}
+  .stl-hint{
+    position:absolute; bottom:12px; right:14px;
+    font-family:var(--mono); font-size:10px; letter-spacing:0.08em;
+    color:rgba(255,255,255,0.35); pointer-events:none;
+  }
+
+  /* Code viewer */
+  .code-wrap{margin:0; overflow:auto; max-height:540px;}
+  .code-wrap pre{margin:0; padding:24px;}
+  .code-wrap code{font-size:13px; line-height:1.6;}
+
+  /* Image lightbox */
+  .modal-img-inner{
+    display:flex; align-items:center; justify-content:center;
+    padding:20px;
+  }
+  .modal-img-inner img{
+    max-width:100%; max-height:80vh; border:1px solid var(--line);
+    display:block;
+  }
+
   /* ---- reveal animation ---- */
   .reveal{opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease;}
   .reveal.in{opacity:1; transform:none;}
@@ -255,6 +398,8 @@
     .contact-cell:last-child{border-bottom:none;}
     .item{grid-template-columns:1fr; gap:12px;}
     .nav{display:none;}
+    .lib-grid{grid-template-columns:1fr;}
+    #stl-canvas{height:340px;}
   }
 
   @media (prefers-reduced-motion:reduce){
@@ -262,6 +407,16 @@
     html{scroll-behavior:auto;}
   }
 </style>
+
+<!-- Three.js importmap for STL viewer -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
 </head>
 <body>
 
@@ -272,6 +427,7 @@
       <a href="#work">Work</a>
       <a href="#about">About</a>
       <a href="#capabilities">Capabilities</a>
+      <a href="#library">Library</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -279,7 +435,7 @@
 
 <main id="top">
 
-  <!-- HERO / TITLE BLOCK -->
+  <!-- HERO -->
   <header class="hero">
     <div class="wrap hero-grid">
       <div class="hero-main reveal">
@@ -471,22 +627,47 @@
     </div>
   </section>
 
+  <!-- LIBRARY -->
+  <section id="library">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-ref">03</span>
+        <h2 class="sec-title">File Library</h2>
+        <span class="sec-rule"></span>
+      </div>
+      <p class="about-body reveal" style="margin-bottom:28px;">
+        CAD models, source code, and project photos — synced automatically from my local machine.
+        Click any STL to open a live 3D preview.
+      </p>
+
+      <div class="lib-toolbar reveal" role="tablist">
+        <button class="lib-tab active" data-filter="all">All</button>
+        <button class="lib-tab" data-filter="cad">CAD Models</button>
+        <button class="lib-tab" data-filter="code">Code</button>
+        <button class="lib-tab" data-filter="images">Images</button>
+      </div>
+
+      <p class="lib-count" id="lib-count">Loading…</p>
+      <div class="lib-grid" id="lib-grid"></div>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section id="contact">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="sec-ref">03</span>
+        <span class="sec-ref">04</span>
         <h2 class="sec-title">Contact</h2>
         <span class="sec-rule"></span>
       </div>
       <div class="contact-grid reveal">
         <div class="contact-cell">
           <span class="label">Email</span>
-          <a href="mailto:you@example.com">you@example.com</a>
+          <a href="mailto:jeffjin2022@gmail.com">jeffjin2022@gmail.com</a>
         </div>
         <div class="contact-cell">
           <span class="label">GitHub</span>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a>
+          <a href="https://github.com/Jeffjinabcd" target="_blank" rel="noopener">github.com/Jeffjinabcd</a>
         </div>
         <div class="contact-cell">
           <span class="label">Location</span>
@@ -510,25 +691,363 @@
 
 </main>
 
+<!-- STL Viewer Modal -->
+<div class="modal-overlay" id="modal-stl" role="dialog" aria-modal="true">
+  <div class="modal-box modal-stl">
+    <div class="modal-header">
+      <span class="modal-title" id="stl-modal-title">3D Preview</span>
+      <button class="modal-close" id="stl-close" aria-label="Close">×</button>
+    </div>
+    <div class="modal-body" style="position:relative;">
+      <canvas id="stl-canvas"></canvas>
+      <span class="stl-hint">Drag to rotate · Scroll to zoom · Right-drag to pan</span>
+    </div>
+  </div>
+</div>
+
+<!-- Code Viewer Modal -->
+<div class="modal-overlay" id="modal-code" role="dialog" aria-modal="true">
+  <div class="modal-box modal-code">
+    <div class="modal-header">
+      <span class="modal-title" id="code-modal-title">Source</span>
+      <button class="modal-close" id="code-close" aria-label="Close">×</button>
+    </div>
+    <div class="modal-body code-wrap">
+      <pre><code id="code-content" class="language-none"></code></pre>
+    </div>
+  </div>
+</div>
+
+<!-- Image Lightbox Modal -->
+<div class="modal-overlay" id="modal-img" role="dialog" aria-modal="true">
+  <div class="modal-box modal-img">
+    <div class="modal-header" style="background:rgba(20,27,39,0.9); border-color:#2a3343;">
+      <span class="modal-title" id="img-modal-title" style="color:#8b94a3;">Image</span>
+      <button class="modal-close" id="img-close" style="color:#8b94a3;" aria-label="Close">×</button>
+    </div>
+    <div class="modal-body modal-img-inner">
+      <img id="img-content" src="" alt="" />
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
 <script>
-  // Scroll-reveal, staggered, reduced-motion aware
-  (function(){
-    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var els = document.querySelectorAll('.reveal');
-    if (reduce || !('IntersectionObserver' in window)) {
-      els.forEach(function(el){ el.classList.add('in'); });
+// ── Scroll-reveal ─────────────────────────────────────────────────────────────
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    els.forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
+
+<script>
+// ── Library: manifest loading + card rendering ─────────────────────────────────
+(function(){
+  var currentFilter = 'all';
+  var allFiles = [];
+
+  var EXT_LANG = {
+    ino:'arduino', cpp:'cpp', c:'c', h:'c', py:'python',
+    js:'javascript', ts:'typescript', v:'verilog', sv:'verilog',
+    txt:'none', sv:'systemverilog'
+  };
+
+  function fmtSize(b){
+    if(b < 1024) return b+' B';
+    if(b < 1048576) return (b/1024).toFixed(1)+' KB';
+    return (b/1048576).toFixed(1)+' MB';
+  }
+
+  function fmtDate(iso){
+    var d = new Date(iso);
+    return d.toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'});
+  }
+
+  // Icons
+  var ICONS = {
+    cad: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/></svg>',
+    code:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>',
+    img: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3 3h18a.75.75 0 01.75.75v15.75a.75.75 0 01-.75.75H3a.75.75 0 01-.75-.75V3.75A.75.75 0 013 3z"/></svg>',
+    step:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>'
+  };
+
+  function iconFor(f){
+    var t = f.type;
+    if(t==='stl') return ICONS.cad;
+    if(t==='step'||t==='stp') return ICONS.step;
+    if(['jpg','jpeg','png','gif','webp','svg'].indexOf(t)>=0) return ICONS.img;
+    return ICONS.code;
+  }
+
+  function isImage(f){ return ['jpg','jpeg','png','gif','webp','svg'].indexOf(f.type)>=0; }
+  function isSTL(f){ return f.type==='stl'; }
+  function isSTEP(f){ return f.type==='step'||f.type==='stp'; }
+  function isCode(f){ return !isImage(f)&&!isSTL(f)&&!isSTEP(f); }
+
+  function makeCard(f){
+    var card = document.createElement('div');
+    card.className = 'file-card';
+
+    if(isImage(f)){
+      var img = document.createElement('img');
+      img.className = 'file-card-img';
+      img.src = f.path;
+      img.alt = f.name;
+      img.loading = 'lazy';
+      card.appendChild(img);
+    }
+
+    var header = document.createElement('div');
+    header.className = 'file-card-header';
+
+    var iconDiv = document.createElement('div');
+    iconDiv.className = 'file-icon';
+    iconDiv.innerHTML = iconFor(f);
+    header.appendChild(iconDiv);
+
+    var info = document.createElement('div');
+    var nameEl = document.createElement('div');
+    nameEl.className = 'file-name';
+    nameEl.textContent = f.name;
+    var metaEl = document.createElement('div');
+    metaEl.className = 'file-meta';
+    metaEl.textContent = f.type.toUpperCase()+' · '+fmtSize(f.size)+' · '+fmtDate(f.modified);
+    var labelEl = document.createElement('div');
+    labelEl.className = 'file-label';
+    labelEl.textContent = f.label||'';
+    info.appendChild(nameEl);
+    info.appendChild(metaEl);
+    if(f.label) info.appendChild(labelEl);
+    header.appendChild(info);
+    card.appendChild(header);
+
+    var actions = document.createElement('div');
+    actions.className = 'file-actions';
+
+    if(isSTL(f)){
+      var prev = document.createElement('button');
+      prev.className = 'btn btn-primary';
+      prev.innerHTML = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/></svg> Preview 3D';
+      prev.addEventListener('click', function(){ openSTL(f); });
+      actions.appendChild(prev);
+    }
+
+    if(isImage(f)){
+      var view = document.createElement('button');
+      view.className = 'btn btn-primary';
+      view.textContent = 'View Full Size';
+      view.addEventListener('click', function(){ openImage(f); });
+      actions.appendChild(view);
+    }
+
+    if(isCode(f)){
+      var view2 = document.createElement('button');
+      view2.className = 'btn btn-primary';
+      view2.textContent = 'View Code';
+      view2.addEventListener('click', function(){ openCode(f); });
+      actions.appendChild(view2);
+    }
+
+    var dl = document.createElement('a');
+    dl.className = 'btn';
+    dl.href = f.path;
+    dl.download = f.name;
+    dl.textContent = 'Download';
+    actions.appendChild(dl);
+
+    card.appendChild(actions);
+    return card;
+  }
+
+  function render(){
+    var grid = document.getElementById('lib-grid');
+    var count = document.getElementById('lib-count');
+    grid.innerHTML = '';
+
+    var filtered = currentFilter==='all' ? allFiles : allFiles.filter(function(f){ return f.category===currentFilter; });
+
+    if(filtered.length===0){
+      var empty = document.createElement('div');
+      empty.className = 'lib-empty';
+      empty.textContent = allFiles.length===0
+        ? 'No files yet — run sync.ps1 to populate the library.'
+        : 'No files in this category.';
+      grid.appendChild(empty);
+      count.textContent = '';
       return;
     }
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if (e.isIntersecting){
-          e.target.classList.add('in');
-          io.unobserve(e.target);
-        }
+
+    count.textContent = filtered.length+' file'+(filtered.length!==1?'s':'');
+    filtered.forEach(function(f){ grid.appendChild(makeCard(f)); });
+  }
+
+  function loadManifest(){
+    fetch('library/manifest.json?v='+Date.now())
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        allFiles = data.files||[];
+        render();
+      })
+      .catch(function(){
+        document.getElementById('lib-count').textContent = '';
+        document.getElementById('lib-grid').innerHTML =
+          '<div class="lib-empty">Library manifest not found. Run sync.ps1 first.</div>';
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    els.forEach(function(el){ io.observe(el); });
-  })();
+  }
+
+  // Filter tabs
+  document.querySelectorAll('.lib-tab').forEach(function(tab){
+    tab.addEventListener('click', function(){
+      document.querySelectorAll('.lib-tab').forEach(function(t){ t.classList.remove('active'); });
+      tab.classList.add('active');
+      currentFilter = tab.dataset.filter;
+      render();
+    });
+  });
+
+  loadManifest();
+
+  // ── Modal helpers ──────────────────────────────────────────────────────────
+  function closeAll(){
+    document.querySelectorAll('.modal-overlay').forEach(function(m){ m.classList.remove('open'); });
+  }
+
+  document.querySelectorAll('.modal-overlay').forEach(function(overlay){
+    overlay.addEventListener('click', function(e){ if(e.target===overlay) closeAll(); });
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeAll(); });
+  document.getElementById('stl-close').addEventListener('click', closeAll);
+  document.getElementById('code-close').addEventListener('click', closeAll);
+  document.getElementById('img-close').addEventListener('click', closeAll);
+
+  // ── Image lightbox ──────────────────────────────────────────────────────────
+  function openImage(f){
+    document.getElementById('img-modal-title').textContent = f.name;
+    document.getElementById('img-content').src = f.path;
+    document.getElementById('img-content').alt = f.name;
+    document.getElementById('modal-img').classList.add('open');
+  }
+
+  // ── Code viewer ────────────────────────────────────────────────────────────
+  function openCode(f){
+    document.getElementById('code-modal-title').textContent = f.name;
+    var el = document.getElementById('code-content');
+    el.textContent = 'Loading…';
+    var lang = EXT_LANG[f.type]||'none';
+    el.className = 'language-'+lang;
+    document.getElementById('modal-code').classList.add('open');
+    fetch(f.path)
+      .then(function(r){ return r.text(); })
+      .then(function(text){
+        el.textContent = text;
+        if(window.Prism) Prism.highlightElement(el);
+      })
+      .catch(function(){ el.textContent = 'Could not load file.'; });
+  }
+
+  // ── STL viewer ─────────────────────────────────────────────────────────────
+  // Defer loading Three.js until first STL open
+  var stlSceneReady = false;
+  var stlScene, stlCamera, stlRenderer, stlControls, stlMesh, stlRAF;
+
+  function openSTL(f){
+    document.getElementById('stl-modal-title').textContent = f.name;
+    document.getElementById('modal-stl').classList.add('open');
+    if(!stlSceneReady){
+      initSTLScene().then(function(){ loadSTL(f.path); });
+    } else {
+      loadSTL(f.path);
+    }
+  }
+
+  async function initSTLScene(){
+    var [THREE, {STLLoader}, {OrbitControls}] = await Promise.all([
+      import('three'),
+      import('three/addons/loaders/STLLoader.js'),
+      import('three/addons/controls/OrbitControls.js')
+    ]);
+
+    window._THREE = THREE;
+    window._STLLoader = STLLoader;
+    window._OrbitControls = OrbitControls;
+
+    var canvas = document.getElementById('stl-canvas');
+    stlRenderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
+    stlRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    stlRenderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
+    stlRenderer.setClearColor(0x1a1f2b);
+
+    stlScene = new THREE.Scene();
+    stlCamera = new THREE.PerspectiveCamera(45, canvas.clientWidth / canvas.clientHeight, 0.01, 10000);
+    stlCamera.position.set(0, 0, 5);
+
+    stlScene.add(new THREE.AmbientLight(0xffffff, 0.5));
+    var dir = new THREE.DirectionalLight(0xffffff, 1.2);
+    dir.position.set(3, 4, 5);
+    stlScene.add(dir);
+    var dir2 = new THREE.DirectionalLight(0x8baac8, 0.4);
+    dir2.position.set(-3, -2, -4);
+    stlScene.add(dir2);
+
+    stlControls = new OrbitControls(stlCamera, canvas);
+    stlControls.enableDamping = true;
+
+    stlSceneReady = true;
+    animate();
+  }
+
+  function loadSTL(path){
+    if(stlMesh){ stlScene.remove(stlMesh); stlMesh=null; }
+    var THREE = window._THREE;
+    var loader = new window._STLLoader();
+    loader.load(path, function(geo){
+      geo.computeBoundingBox();
+      var center = new THREE.Vector3();
+      geo.boundingBox.getCenter(center);
+      geo.translate(-center.x, -center.y, -center.z);
+      var size = new THREE.Vector3();
+      geo.boundingBox.getSize(size);
+      var maxDim = Math.max(size.x, size.y, size.z);
+      var scale = 3 / maxDim;
+      geo.scale(scale, scale, scale);
+
+      var mat = new THREE.MeshStandardMaterial({ color: 0xb0bec5, roughness: 0.55, metalness: 0.25 });
+      stlMesh = new THREE.Mesh(geo, mat);
+      stlScene.add(stlMesh);
+      stlCamera.position.set(0, 0, 5);
+      stlControls.reset();
+    });
+  }
+
+  function animate(){
+    stlRAF = requestAnimationFrame(animate);
+    if(stlControls) stlControls.update();
+    if(stlRenderer && stlScene && stlCamera){
+      var canvas = document.getElementById('stl-canvas');
+      if(canvas.clientWidth !== stlRenderer.domElement.width || canvas.clientHeight !== stlRenderer.domElement.height){
+        stlRenderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
+        stlCamera.aspect = canvas.clientWidth / canvas.clientHeight;
+        stlCamera.updateProjectionMatrix();
+      }
+      stlRenderer.render(stlScene, stlCamera);
+    }
+  }
+
+  // Expose openSTL for cards created after module load
+  window._openSTL = openSTL;
+})();
 </script>
 
 </body>

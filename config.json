@@ -1,0 +1,26 @@
+{
+  "mappings": [
+    {
+      "label": "VEX Robot CAD",
+      "source": "C:\\Users\\jeffj\\Documents\\SolidWorks",
+      "category": "cad"
+    },
+    {
+      "label": "Arduino & Code Projects",
+      "source": "C:\\Users\\jeffj\\Documents\\Arduino",
+      "category": "code"
+    },
+    {
+      "label": "Project Photos",
+      "source": "C:\\Users\\jeffj\\Pictures\\Projects",
+      "category": "images"
+    }
+  ],
+  "extensions": {
+    "cad":    [".stl", ".step", ".stp"],
+    "code":   [".ino", ".cpp", ".c", ".h", ".py", ".js", ".ts", ".v", ".sv", ".txt"],
+    "images": [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg"]
+  },
+  "maxFileSizeMB": 50,
+  "pollIntervalSeconds": 300
+}
