@@ -3,7 +3,6 @@
     { "label": "SolidWorks",           "source": "C:\\Users\\jeffj\\Desktop\\SolidWorks",              "category": "cad"    },
     { "label": "VEX CAD",              "source": "C:\\Users\\jeffj\\Desktop\\Vex",                      "category": "cad"    },
     { "label": "OpenSCAD",             "source": "C:\\Users\\jeffj\\Desktop\\openscad",                 "category": "cad"    },
-    { "label": "Blender",              "source": "C:\\Users\\jeffj\\Desktop\\blender(lemme trytry)",    "category": "cad"    },
 
     { "label": "Code Projects",        "source": "C:\\Users\\jeffj\\Desktop\\Code",                     "category": "code"   },
     { "label": "USACO",                "source": "C:\\Users\\jeffj\\Desktop\\USACO",                    "category": "code"   },
@@ -19,7 +18,6 @@
 
     { "label": "Visuals",              "source": "C:\\Users\\jeffj\\Desktop\\visuals",                  "category": "images" },
     { "label": "Logo",                 "source": "C:\\Users\\jeffj\\Desktop\\Logo",                     "category": "images" },
-    { "label": "Blender Renders",      "source": "C:\\Users\\jeffj\\Desktop\\blender(lemme trytry)",    "category": "images" },
     { "label": "Board Game Files",     "source": "C:\\Users\\jeffj\\Desktop\\board game temp files",    "category": "images" },
     { "label": "Physics",              "source": "C:\\Users\\jeffj\\Desktop\\physics finalfinal",       "category": "images" },
     { "label": "Projects",             "source": "C:\\Users\\jeffj\\Desktop\\projects",                 "category": "images" }
@@ -29,6 +27,6 @@
     "code":   [".ino", ".cpp", ".c", ".h", ".py", ".js", ".ts", ".v", ".sv", ".scad", ".txt", ".kicad_pcb", ".kicad_sch"],
     "images": [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg", ".bmp"]
   },
-  "maxFileSizeMB": 50,
+  "maxFileSizeMB": 95,
   "pollIntervalSeconds": 300
 }
