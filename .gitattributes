@@ -1,0 +1,3 @@
+# Library files are mirrored copies — store as-is, no line-ending conversion.
+# This silences the "LF will be replaced by CRLF" warnings during auto-sync.
+library/** -text

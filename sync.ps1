@@ -150,18 +150,22 @@ function Sync-Library {
   Write-Host "  Synced $copied file(s), skipped $skipped" -ForegroundColor Green
 
   # Git commit & push
+  # git writes harmless warnings to stderr; switch off Stop so they don't abort the script
   Push-Location $repoRoot
+  $prevEAP = $ErrorActionPreference
+  $ErrorActionPreference = 'Continue'
   try {
-    $null = git add -A
+    git add -A 2>&1 | Out-Null
     $ts = Get-Date -Format "yyyy-MM-dd HH:mm"
-    $result = git commit -m "auto: sync library $ts" 2>&1
+    git commit -m "auto: sync library $ts" 2>&1 | Out-Null
     if ($LASTEXITCODE -eq 0) {
-      $null = git push 2>&1
+      git push 2>&1 | Out-Null
       Write-Host "  Pushed to GitHub" -ForegroundColor Cyan
     } else {
-      Write-Host "  Nothing new to push" -ForegroundColor DarkGray
+      Write-Host "  Nothing new to commit/push" -ForegroundColor DarkGray
     }
   } finally {
+    $ErrorActionPreference = $prevEAP
     Pop-Location
   }
 }
