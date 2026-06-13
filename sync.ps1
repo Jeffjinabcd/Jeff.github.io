@@ -42,7 +42,9 @@ function Sync-Library {
     if (-not (Test-Path $destDir)) { New-Item -ItemType Directory -Force $destDir | Out-Null }
 
     Get-ChildItem $src -Recurse -File | Where-Object {
-      $exts -contains $_.Extension.ToLower()
+      $exts -contains $_.Extension.ToLower() -and
+      $_.FullName -notmatch '\\node_modules\\' -and
+      $_.FullName -notmatch '\\.git\\'
     } | ForEach-Object {
       $file = $_
 
