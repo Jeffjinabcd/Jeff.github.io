@@ -1,0 +1,205 @@
+﻿{
+    "generated":  "2026-06-13T20:27:44.0957131Z",
+    "files":  [
+                  {
+                      "name":  "all.3mf",
+                      "type":  "3mf",
+                      "category":  "cad",
+                      "path":  "library/cad/2025-2026/all.3mf",
+                      "relPath":  "2025-2026/all.3mf",
+                      "size":  1086345,
+                      "modified":  "2026-04-17T01:25:47.2847615Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "descore helper.3mf",
+                      "type":  "3mf",
+                      "category":  "cad",
+                      "path":  "library/cad/2025-2026/THE WORLD/mod/descore helper.3mf",
+                      "relPath":  "2025-2026/THE WORLD/mod/descore helper.3mf",
+                      "size":  37721,
+                      "modified":  "2026-04-16T12:53:09.5622944Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "descore helper.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/2025-2026/THE WORLD/mod/descore helper.STL",
+                      "relPath":  "2025-2026/THE WORLD/mod/descore helper.STL",
+                      "size":  19284,
+                      "modified":  "2026-04-16T12:50:11.9104272Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "gear shittt.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/2025-2026/THE WORLD/mod/gear shittt.STL",
+                      "relPath":  "2025-2026/THE WORLD/mod/gear shittt.STL",
+                      "size":  30484,
+                      "modified":  "2026-03-22T07:52:48.0000000Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "gear shit.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/2025-2026/THE WORLD/mod/gear shit.STL",
+                      "relPath":  "2025-2026/THE WORLD/mod/gear shit.STL",
+                      "size":  261984,
+                      "modified":  "2026-03-21T06:36:22.0000000Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "spacer my guy.3mf",
+                      "type":  "3mf",
+                      "category":  "cad",
+                      "path":  "library/cad/2025-2026/THE WORLD/mod/spacer my guy.3mf",
+                      "relPath":  "2025-2026/THE WORLD/mod/spacer my guy.3mf",
+                      "size":  87732,
+                      "modified":  "2026-03-20T16:53:42.0000000Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "1mm spacer.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/2025-2026/THE WORLD/mod/1mm spacer.STL",
+                      "relPath":  "2025-2026/THE WORLD/mod/1mm spacer.STL",
+                      "size":  23484,
+                      "modified":  "2026-03-20T16:42:54.0000000Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "bearing.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/2025-2026/THE WORLD/mod/bearing.STL",
+                      "relPath":  "2025-2026/THE WORLD/mod/bearing.STL",
+                      "size":  4484,
+                      "modified":  "2026-03-19T17:09:32.0000000Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "hs washer.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/2025-2026/啧啧啧啧我不知道关于这个/customized parts/hs washer.STL",
+                      "relPath":  "2025-2026/啧啧啧啧我不知道关于这个/customized parts/hs washer.STL",
+                      "size":  20484,
+                      "modified":  "2026-01-23T23:17:54.3481404Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "snacky ig.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/2025-2026/玉爱死欸/snacky ig.STEP",
+                      "relPath":  "2025-2026/玉爱死欸/snacky ig.STEP",
+                      "size":  85206905,
+                      "modified":  "2025-11-05T21:12:28.2592108Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "Pneumatic Reservoir Assembly (1).step",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Pneumatics/Air Tank/Pneumatic Reservoir Assembly (1).step",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Pneumatics/Air Tank/Pneumatic Reservoir Assembly (1).step",
+                      "size":  86790,
+                      "modified":  "2025-06-29T17:04:38.8582956Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "motor h6 replace.3mf",
+                      "type":  "3mf",
+                      "category":  "cad",
+                      "path":  "library/cad/motor h6 replace.3mf",
+                      "relPath":  "motor h6 replace.3mf",
+                      "size":  119574,
+                      "modified":  "2025-06-19T09:15:34.3017734Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "motor h6 replace.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/motor h6 replace.STL",
+                      "relPath":  "motor h6 replace.STL",
+                      "size":  275284,
+                      "modified":  "2025-06-19T09:13:32.0887838Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "36T High Strength Gear v2 (8-pack) (276-7747).step",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/Gears, Sprocket \u0026 Chain/High Strength Gears/36T High Strength Gear v2 (8-pack) (276-7747).step",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/Gears, Sprocket \u0026 Chain/High Strength Gears/36T High Strength Gear v2 (8-pack) (276-7747).step",
+                      "size":  4551613,
+                      "modified":  "2025-04-22T08:20:40.2626038Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "55286A_front.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Team/55286A_front.STL",
+                      "relPath":  "Team/55286A_front.STL",
+                      "size":  270284,
+                      "modified":  "2024-09-22T02:58:43.0000000Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "V5 Smart Motor (276-4840).step",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/V5 Control System/V5 Smart Motor (276-4840).step",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/V5 Control System/V5 Smart Motor (276-4840).step",
+                      "size":  16822582,
+                      "modified":  "2024-08-19T17:40:09.0000000Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "Metal Shaft Inserts (276-3881-002) (1).step",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/Wheels/Metal Shaft Inserts (276-3881-002) (1).step",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/Wheels/Metal Shaft Inserts (276-3881-002) (1).step",
+                      "size":  69220,
+                      "modified":  "2024-01-10T02:11:28.0000000Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "V5 Smart Motor (5.5W) (276-4842).step",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/V5 Control System/V5 Smart Motor (5.5W) (276-4842).step",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/V5 Control System/V5 Smart Motor (5.5W) (276-4842).step",
+                      "size":  704770,
+                      "modified":  "2023-06-10T07:12:50.0000000Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "TWAdaptor.step",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Electronics/Sensors/Robocon Encoder/TWAdaptor.step",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Electronics/Sensors/Robocon Encoder/TWAdaptor.step",
+                      "size":  4205431,
+                      "modified":  "2023-05-24T12:50:36.0000000Z",
+                      "label":  "VEX CAD"
+                  },
+                  {
+                      "name":  "SJTU_VEXrduino.step",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Electronics/VEXduino-SJTUVEX/parts/SJTU_VEXrduino.step",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Electronics/VEXduino-SJTUVEX/parts/SJTU_VEXrduino.step",
+                      "size":  19642426,
+                      "modified":  "2021-11-25T09:49:10.0000000Z",
+                      "label":  "VEX CAD"
+                  }
+              ]
+}
