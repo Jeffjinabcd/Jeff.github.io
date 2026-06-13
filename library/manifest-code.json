@@ -1,5 +1,5 @@
 {
-    "generated":  "2026-06-13T20:56:06.9611352Z",
+    "generated":  "2026-06-13T21:09:41.1292800Z",
     "files":  [
                   {
                       "name":  "Base_circuit.kicad_sch",
@@ -90,376 +90,6 @@
                       "size":  961,
                       "modified":  "2026-02-19T20:26:25.1513971Z",
                       "label":  "Physics 2"
-                  },
-                  {
-                      "name":  "App.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/App.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/App.js",
-                      "size":  297171,
-                      "modified":  "2026-01-21T01:33:10.3937984Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "temp_check.txt",
-                      "type":  "txt",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/temp_check.txt",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/temp_check.txt",
-                      "size":  1887,
-                      "modified":  "2026-01-21T01:20:36.1310370Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "lines_output.txt",
-                      "type":  "txt",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/lines_output.txt",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/lines_output.txt",
-                      "size":  3646,
-                      "modified":  "2026-01-21T01:09:51.2151104Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "temp_sections.txt",
-                      "type":  "txt",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/temp_sections.txt",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/temp_sections.txt",
-                      "size":  1514,
-                      "modified":  "2026-01-21T01:06:39.6709640Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "UI.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/src/components/UI.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/src/components/UI.js",
-                      "size":  25901,
-                      "modified":  "2026-01-21T00:05:46.3468115Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "verify_swing.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/verify_swing.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/verify_swing.js",
-                      "size":  2023,
-                      "modified":  "2026-01-20T15:53:52.4233329Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "verify_offset.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/verify_offset.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/verify_offset.js",
-                      "size":  1873,
-                      "modified":  "2026-01-20T15:53:52.4221642Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "stats.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/src/utils/stats.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/src/utils/stats.js",
-                      "size":  4381,
-                      "modified":  "2026-01-20T15:53:52.4221642Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "meowScore.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/src/utils/meowScore.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/src/utils/meowScore.js",
-                      "size":  10140,
-                      "modified":  "2026-01-20T15:53:52.4211954Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "FavoritesManager.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/src/utils/FavoritesManager.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/src/utils/FavoritesManager.js",
-                      "size":  2508,
-                      "modified":  "2026-01-20T15:53:52.4211954Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "predictionUtils.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/src/utils/predictionUtils.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/src/utils/predictionUtils.js",
-                      "size":  700,
-                      "modified":  "2026-01-20T15:53:52.4211954Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "theme.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/src/theme.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/src/theme.js",
-                      "size":  2139,
-                      "modified":  "2026-01-20T15:53:52.4198498Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "locations.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/src/data/locations.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/src/data/locations.js",
-                      "size":  2015,
-                      "modified":  "2026-01-20T15:53:52.4198498Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "manualData.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/src/data/manualData.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/src/data/manualData.js",
-                      "size":  24256,
-                      "modified":  "2026-01-20T15:53:52.4198498Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "ThemeContext.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/src/context/ThemeContext.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/src/context/ThemeContext.js",
-                      "size":  1491,
-                      "modified":  "2026-01-20T15:53:52.4188460Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "config.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/src/config.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/src/config.js",
-                      "size":  1030,
-                      "modified":  "2026-01-20T15:53:52.4188460Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "MatchPredictor.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/src/components/MatchPredictor.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/src/components/MatchPredictor.js",
-                      "size":  18376,
-                      "modified":  "2026-01-20T15:53:52.4178347Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "Rankings.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/src/components/Rankings.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/src/components/Rankings.js",
-                      "size":  23696,
-                      "modified":  "2026-01-20T15:53:52.4178347Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "TeamDetailView.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/src/components/TeamDetailView.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/src/components/TeamDetailView.js",
-                      "size":  993,
-                      "modified":  "2026-01-20T15:53:52.4178347Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "DivisionPredictor.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/src/components/DivisionPredictor.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/src/components/DivisionPredictor.js",
-                      "size":  10823,
-                      "modified":  "2026-01-20T15:53:52.4163281Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "LoadingScreen.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/src/components/LoadingScreen.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/src/components/LoadingScreen.js",
-                      "size":  3953,
-                      "modified":  "2026-01-20T15:53:52.4163281Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "AnimatedComponents.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/src/components/AnimatedComponents.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/src/components/AnimatedComponents.js",
-                      "size":  2793,
-                      "modified":  "2026-01-20T15:53:52.4163281Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "patch_project.py",
-                      "type":  "py",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/patch_project.py",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/patch_project.py",
-                      "size":  1970,
-                      "modified":  "2026-01-20T15:53:52.4150632Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "patch_podspec.py",
-                      "type":  "py",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/patch_podspec.py",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/patch_podspec.py",
-                      "size":  1165,
-                      "modified":  "2026-01-20T15:53:52.4150632Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "patch_ninja.py",
-                      "type":  "py",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/patch_ninja.py",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/patch_ninja.py",
-                      "size":  1582,
-                      "modified":  "2026-01-20T15:53:52.4150632Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "patch_hermes_dsym.py",
-                      "type":  "py",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/patch_hermes_dsym.py",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/patch_hermes_dsym.py",
-                      "size":  2040,
-                      "modified":  "2026-01-20T15:53:52.4140598Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "patch_hermes_podspec_array.py",
-                      "type":  "py",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/patch_hermes_podspec_array.py",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/patch_hermes_podspec_array.py",
-                      "size":  2019,
-                      "modified":  "2026-01-20T15:53:52.4140598Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "patch_hermes_podspec_dsym.py",
-                      "type":  "py",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/patch_hermes_podspec_dsym.py",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/patch_hermes_podspec_dsym.py",
-                      "size":  2373,
-                      "modified":  "2026-01-20T15:53:52.4140598Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "patch_cmake_escape.py",
-                      "type":  "py",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/patch_cmake_escape.py",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/patch_cmake_escape.py",
-                      "size":  972,
-                      "modified":  "2026-01-20T15:53:52.4125847Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "MakapakaScout-Bridging-Header.h",
-                      "type":  "h",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/ios/MakapakaScout/MakapakaScout-Bridging-Header.h",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/ios/MakapakaScout/MakapakaScout-Bridging-Header.h",
-                      "size":  105,
-                      "modified":  "2026-01-20T15:53:52.4095519Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "inject_logging.py",
-                      "type":  "py",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/inject_logging.py",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/inject_logging.py",
-                      "size":  537,
-                      "modified":  "2026-01-20T15:53:52.3960671Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "fix_hermes_podspec.py",
-                      "type":  "py",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/fix_hermes_podspec.py",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/fix_hermes_podspec.py",
-                      "size":  2199,
-                      "modified":  "2026-01-20T15:53:52.3960671Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "main.py",
-                      "type":  "py",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/discord-bot/main.py",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/discord-bot/main.py",
-                      "size":  1228,
-                      "modified":  "2026-01-20T15:53:52.3950638Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "requirements.txt",
-                      "type":  "txt",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/discord-bot/requirements.txt",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/discord-bot/requirements.txt",
-                      "size":  27,
-                      "modified":  "2026-01-20T15:53:52.3950638Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "algorithm.py",
-                      "type":  "py",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/discord-bot/algorithm.py",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/discord-bot/algorithm.py",
-                      "size":  2142,
-                      "modified":  "2026-01-20T15:53:52.3936091Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "debug_stats.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/debug_stats.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/debug_stats.js",
-                      "size":  4746,
-                      "modified":  "2026-01-20T15:53:52.3925533Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "babel.config.js",
-                      "type":  "js",
-                      "category":  "code",
-                      "path":  "library/code/Makapaka-Scout/MakapakaScout/babel.config.js",
-                      "relPath":  "Makapaka-Scout/MakapakaScout/babel.config.js",
-                      "size":  124,
-                      "modified":  "2026-01-20T15:53:52.3925533Z",
-                      "label":  "Code Projects"
                   },
                   {
                       "name":  "2021.Dec.1.1.cpp",
@@ -2082,16 +1712,6 @@
                       "label":  "USACO"
                   },
                   {
-                      "name":  "app.py",
-                      "type":  "py",
-                      "category":  "code",
-                      "path":  "library/code/background ai remover/app.py",
-                      "relPath":  "background ai remover/app.py",
-                      "size":  11095,
-                      "modified":  "2024-10-15T12:39:20.0072198Z",
-                      "label":  "Useful Bits"
-                  },
-                  {
                       "name":  "2020.Open.3.cpp",
                       "type":  "cpp",
                       "category":  "code",
@@ -2782,12 +2402,12 @@
                       "label":  "USACO"
                   },
                   {
-                      "name":  "Roll.cpp",
+                      "name":  "fuck.cpp",
                       "type":  "cpp",
                       "category":  "code",
-                      "path":  "library/code/CPP stuff/Roll.cpp",
-                      "relPath":  "CPP stuff/Roll.cpp",
-                      "size":  402,
+                      "path":  "library/code/CPP stuff/fuck.cpp",
+                      "relPath":  "CPP stuff/fuck.cpp",
+                      "size":  141,
                       "modified":  "2024-07-18T06:02:49.0000000Z",
                       "label":  "Code Projects"
                   },
@@ -2802,62 +2422,12 @@
                       "label":  "Code Projects"
                   },
                   {
-                      "name":  "Skiplist.cpp",
+                      "name":  "Roll.cpp",
                       "type":  "cpp",
                       "category":  "code",
-                      "path":  "library/code/CPP stuff/Skiplist.cpp",
-                      "relPath":  "CPP stuff/Skiplist.cpp",
-                      "size":  9340,
-                      "modified":  "2024-07-18T06:02:49.0000000Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "Test.cpp",
-                      "type":  "cpp",
-                      "category":  "code",
-                      "path":  "library/code/CPP stuff/Test.cpp",
-                      "relPath":  "CPP stuff/Test.cpp",
-                      "size":  765,
-                      "modified":  "2024-07-18T06:02:49.0000000Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "Vector2f.cpp",
-                      "type":  "cpp",
-                      "category":  "code",
-                      "path":  "library/code/CPP stuff/Vector2f.cpp",
-                      "relPath":  "CPP stuff/Vector2f.cpp",
-                      "size":  4766,
-                      "modified":  "2024-07-18T06:02:49.0000000Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "Basketball One on One.cpp",
-                      "type":  "cpp",
-                      "category":  "code",
-                      "path":  "library/code/CPP stuff/General/Introduction to Competitive Programming/Basketball One on One.cpp",
-                      "relPath":  "CPP stuff/General/Introduction to Competitive Programming/Basketball One on One.cpp",
-                      "size":  114,
-                      "modified":  "2024-07-18T06:02:49.0000000Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "New Text Document.cpp",
-                      "type":  "cpp",
-                      "category":  "code",
-                      "path":  "library/code/CPP stuff/New Text Document.cpp",
-                      "relPath":  "CPP stuff/New Text Document.cpp",
-                      "size":  4329,
-                      "modified":  "2024-07-18T06:02:49.0000000Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "asd.cpp",
-                      "type":  "cpp",
-                      "category":  "code",
-                      "path":  "library/code/CPP stuff/asd.cpp",
-                      "relPath":  "CPP stuff/asd.cpp",
-                      "size":  22,
+                      "path":  "library/code/CPP stuff/Roll.cpp",
+                      "relPath":  "CPP stuff/Roll.cpp",
+                      "size":  402,
                       "modified":  "2024-07-18T06:02:49.0000000Z",
                       "label":  "Code Projects"
                   },
@@ -2892,12 +2462,62 @@
                       "label":  "Code Projects"
                   },
                   {
-                      "name":  "fuck.cpp",
+                      "name":  "New Text Document.cpp",
                       "type":  "cpp",
                       "category":  "code",
-                      "path":  "library/code/CPP stuff/fuck.cpp",
-                      "relPath":  "CPP stuff/fuck.cpp",
-                      "size":  141,
+                      "path":  "library/code/CPP stuff/New Text Document.cpp",
+                      "relPath":  "CPP stuff/New Text Document.cpp",
+                      "size":  4329,
+                      "modified":  "2024-07-18T06:02:49.0000000Z",
+                      "label":  "Code Projects"
+                  },
+                  {
+                      "name":  "Vector2f.cpp",
+                      "type":  "cpp",
+                      "category":  "code",
+                      "path":  "library/code/CPP stuff/Vector2f.cpp",
+                      "relPath":  "CPP stuff/Vector2f.cpp",
+                      "size":  4766,
+                      "modified":  "2024-07-18T06:02:49.0000000Z",
+                      "label":  "Code Projects"
+                  },
+                  {
+                      "name":  "Skiplist.cpp",
+                      "type":  "cpp",
+                      "category":  "code",
+                      "path":  "library/code/CPP stuff/Skiplist.cpp",
+                      "relPath":  "CPP stuff/Skiplist.cpp",
+                      "size":  9340,
+                      "modified":  "2024-07-18T06:02:49.0000000Z",
+                      "label":  "Code Projects"
+                  },
+                  {
+                      "name":  "Test.cpp",
+                      "type":  "cpp",
+                      "category":  "code",
+                      "path":  "library/code/CPP stuff/Test.cpp",
+                      "relPath":  "CPP stuff/Test.cpp",
+                      "size":  765,
+                      "modified":  "2024-07-18T06:02:49.0000000Z",
+                      "label":  "Code Projects"
+                  },
+                  {
+                      "name":  "Basketball One on One.cpp",
+                      "type":  "cpp",
+                      "category":  "code",
+                      "path":  "library/code/CPP stuff/General/Introduction to Competitive Programming/Basketball One on One.cpp",
+                      "relPath":  "CPP stuff/General/Introduction to Competitive Programming/Basketball One on One.cpp",
+                      "size":  114,
+                      "modified":  "2024-07-18T06:02:49.0000000Z",
+                      "label":  "Code Projects"
+                  },
+                  {
+                      "name":  "asd.cpp",
+                      "type":  "cpp",
+                      "category":  "code",
+                      "path":  "library/code/CPP stuff/asd.cpp",
+                      "relPath":  "CPP stuff/asd.cpp",
+                      "size":  22,
                       "modified":  "2024-07-18T06:02:49.0000000Z",
                       "label":  "Code Projects"
                   },
@@ -3252,22 +2872,22 @@
                       "label":  "VEX Code"
                   },
                   {
-                      "name":  "readme.txt",
-                      "type":  "txt",
-                      "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/机械设计手册（软件版）V3.0 数据更新包/readme.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/机械设计手册（软件版）V3.0 数据更新包/readme.txt",
-                      "size":  4749,
-                      "modified":  "2022-06-17T10:56:34.0000000Z",
-                      "label":  "VEX Code"
-                  },
-                  {
                       "name":  "机械设计手册(软件版)R2.0要插盘问题的解决办法.txt",
                       "type":  "txt",
                       "category":  "code",
                       "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/机械设计手册（软件版）V3.0补丁/机械设计手册(软件版)R2.0要插盘问题的解决办法.txt",
                       "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/机械设计手册（软件版）V3.0补丁/机械设计手册(软件版)R2.0要插盘问题的解决办法.txt",
                       "size":  305,
+                      "modified":  "2022-06-17T10:56:34.0000000Z",
+                      "label":  "VEX Code"
+                  },
+                  {
+                      "name":  "readme.txt",
+                      "type":  "txt",
+                      "category":  "code",
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/机械设计手册（软件版）V3.0 数据更新包/readme.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/机械设计手册（软件版）V3.0 数据更新包/readme.txt",
+                      "size":  4749,
                       "modified":  "2022-06-17T10:56:34.0000000Z",
                       "label":  "VEX Code"
                   },
@@ -3302,22 +2922,12 @@
                       "label":  "VEX Code"
                   },
                   {
-                      "name":  "参数计算器.txt",
+                      "name":  "readme-and-terms-of-use-3d-cad-models.txt",
                       "type":  "txt",
                       "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/参数计算器.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/参数计算器.txt",
-                      "size":  332,
-                      "modified":  "2021-11-25T09:49:10.0000000Z",
-                      "label":  "VEX Code"
-                  },
-                  {
-                      "name":  "READ ME.txt",
-                      "type":  "txt",
-                      "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/READ ME.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/READ ME.txt",
-                      "size":  746,
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R6-5-2ZS/readme-and-terms-of-use-3d-cad-models.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R6-5-2ZS/readme-and-terms-of-use-3d-cad-models.txt",
+                      "size":  2418,
                       "modified":  "2021-11-25T09:49:10.0000000Z",
                       "label":  "VEX Code"
                   },
@@ -3332,32 +2942,12 @@
                       "label":  "VEX Code"
                   },
                   {
-                      "name":  "readme-and-terms-of-use-3d-cad-models.txt",
+                      "name":  "READ ME.txt",
                       "type":  "txt",
                       "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_61902-2Z/readme-and-terms-of-use-3d-cad-models.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_61902-2Z/readme-and-terms-of-use-3d-cad-models.txt",
-                      "size":  2386,
-                      "modified":  "2021-11-25T09:49:10.0000000Z",
-                      "label":  "VEX Code"
-                  },
-                  {
-                      "name":  "readme-and-terms-of-use-3d-cad-models.txt",
-                      "type":  "txt",
-                      "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R168-2Z/readme-and-terms-of-use-3d-cad-models.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R168-2Z/readme-and-terms-of-use-3d-cad-models.txt",
-                      "size":  2410,
-                      "modified":  "2021-11-25T09:49:10.0000000Z",
-                      "label":  "VEX Code"
-                  },
-                  {
-                      "name":  "AutoCAD2006下安装说明.txt",
-                      "type":  "txt",
-                      "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/AutoCAD2006下安装说明.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/AutoCAD2006下安装说明.txt",
-                      "size":  684,
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/READ ME.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/READ ME.txt",
+                      "size":  746,
                       "modified":  "2021-11-25T09:49:10.0000000Z",
                       "label":  "VEX Code"
                   },
@@ -3375,6 +2965,36 @@
                       "name":  "readme-and-terms-of-use-3d-cad-models.txt",
                       "type":  "txt",
                       "category":  "code",
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_61902-2Z/readme-and-terms-of-use-3d-cad-models.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_61902-2Z/readme-and-terms-of-use-3d-cad-models.txt",
+                      "size":  2386,
+                      "modified":  "2021-11-25T09:49:10.0000000Z",
+                      "label":  "VEX Code"
+                  },
+                  {
+                      "name":  "参数计算器.txt",
+                      "type":  "txt",
+                      "category":  "code",
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/参数计算器.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/参数计算器.txt",
+                      "size":  332,
+                      "modified":  "2021-11-25T09:49:10.0000000Z",
+                      "label":  "VEX Code"
+                  },
+                  {
+                      "name":  "AutoCAD2006下安装说明.txt",
+                      "type":  "txt",
+                      "category":  "code",
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/AutoCAD2006下安装说明.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/AutoCAD2006下安装说明.txt",
+                      "size":  684,
+                      "modified":  "2021-11-25T09:49:10.0000000Z",
+                      "label":  "VEX Code"
+                  },
+                  {
+                      "name":  "readme-and-terms-of-use-3d-cad-models.txt",
+                      "type":  "txt",
+                      "category":  "code",
                       "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R6-2Z/readme-and-terms-of-use-3d-cad-models.txt",
                       "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R6-2Z/readme-and-terms-of-use-3d-cad-models.txt",
                       "size":  2394,
@@ -3385,9 +3005,9 @@
                       "name":  "readme-and-terms-of-use-3d-cad-models.txt",
                       "type":  "txt",
                       "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R6-5-2ZS/readme-and-terms-of-use-3d-cad-models.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R6-5-2ZS/readme-and-terms-of-use-3d-cad-models.txt",
-                      "size":  2418,
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R3-2Z/readme-and-terms-of-use-3d-cad-models.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R3-2Z/readme-and-terms-of-use-3d-cad-models.txt",
+                      "size":  2394,
                       "modified":  "2021-11-25T09:49:10.0000000Z",
                       "label":  "VEX Code"
                   },
@@ -3395,9 +3015,9 @@
                       "name":  "readme-and-terms-of-use-3d-cad-models.txt",
                       "type":  "txt",
                       "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R3-2Z/readme-and-terms-of-use-3d-cad-models.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R3-2Z/readme-and-terms-of-use-3d-cad-models.txt",
-                      "size":  2394,
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R168-2Z/readme-and-terms-of-use-3d-cad-models.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R168-2Z/readme-and-terms-of-use-3d-cad-models.txt",
+                      "size":  2410,
                       "modified":  "2021-11-25T09:49:10.0000000Z",
                       "label":  "VEX Code"
                   },
