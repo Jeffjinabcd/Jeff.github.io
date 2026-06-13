@@ -1,25 +1,33 @@
 {
   "mappings": [
-    {
-      "label": "VEX Robot CAD",
-      "source": "C:\\Users\\jeffj\\Documents\\SolidWorks",
-      "category": "cad"
-    },
-    {
-      "label": "Arduino & Code Projects",
-      "source": "C:\\Users\\jeffj\\Documents\\Arduino",
-      "category": "code"
-    },
-    {
-      "label": "Project Photos",
-      "source": "C:\\Users\\jeffj\\Pictures\\Projects",
-      "category": "images"
-    }
+    { "label": "SolidWorks",           "source": "C:\\Users\\jeffj\\Desktop\\SolidWorks",              "category": "cad"    },
+    { "label": "VEX CAD",              "source": "C:\\Users\\jeffj\\Desktop\\Vex",                      "category": "cad"    },
+    { "label": "OpenSCAD",             "source": "C:\\Users\\jeffj\\Desktop\\openscad",                 "category": "cad"    },
+    { "label": "Blender",              "source": "C:\\Users\\jeffj\\Desktop\\blender(lemme trytry)",    "category": "cad"    },
+
+    { "label": "Code Projects",        "source": "C:\\Users\\jeffj\\Desktop\\Code",                     "category": "code"   },
+    { "label": "USACO",                "source": "C:\\Users\\jeffj\\Desktop\\USACO",                    "category": "code"   },
+    { "label": "VEX Code",             "source": "C:\\Users\\jeffj\\Desktop\\Vex",                      "category": "code"   },
+    { "label": "KiCad",                "source": "C:\\Users\\jeffj\\Desktop\\KiCad",                    "category": "code"   },
+    { "label": "Projects",             "source": "C:\\Users\\jeffj\\Desktop\\projects",                 "category": "code"   },
+    { "label": "Physics",              "source": "C:\\Users\\jeffj\\Desktop\\physics finalfinal",       "category": "code"   },
+    { "label": "Physics 2",            "source": "C:\\Users\\jeffj\\Desktop\\phy2",                     "category": "code"   },
+    { "label": "Psych",                "source": "C:\\Users\\jeffj\\Desktop\\Psych",                    "category": "code"   },
+    { "label": "Useful Bits",          "source": "C:\\Users\\jeffj\\Desktop\\useful bits",              "category": "code"   },
+    { "label": "Random",               "source": "C:\\Users\\jeffj\\Desktop\\Random shyts",            "category": "code"   },
+    { "label": "SAT",                  "source": "C:\\Users\\jeffj\\Desktop\\Sat",                      "category": "code"   },
+
+    { "label": "Visuals",              "source": "C:\\Users\\jeffj\\Desktop\\visuals",                  "category": "images" },
+    { "label": "Logo",                 "source": "C:\\Users\\jeffj\\Desktop\\Logo",                     "category": "images" },
+    { "label": "Blender Renders",      "source": "C:\\Users\\jeffj\\Desktop\\blender(lemme trytry)",    "category": "images" },
+    { "label": "Board Game Files",     "source": "C:\\Users\\jeffj\\Desktop\\board game temp files",    "category": "images" },
+    { "label": "Physics",              "source": "C:\\Users\\jeffj\\Desktop\\physics finalfinal",       "category": "images" },
+    { "label": "Projects",             "source": "C:\\Users\\jeffj\\Desktop\\projects",                 "category": "images" }
   ],
   "extensions": {
-    "cad":    [".stl", ".step", ".stp"],
-    "code":   [".ino", ".cpp", ".c", ".h", ".py", ".js", ".ts", ".v", ".sv", ".txt"],
-    "images": [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg"]
+    "cad":    [".stl", ".step", ".stp", ".obj", ".3mf"],
+    "code":   [".ino", ".cpp", ".c", ".h", ".py", ".js", ".ts", ".v", ".sv", ".scad", ".txt", ".kicad_pcb", ".kicad_sch"],
+    "images": [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg", ".bmp"]
   },
   "maxFileSizeMB": 50,
   "pollIntervalSeconds": 300

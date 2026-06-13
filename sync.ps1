@@ -66,6 +66,7 @@ function Sync-Library {
         type     = $file.Extension.TrimStart('.').ToLower()
         category = $cat
         path     = ("library/$cat/" + $rel.Replace('\', '/'))
+        relPath  = $rel.Replace('\', '/')
         size     = $file.Length
         modified = $file.LastWriteTimeUtc.ToString("o")
         label    = $mapping.label

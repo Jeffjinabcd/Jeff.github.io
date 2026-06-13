@@ -302,6 +302,85 @@
     letter-spacing:0.08em; text-transform:uppercase; margin-bottom:14px;
   }
 
+  /* ---- View toggle ---- */
+  .view-toggle{
+    display:flex; gap:0; margin-bottom:22px;
+    border:1px solid var(--line); background:var(--panel-2); width:fit-content;
+  }
+  .view-btn{
+    font-family:var(--mono); font-size:11px; letter-spacing:0.1em;
+    text-transform:uppercase; color:var(--ink-soft);
+    padding:10px 22px; border:none; border-right:1px solid var(--line);
+    background:none; cursor:pointer; transition:background .2s, color .2s;
+  }
+  .view-btn:last-child{border-right:none;}
+  .view-btn:hover{background:var(--accent-soft); color:var(--accent);}
+  .view-btn.active{background:var(--accent); color:#fff;}
+
+  .lib-panel{display:block;}
+  .lib-panel.hidden{display:none;}
+
+  /* ---- Explorer tree ---- */
+  .tree-root{border:1px solid var(--line); background:var(--panel-2);}
+  .tree-source{border-bottom:1px solid var(--line);}
+  .tree-source:last-child{border-bottom:none;}
+  .tree-source-row{
+    display:flex; align-items:center; gap:10px;
+    padding:11px 18px; cursor:pointer; user-select:none;
+    background:var(--panel); border-bottom:1px solid var(--line);
+    transition:background .15s;
+  }
+  .tree-source-row:hover{background:var(--accent-soft);}
+  .tree-caret{
+    font-size:10px; color:var(--ink-faint); width:12px; flex-shrink:0;
+    transition:transform .2s; font-family:var(--mono);
+  }
+  .tree-caret.open{transform:rotate(90deg);}
+  .tree-source-name{
+    font-family:var(--mono); font-size:12px; letter-spacing:0.08em;
+    text-transform:uppercase; color:var(--accent); font-weight:600; flex:1;
+  }
+  .tree-badge{
+    font-family:var(--mono); font-size:10px; letter-spacing:0.06em;
+    color:var(--ink-faint); text-transform:uppercase;
+  }
+  .tree-children{display:none;}
+  .tree-children.open{display:block;}
+
+  .tree-dir-row{
+    display:flex; align-items:center; gap:10px;
+    padding:8px 18px; cursor:pointer; user-select:none;
+    border-bottom:1px solid var(--line); transition:background .15s;
+  }
+  .tree-dir-row:hover{background:var(--accent-soft);}
+  .tree-dir-name{
+    font-family:var(--mono); font-size:12px; color:var(--ink-soft);
+    letter-spacing:0.04em; flex:1;
+  }
+
+  .tree-file-row{
+    display:flex; align-items:center; gap:10px;
+    padding:7px 18px; border-bottom:1px solid var(--line);
+    transition:background .15s;
+  }
+  .tree-file-row:last-child{border-bottom:none;}
+  .tree-file-row:hover{background:var(--accent-soft);}
+  .tree-file-icon{color:var(--ink-faint); width:16px; flex-shrink:0; font-size:11px; text-align:center;}
+  .tree-file-name{
+    font-family:var(--mono); font-size:12px; color:var(--ink); flex:1;
+    min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  }
+  .tree-file-meta{
+    font-family:var(--mono); font-size:10px; color:var(--ink-faint);
+    letter-spacing:0.05em; white-space:nowrap; flex-shrink:0;
+  }
+  .tree-file-actions{display:flex; gap:6px; flex-shrink:0;}
+  .tree-file-actions .btn{padding:4px 10px; font-size:10px; letter-spacing:0.06em;}
+
+  @media(max-width:760px){
+    .tree-file-meta{display:none;}
+  }
+
   /* ---- contact ---- */
   .contact-grid{
     display:grid; grid-template-columns:1fr 1fr; gap:0;
@@ -640,15 +719,29 @@
         Click any STL to open a live 3D preview.
       </p>
 
-      <div class="lib-toolbar reveal" role="tablist">
-        <button class="lib-tab active" data-filter="all">All</button>
-        <button class="lib-tab" data-filter="cad">CAD Models</button>
-        <button class="lib-tab" data-filter="code">Code</button>
-        <button class="lib-tab" data-filter="images">Images</button>
+      <!-- View toggle -->
+      <div class="view-toggle reveal">
+        <button class="view-btn active" data-view="grid">By Type</button>
+        <button class="view-btn" data-view="explorer">File Explorer</button>
       </div>
 
-      <p class="lib-count" id="lib-count">Loading…</p>
-      <div class="lib-grid" id="lib-grid"></div>
+      <!-- Grid view (by type) -->
+      <div class="lib-panel" id="panel-grid">
+        <div class="lib-toolbar" role="tablist">
+          <button class="lib-tab active" data-filter="all">All</button>
+          <button class="lib-tab" data-filter="cad">CAD Models</button>
+          <button class="lib-tab" data-filter="code">Code</button>
+          <button class="lib-tab" data-filter="images">Images</button>
+        </div>
+        <p class="lib-count" id="lib-count">Loading…</p>
+        <div class="lib-grid" id="lib-grid"></div>
+      </div>
+
+      <!-- Explorer view -->
+      <div class="lib-panel hidden" id="panel-explorer">
+        <p class="lib-count" id="lib-count-exp"></p>
+        <div class="tree-root" id="lib-tree"></div>
+      </div>
     </div>
   </section>
 
@@ -907,6 +1000,18 @@
       });
   }
 
+  // View toggle
+  document.querySelectorAll('.view-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.view-btn').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var v = btn.dataset.view;
+      document.getElementById('panel-grid').classList.toggle('hidden', v !== 'grid');
+      document.getElementById('panel-explorer').classList.toggle('hidden', v !== 'explorer');
+      if(v === 'explorer') renderExplorer();
+    });
+  });
+
   // Filter tabs
   document.querySelectorAll('.lib-tab').forEach(function(tab){
     tab.addEventListener('click', function(){
@@ -916,6 +1021,163 @@
       render();
     });
   });
+
+  // ── Explorer tree ──────────────────────────────────────────────────────────
+  function buildTree(files){
+    // tree: { [label]: { __files: [], [subdir]: { __files: [], ... } } }
+    var tree = {};
+    files.forEach(function(f){
+      var label = f.label || 'Other';
+      if(!tree[label]) tree[label] = { __files: [] };
+      var parts = (f.relPath || f.name).split('/');
+      if(parts.length === 1){
+        tree[label].__files.push(f);
+      } else {
+        var node = tree[label];
+        for(var i = 0; i < parts.length - 1; i++){
+          var part = parts[i];
+          if(!node[part]) node[part] = { __files: [] };
+          node = node[part];
+        }
+        node.__files.push(f);
+      }
+    });
+    return tree;
+  }
+
+  var FILE_CHARS = { stl:'◈', step:'◇', stp:'◇', jpg:'▣', jpeg:'▣', png:'▣', gif:'▣', webp:'▣', svg:'▣', bmp:'▣' };
+  function fileChar(f){ return FILE_CHARS[f.type] || '›'; }
+
+  function makeTreeFileRow(f, depth){
+    var row = document.createElement('div');
+    row.className = 'tree-file-row';
+    row.style.paddingLeft = (18 + depth * 20) + 'px';
+
+    var icon = document.createElement('span');
+    icon.className = 'tree-file-icon';
+    icon.textContent = fileChar(f);
+    row.appendChild(icon);
+
+    var name = document.createElement('span');
+    name.className = 'tree-file-name';
+    name.textContent = f.name;
+    row.appendChild(name);
+
+    var meta = document.createElement('span');
+    meta.className = 'tree-file-meta';
+    meta.textContent = fmtSize(f.size) + ' · ' + fmtDate(f.modified);
+    row.appendChild(meta);
+
+    var actions = document.createElement('div');
+    actions.className = 'tree-file-actions';
+
+    if(isSTL(f)){
+      var b = document.createElement('button');
+      b.className = 'btn btn-primary'; b.textContent = 'Preview 3D';
+      b.addEventListener('click', function(){ openSTL(f); });
+      actions.appendChild(b);
+    } else if(isImage(f)){
+      var b = document.createElement('button');
+      b.className = 'btn btn-primary'; b.textContent = 'View';
+      b.addEventListener('click', function(){ openImage(f); });
+      actions.appendChild(b);
+    } else if(isCode(f)){
+      var b = document.createElement('button');
+      b.className = 'btn btn-primary'; b.textContent = 'View Code';
+      b.addEventListener('click', function(){ openCode(f); });
+      actions.appendChild(b);
+    }
+
+    var dl = document.createElement('a');
+    dl.className = 'btn'; dl.href = f.path; dl.download = f.name; dl.textContent = '↓';
+    actions.appendChild(dl);
+    row.appendChild(actions);
+    return row;
+  }
+
+  function renderDirNode(node, container, depth){
+    // Files at this level
+    (node.__files || []).forEach(function(f){
+      container.appendChild(makeTreeFileRow(f, depth));
+    });
+    // Subdirectories
+    Object.keys(node).filter(function(k){ return k !== '__files'; }).sort().forEach(function(dir){
+      var dirRow = document.createElement('div');
+      dirRow.className = 'tree-dir-row';
+      dirRow.style.paddingLeft = (18 + depth * 20) + 'px';
+
+      var caret = document.createElement('span');
+      caret.className = 'tree-caret'; caret.textContent = '▶';
+      dirRow.appendChild(caret);
+
+      var dname = document.createElement('span');
+      dname.className = 'tree-dir-name'; dname.textContent = '📁 ' + dir;
+      dirRow.appendChild(dname);
+
+      var children = document.createElement('div');
+      children.className = 'tree-children';
+      renderDirNode(node[dir], children, depth + 1);
+
+      dirRow.addEventListener('click', function(){
+        var open = children.classList.toggle('open');
+        caret.classList.toggle('open', open);
+      });
+
+      container.appendChild(dirRow);
+      container.appendChild(children);
+    });
+  }
+
+  function renderExplorer(){
+    var treeEl = document.getElementById('lib-tree');
+    var countEl = document.getElementById('lib-count-exp');
+    treeEl.innerHTML = '';
+
+    if(allFiles.length === 0){
+      treeEl.innerHTML = '<div class="lib-empty" style="grid-column:unset;">No files yet — run sync.ps1 to populate.</div>';
+      countEl.textContent = '';
+      return;
+    }
+
+    countEl.textContent = allFiles.length + ' file' + (allFiles.length !== 1 ? 's' : '');
+
+    var tree = buildTree(allFiles);
+    Object.keys(tree).sort().forEach(function(label){
+      var node = tree[label];
+      var totalFiles = (function count(n){ var t = (n.__files||[]).length; Object.keys(n).filter(function(k){return k!=='__files';}).forEach(function(k){t+=count(n[k]);}); return t; })(node);
+
+      var source = document.createElement('div');
+      source.className = 'tree-source';
+
+      var srcRow = document.createElement('div');
+      srcRow.className = 'tree-source-row';
+
+      var caret = document.createElement('span');
+      caret.className = 'tree-caret'; caret.textContent = '▶';
+      srcRow.appendChild(caret);
+
+      var sname = document.createElement('span');
+      sname.className = 'tree-source-name'; sname.textContent = label;
+      srcRow.appendChild(sname);
+
+      var badge = document.createElement('span');
+      badge.className = 'tree-badge'; badge.textContent = totalFiles + ' file' + (totalFiles !== 1 ? 's' : '');
+      srcRow.appendChild(badge);
+
+      var children = document.createElement('div');
+      children.className = 'tree-children';
+      renderDirNode(node, children, 1);
+
+      srcRow.addEventListener('click', function(){
+        var open = children.classList.toggle('open');
+        caret.classList.toggle('open', open);
+      });
+
+      source.appendChild(srcRow);
+      source.appendChild(children);
+      treeEl.appendChild(source);
+    });
+  }
 
   loadManifest();
 
