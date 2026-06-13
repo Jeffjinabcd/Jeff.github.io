@@ -90,7 +90,7 @@ function Sync-Library {
   # Git commit & push
   Push-Location $repoRoot
   try {
-    git add -A 2>&1 | Out-Null
+    $null = git add -A
     $ts = Get-Date -Format "yyyy-MM-dd HH:mm"
     $result = git commit -m "auto: sync library $ts" 2>&1
     if ($LASTEXITCODE -eq 0) {

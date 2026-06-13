@@ -1,0 +1,96 @@
+(21:37:37:868)	FurMark 2.8.1.0 (build: May 22 2025@18:18:48)
+(21:37:37:868)	(c)2007-2025 Geeks3D
+(21:37:37:868)	homepage: https://www.geeks3d.com/furmark/
+(21:37:37:868)	discord server : https://geeks3d.com/discord/
+(21:37:37:868)	FurMark (GeeXLab engine) initialization...
+(21:37:37:868)	command line: furmark.exe --demo furmark-gl --gpu-index 0 --width 1920 --height 1080 
+(21:37:37:868)	FurMark home directory: C:\Users\jeffj\OneDrive - Shady Side Academy\Desktop\FurMark_win64\
+(21:37:37:868)	[stb] STB image loader. Supported formats: *.JPEG, *.PNG, *.TGA, *.BMP, *.PSD, *.GIF, *.HDR, *.PIC
+(21:37:37:870)	[tinyexr] EXR image loader.
+(21:37:37:870)	[lib3ds] Lib3ds loader (core plugin).
+(21:37:37:870)	[ObjLoaderV1] OBJ 3D loader (core plugin).
+(21:37:37:870)	[ObjLoaderV2] OBJ loader based on Tiny OBJ Loader (core plugin).
+(21:37:37:870)	[STL] STL (StereoLithography) 3D loader (core plugin).
+(21:37:37:870)	[glTF] glTF 3D loader (core plugin).
+(21:37:37:870)	[SQLite3] SQLite3 version 3.49.2
+(21:37:37:870)	GraphX Core 0.58.1.0 (codename: Maxwell) initialization ok.
+(21:37:37:870)	Windows version: Windows 11 build 26200
+(21:37:37:870)	HW platform type: PC
+(21:37:37:870)	SW platform type: Windows 64-bit
+(21:37:37:870)	[GpuMonitor] Operating system detected: Windows 11 build 26200
+(21:37:37:875)	[GpuMonitor] NV/R530+: physical GPU(s): 1 - logical GPU(s): 1
+(21:37:37:953)	[GpuMonitor] Overdrive8 init error.
+(21:37:38:170)	[GpuMonitor] ADLX - num_adlx_gpus: 1
+(21:37:38:170)	[GpuMonitor] ADLX - VendorId: 1002
+(21:37:38:170)	[GpuMonitor] ADLX - DeviceId: 164E
+(21:37:38:170)	[GpuMonitor] ADLX - revisionId: D8
+(21:37:38:170)	[GpuMonitor] ADLX - SubSystemId: 25DD
+(21:37:38:170)	[GpuMonitor] ADLX - SubSystemVendorId: 1043
+(21:37:38:170)	[GpuMonitor] ADLX - UniqueId: 2304
+(21:37:38:170)	[GpuMonitor] ADLX - ASIC family: ASIC_FUSION
+(21:37:38:170)	[GpuMonitor] ADLX - GPU type: INTEGRATED
+(21:37:38:170)	[GpuMonitor] ADLX - Name: AMD Radeon(TM) 610M
+(21:37:38:170)	[GpuMonitor] ADLX - PNP String: PCI\VEN_1002&DEV_164E&SUBSYS_25DD1043&REV_D8\4&39F031E8&0&0041
+(21:37:38:170)	[GpuMonitor] ADLX - Total VRAM: 512 MB
+(21:37:38:170)	[GpuMonitor] ADLX - VRAM type: DDR5
+(21:37:38:170)	[GpuMonitor] ADLX - BIOS part number: 102-RAPHAEL-008
+(21:37:38:170)	[GpuMonitor] ADLX - BIOS version: 032.019.000.008
+(21:37:38:170)	[GpuMonitor] ADLX - BIOS date: 2022/09/26 22:19
+(21:37:38:175)	[GpuMonitor] ADLX - GPU 0 usage: 0.0 %
+(21:37:38:175)	[GpuMonitor] ADLX - GPU 0 clocks - core: 600.0 MHz, mem: 2400.0 MHz
+(21:37:38:175)	[GpuMonitor] ADLX - GPU 0 temperatures - GPU core: 70.0 째C, GPU hotspot: -1.0 째C, VRAM: -1.0 째C, Intake: -1.0 째C
+(21:37:38:175)	[GpuMonitor] ADLX - GPU 0 power - total board power: -1.0 W, chip power: 57.0 MHz
+(21:37:38:175)	[GpuMonitor] ADLX - GPU 0 VRAM usage: 3 MB
+(21:37:38:175)	[GpuMonitor] ADLX - GPU 0 voltage: 1.1 V
+(21:37:38:175)	[GpuMonitor] ADLX - initialization OK
+(21:37:38:176)	[GpuMonitor] Num GPUs detected: 3
+(21:37:38:176)	[GpuMonitor] > GPU0
+(21:37:38:176)	[GpuMonitor]   - name: NVIDIA GeForce RTX 4070 Laptop GPU
+(21:37:38:176)	[GpuMonitor]   - PCI codes: 0x10DE-0x2860
+(21:37:38:176)	[GpuMonitor]   - Bus ID: 1
+(21:37:38:176)	[GpuMonitor]   - VBIOS: 95.06.15.40.56
+(21:37:38:176)	[GpuMonitor]   - core temperature: 47 degC
+(21:37:38:176)	[GpuMonitor]   - driver: 576.88
+(21:37:38:176)	[GpuMonitor] > GPU1
+(21:37:38:176)	[GpuMonitor]   - name: AMD Radeon(TM) 610M
+(21:37:38:176)	[GpuMonitor]   - PCI codes: 0x1002-0x164E
+(21:37:38:176)	[GpuMonitor]   - Bus ID: 9
+(21:37:38:176)	[GpuMonitor]   - VBIOS: 032.019.000.008/102-RAPHAEL-008 (2022/09/26 22:19)
+(21:37:38:176)	[GpuMonitor]   - core temperature: 70 degC
+(21:37:38:176)	[GpuMonitor]   - driver: AMD Software: Adrenalin Edition 24.10.02
+(21:37:38:176)	[GpuMonitor] > GPU2
+(21:37:38:176)	[GpuMonitor]   - name: LuminonCore IDDCX Adapter
+(21:37:38:176)	[GpuMonitor]   - PCI codes: 0x112D559-0x110D5559
+(21:37:38:176)	[GpuMonitor]   - driver: 1.0.2018.1204 (12-4-2018)
+(21:37:38:176)	FurMark (GeeXLab engine) started ok.
+(21:37:38:176)	system DPI: 96
+(21:37:38:196)	3D window size: 1936 x 1119
+(21:37:38:219)	current DPI: xdpi(96), ydpi(96) - DPI scale: 1.0
+(21:37:38:347)	GL_RENDERER: NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2
+(21:37:38:347)	GL_VENDOR: NVIDIA Corporation
+(21:37:38:347)	GL_VERSION: 3.2.0 NVIDIA 576.88
+(21:37:38:347)	GL_SHADING_LANGUAGE_VERSION: 1.50 NVIDIA via Cg compiler
+(21:37:38:347)	OpenGL version detected: 3.2
+(21:37:38:347)	OpenGL extensions: 434
+(21:37:38:423)	[ArtifactScanner] Artifact scanner for GPU stability checking.
+(21:39:49:245)	[ Demo Quick Stats ]
+(21:39:49:245)	- demo                 : FurMark (GL) (built-in: YES)
+(21:39:49:245)	- renderer             : NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2
+(21:39:49:245)	- 3D API               : OpenGL 3.2.0 NVIDIA 576.88
+(21:39:49:245)	- resolution           : 1920x1080
+(21:39:49:245)	- frames               : 46145
+(21:39:49:245)	- duration             : 130563 ms
+(21:39:49:245)	- FPS (min/avg/max)    : 145 / 349 / 3208
+(21:39:49:245)	- GPU 0: NVIDIA GeForce RTX 4070 Laptop GPU [10DE-2860]
+(21:39:49:245)	  .max temperature: 83캜
+(21:39:49:245)	  .max usage: 98%
+(21:39:49:245)	  .max core clock: 2430 MHz
+(21:39:49:245)	  .min core clock: 2086 MHz
+(21:39:49:245)	- GPU 1: AMD Radeon(TM) 610M [1002-164E]
+(21:39:49:245)	  .max usage: 0%
+(21:39:49:245)	  .max core clock: 600 MHz
+(21:39:49:245)	  .min core clock: 600 MHz
+(21:39:49:246)	- GPU 2: LuminonCore IDDCX Adapter [112D559-110D5559]
+(21:39:50:126)	FurMark (GeeXLab engine) is shutting down...
+(21:39:50:129)	GraphX Core stopped ok.
+(21:39:50:129)	FurMark (GeeXLab engine) shutdown ok.

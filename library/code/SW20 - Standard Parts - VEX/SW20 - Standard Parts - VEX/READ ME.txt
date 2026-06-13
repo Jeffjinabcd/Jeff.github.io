@@ -1,0 +1,17 @@
+Prefix for naming：
+0	Field conponents  场地元素
+1	VEX V5 / VRC / VEX EDR
+2	VEX PRO
+3	GB or GB/T Standard Parts  国标类型标准件
+4	ANSI Standard Parts  美标类型标准件
+5	Standard Parts that are not GB or ANSI parts, but has a Metric unit  
+	非国标或美标的标准件，单位：公制；
+6	Custom-made Standard Parts  
+	自制（自定义）标准件
+7	Needed to be changed & copied to other folders before use
+	使用前需要被复制到另外的文件夹并作修改，例如：气缸、轴
+8	Pneumatic components  气动元件
+	8s：SMC;		8a：Arctic亚德客；
+	8o：欧思托； 	8am：Andymark;
+9	Electrical conponents but not official
+	非官方电子元件，例如：磁编码器、通信转接板

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="24in"
+   height="24in"
+   viewBox="0 0 609.60001 609.6"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="board ig bro.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0128998"
+     inkscape:cx="1268.1412"
+     inkscape:cy="1376.7403"
+     inkscape:window-width="2560"
+     inkscape:window-height="1351"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.02537458;stroke-linecap:round;stroke-miterlimit:5;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect1"
+       width="298"
+       height="421"
+       x="29.255938"
+       y="27.949869"
+       rx="4.5519144e-15"
+       inkscape:label="a3 - left right" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.02537458;stroke-linecap:round;stroke-miterlimit:5;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect2"
+       width="211"
+       height="298"
+       x="356.11313"
+       y="74.621216"
+       rx="4.5519144e-15"
+       inkscape:label="a4 - corner" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.02097898;stroke-linecap:round;stroke-miterlimit:5;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect3"
+       width="406"
+       height="211"
+       x="8.8658867"
+       y="368.67316"
+       rx="3.1112412e-15"
+       inkscape:label="weird mid" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.02537458;stroke-linecap:round;stroke-miterlimit:5;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect4"
+       width="95.5"
+       height="211"
+       x="147.7648"
+       y="280.75311"
+       rx="4.5519144e-15"
+       inkscape:label="weird side" />
+  </g>
+</svg>
