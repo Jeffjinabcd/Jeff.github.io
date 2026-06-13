@@ -61,9 +61,25 @@ function Sync-Library {
   # Auto-export SolidWorks parts to STL if SW is already open
   $cfg.mappings | Where-Object { $_.category -eq 'cad' } | ForEach-Object { Export-SWToSTL $_ }
 
+  # Mirror sync: wipe category folders so deleted/junk files don't linger
+  foreach ($cat in @('cad','code','images')) {
+    $catDir = Join-Path $repoRoot "library\$cat"
+    if (Test-Path $catDir) { Remove-Item "$catDir\*" -Recurse -Force -ErrorAction SilentlyContinue }
+  }
+
+  # Folders/files that are dependencies, tooling, or generated output — never your work
+  $excludeDirs = @(
+    'node_modules','.git','.history','__pycache__','.vs','.idea','.vscode',
+    'bin','obj','build','dist','out','target','.next','coverage',
+    'env','venv','.venv','site-packages','models',  # python venvs + AI model dumps
+    '.expo','Pods','.gradle','.dart_tool',           # mobile/build deps
+    'vendor','packages','.cache',
+    'FurMark_win64','gpushark'                        # GPU benchmark tool
+  )
+
   foreach ($mapping in $cfg.mappings) {
-    $src = $mapping.source
-    $cat = $mapping.category
+    $src  = $mapping.source
+    $cat  = $mapping.category
     $exts = $cfg.extensions.$cat
 
     if (-not (Test-Path $src)) {
@@ -74,13 +90,6 @@ function Sync-Library {
     $destDir = Join-Path $repoRoot "library\$cat"
     if (-not (Test-Path $destDir)) { New-Item -ItemType Directory -Force $destDir | Out-Null }
 
-    $excludeDirs = @(
-      'node_modules','.git','.history','__pycache__','.vs',
-      'bin','obj','build','dist','.cache',
-      'FurMark_win64','gpushark',       # GPU benchmark tool
-      'vendor','packages','.dart_tool', # dependency managers
-      'Thumbs.db','.DS_Store'
-    )
     Get-ChildItem $src -Recurse -File | Where-Object {
       $f = $_
       $skip = $false
@@ -129,9 +138,8 @@ function Sync-Library {
 
   foreach ($cat in @('cad','code','images')) {
     $subset = $files | Where-Object { $_.category -eq $cat } |
-              Sort-Object { [datetime]$_.modified } -Descending |
-              Select-Object -First 500
-    $counts[$cat] = $subset.Count
+              Sort-Object { [datetime]$_.modified } -Descending
+    $counts[$cat] = @($subset).Count
     $json = [PSCustomObject]@{ generated = $ts; files = @($subset) } | ConvertTo-Json -Depth 5
     [System.IO.File]::WriteAllText("$libDir\manifest-$cat.json", $json, $utf8)
   }
