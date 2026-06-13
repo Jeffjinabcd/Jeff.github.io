@@ -123,22 +123,21 @@ function Sync-Library {
   $libDir = Join-Path $repoRoot "library"
   if (-not (Test-Path $libDir)) { New-Item -ItemType Directory -Force $libDir | Out-Null }
 
-  $ts = (Get-Date).ToUniversalTime().ToString("o")
+  $ts     = (Get-Date).ToUniversalTime().ToString("o")
   $counts = @{}
+  $utf8   = New-Object System.Text.UTF8Encoding $false   # no BOM — required for browser JSON.parse
 
   foreach ($cat in @('cad','code','images')) {
     $subset = $files | Where-Object { $_.category -eq $cat } |
               Sort-Object { [datetime]$_.modified } -Descending |
               Select-Object -First 500
     $counts[$cat] = $subset.Count
-    [PSCustomObject]@{ generated = $ts; files = @($subset) } |
-      ConvertTo-Json -Depth 5 |
-      Set-Content "$libDir\manifest-$cat.json" -Encoding utf8
+    $json = [PSCustomObject]@{ generated = $ts; files = @($subset) } | ConvertTo-Json -Depth 5
+    [System.IO.File]::WriteAllText("$libDir\manifest-$cat.json", $json, $utf8)
   }
 
-  # Tiny index manifest (just counts — loaded on page open)
-  [PSCustomObject]@{ generated = $ts; counts = $counts } |
-    ConvertTo-Json | Set-Content "$libDir\manifest.json" -Encoding utf8
+  $idx = [PSCustomObject]@{ generated = $ts; counts = $counts } | ConvertTo-Json
+  [System.IO.File]::WriteAllText("$libDir\manifest.json", $idx, $utf8)
 
   Write-Host "  Synced $copied file(s), skipped $skipped" -ForegroundColor Green
 
