@@ -320,6 +320,29 @@
   .lib-panel{display:block;}
   .lib-panel.hidden{display:none;}
 
+  /* ---- External repositories ---- */
+  .ext-repos{margin-top:32px; padding-top:28px; border-top:1px solid var(--line);}
+  .ext-repo{
+    display:flex; align-items:center; gap:16px;
+    background:var(--panel-2); border:1px solid var(--line);
+    padding:18px 22px; text-decoration:none; color:var(--ink);
+    transition:border-color .25s, transform .25s, box-shadow .25s;
+  }
+  .ext-repo:hover{
+    border-color:var(--accent); transform:translateY(-2px);
+    box-shadow:0 8px 24px -14px rgba(20,27,39,0.35);
+  }
+  .ext-repo svg{color:var(--ink-soft); flex-shrink:0;}
+  .ext-repo:hover svg{color:var(--accent);}
+  .ext-repo-text{display:flex; flex-direction:column; gap:3px; flex:1; min-width:0;}
+  .ext-repo-name{font-family:var(--display); font-weight:600; font-size:1.08rem;}
+  .ext-repo-meta{
+    font-family:var(--mono); font-size:11px; letter-spacing:0.04em;
+    color:var(--ink-faint); word-break:break-word;
+  }
+  .ext-repo-arrow{font-size:18px; color:var(--ink-faint); flex-shrink:0;}
+  .ext-repo:hover .ext-repo-arrow{color:var(--accent);}
+
   /* ---- Explorer tree ---- */
   .tree-root{border:1px solid var(--line); background:var(--panel-2);}
   .tree-source{border-bottom:1px solid var(--line);}
@@ -743,6 +766,21 @@
         <p class="lib-count" id="lib-count-exp"></p>
         <div class="tree-root" id="lib-tree"></div>
       </div>
+
+      <!-- External / collaborative repositories -->
+      <div class="ext-repos reveal">
+        <p class="label" style="margin-bottom:14px;">External Repositories</p>
+        <a class="ext-repo" href="https://github.com/StevenQQian/Makapaka-Scout" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          <span class="ext-repo-text">
+            <span class="ext-repo-name">Makapaka-Scout</span>
+            <span class="ext-repo-meta">VEX scouting app · collaborative project · github.com/StevenQQian/Makapaka-Scout</span>
+          </span>
+          <span class="ext-repo-arrow">↗</span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -889,8 +927,11 @@
   function isImage(f){ return ['jpg','jpeg','png','gif','webp','svg'].indexOf(f.type)>=0; }
   function isSTL(f){ return f.type==='stl'; }
   function isSTEP(f){ return f.type==='step'||f.type==='stp'; }
-  function is3D(f){ return isSTL(f)||isSTEP(f); }
-  function isCode(f){ return !isImage(f)&&!is3D(f); }
+  function isOBJ(f){ return f.type==='obj'; }
+  function is3D(f){ return isSTL(f)||isSTEP(f)||isOBJ(f); }   // previewable 3D formats
+  var CODE_EXTS = ['ino','cpp','c','h','py','js','ts','v','sv','scad','txt','kicad_pcb','kicad_sch'];
+  function isCode(f){ return CODE_EXTS.indexOf(f.type)>=0; }
+  // anything else (e.g. .3mf slicer projects) → download-only
 
   function makeCard(f){
     var card = document.createElement('div');
@@ -1254,13 +1295,15 @@
   }
 
   async function initViewer(){
-    var [THREE, {STLLoader}, {OrbitControls}] = await Promise.all([
+    var [THREE, {STLLoader}, {OrbitControls}, {OBJLoader}] = await Promise.all([
       import('three'),
       import('three/addons/loaders/STLLoader.js'),
-      import('three/addons/controls/OrbitControls.js')
+      import('three/addons/controls/OrbitControls.js'),
+      import('three/addons/loaders/OBJLoader.js')
     ]);
     window._THREE = THREE;
     window._STLLoader = STLLoader;
+    window._OBJLoader = OBJLoader;
 
     var canvas = document.getElementById('stl-canvas');
     v3Renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
@@ -1284,7 +1327,10 @@
   }
 
   function clearMeshes(){
-    v3Meshes.forEach(function(m){ v3Scene.remove(m); m.geometry.dispose(); });
+    v3Meshes.forEach(function(obj){
+      v3Scene.remove(obj);
+      obj.traverse(function(c){ if(c.geometry) c.geometry.dispose(); });
+    });
     v3Meshes = [];
   }
 
@@ -1344,6 +1390,13 @@
             });
         })
         .catch(function(){ if(hint) hint.textContent = 'Failed to load STEP file'; });
+    } else if(isOBJ(f)){
+      new window._OBJLoader().load(f.path, function(obj){
+        obj.traverse(function(c){ if(c.isMesh) c.material = mat.clone(); });
+        v3Scene.add(obj); v3Meshes.push(obj);
+        fitCamera(v3Meshes);
+        if(hint) hint.textContent = 'Drag to rotate · Scroll to zoom · Right-drag to pan';
+      }, undefined, function(){ if(hint) hint.textContent = 'Could not load OBJ file'; });
     }
   }
 

@@ -74,7 +74,9 @@ function Sync-Library {
     'env','venv','.venv','site-packages','models',  # python venvs + AI model dumps
     '.expo','Pods','.gradle','.dart_tool',           # mobile/build deps
     'vendor','packages','.cache',
-    'FurMark_win64','gpushark'                        # GPU benchmark tool
+    'FurMark_win64','gpushark',                       # GPU benchmark tool
+    'background ai remover',                           # python venv + AI models, not portfolio work
+    'Makapaka-Scout'                                   # external collaborative repo — cited via link instead
   )
 
   foreach ($mapping in $cfg.mappings) {
