@@ -106,75 +106,16 @@ function Sync-Library {
 
 function Install-StartupTask {
   $scriptPath = Join-Path $repoRoot "sync.ps1"
+  $regKey     = "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
+  $regName    = "JeffGitHubSync"
+  $regValue   = "powershell.exe -NonInteractive -WindowStyle Hidden -File `"$scriptPath`" -Watch"
 
-  # Task 1: run -Watch on every login (background, hidden)
-  $action   = New-ScheduledTaskAction -Execute "powershell.exe" `
-                -Argument "-NonInteractive -WindowStyle Hidden -File `"$scriptPath`" -Watch"
-  $trigger  = New-ScheduledTaskTrigger -AtLogOn
-  $settings = New-ScheduledTaskSettingsSet `
-                -ExecutionTimeLimit (New-TimeSpan -Hours 24) `
-                -RestartCount 3 -RestartInterval (New-TimeSpan -Minutes 1) `
-                -MultipleInstances IgnoreNew
-  Register-ScheduledTask -TaskName "JeffGitHubSync" -Action $action `
-    -Trigger $trigger -Settings $settings -Force | Out-Null
-  Write-Host "✓ Login task installed  — syncs every $( (Get-Content "$repoRoot\config.json" | ConvertFrom-Json).pollIntervalSeconds )s in the background." -ForegroundColor Green
-
-  # Task 2: extra sync whenever Claude.exe or claude.exe starts
-  $claudeExe = "$env:LOCALAPPDATA\Programs\claude\Claude.exe"
-  if (-not (Test-Path $claudeExe)) {
-    # Try common alternate locations
-    $candidates = @(
-      "$env:LOCALAPPDATA\Programs\Claude\Claude.exe",
-      "$env:APPDATA\Claude\Claude.exe",
-      "C:\Program Files\Claude\Claude.exe"
-    )
-    $claudeExe = $candidates | Where-Object { Test-Path $_ } | Select-Object -First 1
-  }
-
-  if ($claudeExe) {
-    # Use a process-start WMIC event subscription via a tiny helper script
-    $helperPath = Join-Path $repoRoot "sync-on-claude.ps1"
-    @"
-# Auto-generated — triggered when Claude starts
-& "$scriptPath"
-"@ | Set-Content $helperPath -Encoding utf8
-
-    $action2   = New-ScheduledTaskAction -Execute "powershell.exe" `
-                   -Argument "-NonInteractive -WindowStyle Hidden -File `"$helperPath`""
-    # Event trigger: process create for Claude.exe
-    $xml = @"
-<?xml version="1.0" encoding="UTF-16"?>
-<Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
-  <Triggers>
-    <EventTrigger>
-      <Enabled>true</Enabled>
-      <Subscription>&lt;QueryList&gt;&lt;Query Id="0" Path="Microsoft-Windows-WMI-Activity/Operational"&gt;&lt;Select Path="Security"&gt;*[System[EventID=4688]] and *[EventData[Data[@Name='NewProcessName'] and (Data='$($claudeExe.Replace('\','\\'))')]]&lt;/Select&gt;&lt;/Query&gt;&lt;/QueryList&gt;</Subscription>
-    </EventTrigger>
-  </Triggers>
-  <Actions>
-    <Exec>
-      <Command>powershell.exe</Command>
-      <Arguments>-NonInteractive -WindowStyle Hidden -File "$helperPath"</Arguments>
-    </Exec>
-  </Actions>
-</Task>
-"@
-    # Simpler alternative: add a second At-Startup trigger that runs 1 min after login
-    # (process-event triggers require audit policy; use a reliable fallback instead)
-    $action3   = New-ScheduledTaskAction -Execute "powershell.exe" `
-                   -Argument "-NonInteractive -WindowStyle Hidden -File `"$scriptPath`""
-    $trigger3  = New-ScheduledTaskTrigger -RepetitionInterval (New-TimeSpan -Minutes 5) `
-                   -At (Get-Date) -Once
-    $settings3 = New-ScheduledTaskSettingsSet -ExecutionTimeLimit (New-TimeSpan -Minutes 3) `
-                   -MultipleInstances IgnoreNew
-    Register-ScheduledTask -TaskName "JeffGitHubSyncPulse" -Action $action3 `
-      -Trigger $trigger3 -Settings $settings3 -Force | Out-Null
-    Write-Host "✓ Pulse task installed   — also syncs every 5 min regardless." -ForegroundColor Green
-  }
-
+  Set-ItemProperty -Path $regKey -Name $regName -Value $regValue
+  Write-Host "Installed — sync will start automatically on every login." -ForegroundColor Green
+  Write-Host "Running first sync now..." -ForegroundColor DarkGray
+  Sync-Library
   Write-Host ""
-  Write-Host "Both tasks are active. The library will stay up to date automatically." -ForegroundColor Cyan
-  Write-Host "To uninstall: Unregister-ScheduledTask -TaskName JeffGitHubSync,JeffGitHubSyncPulse -Confirm:`$false" -ForegroundColor DarkGray
+  Write-Host "To uninstall: Remove-ItemProperty -Path '$regKey' -Name '$regName'" -ForegroundColor DarkGray
 }
 
 # ── Main ─────────────────────────────────────────────────────────────────────
