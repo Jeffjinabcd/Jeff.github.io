@@ -76,14 +76,26 @@ function Sync-Library {
     }
   }
 
-  # Write manifest
+  # Write split manifests per category (keeps browser fetch sizes small)
   $libDir = Join-Path $repoRoot "library"
   if (-not (Test-Path $libDir)) { New-Item -ItemType Directory -Force $libDir | Out-Null }
 
-  [PSCustomObject]@{
-    generated = (Get-Date).ToUniversalTime().ToString("o")
-    files     = $files
-  } | ConvertTo-Json -Depth 5 | Set-Content "$libDir\manifest.json" -Encoding utf8
+  $ts = (Get-Date).ToUniversalTime().ToString("o")
+  $counts = @{}
+
+  foreach ($cat in @('cad','code','images')) {
+    $subset = $files | Where-Object { $_.category -eq $cat } |
+              Sort-Object { [datetime]$_.modified } -Descending |
+              Select-Object -First 500
+    $counts[$cat] = $subset.Count
+    [PSCustomObject]@{ generated = $ts; files = @($subset) } |
+      ConvertTo-Json -Depth 5 |
+      Set-Content "$libDir\manifest-$cat.json" -Encoding utf8
+  }
+
+  # Tiny index manifest (just counts — loaded on page open)
+  [PSCustomObject]@{ generated = $ts; counts = $counts } |
+    ConvertTo-Json | Set-Content "$libDir\manifest.json" -Encoding utf8
 
   Write-Host "  Synced $copied file(s), skipped $skipped" -ForegroundColor Green
 

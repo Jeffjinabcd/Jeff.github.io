@@ -850,6 +850,7 @@
 (function(){
   var currentFilter = 'all';
   var allFiles = [];
+  var loaded = {};   // tracks which category manifests have been fetched
 
   var EXT_LANG = {
     ino:'arduino', cpp:'cpp', c:'c', h:'c', py:'python',
@@ -986,18 +987,28 @@
     filtered.forEach(function(f){ grid.appendChild(makeCard(f)); });
   }
 
-  function loadManifest(){
-    fetch('library/manifest.json?v='+Date.now())
+  function loadCategory(cat){
+    if(loaded[cat]) return Promise.resolve();
+    var url = cat==='all' ? null : 'library/manifest-'+cat+'.json?v='+Date.now();
+    if(!url) return Promise.resolve();
+    document.getElementById('lib-count').textContent = 'Loading…';
+    return fetch(url)
       .then(function(r){ return r.json(); })
       .then(function(data){
-        allFiles = data.files||[];
-        render();
+        var incoming = data.files||[];
+        // merge without duplicates
+        var existing = allFiles.map(function(f){ return f.path; });
+        incoming.forEach(function(f){ if(existing.indexOf(f.path)<0) allFiles.push(f); });
+        loaded[cat] = true;
       })
-      .catch(function(){
-        document.getElementById('lib-count').textContent = '';
-        document.getElementById('lib-grid').innerHTML =
-          '<div class="lib-empty">Library manifest not found. Run sync.ps1 first.</div>';
-      });
+      .catch(function(){});
+  }
+
+  function loadManifest(){
+    // Load all three categories in parallel on first open
+    var cats = ['cad','code','images'];
+    document.getElementById('lib-count').textContent = 'Loading…';
+    Promise.all(cats.map(loadCategory)).then(function(){ render(); });
   }
 
   // View toggle
@@ -1012,13 +1023,18 @@
     });
   });
 
-  // Filter tabs
+  // Filter tabs — lazy-load category manifest on first click
   document.querySelectorAll('.lib-tab').forEach(function(tab){
     tab.addEventListener('click', function(){
       document.querySelectorAll('.lib-tab').forEach(function(t){ t.classList.remove('active'); });
       tab.classList.add('active');
       currentFilter = tab.dataset.filter;
-      render();
+      var cat = tab.dataset.filter;
+      if(cat !== 'all' && !loaded[cat]){
+        loadCategory(cat).then(render);
+      } else {
+        render();
+      }
     });
   });
 
