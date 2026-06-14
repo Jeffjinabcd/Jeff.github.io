@@ -23,6 +23,10 @@
     "code":   [".ino", ".cpp", ".c", ".h", ".hpp", ".py", ".js", ".ts", ".java", ".v", ".sv", ".scad", ".txt", ".md", ".kicad_pcb", ".kicad_sch"],
     "images": [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg", ".bmp"]
   },
+  "_projects_comment": "A file is tagged with the first project whose 'match' keyword appears in its path. Add more projects here over time. Files matching none are grouped by their top-level folder.",
+  "projects": [
+    { "name": "Dalek", "match": ["Dalek", "dalek"] }
+  ],
   "maxFileSizeMB": 95,
   "pollIntervalSeconds": 300
 }

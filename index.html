@@ -263,8 +263,9 @@
   .file-icon svg{width:22px; height:22px; color:var(--accent);}
 
   .file-card-img{
-    width:100%; aspect-ratio:16/9; object-fit:cover;
+    width:100%; aspect-ratio:16/9; object-fit:contain;
     border:1px solid var(--line); display:block;
+    background:#fff;   /* so transparent SVG/PNG thumbnails are visible */
   }
 
   .file-name{
@@ -319,6 +320,41 @@
 
   .lib-panel{display:block;}
   .lib-panel.hidden{display:none;}
+
+  /* ---- Projects quick-access ---- */
+  .projects-block{margin-bottom:30px;}
+  .projects-bar{display:flex; flex-wrap:wrap; gap:10px;}
+  .project-chip{
+    display:flex; align-items:center; gap:10px;
+    background:var(--panel-2); border:1px solid var(--line);
+    padding:11px 16px; cursor:pointer;
+    font-family:var(--mono); font-size:12px; letter-spacing:0.04em;
+    color:var(--ink); transition:border-color .2s, background .2s, transform .2s;
+  }
+  .project-chip:hover{border-color:var(--accent); transform:translateY(-2px);}
+  .project-chip.active{background:var(--accent); color:#fff; border-color:var(--accent);}
+  .project-chip .pc-count{
+    font-size:10px; color:var(--ink-faint); background:var(--ground);
+    border:1px solid var(--line); padding:1px 7px;
+  }
+  .project-chip.active .pc-count{color:#fff; background:rgba(255,255,255,0.18); border-color:transparent;}
+
+  .project-expand{margin-top:0;}
+  .project-expand.open{margin-top:18px;}
+  .pe-inner{border:1px solid var(--line); background:var(--panel-2);}
+  .pe-head{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 18px; border-bottom:1px solid var(--line); background:var(--panel);
+  }
+  .pe-title{font-family:var(--display); font-weight:600; font-size:1.15rem;}
+  .pe-close{border:none; background:none; cursor:pointer; font-family:var(--mono);
+    font-size:12px; color:var(--ink-faint); letter-spacing:0.08em;}
+  .pe-close:hover{color:var(--accent);}
+  .pe-group{padding:6px 0;}
+  .pe-group-label{
+    font-family:var(--mono); font-size:10px; letter-spacing:0.12em; text-transform:uppercase;
+    color:var(--accent); padding:10px 18px 6px;
+  }
 
   /* ---- External repositories ---- */
   .ext-repos{margin-top:32px; padding-top:28px; border-top:1px solid var(--line);}
@@ -468,19 +504,35 @@
     color:rgba(255,255,255,0.35); pointer-events:none;
   }
 
-  /* Code viewer */
-  .code-wrap{margin:0; overflow:auto; max-height:540px;}
-  .code-wrap pre{margin:0; padding:24px;}
-  .code-wrap code{font-size:13px; line-height:1.6;}
+  /* Code viewer — dark, cohesive, with toolbar */
+  .modal-code{max-width:860px;}
+  .modal-code .modal-header{background:#11151c; border-bottom:1px solid #232a36;}
+  .modal-code .modal-title{color:#cfd6e2;}
+  .code-toolbar{display:flex; align-items:center; gap:10px;}
+  .code-copy{
+    font-family:var(--mono); font-size:10px; letter-spacing:0.1em; text-transform:uppercase;
+    color:#cfd6e2; background:#1d2430; border:1px solid #2d3543; padding:5px 12px; cursor:pointer;
+    transition:background .2s, border-color .2s;
+  }
+  .code-copy:hover{background:var(--accent); border-color:var(--accent); color:#fff;}
+  .code-wrap{margin:0; overflow:auto; max-height:62vh; background:#1a1f2b;}
+  .code-wrap pre{margin:0 !important; padding:22px 24px !important; background:transparent !important;}
+  .code-wrap code{font-size:12.5px; line-height:1.65; font-family:var(--mono) !important; tab-size:2;}
+  /* line numbers via CSS counters */
+  .code-wrap pre.with-lines code{counter-reset:ln;}
+  .code-wrap pre.with-lines code .ln-line{counter-increment:ln; display:block; white-space:pre;}
+  .code-wrap pre.with-lines code .ln-line::before{
+    content:counter(ln); display:inline-block; width:3ch; margin-right:18px;
+    text-align:right; color:#5b6577; user-select:none;
+  }
 
   /* Image lightbox */
   .modal-img-inner{
     display:flex; align-items:center; justify-content:center;
-    padding:20px;
+    padding:20px; background:#fff;   /* white backing for transparent SVG/PNG */
   }
   .modal-img-inner img{
-    max-width:100%; max-height:80vh; border:1px solid var(--line);
-    display:block;
+    max-width:100%; max-height:80vh; display:block;
   }
 
   /* ---- reveal animation ---- */
@@ -740,8 +792,15 @@
       </div>
       <p class="about-body reveal" style="margin-bottom:28px;">
         CAD models, source code, and project photos — synced automatically from my local machine.
-        Click any STL to open a live 3D preview.
+        Click any STL or STEP to open a live 3D preview.
       </p>
+
+      <!-- Projects quick-access -->
+      <div class="projects-block reveal">
+        <p class="label" style="margin-bottom:14px;">Projects — quick access</p>
+        <div class="projects-bar" id="projects-bar"></div>
+        <div class="project-expand" id="project-expand"></div>
+      </div>
 
       <!-- View toggle -->
       <div class="view-toggle reveal">
@@ -842,10 +901,13 @@
   <div class="modal-box modal-code">
     <div class="modal-header">
       <span class="modal-title" id="code-modal-title">Source</span>
-      <button class="modal-close" id="code-close" aria-label="Close">×</button>
+      <div class="code-toolbar">
+        <button class="code-copy" id="code-copy">Copy</button>
+        <button class="modal-close" id="code-close" aria-label="Close">×</button>
+      </div>
     </div>
     <div class="modal-body code-wrap">
-      <pre><code id="code-content" class="language-none"></code></pre>
+      <pre id="code-pre"><code id="code-content" class="language-none"></code></pre>
     </div>
   </div>
 </div>
@@ -1051,7 +1113,85 @@
     // Load all three categories in parallel on first open
     var cats = ['cad','code','images'];
     document.getElementById('lib-count').textContent = 'Loading…';
-    Promise.all(cats.map(loadCategory)).then(function(){ render(); });
+    Promise.all(cats.map(loadCategory)).then(function(){ render(); renderProjectsBar(); });
+  }
+
+  // ── Projects quick-access ───────────────────────────────────────────────────
+  var activeProject = null;
+
+  function projectsIndex(){
+    var map = {};
+    allFiles.forEach(function(f){
+      var p = f.project || 'Misc';
+      (map[p] = map[p] || []).push(f);
+    });
+    return map;
+  }
+
+  function renderProjectsBar(){
+    var bar = document.getElementById('projects-bar');
+    if(!bar) return;
+    var map = projectsIndex();
+    // sort: most files first, but keep it readable
+    var names = Object.keys(map).sort(function(a,b){ return map[b].length - map[a].length; });
+    bar.innerHTML = '';
+    names.forEach(function(name){
+      var chip = document.createElement('button');
+      chip.className = 'project-chip';
+      chip.innerHTML = '<span>'+name+'</span><span class="pc-count">'+map[name].length+'</span>';
+      chip.addEventListener('click', function(){
+        if(activeProject === name){ closeProject(); }
+        else { expandProject(name); }
+      });
+      bar.appendChild(chip);
+    });
+  }
+
+  function closeProject(){
+    activeProject = null;
+    document.querySelectorAll('.project-chip').forEach(function(c){ c.classList.remove('active'); });
+    var ex = document.getElementById('project-expand');
+    ex.classList.remove('open'); ex.innerHTML = '';
+  }
+
+  function expandProject(name){
+    activeProject = name;
+    document.querySelectorAll('.project-chip').forEach(function(c){
+      c.classList.toggle('active', c.textContent.indexOf(name) === 0);
+    });
+    var files = projectsIndex()[name] || [];
+    var ex = document.getElementById('project-expand');
+    ex.innerHTML = '';
+    var inner = document.createElement('div');
+    inner.className = 'pe-inner';
+
+    var head = document.createElement('div');
+    head.className = 'pe-head';
+    head.innerHTML = '<span class="pe-title">'+name+' · '+files.length+' file'+(files.length!==1?'s':'')+'</span>';
+    var close = document.createElement('button');
+    close.className = 'pe-close'; close.textContent = '✕ Close';
+    close.addEventListener('click', closeProject);
+    head.appendChild(close);
+    inner.appendChild(head);
+
+    // group by category
+    ['cad','code','images'].forEach(function(cat){
+      var group = files.filter(function(f){ return f.category === cat; });
+      if(group.length === 0) return;
+      var label = document.createElement('div');
+      label.className = 'pe-group-label';
+      label.textContent = ({cad:'CAD Models', code:'Code', images:'Images'})[cat] + ' (' + group.length + ')';
+      inner.appendChild(label);
+      var g = document.createElement('div');
+      g.className = 'pe-group';
+      group.sort(function(a,b){ return new Date(b.modified) - new Date(a.modified); })
+           .forEach(function(f){ g.appendChild(makeTreeFileRow(f, 0)); });
+      inner.appendChild(g);
+    });
+
+    ex.appendChild(inner);
+    ex.classList.add('open');
+    ex.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
   // View toggle
@@ -1262,21 +1402,39 @@
   }
 
   // ── Code viewer ────────────────────────────────────────────────────────────
+  var currentCodeText = '';
   function openCode(f){
     document.getElementById('code-modal-title').textContent = f.name;
-    var el = document.getElementById('code-content');
+    var el  = document.getElementById('code-content');
+    var pre = document.getElementById('code-pre');
     el.textContent = 'Loading…';
+    pre.classList.remove('with-lines');
     var lang = EXT_LANG[f.type]||'none';
     el.className = 'language-'+lang;
     document.getElementById('modal-code').classList.add('open');
     fetch(f.path)
       .then(function(r){ return r.text(); })
       .then(function(text){
+        currentCodeText = text;
         el.textContent = text;
         if(window.Prism) Prism.highlightElement(el);
+        // wrap each line so the CSS counter can number them
+        var html = el.innerHTML.split('\n').map(function(line){
+          return '<span class="ln-line">'+(line.length?line:' ')+'</span>';
+        }).join('');
+        el.innerHTML = html;
+        pre.classList.add('with-lines');
       })
       .catch(function(){ el.textContent = 'Could not load file.'; });
   }
+
+  document.getElementById('code-copy').addEventListener('click', function(){
+    var btn = this;
+    navigator.clipboard.writeText(currentCodeText).then(function(){
+      btn.textContent = 'Copied!';
+      setTimeout(function(){ btn.textContent = 'Copy'; }, 1400);
+    });
+  });
 
   // ── 3D viewer (STL + STEP) ──────────────────────────────────────────────────
   var viewerReady = false;

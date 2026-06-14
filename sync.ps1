@@ -120,15 +120,30 @@ function Sync-Library {
       Copy-Item $file.FullName $destFile -Force
       $copied++
 
+      # Tag with the first project whose keyword appears in the path; else the top folder
+      $relFwd  = $rel.Replace('\', '/')
+      $project = $null
+      foreach ($pr in $cfg.projects) {
+        foreach ($kw in $pr.match) {
+          if ($relFwd -like "*$kw*") { $project = $pr.name; break }
+        }
+        if ($project) { break }
+      }
+      if (-not $project) {
+        $seg = ($relFwd -split '/')[0]
+        $project = if ($seg -and $seg -ne $file.Name) { $seg } else { $mapping.label }
+      }
+
       $files.Add([PSCustomObject]@{
         name     = $file.Name
         type     = $file.Extension.TrimStart('.').ToLower()
         category = $cat
-        path     = ("library/$cat/" + $rel.Replace('\', '/'))
-        relPath  = $rel.Replace('\', '/')
+        path     = ("library/$cat/" + $relFwd)
+        relPath  = $relFwd
         size     = $file.Length
         modified = $file.LastWriteTimeUtc.ToString("o")
         label    = $mapping.label
+        project  = $project
       })
     }
   }
