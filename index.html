@@ -672,15 +672,18 @@
         <!-- ============================================================= -->
 
         <article class="item reveal">
-          <div class="item-ref">PRJ-001<span class="item-yr">2023—26</span></div>
+          <div class="item-ref">PRJ-001<span class="item-yr">2021—26</span></div>
           <div>
             <h3 class="item-title">VEX Robotics — V5RC Competition</h3>
             <p class="item-sum">Mechanical design · drivetrain · autonomous code</p>
             <p class="item-body">
-              Competing on teams 555286A and 55288A across the <strong>High Stakes</strong> (2024–25)
-              and <strong>Push Back</strong> (2025–26) seasons, I work the full build cycle in
-              SolidWorks — drivetrains, scoring mechanisms, and hundreds of custom parts — then
-              machine, assemble, and tune autonomous routines and driver controls for match play.
+              I own and compete on teams <strong>55286A</strong> and <strong>55288A</strong> — every
+              season these teams have run is mine, from <strong>Tipping Point</strong> and
+              <strong>Spin Up</strong> through <strong>Over Under</strong>, <strong>High Stakes</strong>,
+              and <strong>Push Back</strong>. Early seasons I focused on building and driving; in the
+              more recent ones I took on the SolidWorks design work too — modeling drivetrains, scoring
+              mechanisms, and hundreds of custom parts — then machining, assembling, and tuning
+              autonomous routines for match play.
             </p>
             <div class="specs">
               <span class="spec">V5RC</span><span class="spec">SolidWorks</span>
@@ -710,61 +713,7 @@
         </article>
 
         <article class="item reveal">
-          <div class="item-ref">PRJ-003<span class="item-yr">2025</span></div>
-          <div>
-            <h3 class="item-title">Automated Magnetic Chessboard</h3>
-            <p class="item-sum">Hall-effect sensing · shift registers · piece tracking</p>
-            <p class="item-body">
-              A chessboard that senses and moves its own pieces: a grid of Hall-effect sensors
-              read through shift registers detects piece positions, paired with a magnet
-              mechanism beneath the board to relocate them. A tight mix of sensing, multiplexing,
-              and mechanical design.
-            </p>
-            <div class="specs">
-              <span class="spec">Hall sensors</span><span class="spec">Shift registers</span>
-              <span class="spec">Embedded C</span><span class="spec">Mechanism design</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="item reveal">
-          <div class="item-ref">PRJ-004<span class="item-yr">2024—25</span></div>
-          <div>
-            <h3 class="item-title">"The Cruelest Years" — Tabletop Wargame</h3>
-            <p class="item-sum">Original WWII game design · rules · production</p>
-            <p class="item-body">
-              An original WWII tabletop wargame, from systems and balance through to a fully
-              produced rulebook and annexes. I laid out the rules as print-ready half-letter
-              booklets for saddle-stitch printing — game design plus the unglamorous work of
-              shipping something playable.
-            </p>
-            <div class="specs">
-              <span class="spec">Game design</span><span class="spec">Systems</span>
-              <span class="spec">Rules writing</span><span class="spec">Print production</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="item reveal">
-          <div class="item-ref">PRJ-005<span class="item-yr">2024</span></div>
-          <div>
-            <h3 class="item-title">iOS App Switcher Gesture Proposal</h3>
-            <p class="item-sum">Interaction design · submitted to Apple</p>
-            <p class="item-body">
-              A proposed gesture for the iOS app switcher — swipe down to send an app to the
-              back of the stack — submitted through Apple's Feedback Assistant. I built an
-              interactive web prototype with spring physics to demonstrate exactly how the
-              motion would feel.
-            </p>
-            <div class="specs">
-              <span class="spec">Interaction design</span><span class="spec">Prototyping</span>
-              <span class="spec">JavaScript</span><span class="spec">Spring physics</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="item reveal">
-          <div class="item-ref">PRJ-006<span class="item-yr">2023—26</span></div>
+          <div class="item-ref">PRJ-003<span class="item-yr">2023—26</span></div>
           <div>
             <h3 class="item-title">Competitive Programming</h3>
             <p class="item-sum">USACO · algorithmic problem-solving in C++</p>
@@ -1181,18 +1130,42 @@
     head.appendChild(close);
     inner.appendChild(head);
 
-    // group by category
-    ['cad','code','images'].forEach(function(cat){
-      var group = files.filter(function(f){ return f.category === cat; });
-      if(group.length === 0) return;
+    // Group files by the folder they live in; assemblies float to the top.
+    function folderOf(f){
+      var p = (f.relPath || f.name).split('/');
+      p.pop();                                  // drop the filename
+      // collapse an STL/ or STEP/ export subfolder so a part sits with its design folder
+      if(p.length && (p[p.length-1] === 'STL' || p[p.length-1] === 'STEP')) p.pop();
+      return p.join('/') || 'Files';
+    }
+    function asmFirst(a,b){
+      if(!!a.isAssembly !== !!b.isAssembly) return a.isAssembly ? -1 : 1;
+      return a.name.localeCompare(b.name);
+    }
+
+    var byFolder = {};
+    files.forEach(function(f){ var k = folderOf(f); (byFolder[k] = byFolder[k] || []).push(f); });
+
+    var folders = Object.keys(byFolder);
+    folders.forEach(function(k){ byFolder[k].sort(asmFirst); });
+    // folders that contain an assembly come first, then alphabetical
+    folders.sort(function(a,b){
+      var aHas = byFolder[a].some(function(f){ return f.isAssembly; });
+      var bHas = byFolder[b].some(function(f){ return f.isAssembly; });
+      if(aHas !== bHas) return aHas ? -1 : 1;
+      return a.localeCompare(b);
+    });
+
+    folders.forEach(function(folder){
+      var list = byFolder[folder];
+      var nAsm = list.filter(function(f){ return f.isAssembly; }).length;
       var label = document.createElement('div');
       label.className = 'pe-group-label';
-      label.textContent = ({cad:'CAD Models', code:'Code', images:'Images'})[cat] + ' (' + group.length + ')';
+      label.textContent = folder + ' (' + list.length + (nAsm ? ', ' + nAsm + ' assembly' : '') + ')';
       inner.appendChild(label);
       var g = document.createElement('div');
       g.className = 'pe-group';
-      group.sort(function(a,b){ return new Date(b.modified) - new Date(a.modified); })
-           .forEach(function(f){ g.appendChild(makeTreeFileRow(f, 0)); });
+      list.forEach(function(f){ g.appendChild(makeTreeFileRow(f, 0)); });
       inner.appendChild(g);
     });
 
