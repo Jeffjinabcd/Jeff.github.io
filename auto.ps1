@@ -19,7 +19,7 @@ param([switch]$Install, [switch]$Uninstall, [switch]$Once)
 $ErrorActionPreference = 'Continue'
 $repo        = $PSScriptRoot
 $PollSeconds = 120
-$SWFolders   = @("$env:USERPROFILE\Desktop\Vex", "$env:USERPROFILE\Desktop\projects")
+$SWFolders   = @("$env:USERPROFILE\Desktop\Vex")   # must match sw-export.ps1's scope
 $RunKey      = "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
 
 # throttle SolidWorks export attempts so a stubborn part can't relaunch SW every tick
