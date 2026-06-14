@@ -1,5 +1,5 @@
 {
-    "generated":  "2026-06-14T12:44:41.7931495Z",
+    "generated":  "2026-06-14T13:09:11.2674927Z",
     "files":  [
                   {
                       "name":  "Base_circuit.kicad_sch",
@@ -46,7 +46,7 @@
                       "size":  13531,
                       "modified":  "2026-05-08T16:15:13.7206358Z",
                       "label":  "Projects",
-                      "project":  "Projects",
+                      "project":  "stuff",
                       "isAssembly":  false
                   },
                   {
@@ -238,7 +238,7 @@
                       "size":  837,
                       "modified":  "2025-11-20T20:35:05.3761271Z",
                       "label":  "USACO",
-                      "project":  "USACO",
+                      "project":  "stuff",
                       "isAssembly":  false
                   },
                   {
@@ -250,7 +250,7 @@
                       "size":  14625,
                       "modified":  "2025-11-20T20:34:54.5823215Z",
                       "label":  "USACO",
-                      "project":  "USACO",
+                      "project":  "stuff",
                       "isAssembly":  false
                   },
                   {
@@ -262,7 +262,7 @@
                       "size":  1423,
                       "modified":  "2025-11-20T20:20:43.9809718Z",
                       "label":  "USACO",
-                      "project":  "USACO",
+                      "project":  "stuff",
                       "isAssembly":  false
                   },
                   {
@@ -274,7 +274,7 @@
                       "size":  2411,
                       "modified":  "2025-11-20T20:09:50.8966290Z",
                       "label":  "USACO",
-                      "project":  "USACO",
+                      "project":  "stuff",
                       "isAssembly":  false
                   },
                   {
@@ -1150,7 +1150,7 @@
                       "size":  1205,
                       "modified":  "2025-06-17T10:02:50.2982105Z",
                       "label":  "USACO",
-                      "project":  "USACO",
+                      "project":  "stuff",
                       "isAssembly":  false
                   },
                   {

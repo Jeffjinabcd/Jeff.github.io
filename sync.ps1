@@ -137,7 +137,8 @@ function Sync-Library {
       }
       if (-not $project) {
         $seg = ($relFwd -split '/')[0]
-        $project = if ($seg -and $seg -ne $file.Name) { $seg } else { $mapping.label }
+        # files inside a folder use that folder as their project; loose files go to "stuff"
+        $project = if ($seg -and $seg -ne $file.Name) { $seg } else { 'stuff' }
       }
 
       # An STL/STEP is "from an assembly" if a .sldasm of the same name sits in its

@@ -815,26 +815,9 @@
         <div class="project-expand" id="project-expand"></div>
       </div>
 
-      <!-- View toggle -->
-      <div class="view-toggle reveal">
-        <button class="view-btn active" data-view="grid">By Type</button>
-        <button class="view-btn" data-view="explorer">File Explorer</button>
-      </div>
-
-      <!-- Grid view (by type) -->
-      <div class="lib-panel" id="panel-grid">
-        <div class="lib-toolbar" role="tablist">
-          <button class="lib-tab active" data-filter="all">All</button>
-          <button class="lib-tab" data-filter="cad">CAD Models</button>
-          <button class="lib-tab" data-filter="code">Code</button>
-          <button class="lib-tab" data-filter="images">Images</button>
-        </div>
-        <p class="lib-count" id="lib-count">Loading…</p>
-        <div class="lib-grid" id="lib-grid"></div>
-      </div>
-
-      <!-- Explorer view -->
-      <div class="lib-panel hidden" id="panel-explorer">
+      <!-- File explorer -->
+      <p class="label" style="margin:6px 0 14px;">File explorer — browse every file by folder</p>
+      <div class="lib-panel" id="panel-explorer">
         <p class="lib-count" id="lib-count-exp"></p>
         <div class="tree-root" id="lib-tree"></div>
       </div>
@@ -1089,33 +1072,11 @@
     return card;
   }
 
-  function render(){
-    var grid = document.getElementById('lib-grid');
-    var count = document.getElementById('lib-count');
-    grid.innerHTML = '';
-
-    var filtered = currentFilter==='all' ? allFiles : allFiles.filter(function(f){ return f.category===currentFilter; });
-
-    if(filtered.length===0){
-      var empty = document.createElement('div');
-      empty.className = 'lib-empty';
-      empty.textContent = allFiles.length===0
-        ? 'No files yet — run sync.ps1 to populate the library.'
-        : 'No files in this category.';
-      grid.appendChild(empty);
-      count.textContent = '';
-      return;
-    }
-
-    count.textContent = filtered.length+' file'+(filtered.length!==1?'s':'');
-    filtered.forEach(function(f){ grid.appendChild(makeCard(f)); });
-  }
 
   function loadCategory(cat){
     if(loaded[cat]) return Promise.resolve();
     var url = cat==='all' ? null : 'library/manifest-'+cat+'.json?v='+Date.now();
     if(!url) return Promise.resolve();
-    document.getElementById('lib-count').textContent = 'Loading…';
     return fetch(url)
       .then(function(r){ return r.json(); })
       .then(function(data){
@@ -1131,8 +1092,8 @@
   function loadManifest(){
     // Load all three categories in parallel on first open
     var cats = ['cad','code','images'];
-    document.getElementById('lib-count').textContent = 'Loading…';
-    Promise.all(cats.map(loadCategory)).then(function(){ render(); renderProjectsBar(); });
+    document.getElementById('lib-count-exp').textContent = 'Loading…';
+    Promise.all(cats.map(loadCategory)).then(function(){ renderExplorer(); renderProjectsBar(); });
   }
 
   // ── Projects quick-access ───────────────────────────────────────────────────
@@ -1212,33 +1173,6 @@
     ex.classList.add('open');
     ex.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
-
-  // View toggle
-  document.querySelectorAll('.view-btn').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      document.querySelectorAll('.view-btn').forEach(function(b){ b.classList.remove('active'); });
-      btn.classList.add('active');
-      var v = btn.dataset.view;
-      document.getElementById('panel-grid').classList.toggle('hidden', v !== 'grid');
-      document.getElementById('panel-explorer').classList.toggle('hidden', v !== 'explorer');
-      if(v === 'explorer') renderExplorer();
-    });
-  });
-
-  // Filter tabs — lazy-load category manifest on first click
-  document.querySelectorAll('.lib-tab').forEach(function(tab){
-    tab.addEventListener('click', function(){
-      document.querySelectorAll('.lib-tab').forEach(function(t){ t.classList.remove('active'); });
-      tab.classList.add('active');
-      currentFilter = tab.dataset.filter;
-      var cat = tab.dataset.filter;
-      if(cat !== 'all' && !loaded[cat]){
-        loadCategory(cat).then(render);
-      } else {
-        render();
-      }
-    });
-  });
 
   // ── Explorer tree ──────────────────────────────────────────────────────────
   function buildTree(files){
