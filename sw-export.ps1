@@ -1,22 +1,16 @@
 # sw-export.ps1  —  Export SolidWorks files to STEP + STL
 #
-# Folder layout (created beside the source files):
+# Folder layout (created beside the source files; .sldprt/.sldasm untouched):
 #
 #   YourFolder/
 #   ├── part.sldprt
 #   ├── assembly.sldasm
-#   ├── STL/                ← all part STLs here
+#   ├── STL/                ← one .stl per part AND per assembly (merged mesh)
 #   │   ├── part.stl
-#   │   └── assembly/       ← each assembly gets its own subfolder
-#   │       ├── assembly.stl
-#   │       ├── component_a.stl
-#   │       └── component_b.stl
-#   └── STEP/               ← all STEP files here
+#   │   └── assembly.stl    ← whole assembly as a single STL, not split up
+#   └── STEP/               ← one .step per part and per assembly
 #       ├── part.step
 #       └── assembly.step
-#
-# Deduplication: parts that appear in multiple assemblies are only
-# exported once to STL/ — assembly subfolders link back to that file.
 #
 # Usage:
 #   .\sw-export.ps1              — run once (SolidWorks must be open)
@@ -86,59 +80,28 @@ function Export-Part($sw, $partPath, [hashtable]$exported) {
 }
 
 # ── Export an assembly (.sldasm) ──────────────────────────────────────────────
+# The whole assembly is exported as ONE merged STL + ONE STEP (no per-component
+# files) — same flat layout as parts: STL/asm.stl and STEP/asm.step.
 function Export-Assembly($sw, $asmPath, [hashtable]$exported) {
   $dir     = Split-Path $asmPath
   $base    = [IO.Path]::GetFileNameWithoutExtension($asmPath)
-  $stlDir  = Join-Path $dir "STL"
-  $stepDir = Join-Path $dir "STEP"
-  $asmStlFolder = Join-Path $stlDir $base   # e.g. STL/Robot_v2/
-  Ensure-Dir $asmStlFolder
-  Ensure-Dir $stepDir
+  $stlDir  = Join-Path $dir "STL";  Ensure-Dir $stlDir
+  $stepDir = Join-Path $dir "STEP"; Ensure-Dir $stepDir
 
-  $asmStl  = Join-Path $asmStlFolder "$base.stl"
+  $asmStl  = Join-Path $stlDir  "$base.stl"
   $asmStep = Join-Path $stepDir "$base.step"
   $needSTL  = Is-Newer $asmPath $asmStl
   $needSTEP = Is-Newer $asmPath $asmStep
+  if (-not $needSTL -and -not $needSTEP) { $exported[$asmPath] = $true; return }
 
-  Write-Host "  ASM  $base/" -ForegroundColor Magenta
+  Write-Host "  ASM  $base" -ForegroundColor Magenta
 
   $doc = Open-Doc $sw $asmPath 2
   if (-not $doc) { Write-Host "  [SKIP] $base (can't open)" -ForegroundColor Yellow; return }
 
-  if ($needSTL  -and (Save-Doc $doc $asmStl))  { Write-Host "       → $base.stl"  -ForegroundColor Cyan }
+  # SolidWorks exports an assembly to STL as a single merged mesh by default.
+  if ($needSTL  -and (Save-Doc $doc $asmStl))  { Write-Host "       → $base.stl (single mesh)" -ForegroundColor Cyan }
   if ($needSTEP -and (Save-Doc $doc $asmStep)) { Write-Host "       → $base.step" -ForegroundColor Cyan }
-
-  # Export top-level components as individual STLs into the assembly subfolder
-  # Skip components already exported to the STL/ folder (avoids VEX duplicate clutter)
-  try {
-    $comps = $doc.GetComponents($false)
-    if ($comps) {
-      # collect unique component paths (VEX assemblies reuse the same parts heavily)
-      $seen = @{}
-      foreach ($comp in $comps) {
-        $compPath = try { $comp.GetPathName() } catch { $null }
-        if (-not $compPath -or $seen.ContainsKey($compPath)) { continue }
-        $seen[$compPath] = $true
-
-        $compBase   = [IO.Path]::GetFileNameWithoutExtension($compPath)
-        $compStl    = Join-Path $asmStlFolder "$compBase.stl"
-        $siblingStl = Join-Path $stlDir "$compBase.stl"   # already exported as standalone?
-
-        if (Test-Path $siblingStl) {
-          # Already exists in STL/ — just copy it, no need to re-export from SW
-          if (-not (Test-Path $compStl)) {
-            Copy-Item $siblingStl $compStl
-            Write-Host "       → $compBase.stl (copied)" -ForegroundColor DarkCyan
-          }
-        } elseif (-not (Test-Path $compStl)) {
-          $compDoc = try { $comp.GetModelDoc2() } catch { $null }
-          if ($compDoc -and (Save-Doc $compDoc $compStl)) {
-            Write-Host "       → $compBase.stl" -ForegroundColor DarkCyan
-          }
-        }
-      }
-    }
-  } catch {}
 
   $sw.CloseDoc($asmPath)
   $exported[$asmPath] = $true
@@ -153,6 +116,11 @@ function Run-Export {
   }
 
   Write-Host "[$(Get-Date -Format 'HH:mm:ss')] SolidWorks open — exporting..." -ForegroundColor Green
+
+  # Force assemblies to export as ONE merged STL, not separate per-component files.
+  # swSTLComponentsIntoOneFile = 218 (swUserPreferenceToggle_e)
+  try { $sw.SetUserPreferenceToggle(218, $true) } catch {}
+
   $exported = @{}
 
   foreach ($folder in $SWFolders) {
