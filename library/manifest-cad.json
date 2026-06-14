@@ -1,5 +1,5 @@
 {
-    "generated":  "2026-06-14T12:05:42.1435370Z",
+    "generated":  "2026-06-14T12:24:56.3622152Z",
     "files":  [
                   {
                       "name":  "12V5AH SLA BATTERY WKDC12-5F.STP",
@@ -3940,17 +3940,6 @@
                       "project":  "Projects"
                   },
                   {
-                      "name":  "Pneumatic Reservoir Assembly (1).step",
-                      "type":  "step",
-                      "category":  "cad",
-                      "path":  "library/cad/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Pneumatics/Air Tank/Pneumatic Reservoir Assembly (1).step",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Pneumatics/Air Tank/Pneumatic Reservoir Assembly (1).step",
-                      "size":  86790,
-                      "modified":  "2025-06-29T17:04:38.8582956Z",
-                      "label":  "VEX Robotics",
-                      "project":  "SW20 - Standard Parts - VEX"
-                  },
-                  {
                       "name":  "short.STL",
                       "type":  "stl",
                       "category":  "cad",
@@ -4050,17 +4039,6 @@
                       "project":  "sock"
                   },
                   {
-                      "name":  "36T High Strength Gear v2 (8-pack) (276-7747).step",
-                      "type":  "step",
-                      "category":  "cad",
-                      "path":  "library/cad/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/Gears, Sprocket \u0026 Chain/High Strength Gears/36T High Strength Gear v2 (8-pack) (276-7747).step",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/Gears, Sprocket \u0026 Chain/High Strength Gears/36T High Strength Gear v2 (8-pack) (276-7747).step",
-                      "size":  4551613,
-                      "modified":  "2025-04-22T08:20:40.2626038Z",
-                      "label":  "VEX Robotics",
-                      "project":  "SW20 - Standard Parts - VEX"
-                  },
-                  {
                       "name":  "keyboard stand.3mf",
                       "type":  "3mf",
                       "category":  "cad",
@@ -4103,61 +4081,6 @@
                       "modified":  "2024-09-22T02:58:43.0000000Z",
                       "label":  "VEX Robotics",
                       "project":  "Team"
-                  },
-                  {
-                      "name":  "V5 Smart Motor (276-4840).step",
-                      "type":  "step",
-                      "category":  "cad",
-                      "path":  "library/cad/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/V5 Control System/V5 Smart Motor (276-4840).step",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/V5 Control System/V5 Smart Motor (276-4840).step",
-                      "size":  16822582,
-                      "modified":  "2024-08-19T17:40:09.0000000Z",
-                      "label":  "VEX Robotics",
-                      "project":  "SW20 - Standard Parts - VEX"
-                  },
-                  {
-                      "name":  "Metal Shaft Inserts (276-3881-002) (1).step",
-                      "type":  "step",
-                      "category":  "cad",
-                      "path":  "library/cad/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/Wheels/Metal Shaft Inserts (276-3881-002) (1).step",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/Wheels/Metal Shaft Inserts (276-3881-002) (1).step",
-                      "size":  69220,
-                      "modified":  "2024-01-10T02:11:28.0000000Z",
-                      "label":  "VEX Robotics",
-                      "project":  "SW20 - Standard Parts - VEX"
-                  },
-                  {
-                      "name":  "V5 Smart Motor (5.5W) (276-4842).step",
-                      "type":  "step",
-                      "category":  "cad",
-                      "path":  "library/cad/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/V5 Control System/V5 Smart Motor (5.5W) (276-4842).step",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/V5 Control System/V5 Smart Motor (5.5W) (276-4842).step",
-                      "size":  704770,
-                      "modified":  "2023-06-10T07:12:50.0000000Z",
-                      "label":  "VEX Robotics",
-                      "project":  "SW20 - Standard Parts - VEX"
-                  },
-                  {
-                      "name":  "TWAdaptor.step",
-                      "type":  "step",
-                      "category":  "cad",
-                      "path":  "library/cad/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Electronics/Sensors/Robocon Encoder/TWAdaptor.step",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Electronics/Sensors/Robocon Encoder/TWAdaptor.step",
-                      "size":  4205431,
-                      "modified":  "2023-05-24T12:50:36.0000000Z",
-                      "label":  "VEX Robotics",
-                      "project":  "SW20 - Standard Parts - VEX"
-                  },
-                  {
-                      "name":  "SJTU_VEXrduino.step",
-                      "type":  "step",
-                      "category":  "cad",
-                      "path":  "library/cad/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Electronics/VEXduino-SJTUVEX/parts/SJTU_VEXrduino.step",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Electronics/VEXduino-SJTUVEX/parts/SJTU_VEXrduino.step",
-                      "size":  19642426,
-                      "modified":  "2021-11-25T09:49:10.0000000Z",
-                      "label":  "VEX Robotics",
-                      "project":  "SW20 - Standard Parts - VEX"
                   }
               ]
 }

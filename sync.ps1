@@ -77,7 +77,9 @@ function Sync-Library {
     'FurMark_win64','gpushark',                       # GPU benchmark tool
     'background ai remover',                           # python venv + AI models, not portfolio work
     'Makapaka-Scout',                                  # external collaborative repo — cited via link instead
-    '__MACOSX'                                         # macOS archive metadata junk
+    '__MACOSX',                                        # macOS archive metadata junk
+    'Cursor',                                          # web-downloaded cursor design images, not my work
+    'SW20 - Standard Parts - VEX'                      # external VEX standard-parts library, not my work
   )
 
   foreach ($mapping in $cfg.mappings) {
