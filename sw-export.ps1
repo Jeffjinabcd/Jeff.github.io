@@ -12,10 +12,15 @@
 #       ├── part.step
 #       └── assembly.step
 #
+# Runs ONLY when SolidWorks is CLOSED: it starts a hidden SolidWorks instance in
+# the background, exports everything, then shuts it down — so it never disturbs
+# your live CAD session. If SolidWorks is already open, it skips.
+#
 # Usage:
-#   .\sw-export.ps1              — run once (SolidWorks must be open)
-#   .\sw-export.ps1 -Watch       — re-run every 5 min while SW is open
-#   .\sw-export.ps1 -SetupTask   — install as login startup task
+#   .\sw-export.ps1              — run once now (skips if SW is open)
+#   .\sw-export.ps1 -Watch       — re-check every 5 min, export when SW is closed
+#
+# Normally you don't run this directly — auto.ps1 drives it automatically.
 
 param([switch]$Watch, [switch]$SetupTask)
 
@@ -28,9 +33,31 @@ $PollSeconds = 300
 # ── Helpers ───────────────────────────────────────────────────────────────────
 $utf8 = New-Object System.Text.UTF8Encoding $false
 
+$script:ownSW = $false
 function Get-SW {
-  try { return [System.Runtime.InteropServices.Marshal]::GetActiveObject("SldWorks.Application") }
-  catch { return $null }
+  # Only run when SolidWorks is CLOSED — never disturb an active session.
+  if (Get-Process -Name 'SLDWORKS' -ErrorAction SilentlyContinue) {
+    Write-Host "  SolidWorks is open — skipping (export only runs when SW is closed)." -ForegroundColor DarkGray
+    return $null
+  }
+  try {
+    $sw = New-Object -ComObject SldWorks.Application   # starts a fresh instance
+    $sw.Visible = $false                               # keep it hidden in the background
+    $script:ownSW = $true
+    return $sw
+  } catch {
+    Write-Host "  Could not start SolidWorks headless: $_" -ForegroundColor Yellow
+    return $null
+  }
+}
+
+function Close-SW($sw) {
+  if ($script:ownSW -and $sw) {
+    try { $sw.ExitApp() } catch {}
+    try { [Runtime.InteropServices.Marshal]::ReleaseComObject($sw) | Out-Null } catch {}
+    $script:ownSW = $false
+    Write-Host "  Closed the hidden SolidWorks instance." -ForegroundColor DarkGray
+  }
 }
 
 function Ensure-Dir($p) { if (-not (Test-Path $p)) { New-Item -ItemType Directory -Force $p | Out-Null } }
@@ -138,6 +165,7 @@ function Run-Export {
       ForEach-Object { Export-Assembly $sw $_.FullName $exported }
   }
 
+  Close-SW $sw
   Write-Host "  Export complete." -ForegroundColor Green
 }
 
