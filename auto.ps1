@@ -32,7 +32,10 @@ function Claude-WindowOpen {
 }
 
 function SW-Running {
-  return [bool](Get-Process -Name 'SLDWORKS' -ErrorAction SilentlyContinue)
+  # Ignore hung/crashed zombies (not responding, ~0 RAM) — only live SW counts.
+  $live = Get-Process -Name 'SLDWORKS' -ErrorAction SilentlyContinue |
+          Where-Object { $_.Responding -or $_.WorkingSet64 -gt 100MB }
+  return [bool]$live
 }
 
 # Any .sldprt/.sldasm without an up-to-date STL export? (filesystem check only)

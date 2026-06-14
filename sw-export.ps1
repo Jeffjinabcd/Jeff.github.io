@@ -34,9 +34,18 @@ $PollSeconds = 300
 $utf8 = New-Object System.Text.UTF8Encoding $false
 
 $script:ownSW = $false
+
+# A SolidWorks process only counts as "open" if it's actually alive — a hung/
+# crashed zombie (not responding, ~0 RAM) lingers in the process table but is dead.
+function SW-IsLive {
+  $live = Get-Process -Name 'SLDWORKS' -ErrorAction SilentlyContinue |
+          Where-Object { $_.Responding -or $_.WorkingSet64 -gt 100MB }
+  return [bool]$live
+}
+
 function Get-SW {
   # Only run when SolidWorks is CLOSED — never disturb an active session.
-  if (Get-Process -Name 'SLDWORKS' -ErrorAction SilentlyContinue) {
+  if (SW-IsLive) {
     Write-Host "  SolidWorks is open — skipping (export only runs when SW is closed)." -ForegroundColor DarkGray
     return $null
   }
