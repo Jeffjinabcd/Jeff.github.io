@@ -19,7 +19,7 @@
     { "label": "Blender",        "source": "C:\\Users\\jeffj\\Desktop\\blender(lemme trytry",   "category": "images" }
   ],
   "extensions": {
-    "cad":    [".stl", ".step", ".stp", ".obj", ".3mf"],
+    "cad":    [".stl", ".step", ".stp", ".obj"],
     "code":   [".ino", ".cpp", ".c", ".h", ".hpp", ".py", ".js", ".ts", ".java", ".v", ".sv", ".scad", ".txt", ".md", ".kicad_pcb", ".kicad_sch"],
     "images": [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg", ".bmp"]
   },

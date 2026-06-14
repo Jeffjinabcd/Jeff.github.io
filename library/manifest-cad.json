@@ -1,5 +1,5 @@
 {
-    "generated":  "2026-06-14T12:33:38.2970841Z",
+    "generated":  "2026-06-14T12:44:41.7931495Z",
     "files":  [
                   {
                       "name":  "12V5AH SLA BATTERY WKDC12-5F.STP",
@@ -146,18 +146,6 @@
                       "isAssembly":  false
                   },
                   {
-                      "name":  "shell coin slot.3mf",
-                      "type":  "3mf",
-                      "category":  "cad",
-                      "path":  "library/cad/Board game/player/shell coin slot.3mf",
-                      "relPath":  "Board game/player/shell coin slot.3mf",
-                      "size":  2117812,
-                      "modified":  "2026-05-25T06:03:49.3450880Z",
-                      "label":  "Projects",
-                      "project":  "Board game",
-                      "isAssembly":  false
-                  },
-                  {
                       "name":  "shell coin slot.STL",
                       "type":  "stl",
                       "category":  "cad",
@@ -273,18 +261,6 @@
                       "relPath":  "Board game/player/player\u0027s view - coin.STL",
                       "size":  188084,
                       "modified":  "2026-05-21T12:50:37.2934276Z",
-                      "label":  "Projects",
-                      "project":  "Board game",
-                      "isAssembly":  false
-                  },
-                  {
-                      "name":  "player\u0027s view - main.3mf",
-                      "type":  "3mf",
-                      "category":  "cad",
-                      "path":  "library/cad/Board game/player/player\u0027s view - main.3mf",
-                      "relPath":  "Board game/player/player\u0027s view - main.3mf",
-                      "size":  1199653,
-                      "modified":  "2026-05-21T09:10:16.8071981Z",
                       "label":  "Projects",
                       "project":  "Board game",
                       "isAssembly":  false
@@ -2714,18 +2690,6 @@
                       "isAssembly":  false
                   },
                   {
-                      "name":  "all.3mf",
-                      "type":  "3mf",
-                      "category":  "cad",
-                      "path":  "library/cad/2025-2026/all.3mf",
-                      "relPath":  "2025-2026/all.3mf",
-                      "size":  1086345,
-                      "modified":  "2026-04-17T01:25:47.2847615Z",
-                      "label":  "VEX Robotics",
-                      "project":  "VEX Robotics",
-                      "isAssembly":  false
-                  },
-                  {
                       "name":  "name tag.STL",
                       "type":  "stl",
                       "category":  "cad",
@@ -2747,18 +2711,6 @@
                       "modified":  "2026-04-16T14:49:15.1014077Z",
                       "label":  "Projects",
                       "project":  "ssamo",
-                      "isAssembly":  false
-                  },
-                  {
-                      "name":  "descore helper.3mf",
-                      "type":  "3mf",
-                      "category":  "cad",
-                      "path":  "library/cad/2025-2026/THE WORLD/mod/descore helper.3mf",
-                      "relPath":  "2025-2026/THE WORLD/mod/descore helper.3mf",
-                      "size":  37721,
-                      "modified":  "2026-04-16T12:53:09.5622944Z",
-                      "label":  "VEX Robotics",
-                      "project":  "VEX Robotics",
                       "isAssembly":  false
                   },
                   {
@@ -2877,18 +2829,6 @@
                       "relPath":  "2025-2026/THE WORLD/mod/gear shit.STL",
                       "size":  261984,
                       "modified":  "2026-03-21T06:36:22.0000000Z",
-                      "label":  "VEX Robotics",
-                      "project":  "VEX Robotics",
-                      "isAssembly":  false
-                  },
-                  {
-                      "name":  "spacer my guy.3mf",
-                      "type":  "3mf",
-                      "category":  "cad",
-                      "path":  "library/cad/2025-2026/THE WORLD/mod/spacer my guy.3mf",
-                      "relPath":  "2025-2026/THE WORLD/mod/spacer my guy.3mf",
-                      "size":  87732,
-                      "modified":  "2026-03-20T16:53:42.0000000Z",
                       "label":  "VEX Robotics",
                       "project":  "VEX Robotics",
                       "isAssembly":  false
@@ -3225,18 +3165,6 @@
                       "relPath":  "63.63.STL",
                       "size":  40884,
                       "modified":  "2026-01-16T04:49:55.4626125Z",
-                      "label":  "Projects",
-                      "project":  "Projects",
-                      "isAssembly":  false
-                  },
-                  {
-                      "name":  "6.3 6.6 7.3mm standoff drill piece.3mf",
-                      "type":  "3mf",
-                      "category":  "cad",
-                      "path":  "library/cad/6.3 6.6 7.3mm standoff drill piece.3mf",
-                      "relPath":  "6.3 6.6 7.3mm standoff drill piece.3mf",
-                      "size":  56894,
-                      "modified":  "2026-01-15T06:48:52.1759035Z",
                       "label":  "Projects",
                       "project":  "Projects",
                       "isAssembly":  false
@@ -3645,18 +3573,6 @@
                       "relPath":  "phy/base_x_axis.STL",
                       "size":  252984,
                       "modified":  "2025-12-09T14:24:15.1277083Z",
-                      "label":  "Projects",
-                      "project":  "phy",
-                      "isAssembly":  false
-                  },
-                  {
-                      "name":  "today.3mf",
-                      "type":  "3mf",
-                      "category":  "cad",
-                      "path":  "library/cad/phy/today.3mf",
-                      "relPath":  "phy/today.3mf",
-                      "size":  43001,
-                      "modified":  "2025-12-09T02:28:49.8235330Z",
                       "label":  "Projects",
                       "project":  "phy",
                       "isAssembly":  false
@@ -4094,18 +4010,6 @@
                       "isAssembly":  false
                   },
                   {
-                      "name":  "laservent.3mf",
-                      "type":  "3mf",
-                      "category":  "cad",
-                      "path":  "library/cad/laser/laservent.3mf",
-                      "relPath":  "laser/laservent.3mf",
-                      "size":  127487,
-                      "modified":  "2025-09-14T17:34:00.0683517Z",
-                      "label":  "Projects",
-                      "project":  "laser",
-                      "isAssembly":  false
-                  },
-                  {
                       "name":  "laservent.STL",
                       "type":  "stl",
                       "category":  "cad",
@@ -4190,18 +4094,6 @@
                       "isAssembly":  false
                   },
                   {
-                      "name":  "heater holder.3mf",
-                      "type":  "3mf",
-                      "category":  "cad",
-                      "path":  "library/cad/heater holder.3mf",
-                      "relPath":  "heater holder.3mf",
-                      "size":  88764,
-                      "modified":  "2025-09-02T04:24:38.6092599Z",
-                      "label":  "Projects",
-                      "project":  "Projects",
-                      "isAssembly":  false
-                  },
-                  {
                       "name":  "screw driver 1.STL",
                       "type":  "stl",
                       "category":  "cad",
@@ -4238,30 +4130,6 @@
                       "isAssembly":  false
                   },
                   {
-                      "name":  "short.3mf",
-                      "type":  "3mf",
-                      "category":  "cad",
-                      "path":  "library/cad/ams lite/stl/short.3mf",
-                      "relPath":  "ams lite/stl/short.3mf",
-                      "size":  53007,
-                      "modified":  "2025-06-25T05:31:27.6166303Z",
-                      "label":  "Projects",
-                      "project":  "ams lite",
-                      "isAssembly":  false
-                  },
-                  {
-                      "name":  "corner.3mf",
-                      "type":  "3mf",
-                      "category":  "cad",
-                      "path":  "library/cad/ams lite/stl/corner.3mf",
-                      "relPath":  "ams lite/stl/corner.3mf",
-                      "size":  46452,
-                      "modified":  "2025-06-23T07:37:41.8212819Z",
-                      "label":  "Projects",
-                      "project":  "ams lite",
-                      "isAssembly":  false
-                  },
-                  {
                       "name":  "corner.STL",
                       "type":  "stl",
                       "category":  "cad",
@@ -4274,18 +4142,6 @@
                       "isAssembly":  false
                   },
                   {
-                      "name":  "motor h6 replace.3mf",
-                      "type":  "3mf",
-                      "category":  "cad",
-                      "path":  "library/cad/motor h6 replace.3mf",
-                      "relPath":  "motor h6 replace.3mf",
-                      "size":  119574,
-                      "modified":  "2025-06-19T09:15:34.3017734Z",
-                      "label":  "VEX Robotics",
-                      "project":  "VEX Robotics",
-                      "isAssembly":  false
-                  },
-                  {
                       "name":  "motor h6 replace.STL",
                       "type":  "stl",
                       "category":  "cad",
@@ -4295,18 +4151,6 @@
                       "modified":  "2025-06-19T09:13:32.0887838Z",
                       "label":  "VEX Robotics",
                       "project":  "VEX Robotics",
-                      "isAssembly":  false
-                  },
-                  {
-                      "name":  "1.3mf",
-                      "type":  "3mf",
-                      "category":  "cad",
-                      "path":  "library/cad/sock/1.3mf",
-                      "relPath":  "sock/1.3mf",
-                      "size":  110478,
-                      "modified":  "2025-06-15T16:19:09.3491816Z",
-                      "label":  "Projects",
-                      "project":  "sock",
                       "isAssembly":  false
                   },
                   {
@@ -4331,42 +4175,6 @@
                       "modified":  "2025-06-15T08:07:29.2972247Z",
                       "label":  "Projects",
                       "project":  "sock",
-                      "isAssembly":  false
-                  },
-                  {
-                      "name":  "keyboard stand.3mf",
-                      "type":  "3mf",
-                      "category":  "cad",
-                      "path":  "library/cad/keyboard stand.3mf",
-                      "relPath":  "keyboard stand.3mf",
-                      "size":  256522,
-                      "modified":  "2025-03-05T05:35:16.8719377Z",
-                      "label":  "Projects",
-                      "project":  "Projects",
-                      "isAssembly":  false
-                  },
-                  {
-                      "name":  "trytry.3mf",
-                      "type":  "3mf",
-                      "category":  "cad",
-                      "path":  "library/cad/trytry.3mf",
-                      "relPath":  "trytry.3mf",
-                      "size":  2720139,
-                      "modified":  "2025-02-26T00:20:52.9220262Z",
-                      "label":  "Projects",
-                      "project":  "Projects",
-                      "isAssembly":  false
-                  },
-                  {
-                      "name":  "DO NOT REMOVE.3mf",
-                      "type":  "3mf",
-                      "category":  "cad",
-                      "path":  "library/cad/DO NOT REMOVE.3mf",
-                      "relPath":  "DO NOT REMOVE.3mf",
-                      "size":  183439,
-                      "modified":  "2024-11-18T16:27:13.0000000Z",
-                      "label":  "Projects",
-                      "project":  "Projects",
                       "isAssembly":  false
                   },
                   {
