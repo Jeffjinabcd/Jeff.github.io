@@ -509,13 +509,29 @@
   .modal-close:hover{color:var(--accent);}
   .modal-body{flex:1; overflow:auto; position:relative;}
 
-  /* STL viewer canvas */
-  #stl-canvas{display:block; width:100%; height:500px; background:#1a1f2b;}
+  /* STL/STEP viewer — studio stage */
+  .stl-stage{
+    background:
+      radial-gradient(120% 90% at 50% 12%, #2b3346 0%, #1a2030 45%, #11151f 100%);
+  }
+  #stl-canvas{display:block; width:100%; height:520px; background:transparent;}
   .stl-hint{
     position:absolute; bottom:12px; right:14px;
     font-family:var(--mono); font-size:10px; letter-spacing:0.08em;
-    color:rgba(255,255,255,0.35); pointer-events:none;
+    color:rgba(255,255,255,0.4); pointer-events:none;
   }
+  .stl-spinner{
+    position:absolute; inset:0; display:none; flex-direction:column; gap:14px;
+    align-items:center; justify-content:center; pointer-events:none;
+    font-family:var(--mono); font-size:11px; letter-spacing:0.14em; text-transform:uppercase;
+    color:rgba(255,255,255,0.55);
+  }
+  .stl-spin{
+    width:34px; height:34px; border-radius:50%;
+    border:2px solid rgba(255,255,255,0.15); border-top-color:var(--accent);
+    animation:stlspin .8s linear infinite;
+  }
+  @keyframes stlspin{ to{ transform:rotate(360deg); } }
 
   /* Code viewer — dark, cohesive, with toolbar */
   .modal-code{max-width:860px;}
@@ -861,8 +877,9 @@
       <span class="modal-title" id="stl-modal-title">3D Preview</span>
       <button class="modal-close" id="stl-close" aria-label="Close">×</button>
     </div>
-    <div class="modal-body" style="position:relative;">
+    <div class="modal-body stl-stage" style="position:relative;">
       <canvas id="stl-canvas"></canvas>
+      <div class="stl-spinner" id="stl-spinner"><span class="stl-spin"></span><span>Rendering…</span></div>
       <span class="dim-readout" id="dim-readout" style="display:none;"></span>
       <span class="stl-hint">Drag to rotate · Scroll to zoom · Right-drag to pan</span>
     </div>
@@ -1404,44 +1421,60 @@
     var dim = document.getElementById('dim-readout');
     if(dim) dim.style.display = 'none';
     var hint = document.querySelector('.stl-hint');
-    if(hint) hint.textContent = 'Loading…';
-    if(!viewerReady){
-      initViewer().then(function(){ load3D(f); });
-    } else {
-      load3D(f);
-    }
+    if(hint) hint.textContent = '';
+    setLoading(true);
+    initViewer().then(function(){ load3D(f); });
   }
 
-  async function initViewer(){
-    var [THREE, {STLLoader}, {OrbitControls}, {OBJLoader}] = await Promise.all([
-      import('three'),
-      import('three/addons/loaders/STLLoader.js'),
-      import('three/addons/controls/OrbitControls.js'),
-      import('three/addons/loaders/OBJLoader.js')
-    ]);
-    window._THREE = THREE;
-    window._STLLoader = STLLoader;
-    window._OBJLoader = OBJLoader;
+  var initViewerPromise = null;
+  function initViewer(){
+    if(initViewerPromise) return initViewerPromise;
+    initViewerPromise = (async function(){
+      var [THREE, {STLLoader}, {OrbitControls}, {OBJLoader}] = await Promise.all([
+        import('three'),
+        import('three/addons/loaders/STLLoader.js'),
+        import('three/addons/controls/OrbitControls.js'),
+        import('three/addons/loaders/OBJLoader.js')
+      ]);
+      window._THREE = THREE;
+      window._STLLoader = STLLoader;
+      window._OBJLoader = OBJLoader;
 
-    var canvas = document.getElementById('stl-canvas');
-    v3Renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
-    v3Renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    v3Renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
-    v3Renderer.setClearColor(0x1a1f2b);
+      var canvas = document.getElementById('stl-canvas');
+      var w = canvas.clientWidth || 760, h = canvas.clientHeight || 480;
+      v3Renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
+      v3Renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      v3Renderer.setSize(w, h, false);
+      v3Renderer.setClearColor(0x000000, 0);   // transparent — CSS gradient shows through
 
-    v3Scene = new THREE.Scene();
-    v3Camera = new THREE.PerspectiveCamera(45, canvas.clientWidth / canvas.clientHeight, 0.01, 100000);
-    v3Camera.position.set(0, 0, 5);
+      v3Scene = new THREE.Scene();
+      v3Camera = new THREE.PerspectiveCamera(45, w / h, 0.01, 100000);
+      v3Camera.position.set(0, 0, 5);
 
-    v3Scene.add(new THREE.AmbientLight(0xffffff, 0.6));
-    var d1 = new THREE.DirectionalLight(0xffffff, 1.2); d1.position.set(3,4,5); v3Scene.add(d1);
-    var d2 = new THREE.DirectionalLight(0x8baac8, 0.4); d2.position.set(-3,-2,-4); v3Scene.add(d2);
+      v3Scene.add(new THREE.AmbientLight(0xffffff, 0.65));
+      var d1 = new THREE.DirectionalLight(0xffffff, 1.25); d1.position.set(4,6,5); v3Scene.add(d1);
+      var d2 = new THREE.DirectionalLight(0x9fc0ff, 0.5);  d2.position.set(-5,-2,-4); v3Scene.add(d2);
+      var d3 = new THREE.DirectionalLight(0xffe0b0, 0.35); d3.position.set(0,-6,3); v3Scene.add(d3);
 
-    v3Controls = new OrbitControls(v3Camera, canvas);
-    v3Controls.enableDamping = true;
+      v3Controls = new OrbitControls(v3Camera, canvas);
+      v3Controls.enableDamping = true;
+      v3Controls.autoRotate = true;            // gently spin until the user grabs it
+      v3Controls.autoRotateSpeed = 1.6;
+      v3Controls.addEventListener('start', function(){ v3Controls.autoRotate = false; });
 
-    viewerReady = true;
-    animateViewer();
+      viewerReady = true;
+      animateViewer();
+    })();
+    return initViewerPromise;
+  }
+
+  // OCCT (STEP) engine — initialise the WASM ONCE and reuse it for every file.
+  function getOcct(){
+    if(window._occtPromise) return window._occtPromise;
+    window._occtPromise = window.occtimportjs
+      ? window.occtimportjs({ locateFile: function(fn){ return 'https://cdn.jsdelivr.net/npm/occt-import-js@0.0.22/dist/'+fn; } })
+      : Promise.reject(new Error('occt unavailable'));
+    return window._occtPromise;
   }
 
   function clearMeshes(){
@@ -1482,69 +1515,80 @@
     el.style.display = 'block';
   }
 
+  var READY_HINT = 'Drag to rotate · Scroll to zoom · Right-drag to pan';
+  function setLoading(on){ var s = document.getElementById('stl-spinner'); if(s) s.style.display = on ? 'flex' : 'none'; }
+  function viewerDone(hint){ setLoading(false); if(hint) hint.textContent = READY_HINT; }
+
   function load3D(f){
     clearMeshes();
+    setLoading(true);
+    if(v3Controls){ v3Controls.autoRotate = true; }   // re-arm gentle spin for the new model
     var hint = document.querySelector('.stl-hint');
+    if(hint) hint.textContent = '';
     var THREE = window._THREE;
-    var mat = new THREE.MeshStandardMaterial({ color: 0xb0bec5, roughness: 0.5, metalness: 0.25, side: THREE.DoubleSide });
+    var mat = new THREE.MeshStandardMaterial({ color: 0xb6c2cf, roughness: 0.45, metalness: 0.3, side: THREE.DoubleSide });
 
     if(isSTL(f)){
       new window._STLLoader().load(f.path, function(geo){
         geo.computeVertexNormals();
         var mesh = new THREE.Mesh(geo, mat);
         v3Scene.add(mesh); v3Meshes.push(mesh);
-        fitCamera(v3Meshes);
-        if(hint) hint.textContent = 'Drag to rotate · Scroll to zoom · Right-drag to pan';
-      });
+        fitCamera(v3Meshes); viewerDone(hint);
+      }, undefined, function(){ setLoading(false); if(hint) hint.textContent = 'Could not load STL'; });
     } else if(isSTEP(f)){
       fetch(f.path)
         .then(function(r){ return r.arrayBuffer(); })
         .then(function(buf){
-          var occtInit = window.occtimportjs;
-          if(!occtInit){ if(hint) hint.textContent = 'STEP viewer unavailable'; return; }
-          return occtInit({ locateFile: function(fn){ return 'https://cdn.jsdelivr.net/npm/occt-import-js@0.0.22/dist/'+fn; } })
-            .then(function(occt){
-              var result = occt.ReadStepFile(new Uint8Array(buf), null);
-              if(!result || !result.meshes || result.meshes.length === 0){
-                if(hint) hint.textContent = 'Could not parse STEP file'; return;
-              }
-              result.meshes.forEach(function(m){
-                var geo = new THREE.BufferGeometry();
-                geo.setAttribute('position', new THREE.Float32BufferAttribute(m.attributes.position.array, 3));
-                if(m.attributes.normal) geo.setAttribute('normal', new THREE.Float32BufferAttribute(m.attributes.normal.array, 3));
-                if(m.index) geo.setIndex(new THREE.BufferAttribute(new Uint32Array(m.index.array), 1));
-                geo.computeVertexNormals();
-                var mesh = new THREE.Mesh(geo, mat.clone());
-                v3Scene.add(mesh); v3Meshes.push(mesh);
-              });
-              fitCamera(v3Meshes);
-              if(hint) hint.textContent = 'Drag to rotate · Scroll to zoom · Right-drag to pan';
+          return getOcct().then(function(occt){
+            var result = occt.ReadStepFile(new Uint8Array(buf), null);
+            if(!result || !result.meshes || result.meshes.length === 0){
+              setLoading(false); if(hint) hint.textContent = 'Could not parse STEP file'; return;
+            }
+            result.meshes.forEach(function(m){
+              var geo = new THREE.BufferGeometry();
+              geo.setAttribute('position', new THREE.Float32BufferAttribute(m.attributes.position.array, 3));
+              if(m.attributes.normal) geo.setAttribute('normal', new THREE.Float32BufferAttribute(m.attributes.normal.array, 3));
+              if(m.index) geo.setIndex(new THREE.BufferAttribute(new Uint32Array(m.index.array), 1));
+              geo.computeVertexNormals();
+              var mesh = new THREE.Mesh(geo, mat.clone());
+              v3Scene.add(mesh); v3Meshes.push(mesh);
             });
+            fitCamera(v3Meshes); viewerDone(hint);
+          });
         })
-        .catch(function(){ if(hint) hint.textContent = 'Failed to load STEP file'; });
+        .catch(function(){ setLoading(false); if(hint) hint.textContent = 'Failed to load STEP file'; });
     } else if(isOBJ(f)){
       new window._OBJLoader().load(f.path, function(obj){
         obj.traverse(function(c){ if(c.isMesh) c.material = mat.clone(); });
         v3Scene.add(obj); v3Meshes.push(obj);
-        fitCamera(v3Meshes);
-        if(hint) hint.textContent = 'Drag to rotate · Scroll to zoom · Right-drag to pan';
-      }, undefined, function(){ if(hint) hint.textContent = 'Could not load OBJ file'; });
+        fitCamera(v3Meshes); viewerDone(hint);
+      }, undefined, function(){ setLoading(false); if(hint) hint.textContent = 'Could not load OBJ file'; });
     }
   }
 
   function animateViewer(){
     requestAnimationFrame(animateViewer);
+    // only spend GPU while the preview is actually open
+    if(!document.getElementById('modal-stl').classList.contains('open')) return;
     if(v3Controls) v3Controls.update();
     if(v3Renderer && v3Scene && v3Camera){
       var canvas = document.getElementById('stl-canvas');
-      if(canvas.clientWidth !== v3Renderer.domElement.width || canvas.clientHeight !== v3Renderer.domElement.height){
-        v3Renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
-        v3Camera.aspect = canvas.clientWidth / canvas.clientHeight;
+      var w = canvas.clientWidth, h = canvas.clientHeight;
+      if(w && h && (w !== v3Renderer.domElement.width || h !== v3Renderer.domElement.height)){
+        v3Renderer.setSize(w, h, false);
+        v3Camera.aspect = w / h;
         v3Camera.updateProjectionMatrix();
       }
       v3Renderer.render(v3Scene, v3Camera);
     }
   }
+
+  // Warm the heavy bits during idle time so the first preview opens instantly.
+  function warmViewer(){
+    initViewer().then(function(){ getOcct().catch(function(){}); });
+  }
+  if('requestIdleCallback' in window) requestIdleCallback(warmViewer, { timeout: 4000 });
+  else setTimeout(warmViewer, 1800);
 })();
 </script>
 
