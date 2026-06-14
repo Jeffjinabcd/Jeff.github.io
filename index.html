@@ -564,9 +564,39 @@
     max-width:100%; max-height:80vh; display:block;
   }
 
-  /* ---- reveal animation ---- */
-  .reveal{opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease;}
-  .reveal.in{opacity:1; transform:none;}
+  /* ---- reveal / slide-in animations ---- */
+  :root{ --ease-out:cubic-bezier(.22,.68,.28,1); }
+  .reveal{opacity:0; transform:translateY(26px);
+    transition:opacity .7s var(--ease-out), transform .7s var(--ease-out);}
+  .reveal-l{opacity:0; transform:translateX(-46px);
+    transition:opacity .7s var(--ease-out), transform .7s var(--ease-out);}
+  .reveal-r{opacity:0; transform:translateX(46px);
+    transition:opacity .7s var(--ease-out), transform .7s var(--ease-out);}
+  .reveal.in, .reveal-l.in, .reveal-r.in{opacity:1; transform:none;}
+
+  /* staggered entrance for items inside a group */
+  .manifest .item, .matrix .cap, .projects-bar .project-chip, .contact-cell{
+    opacity:0; transform:translateY(22px);
+    transition:opacity .6s var(--ease-out), transform .6s var(--ease-out);
+  }
+  .manifest.in .item, .matrix.in .cap, .projects-bar.in .project-chip, .contact-grid.in .contact-cell{
+    opacity:1; transform:none;
+  }
+  .manifest.in .item:nth-child(1){transition-delay:.05s}
+  .manifest.in .item:nth-child(2){transition-delay:.13s}
+  .manifest.in .item:nth-child(3){transition-delay:.21s}
+  .manifest.in .item:nth-child(4){transition-delay:.29s}
+  .manifest.in .item:nth-child(5){transition-delay:.37s}
+  .matrix.in .cap:nth-child(1){transition-delay:.04s}
+  .matrix.in .cap:nth-child(2){transition-delay:.10s}
+  .matrix.in .cap:nth-child(3){transition-delay:.16s}
+  .matrix.in .cap:nth-child(4){transition-delay:.22s}
+  .matrix.in .cap:nth-child(5){transition-delay:.28s}
+  .matrix.in .cap:nth-child(6){transition-delay:.34s}
+  .projects-bar.in .project-chip{transition-delay:calc(var(--i,0) * .035s);}
+  .contact-grid.in .contact-cell:nth-child(2){transition-delay:.08s}
+  .contact-grid.in .contact-cell:nth-child(3){transition-delay:.16s}
+  .contact-grid.in .contact-cell:nth-child(4){transition-delay:.24s}
 
   /* ---- responsive ---- */
   @media (max-width:760px){
@@ -622,7 +652,7 @@
   <!-- HERO -->
   <header class="hero">
     <div class="wrap hero-grid">
-      <div class="hero-main reveal">
+      <div class="hero-main reveal-l">
         <p class="eyebrow"><span class="tick"></span>Portfolio — Engineering &amp; Making</p>
         <h1 class="name">Xuanning <span class="nick">"Jeff"</span> Jin</h1>
         <p class="lede">High-school engineer who builds working machines end to end — mechanical design, electronics, and the code that ties them together.</p>
@@ -637,7 +667,7 @@
         </div>
       </div>
 
-      <aside class="titleblock reveal">
+      <aside class="titleblock reveal-r">
         <dl style="margin:0;">
           <div class="tb-row"><dt>Discipline</dt><dd>Robotics &amp; Embedded</dd></div>
           <div class="tb-row"><dt>Based</dt><dd>Pittsburgh, PA</dd></div>
@@ -922,7 +952,8 @@
 // ── Scroll-reveal ─────────────────────────────────────────────────────────────
 (function(){
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var els = document.querySelectorAll('.reveal');
+  var sel = '.reveal, .reveal-l, .reveal-r, .manifest, .matrix, .contact-grid, .projects-bar';
+  var els = document.querySelectorAll(sel);
   if (reduce || !('IntersectionObserver' in window)) {
     els.forEach(function(el){ el.classList.add('in'); });
     return;
@@ -931,8 +962,10 @@
     entries.forEach(function(e){
       if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
   els.forEach(function(el){ io.observe(el); });
+  // expose so dynamically-rendered groups (projects bar) can register later
+  window._revealObserve = function(el){ if(el && !reduce) io.observe(el); };
 })();
 </script>
 
@@ -1108,9 +1141,10 @@
     // sort: most files first, but keep it readable
     var names = Object.keys(map).sort(function(a,b){ return map[b].length - map[a].length; });
     bar.innerHTML = '';
-    names.forEach(function(name){
+    names.forEach(function(name, i){
       var chip = document.createElement('button');
       chip.className = 'project-chip';
+      chip.style.setProperty('--i', i);   // staggered entrance order
       chip.innerHTML = '<span>'+name+'</span><span class="pc-count">'+map[name].length+'</span>';
       chip.addEventListener('click', function(){
         if(activeProject === name){ closeProject(); }
