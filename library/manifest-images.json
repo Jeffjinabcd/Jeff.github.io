@@ -1,5 +1,5 @@
 {
-    "generated":  "2026-06-14T12:24:56.3622152Z",
+    "generated":  "2026-06-14T12:33:38.2970841Z",
     "files":  [
                   {
                       "name":  "Untitled_Project_2.png",
@@ -10,7 +10,8 @@
                       "size":  988543,
                       "modified":  "2026-06-05T00:32:48.3283197Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Capture.PNG",
@@ -21,7 +22,8 @@
                       "size":  83974,
                       "modified":  "2026-06-04T23:33:31.8061854Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "2.PNG",
@@ -32,7 +34,8 @@
                       "size":  214844,
                       "modified":  "2026-06-04T23:33:31.7990029Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "TopView.JPG",
@@ -43,7 +46,8 @@
                       "size":  704162,
                       "modified":  "2026-06-04T16:29:22.5795542Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "MainImage.JPG",
@@ -54,18 +58,8 @@
                       "size":  788691,
                       "modified":  "2026-06-04T16:29:22.5705537Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
-                  },
-                  {
-                      "name":  "cat_headphone.png",
-                      "type":  "png",
-                      "category":  "images",
-                      "path":  "library/images/Pfp/cat_headphone.png",
-                      "relPath":  "Pfp/cat_headphone.png",
-                      "size":  237063,
-                      "modified":  "2026-05-25T19:04:22.0141059Z",
-                      "label":  "Visuals",
-                      "project":  "Pfp"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "board 4-puzzle.svg",
@@ -76,7 +70,8 @@
                       "size":  5580,
                       "modified":  "2026-05-21T17:12:28.8342755Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "main map.svg",
@@ -87,7 +82,8 @@
                       "size":  1878828,
                       "modified":  "2026-05-21T13:29:45.9830467Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "testtest 100 inkscape.svg",
@@ -98,7 +94,8 @@
                       "size":  55191,
                       "modified":  "2026-04-14T17:08:04.8408883Z",
                       "label":  "Projects",
-                      "project":  "ssamo"
+                      "project":  "ssamo",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "mathy.svg",
@@ -109,7 +106,8 @@
                       "size":  47245,
                       "modified":  "2026-04-14T02:27:54.3639325Z",
                       "label":  "Projects",
-                      "project":  "ssamo"
+                      "project":  "ssamo",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "ssamo logo.svg",
@@ -120,7 +118,8 @@
                       "size":  29376,
                       "modified":  "2026-04-13T17:55:49.1277542Z",
                       "label":  "Projects",
-                      "project":  "ssamo"
+                      "project":  "ssamo",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "nums.svg",
@@ -131,7 +130,8 @@
                       "size":  24364,
                       "modified":  "2026-04-13T16:48:30.9962734Z",
                       "label":  "Projects",
-                      "project":  "ssamo"
+                      "project":  "ssamo",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "f6a31ca584ecdcb7eba96887721c31c4.jpg",
@@ -142,29 +142,8 @@
                       "size":  128548,
                       "modified":  "2026-04-13T15:54:58.6975599Z",
                       "label":  "Projects",
-                      "project":  "ssamo"
-                  },
-                  {
-                      "name":  "8-bit City_1920x1080.jpg",
-                      "type":  "jpg",
-                      "category":  "images",
-                      "path":  "library/images/Wallpaper/8-bit City_1920x1080.jpg",
-                      "relPath":  "Wallpaper/8-bit City_1920x1080.jpg",
-                      "size":  1321563,
-                      "modified":  "2025-02-13T02:35:00.0000000Z",
-                      "label":  "Visuals",
-                      "project":  "Wallpaper"
-                  },
-                  {
-                      "name":  "Interesting_web.png",
-                      "type":  "png",
-                      "category":  "images",
-                      "path":  "library/images/Wallpaper/Interesting_web.png",
-                      "relPath":  "Wallpaper/Interesting_web.png",
-                      "size":  149494,
-                      "modified":  "2024-06-18T13:54:51.0000000Z",
-                      "label":  "Visuals",
-                      "project":  "Wallpaper"
+                      "project":  "ssamo",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Group 1088_white.svg",
@@ -175,7 +154,8 @@
                       "size":  739,
                       "modified":  "2023-04-14T00:28:18.0000000Z",
                       "label":  "Logo",
-                      "project":  "Logo"
+                      "project":  "Logo",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Group 1088.svg",
@@ -186,7 +166,8 @@
                       "size":  681,
                       "modified":  "2023-04-14T00:28:04.0000000Z",
                       "label":  "Logo",
-                      "project":  "Logo"
+                      "project":  "Logo",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "logo_White.png",
@@ -197,7 +178,8 @@
                       "size":  25350,
                       "modified":  "2023-03-23T02:35:58.0000000Z",
                       "label":  "Logo",
-                      "project":  "Logo"
+                      "project":  "Logo",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "logo.png",
@@ -208,7 +190,8 @@
                       "size":  25340,
                       "modified":  "2023-03-23T01:46:44.0000000Z",
                       "label":  "Logo",
-                      "project":  "Logo"
+                      "project":  "Logo",
+                      "isAssembly":  false
                   }
               ]
 }

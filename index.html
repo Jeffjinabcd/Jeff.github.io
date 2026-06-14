@@ -280,6 +280,19 @@
     font-family:var(--mono); font-size:10px; letter-spacing:0.06em;
     color:var(--accent); text-transform:uppercase;
   }
+  .asm-badge{
+    display:inline-block; font-family:var(--mono); font-size:9px;
+    letter-spacing:0.1em; text-transform:uppercase; font-weight:600;
+    color:#fff; background:var(--accent); padding:2px 7px; margin-top:5px;
+  }
+  .asm-badge.tree{margin:0 0 0 8px; vertical-align:middle;}
+  .dim-readout{
+    position:absolute; bottom:12px; left:14px;
+    font-family:var(--mono); font-size:11px; letter-spacing:0.06em;
+    color:rgba(255,255,255,0.78); background:rgba(20,27,39,0.6);
+    padding:5px 10px; pointer-events:none;
+  }
+  .dim-readout b{color:#fff; font-weight:600;}
 
   .file-actions{display:flex; gap:8px; flex-wrap:wrap;}
   .btn{
@@ -891,6 +904,7 @@
     </div>
     <div class="modal-body" style="position:relative;">
       <canvas id="stl-canvas"></canvas>
+      <span class="dim-readout" id="dim-readout" style="display:none;"></span>
       <span class="stl-hint">Drag to rotate · Scroll to zoom · Right-drag to pan</span>
     </div>
   </div>
@@ -1029,6 +1043,11 @@
     info.appendChild(nameEl);
     info.appendChild(metaEl);
     if(f.label) info.appendChild(labelEl);
+    if(f.isAssembly){
+      var asm = document.createElement('div');
+      asm.innerHTML = '<span class="asm-badge">Assembly</span>';
+      info.appendChild(asm);
+    }
     header.appendChild(info);
     card.appendChild(header);
 
@@ -1260,6 +1279,11 @@
     var name = document.createElement('span');
     name.className = 'tree-file-name';
     name.textContent = f.name;
+    if(f.isAssembly){
+      var b = document.createElement('span');
+      b.className = 'asm-badge tree'; b.textContent = 'Assembly';
+      name.appendChild(b);
+    }
     row.appendChild(name);
 
     var meta = document.createElement('span');
@@ -1441,8 +1465,10 @@
   var v3Scene, v3Camera, v3Renderer, v3Controls, v3Meshes = [];
 
   function open3D(f){
-    document.getElementById('stl-modal-title').textContent = f.name;
+    document.getElementById('stl-modal-title').textContent = f.name + (f.isAssembly ? '  — Assembly' : '');
     document.getElementById('modal-stl').classList.add('open');
+    var dim = document.getElementById('dim-readout');
+    if(dim) dim.style.display = 'none';
     var hint = document.querySelector('.stl-hint');
     if(hint) hint.textContent = 'Loading…';
     if(!viewerReady){
@@ -1506,6 +1532,20 @@
     v3Camera.updateProjectionMatrix();
     v3Controls.target.copy(center);
     v3Controls.update();
+    showDimensions(size);
+  }
+
+  // Rough bounding-box dimensions. STL/STEP from SolidWorks are in millimetres.
+  function showDimensions(size){
+    var el = document.getElementById('dim-readout');
+    if(!el) return;
+    function fmt(mm){
+      if(mm >= 1000) return (mm/1000).toFixed(2)+' m';
+      if(mm < 1)     return (mm*1000).toFixed(0)+' µm';
+      return mm.toFixed(1)+' mm';
+    }
+    el.innerHTML = 'Approx size&nbsp; <b>'+fmt(size.x)+'</b> × <b>'+fmt(size.y)+'</b> × <b>'+fmt(size.z)+'</b>';
+    el.style.display = 'block';
   }
 
   function load3D(f){

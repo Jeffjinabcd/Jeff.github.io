@@ -25,7 +25,8 @@
   },
   "_projects_comment": "A file is tagged with the first project whose 'match' keyword appears in its path. Add more projects here over time. Files matching none are grouped by their top-level folder.",
   "projects": [
-    { "name": "Dalek", "match": ["Dalek", "dalek"] }
+    { "name": "Dalek", "match": ["Dalek", "dalek"] },
+    { "name": "VEX Robotics", "match": ["2024-2025", "2025-2026", "Push Back", "High Stakes"] }
   ],
   "maxFileSizeMB": 95,
   "pollIntervalSeconds": 300

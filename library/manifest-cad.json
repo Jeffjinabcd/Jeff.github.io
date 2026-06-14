@@ -1,5 +1,5 @@
 {
-    "generated":  "2026-06-14T12:24:56.3622152Z",
+    "generated":  "2026-06-14T12:33:38.2970841Z",
     "files":  [
                   {
                       "name":  "12V5AH SLA BATTERY WKDC12-5F.STP",
@@ -10,7 +10,8 @@
                       "size":  123452,
                       "modified":  "2026-06-05T00:32:48.3420995Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Motor Driver.STL",
@@ -21,7 +22,8 @@
                       "size":  631684,
                       "modified":  "2026-06-04T23:33:31.7916364Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Spur Gear (24 teeth).stl",
@@ -32,7 +34,8 @@
                       "size":  1026634,
                       "modified":  "2026-06-04T19:03:14.2782653Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "dome-breadboard.STL",
@@ -43,7 +46,8 @@
                       "size":  58084,
                       "modified":  "2026-06-04T17:47:43.2767942Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "HalfBreadboard.STEP",
@@ -54,7 +58,8 @@
                       "size":  22451246,
                       "modified":  "2026-06-04T16:29:22.5551710Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "gear holder.STL",
@@ -65,7 +70,8 @@
                       "size":  27884,
                       "modified":  "2026-06-03T17:52:08.9018405Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "flag.STL",
@@ -76,7 +82,8 @@
                       "size":  23084,
                       "modified":  "2026-05-26T13:02:40.6521706Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "15-attack.STL",
@@ -87,7 +94,8 @@
                       "size":  34284,
                       "modified":  "2026-05-26T12:54:54.6564752Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "25-attack.STL",
@@ -98,7 +106,8 @@
                       "size":  35084,
                       "modified":  "2026-05-26T12:54:34.1710748Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "32.5-attack.STL",
@@ -109,7 +118,8 @@
                       "size":  35084,
                       "modified":  "2026-05-26T12:54:17.5581940Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "40-attack.STL",
@@ -120,7 +130,8 @@
                       "size":  35084,
                       "modified":  "2026-05-26T12:54:01.5599388Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "45-attack.STL",
@@ -131,7 +142,8 @@
                       "size":  35084,
                       "modified":  "2026-05-26T12:53:43.6945579Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "shell coin slot.3mf",
@@ -142,7 +154,8 @@
                       "size":  2117812,
                       "modified":  "2026-05-25T06:03:49.3450880Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "shell coin slot.STL",
@@ -153,7 +166,8 @@
                       "size":  10527284,
                       "modified":  "2026-05-25T05:59:57.1540847Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "20.STL",
@@ -164,7 +178,8 @@
                       "size":  257884,
                       "modified":  "2026-05-22T13:26:27.3481686Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "10.STL",
@@ -175,7 +190,8 @@
                       "size":  235884,
                       "modified":  "2026-05-22T13:25:44.6379372Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "5.STL",
@@ -186,7 +202,8 @@
                       "size":  225084,
                       "modified":  "2026-05-22T13:24:52.3092202Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "2.STL",
@@ -197,7 +214,8 @@
                       "size":  217884,
                       "modified":  "2026-05-22T13:24:04.8037713Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "1.STL",
@@ -208,7 +226,8 @@
                       "size":  190284,
                       "modified":  "2026-05-22T13:22:50.1086697Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "hinge test.STL",
@@ -219,7 +238,8 @@
                       "size":  18684,
                       "modified":  "2026-05-22T13:10:18.6930526Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "new coin.STL",
@@ -230,7 +250,8 @@
                       "size":  188084,
                       "modified":  "2026-05-21T18:50:28.2484140Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "coin slot.STL",
@@ -241,7 +262,8 @@
                       "size":  7720184,
                       "modified":  "2026-05-21T12:50:44.9656477Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "player\u0027s view - coin.STL",
@@ -252,7 +274,8 @@
                       "size":  188084,
                       "modified":  "2026-05-21T12:50:37.2934276Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "player\u0027s view - main.3mf",
@@ -263,7 +286,8 @@
                       "size":  1199653,
                       "modified":  "2026-05-21T09:10:16.8071981Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "player\u0027s view - main.STL",
@@ -274,7 +298,8 @@
                       "size":  5929284,
                       "modified":  "2026-05-21T08:56:19.7576350Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "bearing to bottom.STL",
@@ -285,7 +310,8 @@
                       "size":  31284,
                       "modified":  "2026-05-20T18:32:10.3949407Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "bearing to top.STL",
@@ -296,7 +322,8 @@
                       "size":  20984,
                       "modified":  "2026-05-20T18:32:00.9560159Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "bearing to bottom spacer.STL",
@@ -307,7 +334,8 @@
                       "size":  18884,
                       "modified":  "2026-05-20T17:47:25.8871600Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Surround.stl",
@@ -318,7 +346,8 @@
                       "size":  252884,
                       "modified":  "2026-05-20T14:19:06.1505480Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Hemi.stl",
@@ -329,7 +358,8 @@
                       "size":  286284,
                       "modified":  "2026-05-20T14:19:06.1425397Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body5N.stl",
@@ -340,7 +370,8 @@
                       "size":  96384,
                       "modified":  "2026-05-20T14:19:06.1355405Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body5M.stl",
@@ -351,7 +382,8 @@
                       "size":  89884,
                       "modified":  "2026-05-20T14:19:06.1284421Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body5L.stl",
@@ -362,7 +394,8 @@
                       "size":  86084,
                       "modified":  "2026-05-20T14:19:06.1214389Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body5K.stl",
@@ -373,7 +406,8 @@
                       "size":  80084,
                       "modified":  "2026-05-20T14:19:06.1144389Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body5J.stl",
@@ -384,7 +418,8 @@
                       "size":  85684,
                       "modified":  "2026-05-20T14:19:06.1094391Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body5I.stl",
@@ -395,7 +430,8 @@
                       "size":  86784,
                       "modified":  "2026-05-20T14:19:06.1034391Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body5H.stl",
@@ -406,7 +442,8 @@
                       "size":  81484,
                       "modified":  "2026-05-20T14:19:06.0984419Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body5G.stl",
@@ -417,7 +454,8 @@
                       "size":  98684,
                       "modified":  "2026-05-20T14:19:06.0924414Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body5F.stl",
@@ -428,7 +466,8 @@
                       "size":  87684,
                       "modified":  "2026-05-20T14:19:06.0864389Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body5E.stl",
@@ -439,7 +478,8 @@
                       "size":  79284,
                       "modified":  "2026-05-20T14:19:06.0804049Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body5D.stl",
@@ -450,7 +490,8 @@
                       "size":  91684,
                       "modified":  "2026-05-20T14:19:06.0744055Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body5C.stl",
@@ -461,7 +502,8 @@
                       "size":  100984,
                       "modified":  "2026-05-20T14:19:06.0683370Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body5B.stl",
@@ -472,7 +514,8 @@
                       "size":  106584,
                       "modified":  "2026-05-20T14:19:06.0608267Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body5A.stl",
@@ -483,7 +526,8 @@
                       "size":  97884,
                       "modified":  "2026-05-20T14:19:06.0558275Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body4N.stl",
@@ -494,7 +538,8 @@
                       "size":  119584,
                       "modified":  "2026-05-20T14:19:06.0498266Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body4M.stl",
@@ -505,7 +550,8 @@
                       "size":  108884,
                       "modified":  "2026-05-20T14:19:06.0438221Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body4L.stl",
@@ -516,7 +562,8 @@
                       "size":  100584,
                       "modified":  "2026-05-20T14:19:06.0368229Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body4K.stl",
@@ -527,7 +574,8 @@
                       "size":  90484,
                       "modified":  "2026-05-20T14:19:06.0318232Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body4J.stl",
@@ -538,7 +586,8 @@
                       "size":  95084,
                       "modified":  "2026-05-20T14:19:06.0249249Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body4I.stl",
@@ -549,7 +598,8 @@
                       "size":  99684,
                       "modified":  "2026-05-20T14:19:06.0199274Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body4H.stl",
@@ -560,7 +610,8 @@
                       "size":  92084,
                       "modified":  "2026-05-20T14:19:06.0149289Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body4G.stl",
@@ -571,7 +622,8 @@
                       "size":  114084,
                       "modified":  "2026-05-20T14:19:06.0089276Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body4F.stl",
@@ -582,7 +634,8 @@
                       "size":  100984,
                       "modified":  "2026-05-20T14:19:06.0027435Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body4E.stl",
@@ -593,7 +646,8 @@
                       "size":  88684,
                       "modified":  "2026-05-20T14:19:05.9967423Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body4D.stl",
@@ -604,7 +658,8 @@
                       "size":  102084,
                       "modified":  "2026-05-20T14:19:05.9905395Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body4C.stl",
@@ -615,7 +670,8 @@
                       "size":  116484,
                       "modified":  "2026-05-20T14:19:05.9845386Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body4B.stl",
@@ -626,7 +682,8 @@
                       "size":  125084,
                       "modified":  "2026-05-20T14:19:05.9785376Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body4A.stl",
@@ -637,7 +694,8 @@
                       "size":  121284,
                       "modified":  "2026-05-20T14:19:05.9715378Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body3N.stl",
@@ -648,7 +706,8 @@
                       "size":  128584,
                       "modified":  "2026-05-20T14:19:05.9633018Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body3M.stl",
@@ -659,7 +718,8 @@
                       "size":  128984,
                       "modified":  "2026-05-20T14:19:05.9557988Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body3L.stl",
@@ -670,7 +730,8 @@
                       "size":  122584,
                       "modified":  "2026-05-20T14:19:05.9487982Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body3K.stl",
@@ -681,7 +742,8 @@
                       "size":  111284,
                       "modified":  "2026-05-20T14:19:05.9427910Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body3J.stl",
@@ -692,7 +754,8 @@
                       "size":  116684,
                       "modified":  "2026-05-20T14:19:05.9362325Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body3I.stl",
@@ -703,7 +766,8 @@
                       "size":  117784,
                       "modified":  "2026-05-20T14:19:05.9301843Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body3H.stl",
@@ -714,7 +778,8 @@
                       "size":  112484,
                       "modified":  "2026-05-20T14:19:05.9231282Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body3G.stl",
@@ -725,7 +790,8 @@
                       "size":  129684,
                       "modified":  "2026-05-20T14:19:05.9169838Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body3F.stl",
@@ -736,7 +802,8 @@
                       "size":  118984,
                       "modified":  "2026-05-20T14:19:05.9111295Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body3E.stl",
@@ -747,7 +814,8 @@
                       "size":  110284,
                       "modified":  "2026-05-20T14:19:05.9041319Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body3D.stl",
@@ -758,7 +826,8 @@
                       "size":  122884,
                       "modified":  "2026-05-20T14:19:05.8981321Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body3C.stl",
@@ -769,7 +838,8 @@
                       "size":  138184,
                       "modified":  "2026-05-20T14:19:05.8921329Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body3B.stl",
@@ -780,7 +850,8 @@
                       "size":  145084,
                       "modified":  "2026-05-20T14:19:05.8840899Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body3A.stl",
@@ -791,7 +862,8 @@
                       "size":  131584,
                       "modified":  "2026-05-20T14:19:05.8777350Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body2N.stl",
@@ -802,7 +874,8 @@
                       "size":  132184,
                       "modified":  "2026-05-20T14:19:05.8714646Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body2M.stl",
@@ -813,7 +886,8 @@
                       "size":  121884,
                       "modified":  "2026-05-20T14:19:05.8653887Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body2L.stl",
@@ -824,7 +898,8 @@
                       "size":  116684,
                       "modified":  "2026-05-20T14:19:05.8588748Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body2K.stl",
@@ -835,7 +910,8 @@
                       "size":  105284,
                       "modified":  "2026-05-20T14:19:05.8518788Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body2J.stl",
@@ -846,7 +922,8 @@
                       "size":  110284,
                       "modified":  "2026-05-20T14:19:05.8458710Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body2I.stl",
@@ -857,7 +934,8 @@
                       "size":  112884,
                       "modified":  "2026-05-20T14:19:05.8388694Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body2H.stl",
@@ -868,7 +946,8 @@
                       "size":  106284,
                       "modified":  "2026-05-20T14:19:05.8328681Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body2G.stl",
@@ -879,7 +958,8 @@
                       "size":  123484,
                       "modified":  "2026-05-20T14:19:05.8269160Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body2F.stl",
@@ -890,7 +970,8 @@
                       "size":  114184,
                       "modified":  "2026-05-20T14:19:05.8187083Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body2E.stl",
@@ -901,7 +982,8 @@
                       "size":  103884,
                       "modified":  "2026-05-20T14:19:05.8126650Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body2D.stl",
@@ -912,7 +994,8 @@
                       "size":  116884,
                       "modified":  "2026-05-20T14:19:05.8042828Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body2C.stl",
@@ -923,7 +1006,8 @@
                       "size":  132384,
                       "modified":  "2026-05-20T14:19:05.7982818Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body2B.stl",
@@ -934,7 +1018,8 @@
                       "size":  138084,
                       "modified":  "2026-05-20T14:19:05.7912825Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body2A.stl",
@@ -945,7 +1030,8 @@
                       "size":  135484,
                       "modified":  "2026-05-20T14:19:05.7832805Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body1N.stl",
@@ -956,7 +1042,8 @@
                       "size":  85684,
                       "modified":  "2026-05-20T14:19:05.7762551Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body1M.stl",
@@ -967,7 +1054,8 @@
                       "size":  86384,
                       "modified":  "2026-05-20T14:19:05.7682561Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body1L.stl",
@@ -978,7 +1066,8 @@
                       "size":  79984,
                       "modified":  "2026-05-20T14:19:05.7622508Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body1K.stl",
@@ -989,7 +1078,8 @@
                       "size":  74584,
                       "modified":  "2026-05-20T14:19:05.7552594Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body1J.stl",
@@ -1000,7 +1090,8 @@
                       "size":  79284,
                       "modified":  "2026-05-20T14:19:05.7492619Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body1I.stl",
@@ -1011,7 +1102,8 @@
                       "size":  68584,
                       "modified":  "2026-05-20T14:19:05.7422532Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body1H.stl",
@@ -1022,7 +1114,8 @@
                       "size":  81884,
                       "modified":  "2026-05-20T14:19:05.7362525Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body1G.stl",
@@ -1033,7 +1126,8 @@
                       "size":  98484,
                       "modified":  "2026-05-20T14:19:05.7292504Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body1F.stl",
@@ -1044,7 +1138,8 @@
                       "size":  69484,
                       "modified":  "2026-05-20T14:19:05.7220822Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body1E.stl",
@@ -1055,7 +1150,8 @@
                       "size":  78384,
                       "modified":  "2026-05-20T14:19:05.7160829Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body1D.stl",
@@ -1066,7 +1162,8 @@
                       "size":  83884,
                       "modified":  "2026-05-20T14:19:05.7090789Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body1C.stl",
@@ -1077,7 +1174,8 @@
                       "size":  94484,
                       "modified":  "2026-05-20T14:19:05.7028030Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body1B.stl",
@@ -1088,7 +1186,8 @@
                       "size":  102984,
                       "modified":  "2026-05-20T14:19:05.6968042Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body1A.stl",
@@ -1099,7 +1198,8 @@
                       "size":  88384,
                       "modified":  "2026-05-20T14:19:05.6888034Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-Rear.stl",
@@ -1110,7 +1210,8 @@
                       "size":  97284,
                       "modified":  "2026-05-20T14:19:05.6776930Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-R8.stl",
@@ -1121,7 +1222,8 @@
                       "size":  87984,
                       "modified":  "2026-05-20T14:19:05.6716958Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-R7.stl",
@@ -1132,7 +1234,8 @@
                       "size":  85084,
                       "modified":  "2026-05-20T14:19:05.6656952Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-R6.stl",
@@ -1143,7 +1246,8 @@
                       "size":  107884,
                       "modified":  "2026-05-20T14:19:05.6593193Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-R5.stl",
@@ -1154,7 +1258,8 @@
                       "size":  82184,
                       "modified":  "2026-05-20T14:19:05.6533185Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-R4.stl",
@@ -1165,7 +1270,8 @@
                       "size":  70584,
                       "modified":  "2026-05-20T14:19:05.6483177Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-R3.stl",
@@ -1176,7 +1282,8 @@
                       "size":  84384,
                       "modified":  "2026-05-20T14:19:05.6413156Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-R2.stl",
@@ -1187,7 +1294,8 @@
                       "size":  89784,
                       "modified":  "2026-05-20T14:19:05.6348892Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-R1.stl",
@@ -1198,7 +1306,8 @@
                       "size":  81084,
                       "modified":  "2026-05-20T14:19:05.6281068Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-L8.stl",
@@ -1209,7 +1318,8 @@
                       "size":  88384,
                       "modified":  "2026-05-20T14:19:05.6215372Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-L7.stl",
@@ -1220,7 +1330,8 @@
                       "size":  71784,
                       "modified":  "2026-05-20T14:19:05.6018898Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-L6.stl",
@@ -1231,7 +1342,8 @@
                       "size":  95684,
                       "modified":  "2026-05-20T14:19:05.5955197Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-L5.stl",
@@ -1242,7 +1354,8 @@
                       "size":  64284,
                       "modified":  "2026-05-20T14:19:05.5885226Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-L4.stl",
@@ -1253,7 +1366,8 @@
                       "size":  68884,
                       "modified":  "2026-05-20T14:19:05.5825214Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-L3.stl",
@@ -1264,7 +1378,8 @@
                       "size":  86484,
                       "modified":  "2026-05-20T14:19:05.5775269Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-L2.stl",
@@ -1275,7 +1390,8 @@
                       "size":  79184,
                       "modified":  "2026-05-20T14:19:05.5715140Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-L1.stl",
@@ -1286,7 +1402,8 @@
                       "size":  71584,
                       "modified":  "2026-05-20T14:19:05.5660524Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Slat-Front.stl",
@@ -1297,7 +1414,8 @@
                       "size":  145184,
                       "modified":  "2026-05-20T14:19:05.5605375Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Top H.stl",
@@ -1308,7 +1426,8 @@
                       "size":  182884,
                       "modified":  "2026-05-20T14:19:05.5525406Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Top G.stl",
@@ -1319,7 +1438,8 @@
                       "size":  241184,
                       "modified":  "2026-05-20T14:19:05.5465327Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Top F.stl",
@@ -1330,7 +1450,8 @@
                       "size":  243684,
                       "modified":  "2026-05-20T14:19:05.5405356Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Top E.stl",
@@ -1341,7 +1462,8 @@
                       "size":  252984,
                       "modified":  "2026-05-20T14:19:05.5332889Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Top D.stl",
@@ -1352,7 +1474,8 @@
                       "size":  286884,
                       "modified":  "2026-05-20T14:19:05.5272893Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Top C.stl",
@@ -1363,7 +1486,8 @@
                       "size":  209684,
                       "modified":  "2026-05-20T14:19:05.5192951Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Top B.stl",
@@ -1374,7 +1498,8 @@
                       "size":  173184,
                       "modified":  "2026-05-20T14:19:05.5132894Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Top A.stl",
@@ -1385,7 +1510,8 @@
                       "size":  260084,
                       "modified":  "2026-05-20T14:19:05.5072928Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Bottom J.stl",
@@ -1396,7 +1522,8 @@
                       "size":  276884,
                       "modified":  "2026-05-20T14:19:05.5002898Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Bottom I.stl",
@@ -1407,7 +1534,8 @@
                       "size":  247284,
                       "modified":  "2026-05-20T14:19:05.4942886Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Bottom H.stl",
@@ -1418,7 +1546,8 @@
                       "size":  243184,
                       "modified":  "2026-05-20T14:19:05.4872891Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Bottom G.stl",
@@ -1429,7 +1558,8 @@
                       "size":  309984,
                       "modified":  "2026-05-20T14:19:05.4812890Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Bottom F.stl",
@@ -1440,7 +1570,8 @@
                       "size":  273184,
                       "modified":  "2026-05-20T14:19:05.4742907Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Bottom E.stl",
@@ -1451,7 +1582,8 @@
                       "size":  166784,
                       "modified":  "2026-05-20T14:19:05.4682876Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Bottom D.stl",
@@ -1462,7 +1594,8 @@
                       "size":  190884,
                       "modified":  "2026-05-20T14:19:05.4620652Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Bottom C.stl",
@@ -1473,7 +1606,8 @@
                       "size":  347284,
                       "modified":  "2026-05-20T14:19:05.4570658Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Bottom B.stl",
@@ -1484,7 +1618,8 @@
                       "size":  356084,
                       "modified":  "2026-05-20T14:19:05.4500667Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shoulder Bottom A.stl",
@@ -1495,7 +1630,8 @@
                       "size":  226684,
                       "modified":  "2026-05-20T14:19:05.4427165Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Gun Box Surround.stl",
@@ -1506,7 +1642,8 @@
                       "size":  445084,
                       "modified":  "2026-05-20T14:19:05.4354651Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Ball Clamp.stl",
@@ -1517,7 +1654,8 @@
                       "size":  226184,
                       "modified":  "2026-05-20T14:19:05.4270774Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Stem.stl",
@@ -1528,7 +1666,8 @@
                       "size":  900984,
                       "modified":  "2026-05-20T14:19:05.4166467Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shaft5.stl",
@@ -1539,7 +1678,8 @@
                       "size":  692084,
                       "modified":  "2026-05-20T14:19:05.4068933Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shaft4.stl",
@@ -1550,7 +1690,8 @@
                       "size":  667084,
                       "modified":  "2026-05-20T14:19:05.3974367Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shaft3.stl",
@@ -1561,7 +1702,8 @@
                       "size":  667684,
                       "modified":  "2026-05-20T14:19:05.3875962Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shaft2.stl",
@@ -1572,7 +1714,8 @@
                       "size":  351084,
                       "modified":  "2026-05-20T14:19:05.3789386Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Shaft1.stl",
@@ -1583,7 +1726,8 @@
                       "size":  556384,
                       "modified":  "2026-05-20T14:19:05.3707479Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Bowl.stl",
@@ -1594,7 +1738,8 @@
                       "size":  980984,
                       "modified":  "2026-05-20T14:19:05.3618461Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Ball.stl",
@@ -1605,7 +1750,8 @@
                       "size":  615284,
                       "modified":  "2026-05-20T14:19:05.3508653Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Ball Clamp.stl",
@@ -1616,7 +1762,8 @@
                       "size":  226184,
                       "modified":  "2026-05-20T14:19:05.3430099Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Spacer2.stl",
@@ -1627,7 +1774,8 @@
                       "size":  28284,
                       "modified":  "2026-05-20T14:19:05.1131257Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Spacer1.stl",
@@ -1638,7 +1786,8 @@
                       "size":  38084,
                       "modified":  "2026-05-20T14:19:05.1070972Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Section2.stl",
@@ -1649,7 +1798,8 @@
                       "size":  850984,
                       "modified":  "2026-05-20T14:19:05.1006805Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Section1.stl",
@@ -1660,7 +1810,8 @@
                       "size":  534084,
                       "modified":  "2026-05-20T14:19:05.0873328Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Handle.stl",
@@ -1671,7 +1822,8 @@
                       "size":  730784,
                       "modified":  "2026-05-20T14:19:05.0762005Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Top Motor Mount 2.stl",
@@ -1682,7 +1834,8 @@
                       "size":  857984,
                       "modified":  "2026-05-20T14:19:05.0476819Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Top Motor Mount 1.stl",
@@ -1693,7 +1846,8 @@
                       "size":  35684,
                       "modified":  "2026-05-20T14:19:05.0371282Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Motor Mount.stl",
@@ -1704,7 +1858,8 @@
                       "size":  529784,
                       "modified":  "2026-05-20T14:19:05.0308153Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Dome Mount.stl",
@@ -1715,7 +1870,8 @@
                       "size":  152684,
                       "modified":  "2026-05-20T14:19:05.0225947Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Moflash.stl",
@@ -1726,7 +1882,8 @@
                       "size":  511784,
                       "modified":  "2026-05-20T14:19:05.0149410Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Cage 2.stl",
@@ -1737,7 +1894,8 @@
                       "size":  70084,
                       "modified":  "2026-05-20T14:19:05.0071414Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Cage 1.stl",
@@ -1748,7 +1906,8 @@
                       "size":  941484,
                       "modified":  "2026-05-20T14:19:05.0031459Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Small.stl",
@@ -1759,7 +1918,8 @@
                       "size":  145084,
                       "modified":  "2026-05-20T14:19:04.9913374Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Segment 4.stl",
@@ -1770,7 +1930,8 @@
                       "size":  736684,
                       "modified":  "2026-05-20T14:19:04.9860989Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Segment 3.stl",
@@ -1781,7 +1942,8 @@
                       "size":  1268284,
                       "modified":  "2026-05-20T14:19:04.9769311Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Segment 2.stl",
@@ -1792,7 +1954,8 @@
                       "size":  344984,
                       "modified":  "2026-05-20T14:19:04.9649313Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Segment 1.stl",
@@ -1803,7 +1966,8 @@
                       "size":  1693484,
                       "modified":  "2026-05-20T14:19:04.9574247Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pivot 4.stl",
@@ -1814,7 +1978,8 @@
                       "size":  54384,
                       "modified":  "2026-05-20T14:19:04.9432778Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pivot 3.stl",
@@ -1825,7 +1990,8 @@
                       "size":  1269284,
                       "modified":  "2026-05-20T14:19:04.9392555Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pivot 2.stl",
@@ -1836,7 +2002,8 @@
                       "size":  44884,
                       "modified":  "2026-05-20T14:19:04.9293821Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pivot 1.stl",
@@ -1847,7 +2014,8 @@
                       "size":  309884,
                       "modified":  "2026-05-20T14:19:04.9243795Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Medium.stl",
@@ -1858,7 +2026,8 @@
                       "size":  292784,
                       "modified":  "2026-05-20T14:19:04.9173806Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "LED Mount.stl",
@@ -1869,7 +2038,8 @@
                       "size":  383284,
                       "modified":  "2026-05-20T14:19:04.9103735Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Large.stl",
@@ -1880,7 +2050,8 @@
                       "size":  154384,
                       "modified":  "2026-05-20T14:19:04.9023741Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Eye Lens.stl",
@@ -1891,7 +2062,8 @@
                       "size":  196384,
                       "modified":  "2026-05-20T14:19:04.8969947Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Eye Front.stl",
@@ -1902,7 +2074,8 @@
                       "size":  263284,
                       "modified":  "2026-05-20T14:19:04.8909944Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Eye Back.stl",
@@ -1913,7 +2086,8 @@
                       "size":  742084,
                       "modified":  "2026-05-20T14:19:04.8849946Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Top.stl",
@@ -1924,7 +2098,8 @@
                       "size":  4811684,
                       "modified":  "2026-05-20T14:19:04.8700138Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Middle-Speaker.stl",
@@ -1935,7 +2110,8 @@
                       "size":  1035184,
                       "modified":  "2026-05-20T14:19:04.8437349Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Middle-Slot.stl",
@@ -1946,7 +2122,8 @@
                       "size":  1061984,
                       "modified":  "2026-05-20T14:19:04.8346509Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Middle-Light.stl",
@@ -1957,7 +2134,8 @@
                       "size":  1066384,
                       "modified":  "2026-05-20T14:19:04.8236495Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Middle-Blank.stl",
@@ -1968,7 +2146,8 @@
                       "size":  1036784,
                       "modified":  "2026-05-20T14:19:04.8134250Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Bottom.stl",
@@ -1979,7 +2158,8 @@
                       "size":  531684,
                       "modified":  "2026-05-20T14:19:04.8037414Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body3.stl",
@@ -1990,7 +2170,8 @@
                       "size":  28684,
                       "modified":  "2026-05-20T14:19:04.7940436Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body2.stl",
@@ -2001,7 +2182,8 @@
                       "size":  431984,
                       "modified":  "2026-05-20T14:19:04.7880401Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Body1.stl",
@@ -2012,7 +2194,8 @@
                       "size":  77984,
                       "modified":  "2026-05-20T14:19:04.7762838Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Lets see.stl",
@@ -2023,7 +2206,8 @@
                       "size":  11966084,
                       "modified":  "2026-05-19T18:28:31.3702161Z",
                       "label":  "Projects",
-                      "project":  "Board game"
+                      "project":  "Board game",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Middle 1.stl",
@@ -2034,7 +2218,8 @@
                       "size":  559484,
                       "modified":  "2026-05-19T00:17:43.3425114Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt R.stl",
@@ -2045,7 +2230,8 @@
                       "size":  257684,
                       "modified":  "2026-05-19T00:17:43.3364766Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt O.stl",
@@ -2056,7 +2242,8 @@
                       "size":  839084,
                       "modified":  "2026-05-19T00:17:43.3300300Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Middle 2.stl",
@@ -2067,7 +2254,8 @@
                       "size":  20284,
                       "modified":  "2026-05-19T00:17:43.3215195Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt J.stl",
@@ -2078,7 +2266,8 @@
                       "size":  831884,
                       "modified":  "2026-05-19T00:17:43.3165740Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt E.stl",
@@ -2089,7 +2278,8 @@
                       "size":  825484,
                       "modified":  "2026-05-19T00:17:43.3085310Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Internal Gear.stl",
@@ -2100,7 +2290,8 @@
                       "size":  79284,
                       "modified":  "2026-05-19T00:17:43.3000321Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt A.stl",
@@ -2111,7 +2302,8 @@
                       "size":  185884,
                       "modified":  "2026-05-19T00:17:43.2945166Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt B.stl",
@@ -2122,7 +2314,8 @@
                       "size":  844084,
                       "modified":  "2026-05-19T00:17:43.2885119Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Bottom.stl",
@@ -2133,7 +2326,8 @@
                       "size":  171584,
                       "modified":  "2026-05-19T00:17:43.2800084Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt N.stl",
@@ -2144,7 +2338,8 @@
                       "size":  825084,
                       "modified":  "2026-05-19T00:17:43.2745005Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt D.stl",
@@ -2155,7 +2350,8 @@
                       "size":  837084,
                       "modified":  "2026-05-19T00:17:43.2650119Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt P.stl",
@@ -2166,7 +2362,8 @@
                       "size":  833484,
                       "modified":  "2026-05-19T00:17:43.2580073Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt I.stl",
@@ -2177,7 +2374,8 @@
                       "size":  824084,
                       "modified":  "2026-05-19T00:17:43.2489919Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt H.stl",
@@ -2188,7 +2386,8 @@
                       "size":  204984,
                       "modified":  "2026-05-19T00:17:43.2413663Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt L.stl",
@@ -2199,7 +2398,8 @@
                       "size":  824284,
                       "modified":  "2026-05-19T00:17:43.2348560Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt M.stl",
@@ -2210,7 +2410,8 @@
                       "size":  197384,
                       "modified":  "2026-05-19T00:17:43.2259613Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt F.stl",
@@ -2221,7 +2422,8 @@
                       "size":  825084,
                       "modified":  "2026-05-19T00:17:43.2207867Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt Q.stl",
@@ -2232,7 +2434,8 @@
                       "size":  746084,
                       "modified":  "2026-05-19T00:17:43.2119084Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Top 2.stl",
@@ -2243,7 +2446,8 @@
                       "size":  49284,
                       "modified":  "2026-05-19T00:17:43.2027329Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt C.stl",
@@ -2254,7 +2458,8 @@
                       "size":  839484,
                       "modified":  "2026-05-19T00:17:43.1983039Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Neck Top.stl",
@@ -2265,7 +2470,8 @@
                       "size":  267984,
                       "modified":  "2026-05-19T00:17:43.1896198Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt G.stl",
@@ -2276,7 +2482,8 @@
                       "size":  842684,
                       "modified":  "2026-05-19T00:17:43.1831139Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Top 1.stl",
@@ -2287,7 +2494,8 @@
                       "size":  960784,
                       "modified":  "2026-05-19T00:17:43.1746045Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Pool Matt K.stl",
@@ -2298,7 +2506,8 @@
                       "size":  825484,
                       "modified":  "2026-05-19T00:17:43.1609833Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Middle-Blank.stl",
@@ -2309,7 +2518,8 @@
                       "size":  1036784,
                       "modified":  "2026-05-18T12:30:57.3921378Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Middle-Slot.stl",
@@ -2320,7 +2530,8 @@
                       "size":  1061984,
                       "modified":  "2026-05-18T12:30:57.3691365Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Middle-Light.stl",
@@ -2331,7 +2542,8 @@
                       "size":  1066384,
                       "modified":  "2026-05-18T12:30:57.3421373Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Top.stl",
@@ -2342,7 +2554,8 @@
                       "size":  4811684,
                       "modified":  "2026-05-18T12:30:57.3076096Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Middle-Speaker.stl",
@@ -2353,7 +2566,8 @@
                       "size":  1035184,
                       "modified":  "2026-05-18T12:30:57.2335993Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Bottom.stl",
@@ -2364,7 +2578,8 @@
                       "size":  531684,
                       "modified":  "2026-05-18T12:30:57.2040854Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "final to chain.STL",
@@ -2375,7 +2590,8 @@
                       "size":  23584,
                       "modified":  "2026-05-04T15:20:36.9627552Z",
                       "label":  "Projects",
-                      "project":  "Physics FINAL FINAl"
+                      "project":  "Physics FINAL FINAl",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "12-3.STL",
@@ -2386,7 +2602,8 @@
                       "size":  22884,
                       "modified":  "2026-05-04T13:53:56.3032311Z",
                       "label":  "Projects",
-                      "project":  "Physics FINAL FINAl"
+                      "project":  "Physics FINAL FINAl",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "20-3.STL",
@@ -2397,7 +2614,8 @@
                       "size":  23684,
                       "modified":  "2026-05-04T13:53:36.1399454Z",
                       "label":  "Projects",
-                      "project":  "Physics FINAL FINAl"
+                      "project":  "Physics FINAL FINAl",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "25-3.STL",
@@ -2408,7 +2626,8 @@
                       "size":  23684,
                       "modified":  "2026-05-04T13:53:23.6001825Z",
                       "label":  "Projects",
-                      "project":  "Physics FINAL FINAl"
+                      "project":  "Physics FINAL FINAl",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "sliding to channel.STL",
@@ -2419,7 +2638,8 @@
                       "size":  91084,
                       "modified":  "2026-05-04T06:16:54.8437409Z",
                       "label":  "Projects",
-                      "project":  "Physics FINAL FINAl"
+                      "project":  "Physics FINAL FINAl",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "final piece.STL",
@@ -2430,7 +2650,8 @@
                       "size":  80384,
                       "modified":  "2026-05-04T04:01:15.3698517Z",
                       "label":  "Projects",
-                      "project":  "Physics FINAL FINAl"
+                      "project":  "Physics FINAL FINAl",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "final_feet.STL",
@@ -2441,7 +2662,8 @@
                       "size":  16084,
                       "modified":  "2026-05-04T04:01:06.3998203Z",
                       "label":  "Projects",
-                      "project":  "Physics FINAL FINAl"
+                      "project":  "Physics FINAL FINAl",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "sliding on rack.STL",
@@ -2452,7 +2674,8 @@
                       "size":  63984,
                       "modified":  "2026-05-03T02:37:52.3613294Z",
                       "label":  "Projects",
-                      "project":  "Physics FINAL FINAl"
+                      "project":  "Physics FINAL FINAl",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "rack.STL",
@@ -2463,7 +2686,8 @@
                       "size":  274084,
                       "modified":  "2026-05-02T23:48:07.1375375Z",
                       "label":  "Projects",
-                      "project":  "Physics FINAL FINAl"
+                      "project":  "Physics FINAL FINAl",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "connection between bases.STL",
@@ -2474,7 +2698,8 @@
                       "size":  37484,
                       "modified":  "2026-05-02T22:53:06.2237596Z",
                       "label":  "Projects",
-                      "project":  "Physics FINAL FINAl"
+                      "project":  "Physics FINAL FINAl",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "laser mod.STL",
@@ -2485,7 +2710,8 @@
                       "size":  3084,
                       "modified":  "2026-04-19T21:17:50.7203435Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "all.3mf",
@@ -2496,7 +2722,8 @@
                       "size":  1086345,
                       "modified":  "2026-04-17T01:25:47.2847615Z",
                       "label":  "VEX Robotics",
-                      "project":  "2025-2026"
+                      "project":  "VEX Robotics",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "name tag.STL",
@@ -2507,7 +2734,8 @@
                       "size":  13784,
                       "modified":  "2026-04-16T15:46:55.2276908Z",
                       "label":  "Projects",
-                      "project":  "ssamo"
+                      "project":  "ssamo",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "locking thingy.STL",
@@ -2518,7 +2746,8 @@
                       "size":  8384,
                       "modified":  "2026-04-16T14:49:15.1014077Z",
                       "label":  "Projects",
-                      "project":  "ssamo"
+                      "project":  "ssamo",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "descore helper.3mf",
@@ -2529,7 +2758,8 @@
                       "size":  37721,
                       "modified":  "2026-04-16T12:53:09.5622944Z",
                       "label":  "VEX Robotics",
-                      "project":  "2025-2026"
+                      "project":  "VEX Robotics",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "descore helper.STL",
@@ -2540,7 +2770,8 @@
                       "size":  19284,
                       "modified":  "2026-04-16T12:50:11.9104272Z",
                       "label":  "VEX Robotics",
-                      "project":  "2025-2026"
+                      "project":  "VEX Robotics",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "outside-80.STL",
@@ -2551,7 +2782,8 @@
                       "size":  398684,
                       "modified":  "2026-04-16T12:12:50.3670247Z",
                       "label":  "Projects",
-                      "project":  "ssamo"
+                      "project":  "ssamo",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "outside-100.STL",
@@ -2562,7 +2794,8 @@
                       "size":  396384,
                       "modified":  "2026-04-15T18:15:44.2097738Z",
                       "label":  "Projects",
-                      "project":  "ssamo"
+                      "project":  "ssamo",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "outside-90.STL",
@@ -2573,7 +2806,8 @@
                       "size":  398984,
                       "modified":  "2026-04-15T18:15:31.2104208Z",
                       "label":  "Projects",
-                      "project":  "ssamo"
+                      "project":  "ssamo",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Victor_SP_217-9090_No_Wires.STEP",
@@ -2584,7 +2818,8 @@
                       "size":  8844165,
                       "modified":  "2026-04-14T16:17:34.6956037Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "battery.STL",
@@ -2595,7 +2830,8 @@
                       "size":  46184,
                       "modified":  "2026-04-11T01:46:33.3782384Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "ES17-12.step",
@@ -2606,7 +2842,8 @@
                       "size":  243295,
                       "modified":  "2026-04-11T00:54:23.2973660Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "spacer.STL",
@@ -2617,7 +2854,8 @@
                       "size":  57084,
                       "modified":  "2026-04-08T20:59:41.0521490Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "gear shittt.STL",
@@ -2628,7 +2866,8 @@
                       "size":  30484,
                       "modified":  "2026-03-22T07:52:48.0000000Z",
                       "label":  "VEX Robotics",
-                      "project":  "2025-2026"
+                      "project":  "VEX Robotics",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "gear shit.STL",
@@ -2639,7 +2878,8 @@
                       "size":  261984,
                       "modified":  "2026-03-21T06:36:22.0000000Z",
                       "label":  "VEX Robotics",
-                      "project":  "2025-2026"
+                      "project":  "VEX Robotics",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "spacer my guy.3mf",
@@ -2650,7 +2890,8 @@
                       "size":  87732,
                       "modified":  "2026-03-20T16:53:42.0000000Z",
                       "label":  "VEX Robotics",
-                      "project":  "2025-2026"
+                      "project":  "VEX Robotics",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "1mm spacer.STL",
@@ -2661,7 +2902,8 @@
                       "size":  23484,
                       "modified":  "2026-03-20T16:42:54.0000000Z",
                       "label":  "VEX Robotics",
-                      "project":  "2025-2026"
+                      "project":  "VEX Robotics",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "bearing.STL",
@@ -2672,7 +2914,8 @@
                       "size":  4484,
                       "modified":  "2026-03-19T17:09:32.0000000Z",
                       "label":  "VEX Robotics",
-                      "project":  "2025-2026"
+                      "project":  "VEX Robotics",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "main - base-1.STL",
@@ -2683,7 +2926,8 @@
                       "size":  184184,
                       "modified":  "2026-03-08T21:23:38.5848143Z",
                       "label":  "Projects",
-                      "project":  "card holder"
+                      "project":  "card holder",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "main - back plate-1.STL",
@@ -2694,7 +2938,8 @@
                       "size":  96984,
                       "modified":  "2026-03-08T21:23:38.5804924Z",
                       "label":  "Projects",
-                      "project":  "card holder"
+                      "project":  "card holder",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "main - lever thingy-1.STL",
@@ -2705,7 +2950,8 @@
                       "size":  71784,
                       "modified":  "2026-03-08T21:23:38.5774187Z",
                       "label":  "Projects",
-                      "project":  "card holder"
+                      "project":  "card holder",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "main - front-1.STL",
@@ -2716,7 +2962,8 @@
                       "size":  104384,
                       "modified":  "2026-03-08T21:23:38.5753531Z",
                       "label":  "Projects",
-                      "project":  "card holder"
+                      "project":  "card holder",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Mirrorfront.STL",
@@ -2727,7 +2974,8 @@
                       "size":  127384,
                       "modified":  "2026-03-05T18:59:09.4105169Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Mirrorside.STL",
@@ -2738,7 +2986,8 @@
                       "size":  72684,
                       "modified":  "2026-03-05T18:58:56.8248396Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Mirrorback.STL",
@@ -2749,7 +2998,8 @@
                       "size":  128884,
                       "modified":  "2026-03-05T18:31:02.4576913Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "back.STL",
@@ -2760,7 +3010,8 @@
                       "size":  128884,
                       "modified":  "2026-03-04T19:58:59.2690079Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "side.STL",
@@ -2771,7 +3022,8 @@
                       "size":  72684,
                       "modified":  "2026-03-04T19:57:34.3027557Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "front.STL",
@@ -2782,7 +3034,8 @@
                       "size":  127484,
                       "modified":  "2026-03-04T19:57:24.6250878Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "idk.STL",
@@ -2793,7 +3046,8 @@
                       "size":  1988684,
                       "modified":  "2026-02-23T00:02:14.8656179Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  true
                   },
                   {
                       "name":  "paiint.STL",
@@ -2804,7 +3058,8 @@
                       "size":  53284,
                       "modified":  "2026-02-22T00:52:33.4971461Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "AM-14U5 Wide ToughBox Mini 6in HiGrip 6wD.STEP",
@@ -2815,7 +3070,8 @@
                       "size":  26046414,
                       "modified":  "2026-02-20T18:37:08.3355295Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "AM-14U5 Square ToughBox Mini 6in HiGrip 6wD.STEP",
@@ -2826,7 +3082,8 @@
                       "size":  26066603,
                       "modified":  "2026-02-20T18:37:07.7692762Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "AM-14U5 Long ToughBox Mini 6in HiGrip 6wD.STEP",
@@ -2837,7 +3094,8 @@
                       "size":  26157192,
                       "modified":  "2026-02-20T18:37:07.3585555Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  true
                   },
                   {
                       "name":  "am-14U5_PN8.STEP",
@@ -2848,7 +3106,8 @@
                       "size":  40810513,
                       "modified":  "2026-02-20T18:37:05.0834901Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "AM-14U5 Frame Only.STEP",
@@ -2859,7 +3118,8 @@
                       "size":  3454059,
                       "modified":  "2026-02-20T18:37:04.0513199Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Untitled.step",
@@ -2870,7 +3130,8 @@
                       "size":  43042986,
                       "modified":  "2026-02-20T18:28:54.2939368Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  true
                   },
                   {
                       "name":  "12 gauge.STL",
@@ -2881,7 +3142,8 @@
                       "size":  788284,
                       "modified":  "2026-02-13T08:36:53.6936642Z",
                       "label":  "Projects",
-                      "project":  "wire connectors"
+                      "project":  "wire connectors",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "collar.STL",
@@ -2892,7 +3154,8 @@
                       "size":  35084,
                       "modified":  "2026-01-29T06:26:22.4354283Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "1.625.STL",
@@ -2903,7 +3166,8 @@
                       "size":  214784,
                       "modified":  "2026-01-26T15:11:22.5498677Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "hs washer.STL",
@@ -2914,7 +3178,8 @@
                       "size":  20484,
                       "modified":  "2026-01-23T23:17:54.3481404Z",
                       "label":  "VEX Robotics",
-                      "project":  "2025-2026"
+                      "project":  "VEX Robotics",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "hs bearing flat.STL",
@@ -2925,7 +3190,8 @@
                       "size":  27684,
                       "modified":  "2026-01-23T00:58:20.1491959Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "screw ig.STL",
@@ -2936,7 +3202,8 @@
                       "size":  80784,
                       "modified":  "2026-01-20T05:39:53.5524476Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "2inch flex cutter.STL",
@@ -2947,7 +3214,8 @@
                       "size":  691384,
                       "modified":  "2026-01-17T19:42:17.8270078Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "63.63.STL",
@@ -2958,7 +3226,8 @@
                       "size":  40884,
                       "modified":  "2026-01-16T04:49:55.4626125Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "6.3 6.6 7.3mm standoff drill piece.3mf",
@@ -2969,7 +3238,8 @@
                       "size":  56894,
                       "modified":  "2026-01-15T06:48:52.1759035Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Assem1 - gear cnc-1-1.STL",
@@ -2980,7 +3250,8 @@
                       "size":  437284,
                       "modified":  "2025-12-25T09:24:20.2784569Z",
                       "label":  "Projects",
-                      "project":  "gear cnc"
+                      "project":  "gear cnc",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Assem1 - gear cnc 2-1-1.STL",
@@ -2991,7 +3262,8 @@
                       "size":  203884,
                       "modified":  "2025-12-25T09:24:20.2704608Z",
                       "label":  "Projects",
-                      "project":  "gear cnc"
+                      "project":  "gear cnc",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Assem1 - gear cnc-1.STL",
@@ -3002,7 +3274,8 @@
                       "size":  407284,
                       "modified":  "2025-12-25T08:53:26.0288082Z",
                       "label":  "Projects",
-                      "project":  "gear cnc"
+                      "project":  "gear cnc",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Assem1 - gear cnc 2-1.STL",
@@ -3013,7 +3286,8 @@
                       "size":  203884,
                       "modified":  "2025-12-25T08:53:26.0216470Z",
                       "label":  "Projects",
-                      "project":  "gear cnc"
+                      "project":  "gear cnc",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseLR.stl",
@@ -3024,7 +3298,8 @@
                       "size":  64084,
                       "modified":  "2025-12-16T13:38:09.4297947Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseBL.stl",
@@ -3035,7 +3310,8 @@
                       "size":  100484,
                       "modified":  "2025-12-16T13:38:09.4247928Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseCL.stl",
@@ -3046,7 +3322,8 @@
                       "size":  66484,
                       "modified":  "2025-12-16T13:38:09.4181137Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseA0.stl",
@@ -3057,7 +3334,8 @@
                       "size":  68084,
                       "modified":  "2025-12-16T13:38:09.4128391Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseMR.stl",
@@ -3068,7 +3346,8 @@
                       "size":  95284,
                       "modified":  "2025-12-16T13:38:09.4088381Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseFR.stl",
@@ -3079,7 +3358,8 @@
                       "size":  95484,
                       "modified":  "2025-12-16T13:38:09.4027357Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseDL.stl",
@@ -3090,7 +3370,8 @@
                       "size":  91484,
                       "modified":  "2025-12-16T13:38:09.3983098Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseJR.stl",
@@ -3101,7 +3382,8 @@
                       "size":  70084,
                       "modified":  "2025-12-16T13:38:09.3923090Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseHL.stl",
@@ -3112,7 +3394,8 @@
                       "size":  84884,
                       "modified":  "2025-12-16T13:38:09.3878508Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseIL.stl",
@@ -3123,7 +3406,8 @@
                       "size":  71284,
                       "modified":  "2025-12-16T13:38:09.3825901Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseKR.stl",
@@ -3134,7 +3418,8 @@
                       "size":  97084,
                       "modified":  "2025-12-16T13:38:09.3769437Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseEL.stl",
@@ -3145,7 +3430,8 @@
                       "size":  54284,
                       "modified":  "2025-12-16T13:38:09.3704411Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseGR.stl",
@@ -3156,7 +3442,8 @@
                       "size":  76884,
                       "modified":  "2025-12-16T13:38:09.3654402Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseFL.stl",
@@ -3167,7 +3454,8 @@
                       "size":  82084,
                       "modified":  "2025-12-16T13:38:09.3587841Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseDR.stl",
@@ -3178,7 +3466,8 @@
                       "size":  102484,
                       "modified":  "2025-12-16T13:38:09.3542197Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseJL.stl",
@@ -3189,7 +3478,8 @@
                       "size":  59484,
                       "modified":  "2025-12-16T13:38:09.3487380Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseHR.stl",
@@ -3200,7 +3490,8 @@
                       "size":  95884,
                       "modified":  "2025-12-16T13:38:09.3427312Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseIR.stl",
@@ -3211,7 +3502,8 @@
                       "size":  82284,
                       "modified":  "2025-12-16T13:38:09.3373939Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseKL.stl",
@@ -3222,7 +3514,8 @@
                       "size":  86084,
                       "modified":  "2025-12-16T13:38:09.3316044Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseER.stl",
@@ -3233,7 +3526,8 @@
                       "size":  65284,
                       "modified":  "2025-12-16T13:38:09.3258330Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseGL.stl",
@@ -3244,7 +3538,8 @@
                       "size":  65884,
                       "modified":  "2025-12-16T13:38:09.3205443Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseLL.stl",
@@ -3255,7 +3550,8 @@
                       "size":  53084,
                       "modified":  "2025-12-16T13:38:09.3150634Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseBR.stl",
@@ -3266,7 +3562,8 @@
                       "size":  111484,
                       "modified":  "2025-12-16T13:38:09.3082544Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseCR.stl",
@@ -3277,7 +3574,8 @@
                       "size":  77484,
                       "modified":  "2025-12-16T13:38:09.3028942Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "BaseML.stl",
@@ -3288,7 +3586,8 @@
                       "size":  73284,
                       "modified":  "2025-12-16T13:38:09.2893701Z",
                       "label":  "Projects",
-                      "project":  "Dalek"
+                      "project":  "Dalek",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "final base for slip.STL",
@@ -3299,7 +3598,8 @@
                       "size":  49384,
                       "modified":  "2025-12-12T02:27:51.4657797Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "ass.STL",
@@ -3310,7 +3610,8 @@
                       "size":  55784,
                       "modified":  "2025-12-10T19:45:34.3329354Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Mirrorleg.STL",
@@ -3321,7 +3622,8 @@
                       "size":  113384,
                       "modified":  "2025-12-10T14:55:01.1981320Z",
                       "label":  "Projects",
-                      "project":  "shelf"
+                      "project":  "shelf",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "petite.STL",
@@ -3332,7 +3634,8 @@
                       "size":  73684,
                       "modified":  "2025-12-10T07:38:07.4482505Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "base_x_axis.STL",
@@ -3343,7 +3646,8 @@
                       "size":  252984,
                       "modified":  "2025-12-09T14:24:15.1277083Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "today.3mf",
@@ -3354,7 +3658,8 @@
                       "size":  43001,
                       "modified":  "2025-12-09T02:28:49.8235330Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "motor hs.STL",
@@ -3365,7 +3670,8 @@
                       "size":  20484,
                       "modified":  "2025-12-08T23:38:15.2804672Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "HELPER.STL",
@@ -3376,7 +3682,8 @@
                       "size":  23284,
                       "modified":  "2025-12-08T18:05:56.7506865Z",
                       "label":  "Projects",
-                      "project":  "shelf"
+                      "project":  "shelf",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "leg.STL",
@@ -3387,7 +3694,8 @@
                       "size":  116084,
                       "modified":  "2025-12-08T04:41:56.4027844Z",
                       "label":  "Projects",
-                      "project":  "shelf"
+                      "project":  "shelf",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "side_y_axis.STL",
@@ -3398,7 +3706,8 @@
                       "size":  42284,
                       "modified":  "2025-12-08T01:12:24.1452477Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Mirrorside_y_axis.STL",
@@ -3409,7 +3718,8 @@
                       "size":  42284,
                       "modified":  "2025-12-08T01:12:15.2556399Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "base.STL",
@@ -3420,7 +3730,8 @@
                       "size":  176684,
                       "modified":  "2025-12-08T01:11:57.0567017Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "plate-1.STL",
@@ -3431,7 +3742,8 @@
                       "size":  4684,
                       "modified":  "2025-12-07T06:31:12.9700749Z",
                       "label":  "Projects",
-                      "project":  "shelf"
+                      "project":  "shelf",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "mag.STL",
@@ -3442,7 +3754,8 @@
                       "size":  1306184,
                       "modified":  "2025-12-03T06:17:40.4494770Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "lane.STL",
@@ -3453,7 +3766,8 @@
                       "size":  582984,
                       "modified":  "2025-12-02T22:26:56.9981967Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "camera mount.STL",
@@ -3464,40 +3778,8 @@
                       "size":  1265284,
                       "modified":  "2025-11-25T07:32:47.7391637Z",
                       "label":  "Projects",
-                      "project":  "phy"
-                  },
-                  {
-                      "name":  "Assem1 - test-1-1.STL",
-                      "type":  "stl",
-                      "category":  "cad",
-                      "path":  "library/cad/headphone, yes, we finally started/Assem1 - test-1-1.STL",
-                      "relPath":  "headphone, yes, we finally started/Assem1 - test-1-1.STL",
-                      "size":  549384,
-                      "modified":  "2025-11-23T05:34:55.1740523Z",
-                      "label":  "Projects",
-                      "project":  "headphone, yes, we finally started"
-                  },
-                  {
-                      "name":  "Assem1 - test_inside-1-1.STL",
-                      "type":  "stl",
-                      "category":  "cad",
-                      "path":  "library/cad/headphone, yes, we finally started/Assem1 - test_inside-1-1.STL",
-                      "relPath":  "headphone, yes, we finally started/Assem1 - test_inside-1-1.STL",
-                      "size":  10884,
-                      "modified":  "2025-11-23T05:34:55.1640806Z",
-                      "label":  "Projects",
-                      "project":  "headphone, yes, we finally started"
-                  },
-                  {
-                      "name":  "Assem1 - test_shell-1-1.STL",
-                      "type":  "stl",
-                      "category":  "cad",
-                      "path":  "library/cad/headphone, yes, we finally started/Assem1 - test_shell-1-1.STL",
-                      "relPath":  "headphone, yes, we finally started/Assem1 - test_shell-1-1.STL",
-                      "size":  7684,
-                      "modified":  "2025-11-23T05:34:55.1630772Z",
-                      "label":  "Projects",
-                      "project":  "headphone, yes, we finally started"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Mirrormotor to angle.STL",
@@ -3508,7 +3790,8 @@
                       "size":  381584,
                       "modified":  "2025-11-22T20:20:34.4938945Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "motor to angle.STL",
@@ -3519,7 +3802,8 @@
                       "size":  377184,
                       "modified":  "2025-11-22T20:18:25.3063020Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "6-V5 Smart Motor Adapter-SJTUVEX.STL",
@@ -3530,7 +3814,8 @@
                       "size":  93684,
                       "modified":  "2025-11-22T19:21:59.8482854Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "hs_shaft thingy.STL",
@@ -3541,7 +3826,8 @@
                       "size":  55684,
                       "modified":  "2025-11-10T05:55:01.9294832Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "6-V5 Smart Motor Adapter-SJTUVEX.STL",
@@ -3552,7 +3838,8 @@
                       "size":  94884,
                       "modified":  "2025-11-08T20:12:52.6875694Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "custom flexwheel shyt 2.STL",
@@ -3563,7 +3850,8 @@
                       "size":  947484,
                       "modified":  "2025-11-08T20:11:28.0779829Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "snacky ig.STEP",
@@ -3574,7 +3862,8 @@
                       "size":  85206905,
                       "modified":  "2025-11-05T21:12:28.2592108Z",
                       "label":  "VEX Robotics",
-                      "project":  "2025-2026"
+                      "project":  "VEX Robotics",
+                      "isAssembly":  true
                   },
                   {
                       "name":  "alignment bender.STL",
@@ -3585,7 +3874,8 @@
                       "size":  31084,
                       "modified":  "2025-10-14T15:17:11.6535128Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "center trail.STL",
@@ -3596,7 +3886,8 @@
                       "size":  17284,
                       "modified":  "2025-10-11T20:57:30.5644396Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Center connection.STL",
@@ -3607,7 +3898,8 @@
                       "size":  63284,
                       "modified":  "2025-10-11T20:57:19.8451900Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "MirrorCurrent_cap.STL",
@@ -3618,7 +3910,8 @@
                       "size":  59284,
                       "modified":  "2025-10-11T19:55:26.0037264Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "MirrorCurrent_base.STL",
@@ -3629,7 +3922,8 @@
                       "size":  75184,
                       "modified":  "2025-10-11T19:55:15.2826399Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "MirrorCurrent_Motor_Cap.STL",
@@ -3640,7 +3934,8 @@
                       "size":  813184,
                       "modified":  "2025-10-11T19:55:06.0022186Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "15mm_marble_half.STL",
@@ -3651,7 +3946,8 @@
                       "size":  196384,
                       "modified":  "2025-10-11T19:50:15.4740347Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Current_base.STL",
@@ -3662,7 +3958,8 @@
                       "size":  75184,
                       "modified":  "2025-10-11T05:53:03.2768886Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Current_cap.STL",
@@ -3673,7 +3970,8 @@
                       "size":  59284,
                       "modified":  "2025-10-11T05:52:52.5627021Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "6-V5 Smart Motor Cap 3600rpm-SJTUVEX.STL",
@@ -3684,7 +3982,8 @@
                       "size":  813184,
                       "modified":  "2025-10-11T05:52:37.4872021Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "DONEcustom flexwheel shty.STL",
@@ -3695,7 +3994,8 @@
                       "size":  945984,
                       "modified":  "2025-10-11T03:54:12.3558016Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "6-V5 Smart Motor Adapter-SJTUVEX.STL",
@@ -3706,7 +4006,8 @@
                       "size":  94884,
                       "modified":  "2025-10-10T21:26:51.2733482Z",
                       "label":  "Projects",
-                      "project":  "phy"
+                      "project":  "phy",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "6.3mm standoff drill piece.STL",
@@ -3717,7 +4018,8 @@
                       "size":  22884,
                       "modified":  "2025-10-04T19:47:43.2962631Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "6.6mm standoff drill piece.STL",
@@ -3728,7 +4030,8 @@
                       "size":  22884,
                       "modified":  "2025-10-04T19:47:33.2894101Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "7.3mm standoff drill piece.STL",
@@ -3739,7 +4042,8 @@
                       "size":  20484,
                       "modified":  "2025-10-04T19:47:26.5859093Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "collar trial.STL",
@@ -3750,7 +4054,8 @@
                       "size":  36084,
                       "modified":  "2025-09-28T15:45:42.8811700Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "72 t mod.STL",
@@ -3761,7 +4066,8 @@
                       "size":  378984,
                       "modified":  "2025-09-26T01:34:57.2399087Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "c-channel cut support.STL",
@@ -3772,7 +4078,8 @@
                       "size":  5284,
                       "modified":  "2025-09-20T23:47:21.9207729Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "barcode3040 3mm radius.STL",
@@ -3783,7 +4090,8 @@
                       "size":  173884,
                       "modified":  "2025-09-17T21:55:14.0916418Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "laservent.3mf",
@@ -3794,7 +4102,8 @@
                       "size":  127487,
                       "modified":  "2025-09-14T17:34:00.0683517Z",
                       "label":  "Projects",
-                      "project":  "laser"
+                      "project":  "laser",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "laservent.STL",
@@ -3805,7 +4114,8 @@
                       "size":  27384,
                       "modified":  "2025-09-14T01:56:18.4297739Z",
                       "label":  "Projects",
-                      "project":  "laser"
+                      "project":  "laser",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "v2 side.STL",
@@ -3816,40 +4126,8 @@
                       "size":  77284,
                       "modified":  "2025-09-13T21:16:31.4755688Z",
                       "label":  "Projects",
-                      "project":  "laser"
-                  },
-                  {
-                      "name":  "base.STL",
-                      "type":  "stl",
-                      "category":  "cad",
-                      "path":  "library/cad/ams lid holder/base.STL",
-                      "relPath":  "ams lid holder/base.STL",
-                      "size":  22284,
-                      "modified":  "2025-09-12T05:20:48.6982263Z",
-                      "label":  "Projects",
-                      "project":  "ams lid holder"
-                  },
-                  {
-                      "name":  "spin.STL",
-                      "type":  "stl",
-                      "category":  "cad",
-                      "path":  "library/cad/ams lid holder/spin.STL",
-                      "relPath":  "ams lid holder/spin.STL",
-                      "size":  11484,
-                      "modified":  "2025-09-12T05:20:35.1806532Z",
-                      "label":  "Projects",
-                      "project":  "ams lid holder"
-                  },
-                  {
-                      "name":  "Assem1.STL",
-                      "type":  "stl",
-                      "category":  "cad",
-                      "path":  "library/cad/ams lid holder/Assem1.STL",
-                      "relPath":  "ams lid holder/Assem1.STL",
-                      "size":  52884,
-                      "modified":  "2025-09-12T01:42:48.6039351Z",
-                      "label":  "Projects",
-                      "project":  "ams lid holder"
+                      "project":  "laser",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "saw stuff.STL",
@@ -3860,7 +4138,8 @@
                       "size":  818184,
                       "modified":  "2025-09-08T22:45:30.6591488Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "Bed m6 screw table side.STL",
@@ -3871,7 +4150,8 @@
                       "size":  1420784,
                       "modified":  "2025-09-04T02:03:29.4729734Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "key hook m6 screw table side.STL",
@@ -3882,7 +4162,8 @@
                       "size":  359684,
                       "modified":  "2025-09-03T03:11:22.9147675Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "barcode3040.STL",
@@ -3893,7 +4174,8 @@
                       "size":  152784,
                       "modified":  "2025-09-03T01:12:02.7079891Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "heater holder.STL",
@@ -3904,7 +4186,8 @@
                       "size":  390584,
                       "modified":  "2025-09-02T11:32:24.0805299Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "heater holder.3mf",
@@ -3915,7 +4198,8 @@
                       "size":  88764,
                       "modified":  "2025-09-02T04:24:38.6092599Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "screw driver 1.STL",
@@ -3926,7 +4210,8 @@
                       "size":  649684,
                       "modified":  "2025-09-01T18:42:36.8764440Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "1-Plastic Shaft Inserts-SJTUVEX.STL",
@@ -3937,7 +4222,8 @@
                       "size":  72084,
                       "modified":  "2025-07-15T19:36:05.5674001Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "short.STL",
@@ -3948,7 +4234,8 @@
                       "size":  93684,
                       "modified":  "2025-06-25T06:38:25.7824478Z",
                       "label":  "Projects",
-                      "project":  "ams lite"
+                      "project":  "ams lite",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "short.3mf",
@@ -3959,7 +4246,8 @@
                       "size":  53007,
                       "modified":  "2025-06-25T05:31:27.6166303Z",
                       "label":  "Projects",
-                      "project":  "ams lite"
+                      "project":  "ams lite",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "corner.3mf",
@@ -3970,7 +4258,8 @@
                       "size":  46452,
                       "modified":  "2025-06-23T07:37:41.8212819Z",
                       "label":  "Projects",
-                      "project":  "ams lite"
+                      "project":  "ams lite",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "corner.STL",
@@ -3981,7 +4270,8 @@
                       "size":  86484,
                       "modified":  "2025-06-23T07:33:43.4078336Z",
                       "label":  "Projects",
-                      "project":  "ams lite"
+                      "project":  "ams lite",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "motor h6 replace.3mf",
@@ -3992,7 +4282,8 @@
                       "size":  119574,
                       "modified":  "2025-06-19T09:15:34.3017734Z",
                       "label":  "VEX Robotics",
-                      "project":  "VEX Robotics"
+                      "project":  "VEX Robotics",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "motor h6 replace.STL",
@@ -4003,7 +4294,8 @@
                       "size":  275284,
                       "modified":  "2025-06-19T09:13:32.0887838Z",
                       "label":  "VEX Robotics",
-                      "project":  "VEX Robotics"
+                      "project":  "VEX Robotics",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "1.3mf",
@@ -4014,7 +4306,8 @@
                       "size":  110478,
                       "modified":  "2025-06-15T16:19:09.3491816Z",
                       "label":  "Projects",
-                      "project":  "sock"
+                      "project":  "sock",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "base1.STL",
@@ -4025,7 +4318,8 @@
                       "size":  390484,
                       "modified":  "2025-06-15T08:24:06.2812210Z",
                       "label":  "Projects",
-                      "project":  "sock"
+                      "project":  "sock",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "base.STL",
@@ -4036,7 +4330,8 @@
                       "size":  659984,
                       "modified":  "2025-06-15T08:07:29.2972247Z",
                       "label":  "Projects",
-                      "project":  "sock"
+                      "project":  "sock",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "keyboard stand.3mf",
@@ -4047,7 +4342,8 @@
                       "size":  256522,
                       "modified":  "2025-03-05T05:35:16.8719377Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "trytry.3mf",
@@ -4058,7 +4354,8 @@
                       "size":  2720139,
                       "modified":  "2025-02-26T00:20:52.9220262Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "DO NOT REMOVE.3mf",
@@ -4069,7 +4366,8 @@
                       "size":  183439,
                       "modified":  "2024-11-18T16:27:13.0000000Z",
                       "label":  "Projects",
-                      "project":  "Projects"
+                      "project":  "Projects",
+                      "isAssembly":  false
                   },
                   {
                       "name":  "55286A_front.STL",
@@ -4080,7 +4378,8 @@
                       "size":  270284,
                       "modified":  "2024-09-22T02:58:43.0000000Z",
                       "label":  "VEX Robotics",
-                      "project":  "Team"
+                      "project":  "Team",
+                      "isAssembly":  false
                   }
               ]
 }

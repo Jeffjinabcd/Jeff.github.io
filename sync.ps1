@@ -79,7 +79,11 @@ function Sync-Library {
     'Makapaka-Scout',                                  # external collaborative repo — cited via link instead
     '__MACOSX',                                        # macOS archive metadata junk
     'Cursor',                                          # web-downloaded cursor design images, not my work
-    'SW20 - Standard Parts - VEX'                      # external VEX standard-parts library, not my work
+    'SW20 - Standard Parts - VEX',                     # external VEX standard-parts library, not my work
+    'headphone, yes, we finally started',              # removed per request
+    'ams lid holder',                                  # removed per request
+    'Wallpaper',                                       # removed per request
+    'Pfp'                                              # removed per request
   )
 
   foreach ($mapping in $cfg.mappings) {
@@ -136,16 +140,31 @@ function Sync-Library {
         $project = if ($seg -and $seg -ne $file.Name) { $seg } else { $mapping.label }
       }
 
+      # An STL/STEP is "from an assembly" if a .sldasm of the same name sits in its
+      # design folder (the parent of the STL/ or STEP/ subfolder, or its own folder).
+      $isAssembly = $false
+      if ($cat -eq 'cad' -and $file.Extension -match '(?i)\.(stl|step|stp)$') {
+        $baseName   = [IO.Path]::GetFileNameWithoutExtension($file.Name)
+        $fileDir    = Split-Path $file.FullName
+        $parentLeaf = Split-Path $fileDir -Leaf
+        $designDirs = @($fileDir)
+        if ($parentLeaf -eq 'STL' -or $parentLeaf -eq 'STEP') { $designDirs += (Split-Path $fileDir) }
+        foreach ($dd in $designDirs) {
+          if (Test-Path (Join-Path $dd "$baseName.sldasm")) { $isAssembly = $true; break }
+        }
+      }
+
       $files.Add([PSCustomObject]@{
-        name     = $file.Name
-        type     = $file.Extension.TrimStart('.').ToLower()
-        category = $cat
-        path     = ("library/$cat/" + $relFwd)
-        relPath  = $relFwd
-        size     = $file.Length
-        modified = $file.LastWriteTimeUtc.ToString("o")
-        label    = $mapping.label
-        project  = $project
+        name       = $file.Name
+        type       = $file.Extension.TrimStart('.').ToLower()
+        category   = $cat
+        path       = ("library/$cat/" + $relFwd)
+        relPath    = $relFwd
+        size       = $file.Length
+        modified   = $file.LastWriteTimeUtc.ToString("o")
+        label      = $mapping.label
+        project    = $project
+        isAssembly = $isAssembly
       })
     }
   }
