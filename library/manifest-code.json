@@ -1,5 +1,5 @@
 {
-    "generated":  "2026-06-13T21:09:41.1292800Z",
+    "generated":  "2026-06-14T11:50:16.4498715Z",
     "files":  [
                   {
                       "name":  "Base_circuit.kicad_sch",
@@ -42,26 +42,6 @@
                       "label":  "Projects"
                   },
                   {
-                      "name":  "pdf_highlighter.py",
-                      "type":  "py",
-                      "category":  "code",
-                      "path":  "library/code/pdf_highlighter.py",
-                      "relPath":  "pdf_highlighter.py",
-                      "size":  1314,
-                      "modified":  "2026-05-06T17:02:29.4120736Z",
-                      "label":  "Useful Bits"
-                  },
-                  {
-                      "name":  "hiiiiiiiiiiiiiiiiiiiiiiiiiiiiryan.ino",
-                      "type":  "ino",
-                      "category":  "code",
-                      "path":  "library/code/hiiiiiiiiiiiiiiiiiiiiiiiiiiiiryan/hiiiiiiiiiiiiiiiiiiiiiiiiiiiiryan.ino",
-                      "relPath":  "hiiiiiiiiiiiiiiiiiiiiiiiiiiiiryan/hiiiiiiiiiiiiiiiiiiiiiiiiiiiiryan.ino",
-                      "size":  1460,
-                      "modified":  "2026-05-03T22:49:24.4705463Z",
-                      "label":  "Physics"
-                  },
-                  {
                       "name":  "Base_circuit.kicad_pcb",
                       "type":  "kicad_pcb",
                       "category":  "code",
@@ -70,26 +50,6 @@
                       "size":  29414,
                       "modified":  "2026-05-01T23:39:12.0000000Z",
                       "label":  "Projects"
-                  },
-                  {
-                      "name":  "hi.ino",
-                      "type":  "ino",
-                      "category":  "code",
-                      "path":  "library/code/hi/hi.ino",
-                      "relPath":  "hi/hi.ino",
-                      "size":  927,
-                      "modified":  "2026-05-01T20:39:41.5031621Z",
-                      "label":  "Physics"
-                  },
-                  {
-                      "name":  "hi.ino",
-                      "type":  "ino",
-                      "category":  "code",
-                      "path":  "library/code/hi/hi.ino",
-                      "relPath":  "hi/hi.ino",
-                      "size":  961,
-                      "modified":  "2026-02-19T20:26:25.1513971Z",
-                      "label":  "Physics 2"
                   },
                   {
                       "name":  "2021.Dec.1.1.cpp",
@@ -1812,22 +1772,22 @@
                       "label":  "USACO"
                   },
                   {
-                      "name":  "2021.Dec.2.cpp",
-                      "type":  "cpp",
-                      "category":  "code",
-                      "path":  "library/code/Sliver/2021.Dec.2.cpp",
-                      "relPath":  "Sliver/2021.Dec.2.cpp",
-                      "size":  2444,
-                      "modified":  "2024-09-28T23:23:39.0000000Z",
-                      "label":  "USACO"
-                  },
-                  {
                       "name":  "2019.Dec.2.cpp",
                       "type":  "cpp",
                       "category":  "code",
                       "path":  "library/code/Sliver/2019.Dec.2.cpp",
                       "relPath":  "Sliver/2019.Dec.2.cpp",
                       "size":  1954,
+                      "modified":  "2024-09-28T23:23:39.0000000Z",
+                      "label":  "USACO"
+                  },
+                  {
+                      "name":  "2021.Dec.2.cpp",
+                      "type":  "cpp",
+                      "category":  "code",
+                      "path":  "library/code/Sliver/2021.Dec.2.cpp",
+                      "relPath":  "Sliver/2021.Dec.2.cpp",
+                      "size":  2444,
                       "modified":  "2024-09-28T23:23:39.0000000Z",
                       "label":  "USACO"
                   },
@@ -2402,52 +2362,12 @@
                       "label":  "USACO"
                   },
                   {
-                      "name":  "fuck.cpp",
-                      "type":  "cpp",
-                      "category":  "code",
-                      "path":  "library/code/CPP stuff/fuck.cpp",
-                      "relPath":  "CPP stuff/fuck.cpp",
-                      "size":  141,
-                      "modified":  "2024-07-18T06:02:49.0000000Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "Polynomial addition.cpp",
-                      "type":  "cpp",
-                      "category":  "code",
-                      "path":  "library/code/CPP stuff/Polynomial addition.cpp",
-                      "relPath":  "CPP stuff/Polynomial addition.cpp",
-                      "size":  5897,
-                      "modified":  "2024-07-18T06:02:49.0000000Z",
-                      "label":  "Code Projects"
-                  },
-                  {
                       "name":  "Roll.cpp",
                       "type":  "cpp",
                       "category":  "code",
                       "path":  "library/code/CPP stuff/Roll.cpp",
                       "relPath":  "CPP stuff/Roll.cpp",
                       "size":  402,
-                      "modified":  "2024-07-18T06:02:49.0000000Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "AVL Binary search tree.cpp",
-                      "type":  "cpp",
-                      "category":  "code",
-                      "path":  "library/code/CPP stuff/AVL Binary search tree.cpp",
-                      "relPath":  "CPP stuff/AVL Binary search tree.cpp",
-                      "size":  33377,
-                      "modified":  "2024-07-18T06:02:49.0000000Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "Binary search tree.cpp",
-                      "type":  "cpp",
-                      "category":  "code",
-                      "path":  "library/code/CPP stuff/Binary search tree.cpp",
-                      "relPath":  "CPP stuff/Binary search tree.cpp",
-                      "size":  14822,
                       "modified":  "2024-07-18T06:02:49.0000000Z",
                       "label":  "Code Projects"
                   },
@@ -2472,22 +2392,32 @@
                       "label":  "Code Projects"
                   },
                   {
-                      "name":  "Vector2f.cpp",
-                      "type":  "cpp",
-                      "category":  "code",
-                      "path":  "library/code/CPP stuff/Vector2f.cpp",
-                      "relPath":  "CPP stuff/Vector2f.cpp",
-                      "size":  4766,
-                      "modified":  "2024-07-18T06:02:49.0000000Z",
-                      "label":  "Code Projects"
-                  },
-                  {
                       "name":  "Skiplist.cpp",
                       "type":  "cpp",
                       "category":  "code",
                       "path":  "library/code/CPP stuff/Skiplist.cpp",
                       "relPath":  "CPP stuff/Skiplist.cpp",
                       "size":  9340,
+                      "modified":  "2024-07-18T06:02:49.0000000Z",
+                      "label":  "Code Projects"
+                  },
+                  {
+                      "name":  "fuck.cpp",
+                      "type":  "cpp",
+                      "category":  "code",
+                      "path":  "library/code/CPP stuff/fuck.cpp",
+                      "relPath":  "CPP stuff/fuck.cpp",
+                      "size":  141,
+                      "modified":  "2024-07-18T06:02:49.0000000Z",
+                      "label":  "Code Projects"
+                  },
+                  {
+                      "name":  "asd.cpp",
+                      "type":  "cpp",
+                      "category":  "code",
+                      "path":  "library/code/CPP stuff/asd.cpp",
+                      "relPath":  "CPP stuff/asd.cpp",
+                      "size":  22,
                       "modified":  "2024-07-18T06:02:49.0000000Z",
                       "label":  "Code Projects"
                   },
@@ -2502,22 +2432,52 @@
                       "label":  "Code Projects"
                   },
                   {
+                      "name":  "Polynomial addition.cpp",
+                      "type":  "cpp",
+                      "category":  "code",
+                      "path":  "library/code/CPP stuff/Polynomial addition.cpp",
+                      "relPath":  "CPP stuff/Polynomial addition.cpp",
+                      "size":  5897,
+                      "modified":  "2024-07-18T06:02:49.0000000Z",
+                      "label":  "Code Projects"
+                  },
+                  {
+                      "name":  "Vector2f.cpp",
+                      "type":  "cpp",
+                      "category":  "code",
+                      "path":  "library/code/CPP stuff/Vector2f.cpp",
+                      "relPath":  "CPP stuff/Vector2f.cpp",
+                      "size":  4766,
+                      "modified":  "2024-07-18T06:02:49.0000000Z",
+                      "label":  "Code Projects"
+                  },
+                  {
+                      "name":  "Binary search tree.cpp",
+                      "type":  "cpp",
+                      "category":  "code",
+                      "path":  "library/code/CPP stuff/Binary search tree.cpp",
+                      "relPath":  "CPP stuff/Binary search tree.cpp",
+                      "size":  14822,
+                      "modified":  "2024-07-18T06:02:49.0000000Z",
+                      "label":  "Code Projects"
+                  },
+                  {
+                      "name":  "AVL Binary search tree.cpp",
+                      "type":  "cpp",
+                      "category":  "code",
+                      "path":  "library/code/CPP stuff/AVL Binary search tree.cpp",
+                      "relPath":  "CPP stuff/AVL Binary search tree.cpp",
+                      "size":  33377,
+                      "modified":  "2024-07-18T06:02:49.0000000Z",
+                      "label":  "Code Projects"
+                  },
+                  {
                       "name":  "Basketball One on One.cpp",
                       "type":  "cpp",
                       "category":  "code",
                       "path":  "library/code/CPP stuff/General/Introduction to Competitive Programming/Basketball One on One.cpp",
                       "relPath":  "CPP stuff/General/Introduction to Competitive Programming/Basketball One on One.cpp",
                       "size":  114,
-                      "modified":  "2024-07-18T06:02:49.0000000Z",
-                      "label":  "Code Projects"
-                  },
-                  {
-                      "name":  "asd.cpp",
-                      "type":  "cpp",
-                      "category":  "code",
-                      "path":  "library/code/CPP stuff/asd.cpp",
-                      "relPath":  "CPP stuff/asd.cpp",
-                      "size":  22,
                       "modified":  "2024-07-18T06:02:49.0000000Z",
                       "label":  "Code Projects"
                   },
@@ -2702,22 +2662,22 @@
                       "label":  "USACO"
                   },
                   {
-                      "name":  "QueueSample.cpp",
-                      "type":  "cpp",
-                      "category":  "code",
-                      "path":  "library/code/STL samples/QueueSample.cpp",
-                      "relPath":  "STL samples/QueueSample.cpp",
-                      "size":  497,
-                      "modified":  "2024-07-06T16:29:25.0000000Z",
-                      "label":  "USACO"
-                  },
-                  {
                       "name":  "MapSample.cpp",
                       "type":  "cpp",
                       "category":  "code",
                       "path":  "library/code/STL samples/MapSample.cpp",
                       "relPath":  "STL samples/MapSample.cpp",
                       "size":  1097,
+                      "modified":  "2024-07-06T16:29:25.0000000Z",
+                      "label":  "USACO"
+                  },
+                  {
+                      "name":  "QueueSample.cpp",
+                      "type":  "cpp",
+                      "category":  "code",
+                      "path":  "library/code/STL samples/QueueSample.cpp",
+                      "relPath":  "STL samples/QueueSample.cpp",
+                      "size":  497,
                       "modified":  "2024-07-06T16:29:25.0000000Z",
                       "label":  "USACO"
                   },
@@ -2872,26 +2832,6 @@
                       "label":  "VEX Code"
                   },
                   {
-                      "name":  "机械设计手册(软件版)R2.0要插盘问题的解决办法.txt",
-                      "type":  "txt",
-                      "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/机械设计手册（软件版）V3.0补丁/机械设计手册(软件版)R2.0要插盘问题的解决办法.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/机械设计手册（软件版）V3.0补丁/机械设计手册(软件版)R2.0要插盘问题的解决办法.txt",
-                      "size":  305,
-                      "modified":  "2022-06-17T10:56:34.0000000Z",
-                      "label":  "VEX Code"
-                  },
-                  {
-                      "name":  "readme.txt",
-                      "type":  "txt",
-                      "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/机械设计手册（软件版）V3.0 数据更新包/readme.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/机械设计手册（软件版）V3.0 数据更新包/readme.txt",
-                      "size":  4749,
-                      "modified":  "2022-06-17T10:56:34.0000000Z",
-                      "label":  "VEX Code"
-                  },
-                  {
                       "name":  "keycode.txt",
                       "type":  "txt",
                       "category":  "code",
@@ -2912,53 +2852,23 @@
                       "label":  "VEX Code"
                   },
                   {
-                      "name":  "readme-and-terms-of-use-3d-cad-models.txt",
+                      "name":  "readme.txt",
                       "type":  "txt",
                       "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R8-2Z/readme-and-terms-of-use-3d-cad-models.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R8-2Z/readme-and-terms-of-use-3d-cad-models.txt",
-                      "size":  2394,
-                      "modified":  "2021-11-25T09:49:10.0000000Z",
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/机械设计手册（软件版）V3.0 数据更新包/readme.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/机械设计手册（软件版）V3.0 数据更新包/readme.txt",
+                      "size":  4749,
+                      "modified":  "2022-06-17T10:56:34.0000000Z",
                       "label":  "VEX Code"
                   },
                   {
-                      "name":  "readme-and-terms-of-use-3d-cad-models.txt",
+                      "name":  "机械设计手册(软件版)R2.0要插盘问题的解决办法.txt",
                       "type":  "txt",
                       "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R6-5-2ZS/readme-and-terms-of-use-3d-cad-models.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R6-5-2ZS/readme-and-terms-of-use-3d-cad-models.txt",
-                      "size":  2418,
-                      "modified":  "2021-11-25T09:49:10.0000000Z",
-                      "label":  "VEX Code"
-                  },
-                  {
-                      "name":  "Readme.txt",
-                      "type":  "txt",
-                      "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Pneumatics/Air Cylinder/Readme.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Pneumatics/Air Cylinder/Readme.txt",
-                      "size":  740,
-                      "modified":  "2021-11-25T09:49:10.0000000Z",
-                      "label":  "VEX Code"
-                  },
-                  {
-                      "name":  "READ ME.txt",
-                      "type":  "txt",
-                      "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/READ ME.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/READ ME.txt",
-                      "size":  746,
-                      "modified":  "2021-11-25T09:49:10.0000000Z",
-                      "label":  "VEX Code"
-                  },
-                  {
-                      "name":  "readme-and-terms-of-use-3d-cad-models.txt",
-                      "type":  "txt",
-                      "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_61803-2Z/readme-and-terms-of-use-3d-cad-models.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_61803-2Z/readme-and-terms-of-use-3d-cad-models.txt",
-                      "size":  2386,
-                      "modified":  "2021-11-25T09:49:10.0000000Z",
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/机械设计手册（软件版）V3.0补丁/机械设计手册(软件版)R2.0要插盘问题的解决办法.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/机械设计手册（软件版）V3.0补丁/机械设计手册(软件版)R2.0要插盘问题的解决办法.txt",
+                      "size":  305,
+                      "modified":  "2022-06-17T10:56:34.0000000Z",
                       "label":  "VEX Code"
                   },
                   {
@@ -2972,22 +2882,12 @@
                       "label":  "VEX Code"
                   },
                   {
-                      "name":  "参数计算器.txt",
+                      "name":  "readme-and-terms-of-use-3d-cad-models.txt",
                       "type":  "txt",
                       "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/参数计算器.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/参数计算器.txt",
-                      "size":  332,
-                      "modified":  "2021-11-25T09:49:10.0000000Z",
-                      "label":  "VEX Code"
-                  },
-                  {
-                      "name":  "AutoCAD2006下安装说明.txt",
-                      "type":  "txt",
-                      "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/AutoCAD2006下安装说明.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/AutoCAD2006下安装说明.txt",
-                      "size":  684,
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R6-2Z/readme-and-terms-of-use-3d-cad-models.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R6-2Z/readme-and-terms-of-use-3d-cad-models.txt",
+                      "size":  2394,
                       "modified":  "2021-11-25T09:49:10.0000000Z",
                       "label":  "VEX Code"
                   },
@@ -2995,9 +2895,9 @@
                       "name":  "readme-and-terms-of-use-3d-cad-models.txt",
                       "type":  "txt",
                       "category":  "code",
-                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R6-2Z/readme-and-terms-of-use-3d-cad-models.txt",
-                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R6-2Z/readme-and-terms-of-use-3d-cad-models.txt",
-                      "size":  2394,
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R6-5-2ZS/readme-and-terms-of-use-3d-cad-models.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R6-5-2ZS/readme-and-terms-of-use-3d-cad-models.txt",
+                      "size":  2418,
                       "modified":  "2021-11-25T09:49:10.0000000Z",
                       "label":  "VEX Code"
                   },
@@ -3028,6 +2928,66 @@
                       "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R188-2Z/readme-and-terms-of-use-3d-cad-models.txt",
                       "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R188-2Z/readme-and-terms-of-use-3d-cad-models.txt",
                       "size":  2410,
+                      "modified":  "2021-11-25T09:49:10.0000000Z",
+                      "label":  "VEX Code"
+                  },
+                  {
+                      "name":  "Readme.txt",
+                      "type":  "txt",
+                      "category":  "code",
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Pneumatics/Air Cylinder/Readme.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Pneumatics/Air Cylinder/Readme.txt",
+                      "size":  740,
+                      "modified":  "2021-11-25T09:49:10.0000000Z",
+                      "label":  "VEX Code"
+                  },
+                  {
+                      "name":  "READ ME.txt",
+                      "type":  "txt",
+                      "category":  "code",
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/READ ME.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/READ ME.txt",
+                      "size":  746,
+                      "modified":  "2021-11-25T09:49:10.0000000Z",
+                      "label":  "VEX Code"
+                  },
+                  {
+                      "name":  "AutoCAD2006下安装说明.txt",
+                      "type":  "txt",
+                      "category":  "code",
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/AutoCAD2006下安装说明.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/现代机械设计手册/机械设计手册(软件版).V3.0（破解版）/AutoCAD2006下安装说明.txt",
+                      "size":  684,
+                      "modified":  "2021-11-25T09:49:10.0000000Z",
+                      "label":  "VEX Code"
+                  },
+                  {
+                      "name":  "readme-and-terms-of-use-3d-cad-models.txt",
+                      "type":  "txt",
+                      "category":  "code",
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_61803-2Z/readme-and-terms-of-use-3d-cad-models.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_61803-2Z/readme-and-terms-of-use-3d-cad-models.txt",
+                      "size":  2386,
+                      "modified":  "2021-11-25T09:49:10.0000000Z",
+                      "label":  "VEX Code"
+                  },
+                  {
+                      "name":  "readme-and-terms-of-use-3d-cad-models.txt",
+                      "type":  "txt",
+                      "category":  "code",
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R8-2Z/readme-and-terms-of-use-3d-cad-models.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/X/FRC Library/Bearings/SKF Standard Bearings/SKF_CAD_MODEL_SKF_D_W R8-2Z/readme-and-terms-of-use-3d-cad-models.txt",
+                      "size":  2394,
+                      "modified":  "2021-11-25T09:49:10.0000000Z",
+                      "label":  "VEX Code"
+                  },
+                  {
+                      "name":  "参数计算器.txt",
+                      "type":  "txt",
+                      "category":  "code",
+                      "path":  "library/code/SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/参数计算器.txt",
+                      "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Study Data/参数计算器.txt",
+                      "size":  332,
                       "modified":  "2021-11-25T09:49:10.0000000Z",
                       "label":  "VEX Code"
                   },

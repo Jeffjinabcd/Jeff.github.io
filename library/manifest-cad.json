@@ -1,6 +1,2266 @@
 {
-    "generated":  "2026-06-13T21:09:41.1292800Z",
+    "generated":  "2026-06-14T11:50:16.4498715Z",
     "files":  [
+                  {
+                      "name":  "12V5AH SLA BATTERY WKDC12-5F.STP",
+                      "type":  "stp",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/bat/12V5AH SLA BATTERY WKDC12-5F.STP",
+                      "relPath":  "Dalek/bat/12V5AH SLA BATTERY WKDC12-5F.STP",
+                      "size":  123452,
+                      "modified":  "2026-06-05T00:32:48.3420995Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Motor Driver.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/cytron motor driver/Motor Driver.STL",
+                      "relPath":  "Dalek/cytron motor driver/Motor Driver.STL",
+                      "size":  631684,
+                      "modified":  "2026-06-04T23:33:31.7916364Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Spur Gear (24 teeth).stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Mounts/Spur Gear (24 teeth).stl",
+                      "relPath":  "Dalek/Dome/Mounts/Spur Gear (24 teeth).stl",
+                      "size":  1026634,
+                      "modified":  "2026-06-04T19:03:14.2782653Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "dome-breadboard.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/dome-breadboard.STL",
+                      "relPath":  "Dalek/dome-breadboard.STL",
+                      "size":  58084,
+                      "modified":  "2026-06-04T17:47:43.2767942Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "HalfBreadboard.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/breadboard/HalfBreadboard.STEP",
+                      "relPath":  "Dalek/breadboard/HalfBreadboard.STEP",
+                      "size":  22451246,
+                      "modified":  "2026-06-04T16:29:22.5551710Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "gear holder.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/gear holder.STL",
+                      "relPath":  "Dalek/gear holder.STL",
+                      "size":  27884,
+                      "modified":  "2026-06-03T17:52:08.9018405Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "flag.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/flag.STL",
+                      "relPath":  "Board game/player/flag.STL",
+                      "size":  23084,
+                      "modified":  "2026-05-26T13:02:40.6521706Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "15-attack.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/15-attack.STL",
+                      "relPath":  "Board game/player/15-attack.STL",
+                      "size":  34284,
+                      "modified":  "2026-05-26T12:54:54.6564752Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "25-attack.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/25-attack.STL",
+                      "relPath":  "Board game/player/25-attack.STL",
+                      "size":  35084,
+                      "modified":  "2026-05-26T12:54:34.1710748Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "32.5-attack.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/32.5-attack.STL",
+                      "relPath":  "Board game/player/32.5-attack.STL",
+                      "size":  35084,
+                      "modified":  "2026-05-26T12:54:17.5581940Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "40-attack.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/40-attack.STL",
+                      "relPath":  "Board game/player/40-attack.STL",
+                      "size":  35084,
+                      "modified":  "2026-05-26T12:54:01.5599388Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "45-attack.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/45-attack.STL",
+                      "relPath":  "Board game/player/45-attack.STL",
+                      "size":  35084,
+                      "modified":  "2026-05-26T12:53:43.6945579Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "shell coin slot.3mf",
+                      "type":  "3mf",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/shell coin slot.3mf",
+                      "relPath":  "Board game/player/shell coin slot.3mf",
+                      "size":  2117812,
+                      "modified":  "2026-05-25T06:03:49.3450880Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "shell coin slot.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/shell coin slot.STL",
+                      "relPath":  "Board game/player/shell coin slot.STL",
+                      "size":  10527284,
+                      "modified":  "2026-05-25T05:59:57.1540847Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "20.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/20.STL",
+                      "relPath":  "Board game/player/20.STL",
+                      "size":  257884,
+                      "modified":  "2026-05-22T13:26:27.3481686Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "10.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/10.STL",
+                      "relPath":  "Board game/player/10.STL",
+                      "size":  235884,
+                      "modified":  "2026-05-22T13:25:44.6379372Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "5.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/5.STL",
+                      "relPath":  "Board game/player/5.STL",
+                      "size":  225084,
+                      "modified":  "2026-05-22T13:24:52.3092202Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "2.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/2.STL",
+                      "relPath":  "Board game/player/2.STL",
+                      "size":  217884,
+                      "modified":  "2026-05-22T13:24:04.8037713Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/1.STL",
+                      "relPath":  "Board game/player/1.STL",
+                      "size":  190284,
+                      "modified":  "2026-05-22T13:22:50.1086697Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "hinge test.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/hinge test.STL",
+                      "relPath":  "Board game/player/hinge test.STL",
+                      "size":  18684,
+                      "modified":  "2026-05-22T13:10:18.6930526Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "new coin.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/new coin.STL",
+                      "relPath":  "Board game/player/new coin.STL",
+                      "size":  188084,
+                      "modified":  "2026-05-21T18:50:28.2484140Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "coin slot.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/coin slot.STL",
+                      "relPath":  "Board game/player/coin slot.STL",
+                      "size":  7720184,
+                      "modified":  "2026-05-21T12:50:44.9656477Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "player\u0027s view - coin.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/player\u0027s view - coin.STL",
+                      "relPath":  "Board game/player/player\u0027s view - coin.STL",
+                      "size":  188084,
+                      "modified":  "2026-05-21T12:50:37.2934276Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "player\u0027s view - main.3mf",
+                      "type":  "3mf",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/player\u0027s view - main.3mf",
+                      "relPath":  "Board game/player/player\u0027s view - main.3mf",
+                      "size":  1199653,
+                      "modified":  "2026-05-21T09:10:16.8071981Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "player\u0027s view - main.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/player/player\u0027s view - main.STL",
+                      "relPath":  "Board game/player/player\u0027s view - main.STL",
+                      "size":  5929284,
+                      "modified":  "2026-05-21T08:56:19.7576350Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "bearing to bottom.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/bearing to bottom.STL",
+                      "relPath":  "Dalek/bearing to bottom.STL",
+                      "size":  31284,
+                      "modified":  "2026-05-20T18:32:10.3949407Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "bearing to top.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/bearing to top.STL",
+                      "relPath":  "Dalek/bearing to top.STL",
+                      "size":  20984,
+                      "modified":  "2026-05-20T18:32:00.9560159Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "bearing to bottom spacer.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/bearing to bottom spacer.STL",
+                      "relPath":  "Dalek/bearing to bottom spacer.STL",
+                      "size":  18884,
+                      "modified":  "2026-05-20T17:47:25.8871600Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Surround.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Surround.stl",
+                      "relPath":  "Dalek/Skirt/Surround.stl",
+                      "size":  252884,
+                      "modified":  "2026-05-20T14:19:06.1505480Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Hemi.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Hemi.stl",
+                      "relPath":  "Dalek/Skirt/Hemi.stl",
+                      "size":  286284,
+                      "modified":  "2026-05-20T14:19:06.1425397Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body5N.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body5N.stl",
+                      "relPath":  "Dalek/Skirt/Body5N.stl",
+                      "size":  96384,
+                      "modified":  "2026-05-20T14:19:06.1355405Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body5M.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body5M.stl",
+                      "relPath":  "Dalek/Skirt/Body5M.stl",
+                      "size":  89884,
+                      "modified":  "2026-05-20T14:19:06.1284421Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body5L.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body5L.stl",
+                      "relPath":  "Dalek/Skirt/Body5L.stl",
+                      "size":  86084,
+                      "modified":  "2026-05-20T14:19:06.1214389Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body5K.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body5K.stl",
+                      "relPath":  "Dalek/Skirt/Body5K.stl",
+                      "size":  80084,
+                      "modified":  "2026-05-20T14:19:06.1144389Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body5J.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body5J.stl",
+                      "relPath":  "Dalek/Skirt/Body5J.stl",
+                      "size":  85684,
+                      "modified":  "2026-05-20T14:19:06.1094391Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body5I.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body5I.stl",
+                      "relPath":  "Dalek/Skirt/Body5I.stl",
+                      "size":  86784,
+                      "modified":  "2026-05-20T14:19:06.1034391Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body5H.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body5H.stl",
+                      "relPath":  "Dalek/Skirt/Body5H.stl",
+                      "size":  81484,
+                      "modified":  "2026-05-20T14:19:06.0984419Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body5G.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body5G.stl",
+                      "relPath":  "Dalek/Skirt/Body5G.stl",
+                      "size":  98684,
+                      "modified":  "2026-05-20T14:19:06.0924414Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body5F.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body5F.stl",
+                      "relPath":  "Dalek/Skirt/Body5F.stl",
+                      "size":  87684,
+                      "modified":  "2026-05-20T14:19:06.0864389Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body5E.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body5E.stl",
+                      "relPath":  "Dalek/Skirt/Body5E.stl",
+                      "size":  79284,
+                      "modified":  "2026-05-20T14:19:06.0804049Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body5D.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body5D.stl",
+                      "relPath":  "Dalek/Skirt/Body5D.stl",
+                      "size":  91684,
+                      "modified":  "2026-05-20T14:19:06.0744055Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body5C.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body5C.stl",
+                      "relPath":  "Dalek/Skirt/Body5C.stl",
+                      "size":  100984,
+                      "modified":  "2026-05-20T14:19:06.0683370Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body5B.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body5B.stl",
+                      "relPath":  "Dalek/Skirt/Body5B.stl",
+                      "size":  106584,
+                      "modified":  "2026-05-20T14:19:06.0608267Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body5A.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body5A.stl",
+                      "relPath":  "Dalek/Skirt/Body5A.stl",
+                      "size":  97884,
+                      "modified":  "2026-05-20T14:19:06.0558275Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body4N.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body4N.stl",
+                      "relPath":  "Dalek/Skirt/Body4N.stl",
+                      "size":  119584,
+                      "modified":  "2026-05-20T14:19:06.0498266Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body4M.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body4M.stl",
+                      "relPath":  "Dalek/Skirt/Body4M.stl",
+                      "size":  108884,
+                      "modified":  "2026-05-20T14:19:06.0438221Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body4L.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body4L.stl",
+                      "relPath":  "Dalek/Skirt/Body4L.stl",
+                      "size":  100584,
+                      "modified":  "2026-05-20T14:19:06.0368229Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body4K.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body4K.stl",
+                      "relPath":  "Dalek/Skirt/Body4K.stl",
+                      "size":  90484,
+                      "modified":  "2026-05-20T14:19:06.0318232Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body4J.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body4J.stl",
+                      "relPath":  "Dalek/Skirt/Body4J.stl",
+                      "size":  95084,
+                      "modified":  "2026-05-20T14:19:06.0249249Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body4I.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body4I.stl",
+                      "relPath":  "Dalek/Skirt/Body4I.stl",
+                      "size":  99684,
+                      "modified":  "2026-05-20T14:19:06.0199274Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body4H.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body4H.stl",
+                      "relPath":  "Dalek/Skirt/Body4H.stl",
+                      "size":  92084,
+                      "modified":  "2026-05-20T14:19:06.0149289Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body4G.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body4G.stl",
+                      "relPath":  "Dalek/Skirt/Body4G.stl",
+                      "size":  114084,
+                      "modified":  "2026-05-20T14:19:06.0089276Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body4F.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body4F.stl",
+                      "relPath":  "Dalek/Skirt/Body4F.stl",
+                      "size":  100984,
+                      "modified":  "2026-05-20T14:19:06.0027435Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body4E.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body4E.stl",
+                      "relPath":  "Dalek/Skirt/Body4E.stl",
+                      "size":  88684,
+                      "modified":  "2026-05-20T14:19:05.9967423Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body4D.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body4D.stl",
+                      "relPath":  "Dalek/Skirt/Body4D.stl",
+                      "size":  102084,
+                      "modified":  "2026-05-20T14:19:05.9905395Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body4C.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body4C.stl",
+                      "relPath":  "Dalek/Skirt/Body4C.stl",
+                      "size":  116484,
+                      "modified":  "2026-05-20T14:19:05.9845386Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body4B.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body4B.stl",
+                      "relPath":  "Dalek/Skirt/Body4B.stl",
+                      "size":  125084,
+                      "modified":  "2026-05-20T14:19:05.9785376Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body4A.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body4A.stl",
+                      "relPath":  "Dalek/Skirt/Body4A.stl",
+                      "size":  121284,
+                      "modified":  "2026-05-20T14:19:05.9715378Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body3N.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body3N.stl",
+                      "relPath":  "Dalek/Skirt/Body3N.stl",
+                      "size":  128584,
+                      "modified":  "2026-05-20T14:19:05.9633018Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body3M.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body3M.stl",
+                      "relPath":  "Dalek/Skirt/Body3M.stl",
+                      "size":  128984,
+                      "modified":  "2026-05-20T14:19:05.9557988Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body3L.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body3L.stl",
+                      "relPath":  "Dalek/Skirt/Body3L.stl",
+                      "size":  122584,
+                      "modified":  "2026-05-20T14:19:05.9487982Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body3K.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body3K.stl",
+                      "relPath":  "Dalek/Skirt/Body3K.stl",
+                      "size":  111284,
+                      "modified":  "2026-05-20T14:19:05.9427910Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body3J.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body3J.stl",
+                      "relPath":  "Dalek/Skirt/Body3J.stl",
+                      "size":  116684,
+                      "modified":  "2026-05-20T14:19:05.9362325Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body3I.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body3I.stl",
+                      "relPath":  "Dalek/Skirt/Body3I.stl",
+                      "size":  117784,
+                      "modified":  "2026-05-20T14:19:05.9301843Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body3H.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body3H.stl",
+                      "relPath":  "Dalek/Skirt/Body3H.stl",
+                      "size":  112484,
+                      "modified":  "2026-05-20T14:19:05.9231282Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body3G.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body3G.stl",
+                      "relPath":  "Dalek/Skirt/Body3G.stl",
+                      "size":  129684,
+                      "modified":  "2026-05-20T14:19:05.9169838Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body3F.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body3F.stl",
+                      "relPath":  "Dalek/Skirt/Body3F.stl",
+                      "size":  118984,
+                      "modified":  "2026-05-20T14:19:05.9111295Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body3E.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body3E.stl",
+                      "relPath":  "Dalek/Skirt/Body3E.stl",
+                      "size":  110284,
+                      "modified":  "2026-05-20T14:19:05.9041319Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body3D.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body3D.stl",
+                      "relPath":  "Dalek/Skirt/Body3D.stl",
+                      "size":  122884,
+                      "modified":  "2026-05-20T14:19:05.8981321Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body3C.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body3C.stl",
+                      "relPath":  "Dalek/Skirt/Body3C.stl",
+                      "size":  138184,
+                      "modified":  "2026-05-20T14:19:05.8921329Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body3B.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body3B.stl",
+                      "relPath":  "Dalek/Skirt/Body3B.stl",
+                      "size":  145084,
+                      "modified":  "2026-05-20T14:19:05.8840899Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body3A.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body3A.stl",
+                      "relPath":  "Dalek/Skirt/Body3A.stl",
+                      "size":  131584,
+                      "modified":  "2026-05-20T14:19:05.8777350Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body2N.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body2N.stl",
+                      "relPath":  "Dalek/Skirt/Body2N.stl",
+                      "size":  132184,
+                      "modified":  "2026-05-20T14:19:05.8714646Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body2M.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body2M.stl",
+                      "relPath":  "Dalek/Skirt/Body2M.stl",
+                      "size":  121884,
+                      "modified":  "2026-05-20T14:19:05.8653887Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body2L.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body2L.stl",
+                      "relPath":  "Dalek/Skirt/Body2L.stl",
+                      "size":  116684,
+                      "modified":  "2026-05-20T14:19:05.8588748Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body2K.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body2K.stl",
+                      "relPath":  "Dalek/Skirt/Body2K.stl",
+                      "size":  105284,
+                      "modified":  "2026-05-20T14:19:05.8518788Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body2J.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body2J.stl",
+                      "relPath":  "Dalek/Skirt/Body2J.stl",
+                      "size":  110284,
+                      "modified":  "2026-05-20T14:19:05.8458710Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body2I.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body2I.stl",
+                      "relPath":  "Dalek/Skirt/Body2I.stl",
+                      "size":  112884,
+                      "modified":  "2026-05-20T14:19:05.8388694Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body2H.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body2H.stl",
+                      "relPath":  "Dalek/Skirt/Body2H.stl",
+                      "size":  106284,
+                      "modified":  "2026-05-20T14:19:05.8328681Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body2G.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body2G.stl",
+                      "relPath":  "Dalek/Skirt/Body2G.stl",
+                      "size":  123484,
+                      "modified":  "2026-05-20T14:19:05.8269160Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body2F.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body2F.stl",
+                      "relPath":  "Dalek/Skirt/Body2F.stl",
+                      "size":  114184,
+                      "modified":  "2026-05-20T14:19:05.8187083Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body2E.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body2E.stl",
+                      "relPath":  "Dalek/Skirt/Body2E.stl",
+                      "size":  103884,
+                      "modified":  "2026-05-20T14:19:05.8126650Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body2D.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body2D.stl",
+                      "relPath":  "Dalek/Skirt/Body2D.stl",
+                      "size":  116884,
+                      "modified":  "2026-05-20T14:19:05.8042828Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body2C.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body2C.stl",
+                      "relPath":  "Dalek/Skirt/Body2C.stl",
+                      "size":  132384,
+                      "modified":  "2026-05-20T14:19:05.7982818Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body2B.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body2B.stl",
+                      "relPath":  "Dalek/Skirt/Body2B.stl",
+                      "size":  138084,
+                      "modified":  "2026-05-20T14:19:05.7912825Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body2A.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body2A.stl",
+                      "relPath":  "Dalek/Skirt/Body2A.stl",
+                      "size":  135484,
+                      "modified":  "2026-05-20T14:19:05.7832805Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body1N.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body1N.stl",
+                      "relPath":  "Dalek/Skirt/Body1N.stl",
+                      "size":  85684,
+                      "modified":  "2026-05-20T14:19:05.7762551Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body1M.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body1M.stl",
+                      "relPath":  "Dalek/Skirt/Body1M.stl",
+                      "size":  86384,
+                      "modified":  "2026-05-20T14:19:05.7682561Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body1L.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body1L.stl",
+                      "relPath":  "Dalek/Skirt/Body1L.stl",
+                      "size":  79984,
+                      "modified":  "2026-05-20T14:19:05.7622508Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body1K.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body1K.stl",
+                      "relPath":  "Dalek/Skirt/Body1K.stl",
+                      "size":  74584,
+                      "modified":  "2026-05-20T14:19:05.7552594Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body1J.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body1J.stl",
+                      "relPath":  "Dalek/Skirt/Body1J.stl",
+                      "size":  79284,
+                      "modified":  "2026-05-20T14:19:05.7492619Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body1I.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body1I.stl",
+                      "relPath":  "Dalek/Skirt/Body1I.stl",
+                      "size":  68584,
+                      "modified":  "2026-05-20T14:19:05.7422532Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body1H.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body1H.stl",
+                      "relPath":  "Dalek/Skirt/Body1H.stl",
+                      "size":  81884,
+                      "modified":  "2026-05-20T14:19:05.7362525Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body1G.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body1G.stl",
+                      "relPath":  "Dalek/Skirt/Body1G.stl",
+                      "size":  98484,
+                      "modified":  "2026-05-20T14:19:05.7292504Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body1F.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body1F.stl",
+                      "relPath":  "Dalek/Skirt/Body1F.stl",
+                      "size":  69484,
+                      "modified":  "2026-05-20T14:19:05.7220822Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body1E.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body1E.stl",
+                      "relPath":  "Dalek/Skirt/Body1E.stl",
+                      "size":  78384,
+                      "modified":  "2026-05-20T14:19:05.7160829Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body1D.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body1D.stl",
+                      "relPath":  "Dalek/Skirt/Body1D.stl",
+                      "size":  83884,
+                      "modified":  "2026-05-20T14:19:05.7090789Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body1C.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body1C.stl",
+                      "relPath":  "Dalek/Skirt/Body1C.stl",
+                      "size":  94484,
+                      "modified":  "2026-05-20T14:19:05.7028030Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body1B.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body1B.stl",
+                      "relPath":  "Dalek/Skirt/Body1B.stl",
+                      "size":  102984,
+                      "modified":  "2026-05-20T14:19:05.6968042Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body1A.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Skirt/Body1A.stl",
+                      "relPath":  "Dalek/Skirt/Body1A.stl",
+                      "size":  88384,
+                      "modified":  "2026-05-20T14:19:05.6888034Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-Rear.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-Rear.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-Rear.stl",
+                      "size":  97284,
+                      "modified":  "2026-05-20T14:19:05.6776930Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-R8.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-R8.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-R8.stl",
+                      "size":  87984,
+                      "modified":  "2026-05-20T14:19:05.6716958Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-R7.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-R7.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-R7.stl",
+                      "size":  85084,
+                      "modified":  "2026-05-20T14:19:05.6656952Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-R6.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-R6.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-R6.stl",
+                      "size":  107884,
+                      "modified":  "2026-05-20T14:19:05.6593193Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-R5.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-R5.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-R5.stl",
+                      "size":  82184,
+                      "modified":  "2026-05-20T14:19:05.6533185Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-R4.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-R4.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-R4.stl",
+                      "size":  70584,
+                      "modified":  "2026-05-20T14:19:05.6483177Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-R3.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-R3.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-R3.stl",
+                      "size":  84384,
+                      "modified":  "2026-05-20T14:19:05.6413156Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-R2.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-R2.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-R2.stl",
+                      "size":  89784,
+                      "modified":  "2026-05-20T14:19:05.6348892Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-R1.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-R1.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-R1.stl",
+                      "size":  81084,
+                      "modified":  "2026-05-20T14:19:05.6281068Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-L8.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-L8.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-L8.stl",
+                      "size":  88384,
+                      "modified":  "2026-05-20T14:19:05.6215372Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-L7.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-L7.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-L7.stl",
+                      "size":  71784,
+                      "modified":  "2026-05-20T14:19:05.6018898Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-L6.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-L6.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-L6.stl",
+                      "size":  95684,
+                      "modified":  "2026-05-20T14:19:05.5955197Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-L5.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-L5.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-L5.stl",
+                      "size":  64284,
+                      "modified":  "2026-05-20T14:19:05.5885226Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-L4.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-L4.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-L4.stl",
+                      "size":  68884,
+                      "modified":  "2026-05-20T14:19:05.5825214Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-L3.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-L3.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-L3.stl",
+                      "size":  86484,
+                      "modified":  "2026-05-20T14:19:05.5775269Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-L2.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-L2.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-L2.stl",
+                      "size":  79184,
+                      "modified":  "2026-05-20T14:19:05.5715140Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-L1.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-L1.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-L1.stl",
+                      "size":  71584,
+                      "modified":  "2026-05-20T14:19:05.5660524Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Slat-Front.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Slats/Slat-Front.stl",
+                      "relPath":  "Dalek/Shoulder/Slats/Slat-Front.stl",
+                      "size":  145184,
+                      "modified":  "2026-05-20T14:19:05.5605375Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Top H.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Top H.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Top H.stl",
+                      "size":  182884,
+                      "modified":  "2026-05-20T14:19:05.5525406Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Top G.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Top G.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Top G.stl",
+                      "size":  241184,
+                      "modified":  "2026-05-20T14:19:05.5465327Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Top F.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Top F.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Top F.stl",
+                      "size":  243684,
+                      "modified":  "2026-05-20T14:19:05.5405356Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Top E.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Top E.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Top E.stl",
+                      "size":  252984,
+                      "modified":  "2026-05-20T14:19:05.5332889Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Top D.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Top D.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Top D.stl",
+                      "size":  286884,
+                      "modified":  "2026-05-20T14:19:05.5272893Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Top C.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Top C.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Top C.stl",
+                      "size":  209684,
+                      "modified":  "2026-05-20T14:19:05.5192951Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Top B.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Top B.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Top B.stl",
+                      "size":  173184,
+                      "modified":  "2026-05-20T14:19:05.5132894Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Top A.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Top A.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Top A.stl",
+                      "size":  260084,
+                      "modified":  "2026-05-20T14:19:05.5072928Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Bottom J.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Bottom J.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Bottom J.stl",
+                      "size":  276884,
+                      "modified":  "2026-05-20T14:19:05.5002898Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Bottom I.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Bottom I.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Bottom I.stl",
+                      "size":  247284,
+                      "modified":  "2026-05-20T14:19:05.4942886Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Bottom H.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Bottom H.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Bottom H.stl",
+                      "size":  243184,
+                      "modified":  "2026-05-20T14:19:05.4872891Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Bottom G.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Bottom G.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Bottom G.stl",
+                      "size":  309984,
+                      "modified":  "2026-05-20T14:19:05.4812890Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Bottom F.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Bottom F.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Bottom F.stl",
+                      "size":  273184,
+                      "modified":  "2026-05-20T14:19:05.4742907Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Bottom E.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Bottom E.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Bottom E.stl",
+                      "size":  166784,
+                      "modified":  "2026-05-20T14:19:05.4682876Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Bottom D.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Bottom D.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Bottom D.stl",
+                      "size":  190884,
+                      "modified":  "2026-05-20T14:19:05.4620652Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Bottom C.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Bottom C.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Bottom C.stl",
+                      "size":  347284,
+                      "modified":  "2026-05-20T14:19:05.4570658Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Bottom B.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Bottom B.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Bottom B.stl",
+                      "size":  356084,
+                      "modified":  "2026-05-20T14:19:05.4500667Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shoulder Bottom A.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Shoulder/Shoulder Bottom A.stl",
+                      "relPath":  "Dalek/Shoulder/Shoulder/Shoulder Bottom A.stl",
+                      "size":  226684,
+                      "modified":  "2026-05-20T14:19:05.4427165Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Gun Box Surround.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Gun Box Surrounds/Gun Box Surround.stl",
+                      "relPath":  "Dalek/Shoulder/Gun Box Surrounds/Gun Box Surround.stl",
+                      "size":  445084,
+                      "modified":  "2026-05-20T14:19:05.4354651Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Ball Clamp.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Shoulder/Gun Box Surrounds/Ball Clamp.stl",
+                      "relPath":  "Dalek/Shoulder/Gun Box Surrounds/Ball Clamp.stl",
+                      "size":  226184,
+                      "modified":  "2026-05-20T14:19:05.4270774Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Stem.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Plunger/Stem.stl",
+                      "relPath":  "Dalek/Plunger/Stem.stl",
+                      "size":  900984,
+                      "modified":  "2026-05-20T14:19:05.4166467Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shaft5.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Plunger/Shaft5.stl",
+                      "relPath":  "Dalek/Plunger/Shaft5.stl",
+                      "size":  692084,
+                      "modified":  "2026-05-20T14:19:05.4068933Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shaft4.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Plunger/Shaft4.stl",
+                      "relPath":  "Dalek/Plunger/Shaft4.stl",
+                      "size":  667084,
+                      "modified":  "2026-05-20T14:19:05.3974367Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shaft3.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Plunger/Shaft3.stl",
+                      "relPath":  "Dalek/Plunger/Shaft3.stl",
+                      "size":  667684,
+                      "modified":  "2026-05-20T14:19:05.3875962Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shaft2.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Plunger/Shaft2.stl",
+                      "relPath":  "Dalek/Plunger/Shaft2.stl",
+                      "size":  351084,
+                      "modified":  "2026-05-20T14:19:05.3789386Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Shaft1.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Plunger/Shaft1.stl",
+                      "relPath":  "Dalek/Plunger/Shaft1.stl",
+                      "size":  556384,
+                      "modified":  "2026-05-20T14:19:05.3707479Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Bowl.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Plunger/Bowl.stl",
+                      "relPath":  "Dalek/Plunger/Bowl.stl",
+                      "size":  980984,
+                      "modified":  "2026-05-20T14:19:05.3618461Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Ball.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Plunger/Ball.stl",
+                      "relPath":  "Dalek/Plunger/Ball.stl",
+                      "size":  615284,
+                      "modified":  "2026-05-20T14:19:05.3508653Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Ball Clamp.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Plunger/Ball Clamp.stl",
+                      "relPath":  "Dalek/Plunger/Ball Clamp.stl",
+                      "size":  226184,
+                      "modified":  "2026-05-20T14:19:05.3430099Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Spacer2.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Gun/Spacer2.stl",
+                      "relPath":  "Dalek/Gun/Spacer2.stl",
+                      "size":  28284,
+                      "modified":  "2026-05-20T14:19:05.1131257Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Spacer1.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Gun/Spacer1.stl",
+                      "relPath":  "Dalek/Gun/Spacer1.stl",
+                      "size":  38084,
+                      "modified":  "2026-05-20T14:19:05.1070972Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Section2.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Gun/Section2.stl",
+                      "relPath":  "Dalek/Gun/Section2.stl",
+                      "size":  850984,
+                      "modified":  "2026-05-20T14:19:05.1006805Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Section1.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Gun/Section1.stl",
+                      "relPath":  "Dalek/Gun/Section1.stl",
+                      "size":  534084,
+                      "modified":  "2026-05-20T14:19:05.0873328Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Handle.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Gun/Handle.stl",
+                      "relPath":  "Dalek/Gun/Handle.stl",
+                      "size":  730784,
+                      "modified":  "2026-05-20T14:19:05.0762005Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Top Motor Mount 2.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Mounts/Top Motor Mount 2.stl",
+                      "relPath":  "Dalek/Dome/Mounts/Top Motor Mount 2.stl",
+                      "size":  857984,
+                      "modified":  "2026-05-20T14:19:05.0476819Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Top Motor Mount 1.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Mounts/Top Motor Mount 1.stl",
+                      "relPath":  "Dalek/Dome/Mounts/Top Motor Mount 1.stl",
+                      "size":  35684,
+                      "modified":  "2026-05-20T14:19:05.0371282Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Motor Mount.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Mounts/Motor Mount.stl",
+                      "relPath":  "Dalek/Dome/Mounts/Motor Mount.stl",
+                      "size":  529784,
+                      "modified":  "2026-05-20T14:19:05.0308153Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Dome Mount.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Mounts/Dome Mount.stl",
+                      "relPath":  "Dalek/Dome/Mounts/Dome Mount.stl",
+                      "size":  152684,
+                      "modified":  "2026-05-20T14:19:05.0225947Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Moflash.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Lights/Moflash.stl",
+                      "relPath":  "Dalek/Dome/Lights/Moflash.stl",
+                      "size":  511784,
+                      "modified":  "2026-05-20T14:19:05.0149410Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Cage 2.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Lights/Cage 2.stl",
+                      "relPath":  "Dalek/Dome/Lights/Cage 2.stl",
+                      "size":  70084,
+                      "modified":  "2026-05-20T14:19:05.0071414Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Cage 1.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Lights/Cage 1.stl",
+                      "relPath":  "Dalek/Dome/Lights/Cage 1.stl",
+                      "size":  941484,
+                      "modified":  "2026-05-20T14:19:05.0031459Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Small.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/Small.stl",
+                      "relPath":  "Dalek/Dome/Eye/Small.stl",
+                      "size":  145084,
+                      "modified":  "2026-05-20T14:19:04.9913374Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Segment 4.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/Segment 4.stl",
+                      "relPath":  "Dalek/Dome/Eye/Segment 4.stl",
+                      "size":  736684,
+                      "modified":  "2026-05-20T14:19:04.9860989Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Segment 3.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/Segment 3.stl",
+                      "relPath":  "Dalek/Dome/Eye/Segment 3.stl",
+                      "size":  1268284,
+                      "modified":  "2026-05-20T14:19:04.9769311Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Segment 2.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/Segment 2.stl",
+                      "relPath":  "Dalek/Dome/Eye/Segment 2.stl",
+                      "size":  344984,
+                      "modified":  "2026-05-20T14:19:04.9649313Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Segment 1.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/Segment 1.stl",
+                      "relPath":  "Dalek/Dome/Eye/Segment 1.stl",
+                      "size":  1693484,
+                      "modified":  "2026-05-20T14:19:04.9574247Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pivot 4.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/Pivot 4.stl",
+                      "relPath":  "Dalek/Dome/Eye/Pivot 4.stl",
+                      "size":  54384,
+                      "modified":  "2026-05-20T14:19:04.9432778Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pivot 3.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/Pivot 3.stl",
+                      "relPath":  "Dalek/Dome/Eye/Pivot 3.stl",
+                      "size":  1269284,
+                      "modified":  "2026-05-20T14:19:04.9392555Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pivot 2.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/Pivot 2.stl",
+                      "relPath":  "Dalek/Dome/Eye/Pivot 2.stl",
+                      "size":  44884,
+                      "modified":  "2026-05-20T14:19:04.9293821Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pivot 1.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/Pivot 1.stl",
+                      "relPath":  "Dalek/Dome/Eye/Pivot 1.stl",
+                      "size":  309884,
+                      "modified":  "2026-05-20T14:19:04.9243795Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Medium.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/Medium.stl",
+                      "relPath":  "Dalek/Dome/Eye/Medium.stl",
+                      "size":  292784,
+                      "modified":  "2026-05-20T14:19:04.9173806Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "LED Mount.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/LED Mount.stl",
+                      "relPath":  "Dalek/Dome/Eye/LED Mount.stl",
+                      "size":  383284,
+                      "modified":  "2026-05-20T14:19:04.9103735Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Large.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/Large.stl",
+                      "relPath":  "Dalek/Dome/Eye/Large.stl",
+                      "size":  154384,
+                      "modified":  "2026-05-20T14:19:04.9023741Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Eye Lens.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/Eye Lens.stl",
+                      "relPath":  "Dalek/Dome/Eye/Eye Lens.stl",
+                      "size":  196384,
+                      "modified":  "2026-05-20T14:19:04.8969947Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Eye Front.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/Eye Front.stl",
+                      "relPath":  "Dalek/Dome/Eye/Eye Front.stl",
+                      "size":  263284,
+                      "modified":  "2026-05-20T14:19:04.8909944Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Eye Back.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/Eye Back.stl",
+                      "relPath":  "Dalek/Dome/Eye/Eye Back.stl",
+                      "size":  742084,
+                      "modified":  "2026-05-20T14:19:04.8849946Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Top.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Dome/Top.stl",
+                      "relPath":  "Dalek/Dome/Dome/Top.stl",
+                      "size":  4811684,
+                      "modified":  "2026-05-20T14:19:04.8700138Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Middle-Speaker.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Dome/Middle-Speaker.stl",
+                      "relPath":  "Dalek/Dome/Dome/Middle-Speaker.stl",
+                      "size":  1035184,
+                      "modified":  "2026-05-20T14:19:04.8437349Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Middle-Slot.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Dome/Middle-Slot.stl",
+                      "relPath":  "Dalek/Dome/Dome/Middle-Slot.stl",
+                      "size":  1061984,
+                      "modified":  "2026-05-20T14:19:04.8346509Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Middle-Light.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Dome/Middle-Light.stl",
+                      "relPath":  "Dalek/Dome/Dome/Middle-Light.stl",
+                      "size":  1066384,
+                      "modified":  "2026-05-20T14:19:04.8236495Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Middle-Blank.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Dome/Middle-Blank.stl",
+                      "relPath":  "Dalek/Dome/Dome/Middle-Blank.stl",
+                      "size":  1036784,
+                      "modified":  "2026-05-20T14:19:04.8134250Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Bottom.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Dome/Bottom.stl",
+                      "relPath":  "Dalek/Dome/Dome/Bottom.stl",
+                      "size":  531684,
+                      "modified":  "2026-05-20T14:19:04.8037414Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body3.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Cowl/Body3.stl",
+                      "relPath":  "Dalek/Dome/Cowl/Body3.stl",
+                      "size":  28684,
+                      "modified":  "2026-05-20T14:19:04.7940436Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body2.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Cowl/Body2.stl",
+                      "relPath":  "Dalek/Dome/Cowl/Body2.stl",
+                      "size":  431984,
+                      "modified":  "2026-05-20T14:19:04.7880401Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Body1.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Cowl/Body1.stl",
+                      "relPath":  "Dalek/Dome/Cowl/Body1.stl",
+                      "size":  77984,
+                      "modified":  "2026-05-20T14:19:04.7762838Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Lets see.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Board game/Lets see.stl",
+                      "relPath":  "Board game/Lets see.stl",
+                      "size":  11966084,
+                      "modified":  "2026-05-19T18:28:31.3702161Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Middle 1.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Middle 1.stl",
+                      "relPath":  "Dalek/Neck/Middle 1.stl",
+                      "size":  559484,
+                      "modified":  "2026-05-19T00:17:43.3425114Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt R.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt R.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt R.stl",
+                      "size":  257684,
+                      "modified":  "2026-05-19T00:17:43.3364766Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt O.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt O.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt O.stl",
+                      "size":  839084,
+                      "modified":  "2026-05-19T00:17:43.3300300Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Middle 2.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Middle 2.stl",
+                      "relPath":  "Dalek/Neck/Middle 2.stl",
+                      "size":  20284,
+                      "modified":  "2026-05-19T00:17:43.3215195Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt J.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt J.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt J.stl",
+                      "size":  831884,
+                      "modified":  "2026-05-19T00:17:43.3165740Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt E.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt E.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt E.stl",
+                      "size":  825484,
+                      "modified":  "2026-05-19T00:17:43.3085310Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Internal Gear.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Internal Gear.stl",
+                      "relPath":  "Dalek/Neck/Internal Gear.stl",
+                      "size":  79284,
+                      "modified":  "2026-05-19T00:17:43.3000321Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt A.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt A.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt A.stl",
+                      "size":  185884,
+                      "modified":  "2026-05-19T00:17:43.2945166Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt B.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt B.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt B.stl",
+                      "size":  844084,
+                      "modified":  "2026-05-19T00:17:43.2885119Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Bottom.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Bottom.stl",
+                      "relPath":  "Dalek/Neck/Bottom.stl",
+                      "size":  171584,
+                      "modified":  "2026-05-19T00:17:43.2800084Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt N.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt N.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt N.stl",
+                      "size":  825084,
+                      "modified":  "2026-05-19T00:17:43.2745005Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt D.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt D.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt D.stl",
+                      "size":  837084,
+                      "modified":  "2026-05-19T00:17:43.2650119Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt P.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt P.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt P.stl",
+                      "size":  833484,
+                      "modified":  "2026-05-19T00:17:43.2580073Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt I.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt I.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt I.stl",
+                      "size":  824084,
+                      "modified":  "2026-05-19T00:17:43.2489919Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt H.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt H.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt H.stl",
+                      "size":  204984,
+                      "modified":  "2026-05-19T00:17:43.2413663Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt L.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt L.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt L.stl",
+                      "size":  824284,
+                      "modified":  "2026-05-19T00:17:43.2348560Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt M.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt M.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt M.stl",
+                      "size":  197384,
+                      "modified":  "2026-05-19T00:17:43.2259613Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt F.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt F.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt F.stl",
+                      "size":  825084,
+                      "modified":  "2026-05-19T00:17:43.2207867Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt Q.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt Q.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt Q.stl",
+                      "size":  746084,
+                      "modified":  "2026-05-19T00:17:43.2119084Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Top 2.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Top 2.stl",
+                      "relPath":  "Dalek/Neck/Top 2.stl",
+                      "size":  49284,
+                      "modified":  "2026-05-19T00:17:43.2027329Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt C.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt C.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt C.stl",
+                      "size":  839484,
+                      "modified":  "2026-05-19T00:17:43.1983039Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Neck Top.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Neck Top.stl",
+                      "relPath":  "Dalek/Neck/Neck Top.stl",
+                      "size":  267984,
+                      "modified":  "2026-05-19T00:17:43.1896198Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt G.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt G.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt G.stl",
+                      "size":  842684,
+                      "modified":  "2026-05-19T00:17:43.1831139Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Top 1.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Top 1.stl",
+                      "relPath":  "Dalek/Neck/Top 1.stl",
+                      "size":  960784,
+                      "modified":  "2026-05-19T00:17:43.1746045Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Pool Matt K.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Neck/Pool Matt K.stl",
+                      "relPath":  "Dalek/Neck/Pool Matt K.stl",
+                      "size":  825484,
+                      "modified":  "2026-05-19T00:17:43.1609833Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Middle-Blank.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Middle-Blank.stl",
+                      "relPath":  "Dalek/Dome/Middle-Blank.stl",
+                      "size":  1036784,
+                      "modified":  "2026-05-18T12:30:57.3921378Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Middle-Slot.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Middle-Slot.stl",
+                      "relPath":  "Dalek/Dome/Middle-Slot.stl",
+                      "size":  1061984,
+                      "modified":  "2026-05-18T12:30:57.3691365Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Middle-Light.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Middle-Light.stl",
+                      "relPath":  "Dalek/Dome/Middle-Light.stl",
+                      "size":  1066384,
+                      "modified":  "2026-05-18T12:30:57.3421373Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Top.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Top.stl",
+                      "relPath":  "Dalek/Dome/Top.stl",
+                      "size":  4811684,
+                      "modified":  "2026-05-18T12:30:57.3076096Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Middle-Speaker.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Middle-Speaker.stl",
+                      "relPath":  "Dalek/Dome/Middle-Speaker.stl",
+                      "size":  1035184,
+                      "modified":  "2026-05-18T12:30:57.2335993Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Bottom.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Bottom.stl",
+                      "relPath":  "Dalek/Dome/Bottom.stl",
+                      "size":  531684,
+                      "modified":  "2026-05-18T12:30:57.2040854Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "final to chain.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Physics FINAL FINAl/stl/final to chain.STL",
+                      "relPath":  "Physics FINAL FINAl/stl/final to chain.STL",
+                      "size":  23584,
+                      "modified":  "2026-05-04T15:20:36.9627552Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "12-3.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Physics FINAL FINAl/stl/12-3.STL",
+                      "relPath":  "Physics FINAL FINAl/stl/12-3.STL",
+                      "size":  22884,
+                      "modified":  "2026-05-04T13:53:56.3032311Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "20-3.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Physics FINAL FINAl/stl/20-3.STL",
+                      "relPath":  "Physics FINAL FINAl/stl/20-3.STL",
+                      "size":  23684,
+                      "modified":  "2026-05-04T13:53:36.1399454Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "25-3.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Physics FINAL FINAl/stl/25-3.STL",
+                      "relPath":  "Physics FINAL FINAl/stl/25-3.STL",
+                      "size":  23684,
+                      "modified":  "2026-05-04T13:53:23.6001825Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "sliding to channel.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Physics FINAL FINAl/stl/sliding to channel.STL",
+                      "relPath":  "Physics FINAL FINAl/stl/sliding to channel.STL",
+                      "size":  91084,
+                      "modified":  "2026-05-04T06:16:54.8437409Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "final piece.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Physics FINAL FINAl/stl/final piece.STL",
+                      "relPath":  "Physics FINAL FINAl/stl/final piece.STL",
+                      "size":  80384,
+                      "modified":  "2026-05-04T04:01:15.3698517Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "final_feet.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Physics FINAL FINAl/stl/final_feet.STL",
+                      "relPath":  "Physics FINAL FINAl/stl/final_feet.STL",
+                      "size":  16084,
+                      "modified":  "2026-05-04T04:01:06.3998203Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "sliding on rack.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Physics FINAL FINAl/stl/sliding on rack.STL",
+                      "relPath":  "Physics FINAL FINAl/stl/sliding on rack.STL",
+                      "size":  63984,
+                      "modified":  "2026-05-03T02:37:52.3613294Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "rack.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Physics FINAL FINAl/stl/rack.STL",
+                      "relPath":  "Physics FINAL FINAl/stl/rack.STL",
+                      "size":  274084,
+                      "modified":  "2026-05-02T23:48:07.1375375Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "connection between bases.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Physics FINAL FINAl/stl/connection between bases.STL",
+                      "relPath":  "Physics FINAL FINAl/stl/connection between bases.STL",
+                      "size":  37484,
+                      "modified":  "2026-05-02T22:53:06.2237596Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "laser mod.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/laser mod.STL",
+                      "relPath":  "laser mod.STL",
+                      "size":  3084,
+                      "modified":  "2026-04-19T21:17:50.7203435Z",
+                      "label":  "Projects"
+                  },
                   {
                       "name":  "all.3mf",
                       "type":  "3mf",
@@ -9,7 +2269,27 @@
                       "relPath":  "2025-2026/all.3mf",
                       "size":  1086345,
                       "modified":  "2026-04-17T01:25:47.2847615Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
+                  },
+                  {
+                      "name":  "name tag.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/ssamo/name tag/name tag.STL",
+                      "relPath":  "ssamo/name tag/name tag.STL",
+                      "size":  13784,
+                      "modified":  "2026-04-16T15:46:55.2276908Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "locking thingy.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/ssamo/name tag/locking thingy.STL",
+                      "relPath":  "ssamo/name tag/locking thingy.STL",
+                      "size":  8384,
+                      "modified":  "2026-04-16T14:49:15.1014077Z",
+                      "label":  "Projects"
                   },
                   {
                       "name":  "descore helper.3mf",
@@ -19,7 +2299,7 @@
                       "relPath":  "2025-2026/THE WORLD/mod/descore helper.3mf",
                       "size":  37721,
                       "modified":  "2026-04-16T12:53:09.5622944Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
                   },
                   {
                       "name":  "descore helper.STL",
@@ -29,7 +2309,77 @@
                       "relPath":  "2025-2026/THE WORLD/mod/descore helper.STL",
                       "size":  19284,
                       "modified":  "2026-04-16T12:50:11.9104272Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
+                  },
+                  {
+                      "name":  "outside-80.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/ssamo/outsides/outside-80.STL",
+                      "relPath":  "ssamo/outsides/outside-80.STL",
+                      "size":  398684,
+                      "modified":  "2026-04-16T12:12:50.3670247Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "outside-100.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/ssamo/outsides/outside-100.STL",
+                      "relPath":  "ssamo/outsides/outside-100.STL",
+                      "size":  396384,
+                      "modified":  "2026-04-15T18:15:44.2097738Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "outside-90.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/ssamo/outsides/outside-90.STL",
+                      "relPath":  "ssamo/outsides/outside-90.STL",
+                      "size":  398984,
+                      "modified":  "2026-04-15T18:15:31.2104208Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Victor_SP_217-9090_No_Wires.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Victor_SP_217-9090_No_Wires.STEP",
+                      "relPath":  "Dalek/Victor_SP_217-9090_No_Wires.STEP",
+                      "size":  8844165,
+                      "modified":  "2026-04-14T16:17:34.6956037Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "battery.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/battery.STL",
+                      "relPath":  "Dalek/battery.STL",
+                      "size":  46184,
+                      "modified":  "2026-04-11T01:46:33.3782384Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "ES17-12.step",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/ES17-12.step",
+                      "relPath":  "Dalek/ES17-12.step",
+                      "size":  243295,
+                      "modified":  "2026-04-11T00:54:23.2973660Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "spacer.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/spacer.STL",
+                      "relPath":  "Dalek/spacer.STL",
+                      "size":  57084,
+                      "modified":  "2026-04-08T20:59:41.0521490Z",
+                      "label":  "Projects"
                   },
                   {
                       "name":  "gear shittt.STL",
@@ -39,7 +2389,7 @@
                       "relPath":  "2025-2026/THE WORLD/mod/gear shittt.STL",
                       "size":  30484,
                       "modified":  "2026-03-22T07:52:48.0000000Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
                   },
                   {
                       "name":  "gear shit.STL",
@@ -49,7 +2399,7 @@
                       "relPath":  "2025-2026/THE WORLD/mod/gear shit.STL",
                       "size":  261984,
                       "modified":  "2026-03-21T06:36:22.0000000Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
                   },
                   {
                       "name":  "spacer my guy.3mf",
@@ -59,7 +2409,7 @@
                       "relPath":  "2025-2026/THE WORLD/mod/spacer my guy.3mf",
                       "size":  87732,
                       "modified":  "2026-03-20T16:53:42.0000000Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
                   },
                   {
                       "name":  "1mm spacer.STL",
@@ -69,7 +2419,7 @@
                       "relPath":  "2025-2026/THE WORLD/mod/1mm spacer.STL",
                       "size":  23484,
                       "modified":  "2026-03-20T16:42:54.0000000Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
                   },
                   {
                       "name":  "bearing.STL",
@@ -79,7 +2429,217 @@
                       "relPath":  "2025-2026/THE WORLD/mod/bearing.STL",
                       "size":  4484,
                       "modified":  "2026-03-19T17:09:32.0000000Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
+                  },
+                  {
+                      "name":  "main - base-1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/card holder/main - base-1.STL",
+                      "relPath":  "card holder/main - base-1.STL",
+                      "size":  184184,
+                      "modified":  "2026-03-08T21:23:38.5848143Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "main - back plate-1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/card holder/main - back plate-1.STL",
+                      "relPath":  "card holder/main - back plate-1.STL",
+                      "size":  96984,
+                      "modified":  "2026-03-08T21:23:38.5804924Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "main - lever thingy-1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/card holder/main - lever thingy-1.STL",
+                      "relPath":  "card holder/main - lever thingy-1.STL",
+                      "size":  71784,
+                      "modified":  "2026-03-08T21:23:38.5774187Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "main - front-1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/card holder/main - front-1.STL",
+                      "relPath":  "card holder/main - front-1.STL",
+                      "size":  104384,
+                      "modified":  "2026-03-08T21:23:38.5753531Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Mirrorfront.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/hi/Mirrorfront.STL",
+                      "relPath":  "Dalek/hi/Mirrorfront.STL",
+                      "size":  127384,
+                      "modified":  "2026-03-05T18:59:09.4105169Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Mirrorside.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/hi/Mirrorside.STL",
+                      "relPath":  "Dalek/hi/Mirrorside.STL",
+                      "size":  72684,
+                      "modified":  "2026-03-05T18:58:56.8248396Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Mirrorback.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/hi/Mirrorback.STL",
+                      "relPath":  "Dalek/hi/Mirrorback.STL",
+                      "size":  128884,
+                      "modified":  "2026-03-05T18:31:02.4576913Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "back.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/hi/back.STL",
+                      "relPath":  "Dalek/hi/back.STL",
+                      "size":  128884,
+                      "modified":  "2026-03-04T19:58:59.2690079Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "side.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/hi/side.STL",
+                      "relPath":  "Dalek/hi/side.STL",
+                      "size":  72684,
+                      "modified":  "2026-03-04T19:57:34.3027557Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "front.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/hi/front.STL",
+                      "relPath":  "Dalek/hi/front.STL",
+                      "size":  127484,
+                      "modified":  "2026-03-04T19:57:24.6250878Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "idk.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/idk.STL",
+                      "relPath":  "Dalek/Base/idk.STL",
+                      "size":  1988684,
+                      "modified":  "2026-02-23T00:02:14.8656179Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "paiint.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/paiint.STL",
+                      "relPath":  "paiint.STL",
+                      "size":  53284,
+                      "modified":  "2026-02-22T00:52:33.4971461Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "AM-14U5 Wide ToughBox Mini 6in HiGrip 6wD.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/idk man/AM-14U5 Wide ToughBox Mini 6in HiGrip 6wD.STEP",
+                      "relPath":  "Dalek/idk man/AM-14U5 Wide ToughBox Mini 6in HiGrip 6wD.STEP",
+                      "size":  26046414,
+                      "modified":  "2026-02-20T18:37:08.3355295Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "AM-14U5 Square ToughBox Mini 6in HiGrip 6wD.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/idk man/AM-14U5 Square ToughBox Mini 6in HiGrip 6wD.STEP",
+                      "relPath":  "Dalek/idk man/AM-14U5 Square ToughBox Mini 6in HiGrip 6wD.STEP",
+                      "size":  26066603,
+                      "modified":  "2026-02-20T18:37:07.7692762Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "AM-14U5 Long ToughBox Mini 6in HiGrip 6wD.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/idk man/AM-14U5 Long ToughBox Mini 6in HiGrip 6wD.STEP",
+                      "relPath":  "Dalek/idk man/AM-14U5 Long ToughBox Mini 6in HiGrip 6wD.STEP",
+                      "size":  26157192,
+                      "modified":  "2026-02-20T18:37:07.3585555Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "am-14U5_PN8.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/idk man/am-14U5_PN8.STEP",
+                      "relPath":  "Dalek/idk man/am-14U5_PN8.STEP",
+                      "size":  40810513,
+                      "modified":  "2026-02-20T18:37:05.0834901Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "AM-14U5 Frame Only.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/idk man/AM-14U5 Frame Only.STEP",
+                      "relPath":  "Dalek/idk man/AM-14U5 Frame Only.STEP",
+                      "size":  3454059,
+                      "modified":  "2026-02-20T18:37:04.0513199Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Untitled.step",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Untitled.step",
+                      "relPath":  "Dalek/Untitled.step",
+                      "size":  43042986,
+                      "modified":  "2026-02-20T18:28:54.2939368Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "12 gauge.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/wire connectors/12 gauge.STL",
+                      "relPath":  "wire connectors/12 gauge.STL",
+                      "size":  788284,
+                      "modified":  "2026-02-13T08:36:53.6936642Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "collar.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/collar.STL",
+                      "relPath":  "collar.STL",
+                      "size":  35084,
+                      "modified":  "2026-01-29T06:26:22.4354283Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "1.625.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/1.625.STL",
+                      "relPath":  "1.625.STL",
+                      "size":  214784,
+                      "modified":  "2026-01-26T15:11:22.5498677Z",
+                      "label":  "Projects"
                   },
                   {
                       "name":  "hs washer.STL",
@@ -89,7 +2649,597 @@
                       "relPath":  "2025-2026/啧啧啧啧我不知道关于这个/customized parts/hs washer.STL",
                       "size":  20484,
                       "modified":  "2026-01-23T23:17:54.3481404Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
+                  },
+                  {
+                      "name":  "hs bearing flat.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/hs bearing flat.STL",
+                      "relPath":  "hs bearing flat.STL",
+                      "size":  27684,
+                      "modified":  "2026-01-23T00:58:20.1491959Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "screw ig.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/screw ig.STL",
+                      "relPath":  "screw ig.STL",
+                      "size":  80784,
+                      "modified":  "2026-01-20T05:39:53.5524476Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "2inch flex cutter.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/2inch flex cutter.STL",
+                      "relPath":  "2inch flex cutter.STL",
+                      "size":  691384,
+                      "modified":  "2026-01-17T19:42:17.8270078Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "63.63.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/63.63.STL",
+                      "relPath":  "63.63.STL",
+                      "size":  40884,
+                      "modified":  "2026-01-16T04:49:55.4626125Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "6.3 6.6 7.3mm standoff drill piece.3mf",
+                      "type":  "3mf",
+                      "category":  "cad",
+                      "path":  "library/cad/6.3 6.6 7.3mm standoff drill piece.3mf",
+                      "relPath":  "6.3 6.6 7.3mm standoff drill piece.3mf",
+                      "size":  56894,
+                      "modified":  "2026-01-15T06:48:52.1759035Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Assem1 - gear cnc-1-1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/gear cnc/stl/Assem1 - gear cnc-1-1.STL",
+                      "relPath":  "gear cnc/stl/Assem1 - gear cnc-1-1.STL",
+                      "size":  437284,
+                      "modified":  "2025-12-25T09:24:20.2784569Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Assem1 - gear cnc 2-1-1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/gear cnc/stl/Assem1 - gear cnc 2-1-1.STL",
+                      "relPath":  "gear cnc/stl/Assem1 - gear cnc 2-1-1.STL",
+                      "size":  203884,
+                      "modified":  "2025-12-25T09:24:20.2704608Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Assem1 - gear cnc-1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/gear cnc/stl/Assem1 - gear cnc-1.STL",
+                      "relPath":  "gear cnc/stl/Assem1 - gear cnc-1.STL",
+                      "size":  407284,
+                      "modified":  "2025-12-25T08:53:26.0288082Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Assem1 - gear cnc 2-1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/gear cnc/stl/Assem1 - gear cnc 2-1.STL",
+                      "relPath":  "gear cnc/stl/Assem1 - gear cnc 2-1.STL",
+                      "size":  203884,
+                      "modified":  "2025-12-25T08:53:26.0216470Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseLR.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseLR.stl",
+                      "relPath":  "Dalek/Base/BaseLR.stl",
+                      "size":  64084,
+                      "modified":  "2025-12-16T13:38:09.4297947Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseBL.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseBL.stl",
+                      "relPath":  "Dalek/Base/BaseBL.stl",
+                      "size":  100484,
+                      "modified":  "2025-12-16T13:38:09.4247928Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseCL.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseCL.stl",
+                      "relPath":  "Dalek/Base/BaseCL.stl",
+                      "size":  66484,
+                      "modified":  "2025-12-16T13:38:09.4181137Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseA0.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseA0.stl",
+                      "relPath":  "Dalek/Base/BaseA0.stl",
+                      "size":  68084,
+                      "modified":  "2025-12-16T13:38:09.4128391Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseMR.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseMR.stl",
+                      "relPath":  "Dalek/Base/BaseMR.stl",
+                      "size":  95284,
+                      "modified":  "2025-12-16T13:38:09.4088381Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseFR.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseFR.stl",
+                      "relPath":  "Dalek/Base/BaseFR.stl",
+                      "size":  95484,
+                      "modified":  "2025-12-16T13:38:09.4027357Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseDL.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseDL.stl",
+                      "relPath":  "Dalek/Base/BaseDL.stl",
+                      "size":  91484,
+                      "modified":  "2025-12-16T13:38:09.3983098Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseJR.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseJR.stl",
+                      "relPath":  "Dalek/Base/BaseJR.stl",
+                      "size":  70084,
+                      "modified":  "2025-12-16T13:38:09.3923090Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseHL.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseHL.stl",
+                      "relPath":  "Dalek/Base/BaseHL.stl",
+                      "size":  84884,
+                      "modified":  "2025-12-16T13:38:09.3878508Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseIL.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseIL.stl",
+                      "relPath":  "Dalek/Base/BaseIL.stl",
+                      "size":  71284,
+                      "modified":  "2025-12-16T13:38:09.3825901Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseKR.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseKR.stl",
+                      "relPath":  "Dalek/Base/BaseKR.stl",
+                      "size":  97084,
+                      "modified":  "2025-12-16T13:38:09.3769437Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseEL.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseEL.stl",
+                      "relPath":  "Dalek/Base/BaseEL.stl",
+                      "size":  54284,
+                      "modified":  "2025-12-16T13:38:09.3704411Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseGR.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseGR.stl",
+                      "relPath":  "Dalek/Base/BaseGR.stl",
+                      "size":  76884,
+                      "modified":  "2025-12-16T13:38:09.3654402Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseFL.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseFL.stl",
+                      "relPath":  "Dalek/Base/BaseFL.stl",
+                      "size":  82084,
+                      "modified":  "2025-12-16T13:38:09.3587841Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseDR.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseDR.stl",
+                      "relPath":  "Dalek/Base/BaseDR.stl",
+                      "size":  102484,
+                      "modified":  "2025-12-16T13:38:09.3542197Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseJL.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseJL.stl",
+                      "relPath":  "Dalek/Base/BaseJL.stl",
+                      "size":  59484,
+                      "modified":  "2025-12-16T13:38:09.3487380Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseHR.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseHR.stl",
+                      "relPath":  "Dalek/Base/BaseHR.stl",
+                      "size":  95884,
+                      "modified":  "2025-12-16T13:38:09.3427312Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseIR.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseIR.stl",
+                      "relPath":  "Dalek/Base/BaseIR.stl",
+                      "size":  82284,
+                      "modified":  "2025-12-16T13:38:09.3373939Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseKL.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseKL.stl",
+                      "relPath":  "Dalek/Base/BaseKL.stl",
+                      "size":  86084,
+                      "modified":  "2025-12-16T13:38:09.3316044Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseER.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseER.stl",
+                      "relPath":  "Dalek/Base/BaseER.stl",
+                      "size":  65284,
+                      "modified":  "2025-12-16T13:38:09.3258330Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseGL.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseGL.stl",
+                      "relPath":  "Dalek/Base/BaseGL.stl",
+                      "size":  65884,
+                      "modified":  "2025-12-16T13:38:09.3205443Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseLL.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseLL.stl",
+                      "relPath":  "Dalek/Base/BaseLL.stl",
+                      "size":  53084,
+                      "modified":  "2025-12-16T13:38:09.3150634Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseBR.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseBR.stl",
+                      "relPath":  "Dalek/Base/BaseBR.stl",
+                      "size":  111484,
+                      "modified":  "2025-12-16T13:38:09.3082544Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseCR.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseCR.stl",
+                      "relPath":  "Dalek/Base/BaseCR.stl",
+                      "size":  77484,
+                      "modified":  "2025-12-16T13:38:09.3028942Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "BaseML.stl",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Base/BaseML.stl",
+                      "relPath":  "Dalek/Base/BaseML.stl",
+                      "size":  73284,
+                      "modified":  "2025-12-16T13:38:09.2893701Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "final base for slip.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/final base for slip.STL",
+                      "relPath":  "phy/final base for slip.STL",
+                      "size":  49384,
+                      "modified":  "2025-12-12T02:27:51.4657797Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "ass.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/ass.STL",
+                      "relPath":  "phy/ass.STL",
+                      "size":  55784,
+                      "modified":  "2025-12-10T19:45:34.3329354Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Mirrorleg.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/shelf/Mirrorleg.STL",
+                      "relPath":  "shelf/Mirrorleg.STL",
+                      "size":  113384,
+                      "modified":  "2025-12-10T14:55:01.1981320Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "petite.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/petite.STL",
+                      "relPath":  "phy/petite.STL",
+                      "size":  73684,
+                      "modified":  "2025-12-10T07:38:07.4482505Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "base_x_axis.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/base_x_axis.STL",
+                      "relPath":  "phy/base_x_axis.STL",
+                      "size":  252984,
+                      "modified":  "2025-12-09T14:24:15.1277083Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "today.3mf",
+                      "type":  "3mf",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/today.3mf",
+                      "relPath":  "phy/today.3mf",
+                      "size":  43001,
+                      "modified":  "2025-12-09T02:28:49.8235330Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "motor hs.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/motor hs.STL",
+                      "relPath":  "phy/motor hs.STL",
+                      "size":  20484,
+                      "modified":  "2025-12-08T23:38:15.2804672Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "HELPER.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/shelf/HELPER.STL",
+                      "relPath":  "shelf/HELPER.STL",
+                      "size":  23284,
+                      "modified":  "2025-12-08T18:05:56.7506865Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "leg.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/shelf/leg.STL",
+                      "relPath":  "shelf/leg.STL",
+                      "size":  116084,
+                      "modified":  "2025-12-08T04:41:56.4027844Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "side_y_axis.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/side_y_axis.STL",
+                      "relPath":  "phy/side_y_axis.STL",
+                      "size":  42284,
+                      "modified":  "2025-12-08T01:12:24.1452477Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Mirrorside_y_axis.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/Mirrorside_y_axis.STL",
+                      "relPath":  "phy/Mirrorside_y_axis.STL",
+                      "size":  42284,
+                      "modified":  "2025-12-08T01:12:15.2556399Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "base.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/base.STL",
+                      "relPath":  "phy/base.STL",
+                      "size":  176684,
+                      "modified":  "2025-12-08T01:11:57.0567017Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "plate-1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/shelf/plate-1.STL",
+                      "relPath":  "shelf/plate-1.STL",
+                      "size":  4684,
+                      "modified":  "2025-12-07T06:31:12.9700749Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "mag.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/mag.STL",
+                      "relPath":  "phy/mag.STL",
+                      "size":  1306184,
+                      "modified":  "2025-12-03T06:17:40.4494770Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "lane.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/lane.STL",
+                      "relPath":  "phy/lane.STL",
+                      "size":  582984,
+                      "modified":  "2025-12-02T22:26:56.9981967Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "camera mount.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/camera mount.STL",
+                      "relPath":  "phy/camera mount.STL",
+                      "size":  1265284,
+                      "modified":  "2025-11-25T07:32:47.7391637Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Assem1 - test-1-1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/headphone, yes, we finally started/Assem1 - test-1-1.STL",
+                      "relPath":  "headphone, yes, we finally started/Assem1 - test-1-1.STL",
+                      "size":  549384,
+                      "modified":  "2025-11-23T05:34:55.1740523Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Assem1 - test_inside-1-1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/headphone, yes, we finally started/Assem1 - test_inside-1-1.STL",
+                      "relPath":  "headphone, yes, we finally started/Assem1 - test_inside-1-1.STL",
+                      "size":  10884,
+                      "modified":  "2025-11-23T05:34:55.1640806Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Assem1 - test_shell-1-1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/headphone, yes, we finally started/Assem1 - test_shell-1-1.STL",
+                      "relPath":  "headphone, yes, we finally started/Assem1 - test_shell-1-1.STL",
+                      "size":  7684,
+                      "modified":  "2025-11-23T05:34:55.1630772Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Mirrormotor to angle.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/Mirrormotor to angle.STL",
+                      "relPath":  "phy/Mirrormotor to angle.STL",
+                      "size":  381584,
+                      "modified":  "2025-11-22T20:20:34.4938945Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "motor to angle.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/motor to angle.STL",
+                      "relPath":  "phy/motor to angle.STL",
+                      "size":  377184,
+                      "modified":  "2025-11-22T20:18:25.3063020Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "6-V5 Smart Motor Adapter-SJTUVEX.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/6-V5 Smart Motor Adapter-SJTUVEX.STL",
+                      "relPath":  "6-V5 Smart Motor Adapter-SJTUVEX.STL",
+                      "size":  93684,
+                      "modified":  "2025-11-22T19:21:59.8482854Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "hs_shaft thingy.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/hs_shaft thingy.STL",
+                      "relPath":  "hs_shaft thingy.STL",
+                      "size":  55684,
+                      "modified":  "2025-11-10T05:55:01.9294832Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "6-V5 Smart Motor Adapter-SJTUVEX.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/6-V5 Smart Motor Adapter-SJTUVEX.STL",
+                      "relPath":  "phy/6-V5 Smart Motor Adapter-SJTUVEX.STL",
+                      "size":  94884,
+                      "modified":  "2025-11-08T20:12:52.6875694Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "custom flexwheel shyt 2.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/Finished/custom flexwheel shyt 2.STL",
+                      "relPath":  "phy/Finished/custom flexwheel shyt 2.STL",
+                      "size":  947484,
+                      "modified":  "2025-11-08T20:11:28.0779829Z",
+                      "label":  "Projects"
                   },
                   {
                       "name":  "snacky ig.STEP",
@@ -99,7 +3249,337 @@
                       "relPath":  "2025-2026/玉爱死欸/snacky ig.STEP",
                       "size":  85206905,
                       "modified":  "2025-11-05T21:12:28.2592108Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
+                  },
+                  {
+                      "name":  "alignment bender.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/alignment bender.STL",
+                      "relPath":  "alignment bender.STL",
+                      "size":  31084,
+                      "modified":  "2025-10-14T15:17:11.6535128Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "center trail.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/center trail.STL",
+                      "relPath":  "phy/center trail.STL",
+                      "size":  17284,
+                      "modified":  "2025-10-11T20:57:30.5644396Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Center connection.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/Center connection.STL",
+                      "relPath":  "phy/Center connection.STL",
+                      "size":  63284,
+                      "modified":  "2025-10-11T20:57:19.8451900Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "MirrorCurrent_cap.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/MirrorCurrent_cap.STL",
+                      "relPath":  "phy/MirrorCurrent_cap.STL",
+                      "size":  59284,
+                      "modified":  "2025-10-11T19:55:26.0037264Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "MirrorCurrent_base.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/MirrorCurrent_base.STL",
+                      "relPath":  "phy/MirrorCurrent_base.STL",
+                      "size":  75184,
+                      "modified":  "2025-10-11T19:55:15.2826399Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "MirrorCurrent_Motor_Cap.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/MirrorCurrent_Motor_Cap.STL",
+                      "relPath":  "phy/MirrorCurrent_Motor_Cap.STL",
+                      "size":  813184,
+                      "modified":  "2025-10-11T19:55:06.0022186Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "15mm_marble_half.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/15mm_marble_half.STL",
+                      "relPath":  "phy/15mm_marble_half.STL",
+                      "size":  196384,
+                      "modified":  "2025-10-11T19:50:15.4740347Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Current_base.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/Current_base.STL",
+                      "relPath":  "phy/Current_base.STL",
+                      "size":  75184,
+                      "modified":  "2025-10-11T05:53:03.2768886Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Current_cap.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/Current_cap.STL",
+                      "relPath":  "phy/Current_cap.STL",
+                      "size":  59284,
+                      "modified":  "2025-10-11T05:52:52.5627021Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "6-V5 Smart Motor Cap 3600rpm-SJTUVEX.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/6-V5 Smart Motor Cap 3600rpm-SJTUVEX.STL",
+                      "relPath":  "phy/6-V5 Smart Motor Cap 3600rpm-SJTUVEX.STL",
+                      "size":  813184,
+                      "modified":  "2025-10-11T05:52:37.4872021Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "DONEcustom flexwheel shty.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/Finished/DONEcustom flexwheel shty.STL",
+                      "relPath":  "phy/Finished/DONEcustom flexwheel shty.STL",
+                      "size":  945984,
+                      "modified":  "2025-10-11T03:54:12.3558016Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "6-V5 Smart Motor Adapter-SJTUVEX.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/phy/Finished/6-V5 Smart Motor Adapter-SJTUVEX.STL",
+                      "relPath":  "phy/Finished/6-V5 Smart Motor Adapter-SJTUVEX.STL",
+                      "size":  94884,
+                      "modified":  "2025-10-10T21:26:51.2733482Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "6.3mm standoff drill piece.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/6.3mm standoff drill piece.STL",
+                      "relPath":  "6.3mm standoff drill piece.STL",
+                      "size":  22884,
+                      "modified":  "2025-10-04T19:47:43.2962631Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "6.6mm standoff drill piece.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/6.6mm standoff drill piece.STL",
+                      "relPath":  "6.6mm standoff drill piece.STL",
+                      "size":  22884,
+                      "modified":  "2025-10-04T19:47:33.2894101Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "7.3mm standoff drill piece.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/7.3mm standoff drill piece.STL",
+                      "relPath":  "7.3mm standoff drill piece.STL",
+                      "size":  20484,
+                      "modified":  "2025-10-04T19:47:26.5859093Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "collar trial.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/collar trial.STL",
+                      "relPath":  "collar trial.STL",
+                      "size":  36084,
+                      "modified":  "2025-09-28T15:45:42.8811700Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "72 t mod.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/72 t mod.STL",
+                      "relPath":  "72 t mod.STL",
+                      "size":  378984,
+                      "modified":  "2025-09-26T01:34:57.2399087Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "c-channel cut support.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/c-channel cut support.STL",
+                      "relPath":  "c-channel cut support.STL",
+                      "size":  5284,
+                      "modified":  "2025-09-20T23:47:21.9207729Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "barcode3040 3mm radius.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/barcode3040 3mm radius.STL",
+                      "relPath":  "barcode3040 3mm radius.STL",
+                      "size":  173884,
+                      "modified":  "2025-09-17T21:55:14.0916418Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "laservent.3mf",
+                      "type":  "3mf",
+                      "category":  "cad",
+                      "path":  "library/cad/laser/laservent.3mf",
+                      "relPath":  "laser/laservent.3mf",
+                      "size":  127487,
+                      "modified":  "2025-09-14T17:34:00.0683517Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "laservent.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/laser/laservent.STL",
+                      "relPath":  "laser/laservent.STL",
+                      "size":  27384,
+                      "modified":  "2025-09-14T01:56:18.4297739Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "v2 side.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/laser/v2 side.STL",
+                      "relPath":  "laser/v2 side.STL",
+                      "size":  77284,
+                      "modified":  "2025-09-13T21:16:31.4755688Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "base.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/ams lid holder/base.STL",
+                      "relPath":  "ams lid holder/base.STL",
+                      "size":  22284,
+                      "modified":  "2025-09-12T05:20:48.6982263Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "spin.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/ams lid holder/spin.STL",
+                      "relPath":  "ams lid holder/spin.STL",
+                      "size":  11484,
+                      "modified":  "2025-09-12T05:20:35.1806532Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Assem1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/ams lid holder/Assem1.STL",
+                      "relPath":  "ams lid holder/Assem1.STL",
+                      "size":  52884,
+                      "modified":  "2025-09-12T01:42:48.6039351Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "saw stuff.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/saw stuff.STL",
+                      "relPath":  "saw stuff.STL",
+                      "size":  818184,
+                      "modified":  "2025-09-08T22:45:30.6591488Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "Bed m6 screw table side.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Bed m6 screw table side.STL",
+                      "relPath":  "Bed m6 screw table side.STL",
+                      "size":  1420784,
+                      "modified":  "2025-09-04T02:03:29.4729734Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "key hook m6 screw table side.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/key hook m6 screw table side.STL",
+                      "relPath":  "key hook m6 screw table side.STL",
+                      "size":  359684,
+                      "modified":  "2025-09-03T03:11:22.9147675Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "barcode3040.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/barcode3040.STL",
+                      "relPath":  "barcode3040.STL",
+                      "size":  152784,
+                      "modified":  "2025-09-03T01:12:02.7079891Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "heater holder.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/heater holder.STL",
+                      "relPath":  "heater holder.STL",
+                      "size":  390584,
+                      "modified":  "2025-09-02T11:32:24.0805299Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "heater holder.3mf",
+                      "type":  "3mf",
+                      "category":  "cad",
+                      "path":  "library/cad/heater holder.3mf",
+                      "relPath":  "heater holder.3mf",
+                      "size":  88764,
+                      "modified":  "2025-09-02T04:24:38.6092599Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "screw driver 1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/screw driver 1.STL",
+                      "relPath":  "screw driver 1.STL",
+                      "size":  649684,
+                      "modified":  "2025-09-01T18:42:36.8764440Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "1-Plastic Shaft Inserts-SJTUVEX.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/1-Plastic Shaft Inserts-SJTUVEX.STL",
+                      "relPath":  "1-Plastic Shaft Inserts-SJTUVEX.STL",
+                      "size":  72084,
+                      "modified":  "2025-07-15T19:36:05.5674001Z",
+                      "label":  "Projects"
                   },
                   {
                       "name":  "Pneumatic Reservoir Assembly (1).step",
@@ -109,7 +3589,47 @@
                       "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Pneumatics/Air Tank/Pneumatic Reservoir Assembly (1).step",
                       "size":  86790,
                       "modified":  "2025-06-29T17:04:38.8582956Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
+                  },
+                  {
+                      "name":  "short.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/ams lite/stl/short.STL",
+                      "relPath":  "ams lite/stl/short.STL",
+                      "size":  93684,
+                      "modified":  "2025-06-25T06:38:25.7824478Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "short.3mf",
+                      "type":  "3mf",
+                      "category":  "cad",
+                      "path":  "library/cad/ams lite/stl/short.3mf",
+                      "relPath":  "ams lite/stl/short.3mf",
+                      "size":  53007,
+                      "modified":  "2025-06-25T05:31:27.6166303Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "corner.3mf",
+                      "type":  "3mf",
+                      "category":  "cad",
+                      "path":  "library/cad/ams lite/stl/corner.3mf",
+                      "relPath":  "ams lite/stl/corner.3mf",
+                      "size":  46452,
+                      "modified":  "2025-06-23T07:37:41.8212819Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "corner.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/ams lite/stl/corner.STL",
+                      "relPath":  "ams lite/stl/corner.STL",
+                      "size":  86484,
+                      "modified":  "2025-06-23T07:33:43.4078336Z",
+                      "label":  "Projects"
                   },
                   {
                       "name":  "motor h6 replace.3mf",
@@ -119,7 +3639,7 @@
                       "relPath":  "motor h6 replace.3mf",
                       "size":  119574,
                       "modified":  "2025-06-19T09:15:34.3017734Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
                   },
                   {
                       "name":  "motor h6 replace.STL",
@@ -129,7 +3649,37 @@
                       "relPath":  "motor h6 replace.STL",
                       "size":  275284,
                       "modified":  "2025-06-19T09:13:32.0887838Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
+                  },
+                  {
+                      "name":  "1.3mf",
+                      "type":  "3mf",
+                      "category":  "cad",
+                      "path":  "library/cad/sock/1.3mf",
+                      "relPath":  "sock/1.3mf",
+                      "size":  110478,
+                      "modified":  "2025-06-15T16:19:09.3491816Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "base1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/sock/base1.STL",
+                      "relPath":  "sock/base1.STL",
+                      "size":  390484,
+                      "modified":  "2025-06-15T08:24:06.2812210Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "base.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/sock/base.STL",
+                      "relPath":  "sock/base.STL",
+                      "size":  659984,
+                      "modified":  "2025-06-15T08:07:29.2972247Z",
+                      "label":  "Projects"
                   },
                   {
                       "name":  "36T High Strength Gear v2 (8-pack) (276-7747).step",
@@ -139,7 +3689,37 @@
                       "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/Gears, Sprocket \u0026 Chain/High Strength Gears/36T High Strength Gear v2 (8-pack) (276-7747).step",
                       "size":  4551613,
                       "modified":  "2025-04-22T08:20:40.2626038Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
+                  },
+                  {
+                      "name":  "keyboard stand.3mf",
+                      "type":  "3mf",
+                      "category":  "cad",
+                      "path":  "library/cad/keyboard stand.3mf",
+                      "relPath":  "keyboard stand.3mf",
+                      "size":  256522,
+                      "modified":  "2025-03-05T05:35:16.8719377Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "trytry.3mf",
+                      "type":  "3mf",
+                      "category":  "cad",
+                      "path":  "library/cad/trytry.3mf",
+                      "relPath":  "trytry.3mf",
+                      "size":  2720139,
+                      "modified":  "2025-02-26T00:20:52.9220262Z",
+                      "label":  "Projects"
+                  },
+                  {
+                      "name":  "DO NOT REMOVE.3mf",
+                      "type":  "3mf",
+                      "category":  "cad",
+                      "path":  "library/cad/DO NOT REMOVE.3mf",
+                      "relPath":  "DO NOT REMOVE.3mf",
+                      "size":  183439,
+                      "modified":  "2024-11-18T16:27:13.0000000Z",
+                      "label":  "Projects"
                   },
                   {
                       "name":  "55286A_front.STL",
@@ -149,7 +3729,7 @@
                       "relPath":  "Team/55286A_front.STL",
                       "size":  270284,
                       "modified":  "2024-09-22T02:58:43.0000000Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
                   },
                   {
                       "name":  "V5 Smart Motor (276-4840).step",
@@ -159,7 +3739,7 @@
                       "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/V5 Control System/V5 Smart Motor (276-4840).step",
                       "size":  16822582,
                       "modified":  "2024-08-19T17:40:09.0000000Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
                   },
                   {
                       "name":  "Metal Shaft Inserts (276-3881-002) (1).step",
@@ -169,7 +3749,7 @@
                       "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/Wheels/Metal Shaft Inserts (276-3881-002) (1).step",
                       "size":  69220,
                       "modified":  "2024-01-10T02:11:28.0000000Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
                   },
                   {
                       "name":  "V5 Smart Motor (5.5W) (276-4842).step",
@@ -179,7 +3759,7 @@
                       "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/VEX Library-SJTUVEX/V5 Control System/V5 Smart Motor (5.5W) (276-4842).step",
                       "size":  704770,
                       "modified":  "2023-06-10T07:12:50.0000000Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
                   },
                   {
                       "name":  "TWAdaptor.step",
@@ -189,7 +3769,7 @@
                       "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Electronics/Sensors/Robocon Encoder/TWAdaptor.step",
                       "size":  4205431,
                       "modified":  "2023-05-24T12:50:36.0000000Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
                   },
                   {
                       "name":  "SJTU_VEXrduino.step",
@@ -199,7 +3779,7 @@
                       "relPath":  "SW20 - Standard Parts - VEX/SW20 - Standard Parts - VEX/Electronics/VEXduino-SJTUVEX/parts/SJTU_VEXrduino.step",
                       "size":  19642426,
                       "modified":  "2021-11-25T09:49:10.0000000Z",
-                      "label":  "VEX CAD"
+                      "label":  "VEX Robotics"
                   }
               ]
 }

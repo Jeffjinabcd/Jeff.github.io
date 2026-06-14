@@ -58,8 +58,8 @@ function Sync-Library {
   $copied = 0
   $skipped = 0
 
-  # Auto-export SolidWorks parts to STL if SW is already open
-  $cfg.mappings | Where-Object { $_.category -eq 'cad' } | ForEach-Object { Export-SWToSTL $_ }
+  # NOTE: SolidWorks → STL/STEP export is handled by the separate sw-export.ps1.
+  # sync.ps1 only mirrors files that already exist on disk.
 
   # Mirror sync: wipe category folders so deleted/junk files don't linger
   foreach ($cat in @('cad','code','images')) {
@@ -76,7 +76,8 @@ function Sync-Library {
     'vendor','packages','.cache',
     'FurMark_win64','gpushark',                       # GPU benchmark tool
     'background ai remover',                           # python venv + AI models, not portfolio work
-    'Makapaka-Scout'                                   # external collaborative repo — cited via link instead
+    'Makapaka-Scout',                                  # external collaborative repo — cited via link instead
+    '__MACOSX'                                         # macOS archive metadata junk
   )
 
   foreach ($mapping in $cfg.mappings) {
@@ -94,6 +95,8 @@ function Sync-Library {
 
     Get-ChildItem $src -Recurse -File | Where-Object {
       $f = $_
+      # Skip junk filenames: macOS resource forks (._x) and SolidWorks lock files (~$x)
+      if ($f.Name -like '._*' -or $f.Name -like '~$*') { return $false }
       $skip = $false
       foreach ($d in $excludeDirs) {
         if ($f.FullName -like "*\$d\*" -or $f.FullName -like "*\$d") { $skip = $true; break }
