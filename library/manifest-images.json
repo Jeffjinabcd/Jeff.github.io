@@ -1,5 +1,5 @@
 {
-    "generated":  "2026-07-15T12:59:16.5256836Z",
+    "generated":  "2026-07-16T12:55:01.1337940Z",
     "files":  [
                   {
                       "name":  "Untitled_Project_2.png",
@@ -143,54 +143,6 @@
                       "modified":  "2026-04-13T15:54:58.6975599Z",
                       "label":  "Projects",
                       "project":  "ssamo",
-                      "isAssembly":  false
-                  },
-                  {
-                      "name":  "Group 1088_white.svg",
-                      "type":  "svg",
-                      "category":  "images",
-                      "path":  "library/images/Group 1088_white.svg",
-                      "relPath":  "Group 1088_white.svg",
-                      "size":  739,
-                      "modified":  "2023-04-14T00:28:18.0000000Z",
-                      "label":  "Logo",
-                      "project":  "stuff",
-                      "isAssembly":  false
-                  },
-                  {
-                      "name":  "Group 1088.svg",
-                      "type":  "svg",
-                      "category":  "images",
-                      "path":  "library/images/Group 1088.svg",
-                      "relPath":  "Group 1088.svg",
-                      "size":  681,
-                      "modified":  "2023-04-14T00:28:04.0000000Z",
-                      "label":  "Logo",
-                      "project":  "stuff",
-                      "isAssembly":  false
-                  },
-                  {
-                      "name":  "logo_White.png",
-                      "type":  "png",
-                      "category":  "images",
-                      "path":  "library/images/logo_White.png",
-                      "relPath":  "logo_White.png",
-                      "size":  25350,
-                      "modified":  "2023-03-23T02:35:58.0000000Z",
-                      "label":  "Logo",
-                      "project":  "stuff",
-                      "isAssembly":  false
-                  },
-                  {
-                      "name":  "logo.png",
-                      "type":  "png",
-                      "category":  "images",
-                      "path":  "library/images/logo.png",
-                      "relPath":  "logo.png",
-                      "size":  25340,
-                      "modified":  "2023-03-23T01:46:44.0000000Z",
-                      "label":  "Logo",
-                      "project":  "stuff",
                       "isAssembly":  false
                   }
               ]
