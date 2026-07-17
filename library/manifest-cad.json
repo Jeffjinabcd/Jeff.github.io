@@ -1,6 +1,18 @@
 {
-    "generated":  "2026-07-17T17:06:30.6958539Z",
+    "generated":  "2026-07-17T21:18:42.2617212Z",
     "files":  [
+                  {
+                      "name":  "here we go.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/bullet armor (brandon)/here we go.STEP",
+                      "relPath":  "bullet armor (brandon)/here we go.STEP",
+                      "size":  66274930,
+                      "modified":  "2026-07-17T17:54:42.6454043Z",
+                      "label":  "Projects",
+                      "project":  "bullet armor (brandon)",
+                      "isAssembly":  true
+                  },
                   {
                       "name":  "box.STEP",
                       "type":  "step",
