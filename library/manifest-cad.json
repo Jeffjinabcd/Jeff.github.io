@@ -1,5 +1,5 @@
 {
-    "generated":  "2026-08-03T04:27:25.9038509Z",
+    "generated":  "2026-08-03T04:32:39.4116599Z",
     "files":  [
                   {
                       "name":  "main.STEP",
@@ -7,20 +7,32 @@
                       "category":  "cad",
                       "path":  "library/cad/towel holder/main.STEP",
                       "relPath":  "towel holder/main.STEP",
-                      "size":  8751,
-                      "modified":  "2026-08-03T03:31:37.0005089Z",
+                      "size":  15697,
+                      "modified":  "2026-08-03T04:32:10.3794399Z",
                       "label":  "Projects",
                       "project":  "towel holder",
                       "isAssembly":  true
                   },
                   {
-                      "name":  "screw - 副本 (2)_默认.STEP",
+                      "name":  "Mirrorscrew_默认.STEP",
                       "type":  "step",
                       "category":  "cad",
-                      "path":  "library/cad/towel holder/screw - 副本 (2)_默认.STEP",
-                      "relPath":  "towel holder/screw - 副本 (2)_默认.STEP",
-                      "size":  260023,
-                      "modified":  "2026-08-03T03:31:36.9768682Z",
+                      "path":  "library/cad/towel holder/Mirrorscrew_默认.STEP",
+                      "relPath":  "towel holder/Mirrorscrew_默认.STEP",
+                      "size":  925537,
+                      "modified":  "2026-08-03T04:32:10.3283343Z",
+                      "label":  "Projects",
+                      "project":  "towel holder",
+                      "isAssembly":  false
+                  },
+                  {
+                      "name":  "Mirrorright_默认.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/towel holder/Mirrorright_默认.STEP",
+                      "relPath":  "towel holder/Mirrorright_默认.STEP",
+                      "size":  313078,
+                      "modified":  "2026-08-03T04:32:10.1240171Z",
                       "label":  "Projects",
                       "project":  "towel holder",
                       "isAssembly":  false
@@ -31,8 +43,20 @@
                       "category":  "cad",
                       "path":  "library/cad/towel holder/screw_默认.STEP",
                       "relPath":  "towel holder/screw_默认.STEP",
-                      "size":  866087,
-                      "modified":  "2026-08-03T03:31:36.9202577Z",
+                      "size":  866098,
+                      "modified":  "2026-08-03T04:32:10.0165041Z",
+                      "label":  "Projects",
+                      "project":  "towel holder",
+                      "isAssembly":  false
+                  },
+                  {
+                      "name":  "screw - 副本 (2)_默认.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/towel holder/screw - 副本 (2)_默认.STEP",
+                      "relPath":  "towel holder/screw - 副本 (2)_默认.STEP",
+                      "size":  260550,
+                      "modified":  "2026-08-03T04:32:09.8457819Z",
                       "label":  "Projects",
                       "project":  "towel holder",
                       "isAssembly":  false
@@ -43,8 +67,8 @@
                       "category":  "cad",
                       "path":  "library/cad/towel holder/right_默认.STEP",
                       "relPath":  "towel holder/right_默认.STEP",
-                      "size":  319037,
-                      "modified":  "2026-08-03T03:31:36.7214578Z",
+                      "size":  314224,
+                      "modified":  "2026-08-03T04:32:09.7709240Z",
                       "label":  "Projects",
                       "project":  "towel holder",
                       "isAssembly":  false
@@ -242,24 +266,24 @@
                       "isAssembly":  false
                   },
                   {
-                      "name":  "vvvvvvvvvvv2 - v2 - right lever-1.STL",
-                      "type":  "stl",
-                      "category":  "cad",
-                      "path":  "library/cad/vex scuff/v2/vvvvvvvvvvv2 - v2 - right lever-1.STL",
-                      "relPath":  "vex scuff/v2/vvvvvvvvvvv2 - v2 - right lever-1.STL",
-                      "size":  49884,
-                      "modified":  "2026-06-23T22:17:22.5754782Z",
-                      "label":  "Projects",
-                      "project":  "vex scuff",
-                      "isAssembly":  false
-                  },
-                  {
                       "name":  "vvvvvvvvvvv2 - Mirrorback-3.STL",
                       "type":  "stl",
                       "category":  "cad",
                       "path":  "library/cad/vex scuff/v2/vvvvvvvvvvv2 - Mirrorback-3.STL",
                       "relPath":  "vex scuff/v2/vvvvvvvvvvv2 - Mirrorback-3.STL",
                       "size":  524684,
+                      "modified":  "2026-06-23T22:17:22.5754782Z",
+                      "label":  "Projects",
+                      "project":  "vex scuff",
+                      "isAssembly":  false
+                  },
+                  {
+                      "name":  "vvvvvvvvvvv2 - v2 - right lever-1.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/vex scuff/v2/vvvvvvvvvvv2 - v2 - right lever-1.STL",
+                      "relPath":  "vex scuff/v2/vvvvvvvvvvv2 - v2 - right lever-1.STL",
+                      "size":  49884,
                       "modified":  "2026-06-23T22:17:22.5754782Z",
                       "label":  "Projects",
                       "project":  "vex scuff",
