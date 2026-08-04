@@ -1,6 +1,54 @@
 {
-    "generated":  "2026-08-03T04:32:39.4116599Z",
+    "generated":  "2026-08-04T22:13:28.5292258Z",
     "files":  [
+                  {
+                      "name":  "cylinder.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/towel holder/cylinder.STEP",
+                      "relPath":  "towel holder/cylinder.STEP",
+                      "size":  44492,
+                      "modified":  "2026-08-03T22:22:16.9075359Z",
+                      "label":  "Projects",
+                      "project":  "towel holder",
+                      "isAssembly":  false
+                  },
+                  {
+                      "name":  "cylinder out.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/towel holder/cylinder out.STEP",
+                      "relPath":  "towel holder/cylinder out.STEP",
+                      "size":  33924,
+                      "modified":  "2026-08-03T22:22:07.1407203Z",
+                      "label":  "Projects",
+                      "project":  "towel holder",
+                      "isAssembly":  false
+                  },
+                  {
+                      "name":  "right outside.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/towel holder/right outside.STEP",
+                      "relPath":  "towel holder/right outside.STEP",
+                      "size":  14690,
+                      "modified":  "2026-08-03T21:25:36.8677806Z",
+                      "label":  "Projects",
+                      "project":  "towel holder",
+                      "isAssembly":  false
+                  },
+                  {
+                      "name":  "right flap.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/towel holder/right flap.STEP",
+                      "relPath":  "towel holder/right flap.STEP",
+                      "size":  300166,
+                      "modified":  "2026-08-03T21:24:38.4288673Z",
+                      "label":  "Projects",
+                      "project":  "towel holder",
+                      "isAssembly":  false
+                  },
                   {
                       "name":  "main.STEP",
                       "type":  "step",
@@ -266,24 +314,24 @@
                       "isAssembly":  false
                   },
                   {
-                      "name":  "vvvvvvvvvvv2 - Mirrorback-3.STL",
-                      "type":  "stl",
-                      "category":  "cad",
-                      "path":  "library/cad/vex scuff/v2/vvvvvvvvvvv2 - Mirrorback-3.STL",
-                      "relPath":  "vex scuff/v2/vvvvvvvvvvv2 - Mirrorback-3.STL",
-                      "size":  524684,
-                      "modified":  "2026-06-23T22:17:22.5754782Z",
-                      "label":  "Projects",
-                      "project":  "vex scuff",
-                      "isAssembly":  false
-                  },
-                  {
                       "name":  "vvvvvvvvvvv2 - v2 - right lever-1.STL",
                       "type":  "stl",
                       "category":  "cad",
                       "path":  "library/cad/vex scuff/v2/vvvvvvvvvvv2 - v2 - right lever-1.STL",
                       "relPath":  "vex scuff/v2/vvvvvvvvvvv2 - v2 - right lever-1.STL",
                       "size":  49884,
+                      "modified":  "2026-06-23T22:17:22.5754782Z",
+                      "label":  "Projects",
+                      "project":  "vex scuff",
+                      "isAssembly":  false
+                  },
+                  {
+                      "name":  "vvvvvvvvvvv2 - Mirrorback-3.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/vex scuff/v2/vvvvvvvvvvv2 - Mirrorback-3.STL",
+                      "relPath":  "vex scuff/v2/vvvvvvvvvvv2 - Mirrorback-3.STL",
+                      "size":  524684,
                       "modified":  "2026-06-23T22:17:22.5754782Z",
                       "label":  "Projects",
                       "project":  "vex scuff",
