@@ -1,26 +1,14 @@
 {
-    "generated":  "2026-08-05T20:01:03.6593386Z",
+    "generated":  "2026-08-05T20:06:24.1845560Z",
     "files":  [
-                  {
-                      "name":  "cap.STEP",
-                      "type":  "step",
-                      "category":  "cad",
-                      "path":  "library/cad/3KEY/cap.STEP",
-                      "relPath":  "3KEY/cap.STEP",
-                      "size":  636565,
-                      "modified":  "2026-08-05T06:57:50.3611124Z",
-                      "label":  "Projects",
-                      "project":  "3KEY",
-                      "isAssembly":  false
-                  },
                   {
                       "name":  "MAIN.STEP",
                       "type":  "step",
                       "category":  "cad",
                       "path":  "library/cad/3KEY/MAIN.STEP",
                       "relPath":  "3KEY/MAIN.STEP",
-                      "size":  12173,
-                      "modified":  "2026-08-05T03:28:49.2468126Z",
+                      "size":  12174,
+                      "modified":  "2026-08-05T20:03:51.9540749Z",
                       "label":  "Projects",
                       "project":  "3KEY",
                       "isAssembly":  true
@@ -31,20 +19,8 @@
                       "category":  "cad",
                       "path":  "library/cad/3KEY/cap_默认.STEP",
                       "relPath":  "3KEY/cap_默认.STEP",
-                      "size":  636904,
-                      "modified":  "2026-08-05T03:28:49.2041389Z",
-                      "label":  "Projects",
-                      "project":  "3KEY",
-                      "isAssembly":  false
-                  },
-                  {
-                      "name":  "bottom_默认.STEP",
-                      "type":  "step",
-                      "category":  "cad",
-                      "path":  "library/cad/3KEY/bottom_默认.STEP",
-                      "relPath":  "3KEY/bottom_默认.STEP",
-                      "size":  181401,
-                      "modified":  "2026-08-05T03:28:48.8798802Z",
+                      "size":  636622,
+                      "modified":  "2026-08-05T20:03:51.8500919Z",
                       "label":  "Projects",
                       "project":  "3KEY",
                       "isAssembly":  false
@@ -55,8 +31,32 @@
                       "category":  "cad",
                       "path":  "library/cad/3KEY/top_默认.STEP",
                       "relPath":  "3KEY/top_默认.STEP",
-                      "size":  159367,
-                      "modified":  "2026-08-05T03:28:48.7608204Z",
+                      "size":  146595,
+                      "modified":  "2026-08-05T20:03:51.1069437Z",
+                      "label":  "Projects",
+                      "project":  "3KEY",
+                      "isAssembly":  false
+                  },
+                  {
+                      "name":  "bottom_默认.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/3KEY/bottom_默认.STEP",
+                      "relPath":  "3KEY/bottom_默认.STEP",
+                      "size":  181381,
+                      "modified":  "2026-08-05T20:03:50.9137037Z",
+                      "label":  "Projects",
+                      "project":  "3KEY",
+                      "isAssembly":  false
+                  },
+                  {
+                      "name":  "cap.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/3KEY/cap.STEP",
+                      "relPath":  "3KEY/cap.STEP",
+                      "size":  636565,
+                      "modified":  "2026-08-05T06:57:50.3611124Z",
                       "label":  "Projects",
                       "project":  "3KEY",
                       "isAssembly":  false
