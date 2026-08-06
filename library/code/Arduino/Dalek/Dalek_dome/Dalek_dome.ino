@@ -17,11 +17,21 @@
 #include <esp_wifi.h>
 
 // ===== DOME + ARM pins (same layout as your earlier dome sketch) =====
-const int DOME_PWM_PIN  = 25;   // Cytron MDD10A ch1 PWM
-const int DOME_DIR_PIN  = 33;   // Cytron MDD10A ch1 DIR
-const int ARM_PWM_PIN   = 27;   // Cytron MDD10A ch2 PWM
-const int ARM_DIR_PIN   = 26;   // Cytron MDD10A ch2 DIR
+// SWAPPED to match physical wiring: dome is now on MDD10A Ch2, arm on Ch1
+const int DOME_PWM_PIN  = 27;   // Cytron MDD10A ch2 PWM  (dome)
+const int DOME_DIR_PIN  = 26;   // Cytron MDD10A ch2 DIR  (dome)
+const int ARM_PWM_PIN   = 25;   // Cytron MDD10A ch1 PWM  (arm)
+const int ARM_DIR_PIN   = 33;   // Cytron MDD10A ch1 DIR  (arm)
 const int DOME_DEADZONE = 20;
+
+// ===== Dome encoder (SKU 638326 — open-collector, needs pull-ups) =====
+const int ENC_A_PIN = 16;   // Channel A (yellow wire)
+const int ENC_B_PIN = 17;   // Channel B (brown wire)
+// Output shaft = ~2443 countable events/rev at full 4x. We interrupt on A only
+// (2x), so ~1221/rev. CALIBRATE: spin the dome exactly one full turn, read the
+// count printed on serial, and put that number here.
+const float COUNTS_PER_REV = 1221.48;
+volatile long domeCount = 0;
 
 // ===== drivetrain input tuning (matches your Nano arcade drive) =====
 const int  DEADBAND = 50;
@@ -46,6 +56,14 @@ unsigned long lastPrint = 0;
 void onConnected(ControllerPtr ctl){ if(!myController){ Serial.println(">>> XBOX ONLINE");  myController=ctl; } }
 void onDisconnected(ControllerPtr ctl){ if(myController==ctl){ myController=nullptr; Serial.println(">>> XBOX OFFLINE"); } }
 
+// Encoder interrupt: fires on every edge of Channel A.
+// If A and B match, we're turning one way; if not, the other.
+void IRAM_ATTR readDomeEncoder(){
+  bool a = digitalRead(ENC_A_PIN);
+  bool b = digitalRead(ENC_B_PIN);
+  if (a == b) domeCount++; else domeCount--;
+}
+
 void setup(){
   Serial.begin(115200);
   delay(500);
@@ -54,6 +72,11 @@ void setup(){
   pinMode(DOME_PWM_PIN,OUTPUT); pinMode(DOME_DIR_PIN,OUTPUT);
   pinMode(ARM_PWM_PIN, OUTPUT); pinMode(ARM_DIR_PIN, OUTPUT);
   analogWrite(DOME_PWM_PIN,0);  analogWrite(ARM_PWM_PIN,0);   // safe on boot
+
+  // dome encoder inputs — open-collector, so use internal pull-ups
+  pinMode(ENC_A_PIN, INPUT_PULLUP);
+  pinMode(ENC_B_PIN, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(ENC_A_PIN), readDomeEncoder, CHANGE);
 
   // ESP-NOW (WiFi). Original ESP32 handles BT + WiFi coexistence.
   WiFi.mode(WIFI_STA);
@@ -91,8 +114,8 @@ void loop(){
     } else analogWrite(DOME_PWM_PIN,0);
 
     // ---- ARM: Y extend, A retract (same as earlier) ----
-    if(bY){ digitalWrite(ARM_DIR_PIN,HIGH); analogWrite(ARM_PWM_PIN,255); }
-    else if(bA){ digitalWrite(ARM_DIR_PIN,LOW); analogWrite(ARM_PWM_PIN,255); }
+    if(bA){ digitalWrite(ARM_DIR_PIN,HIGH); analogWrite(ARM_PWM_PIN,255); }
+    else if(bY){ digitalWrite(ARM_DIR_PIN,LOW); analogWrite(ARM_PWM_PIN,255); }
     else analogWrite(ARM_PWM_PIN,0);
 
     // ---- DRIVE: dpad up/down speed limit (same as earlier) ----
@@ -115,9 +138,11 @@ void loop(){
 
     // ---- print everything ----
     if(millis()-lastPrint>=150){
+      long c = domeCount;
+      float deg = (float)c / COUNTS_PER_REV * 360.0;
       Serial.printf("XBOX L(%5d,%5d) R(%5d,%5d) LT:%4d RT:%4d dpad:0x%02x A:%d B:%d X:%d Y:%d "
-                    "| dome:%5d | SEND thr:%4d turn:%4d lim:%d%%\n",
-        lx,ly,rx,ry,lt,rt,dpad,bA,bB,bX,bY,domeCmd,tx.throttle,tx.turn,tx.speedLimitPct);
+                    "| domeCmd:%5d enc:%ld (%.1f deg) | SEND thr:%4d turn:%4d lim:%d%%\n",
+        lx,ly,rx,ry,lt,rt,dpad,bA,bB,bX,bY,domeCmd,c,deg,tx.throttle,tx.turn,tx.speedLimitPct);
       lastPrint=millis();
     }
   } else {
