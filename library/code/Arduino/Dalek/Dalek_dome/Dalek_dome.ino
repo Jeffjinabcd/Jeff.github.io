@@ -53,8 +53,20 @@ float globalSpeedLimit = 0.5;   // starts at 50%
 uint8_t lastDpadState = 0;
 unsigned long lastPrint = 0;
 
-void onConnected(ControllerPtr ctl){ if(!myController){ Serial.println(">>> XBOX ONLINE");  myController=ctl; } }
-void onDisconnected(ControllerPtr ctl){ if(myController==ctl){ myController=nullptr; Serial.println(">>> XBOX OFFLINE"); } }
+void onConnected(ControllerPtr ctl){
+  if(!myController){
+    Serial.println(">>> XBOX ONLINE");
+    myController=ctl;
+    BP32.enableNewBluetoothConnections(false);  // stop BT scanning -> frees radio for ESP-NOW
+  }
+}
+void onDisconnected(ControllerPtr ctl){
+  if(myController==ctl){
+    myController=nullptr;
+    Serial.println(">>> XBOX OFFLINE");
+    BP32.enableNewBluetoothConnections(true);   // allow re-pairing again
+  }
+}
 
 // Encoder interrupt: fires on every edge of Channel A.
 // If A and B match, we're turning one way; if not, the other.
@@ -81,6 +93,8 @@ void setup(){
   // ESP-NOW (WiFi). Original ESP32 handles BT + WiFi coexistence.
   WiFi.mode(WIFI_STA);
   WiFi.disconnect();
+  // Do NOT disable WiFi modem sleep here — it is REQUIRED when Bluetooth is
+  // also enabled. Disabling it crashes the ESP32 in a reboot loop.
   esp_wifi_set_channel(1, WIFI_SECOND_CHAN_NONE);   // MUST match the Nano
   if(esp_now_init()!=ESP_OK) Serial.println("ESP-NOW init FAILED");
   esp_now_peer_info_t peer = {};
@@ -113,7 +127,7 @@ void loop(){
       analogWrite(DOME_PWM_PIN, map(abs(domeCmd),0,1023,0,255));
     } else analogWrite(DOME_PWM_PIN,0);
 
-    // ---- ARM: Y extend, A retract (same as earlier) ----
+    // ---- ARM: A extend, Y retract (swapped) ----
     if(bA){ digitalWrite(ARM_DIR_PIN,HIGH); analogWrite(ARM_PWM_PIN,255); }
     else if(bY){ digitalWrite(ARM_DIR_PIN,LOW); analogWrite(ARM_PWM_PIN,255); }
     else analogWrite(ARM_PWM_PIN,0);
