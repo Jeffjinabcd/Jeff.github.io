@@ -334,6 +334,26 @@
   .lib-panel{display:block;}
   .lib-panel.hidden{display:none;}
 
+  /* ---- Featured Sketchfab models ---- */
+  .featured-block{margin-bottom:34px;}
+  .featured-grid{
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:16px;
+  }
+  .featured-card{
+    border:1px solid var(--line); background:var(--panel-2);
+    display:flex; flex-direction:column; overflow:hidden;
+    transition:border-color .25s, transform .25s, box-shadow .25s;
+  }
+  .featured-card:hover{
+    border-color:var(--accent); transform:translateY(-2px);
+    box-shadow:0 10px 30px -16px rgba(20,27,39,0.45);
+  }
+  .featured-embed{position:relative; width:100%; aspect-ratio:16/10; background:#11151f;}
+  .featured-embed iframe{position:absolute; inset:0; width:100%; height:100%; border:0; display:block;}
+  .featured-meta{padding:16px 18px; border-top:1px solid var(--line);}
+  .featured-title{font-family:var(--display); font-weight:600; font-size:1.1rem; margin:0 0 4px;}
+  .featured-note{color:var(--ink-soft); font-size:0.95rem; margin:0;}
+
   /* ---- Projects quick-access ---- */
   .projects-block{margin-bottom:30px;}
   .projects-bar{display:flex; flex-wrap:wrap; gap:10px;}
@@ -830,6 +850,12 @@
         Click any STL or STEP to open a live 3D preview.
       </p>
 
+      <!-- Featured Sketchfab models — stays hidden until featured.json has entries -->
+      <div class="featured-block reveal" id="featured-block" style="display:none;">
+        <p class="label" style="margin-bottom:14px;">Featured — interactive 3D</p>
+        <div class="featured-grid" id="featured-grid"></div>
+      </div>
+
       <!-- Projects quick-access -->
       <div class="projects-block reveal">
         <p class="label" style="margin-bottom:14px;">Projects — quick access</p>
@@ -1121,6 +1147,45 @@
     document.getElementById('lib-count-exp').textContent = 'Loading…';
     Promise.all(cats.map(loadCategory)).then(function(){ renderExplorer(); renderProjectsBar(); });
   }
+
+  // ── Featured Sketchfab models ───────────────────────────────────────────────
+  function sketchfabId(s){
+    if(!s) return '';
+    var m = String(s).match(/[0-9a-f]{32}/i);   // pull the 32-hex id from a full URL or raw id
+    return m ? m[0] : String(s).trim();
+  }
+  function renderFeatured(){
+    fetch('featured.json?v='+Date.now())
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        var models = (data && data.models) || [];
+        if(!models.length) return;                 // stay hidden when nothing is featured
+        var grid = document.getElementById('featured-grid');
+        grid.innerHTML = '';
+        models.forEach(function(m){
+          var id = sketchfabId(m.sketchfab);
+          if(!id) return;
+          var card = document.createElement('div'); card.className = 'featured-card';
+          var embed = document.createElement('div'); embed.className = 'featured-embed';
+          var iframe = document.createElement('iframe');
+          iframe.title = m.title || '3D model';
+          iframe.setAttribute('allow', 'autoplay; fullscreen; xr-spatial-tracking');
+          iframe.allowFullscreen = true;
+          iframe.loading = 'lazy';
+          iframe.src = 'https://sketchfab.com/models/' + id + '/embed?ui_theme=dark&dnt=1';
+          embed.appendChild(iframe); card.appendChild(embed);
+          var meta = document.createElement('div'); meta.className = 'featured-meta';
+          var t = document.createElement('p'); t.className = 'featured-title'; t.textContent = m.title || 'Untitled';
+          meta.appendChild(t);
+          if(m.note){ var n = document.createElement('p'); n.className = 'featured-note'; n.textContent = m.note; meta.appendChild(n); }
+          card.appendChild(meta);
+          grid.appendChild(card);
+        });
+        document.getElementById('featured-block').style.display = 'block';
+      })
+      .catch(function(){});
+  }
+  renderFeatured();
 
   // ── Projects quick-access ───────────────────────────────────────────────────
   var activeProject = null;
