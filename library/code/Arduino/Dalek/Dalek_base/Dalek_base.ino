@@ -36,8 +36,6 @@ const int PWM_MIN = 819, PWM_NEUTRAL = 1229, PWM_MAX = 1638;
 const int DEADBAND = 50;
 bool REVERSE_THROTTLE = false;
 
-const int ENABLE_PIN = A3;
-
 ControllerPtr myController;
 float globalSpeedLimit = 0.5;
 uint8_t lastDpadState = 0;
@@ -49,7 +47,6 @@ void driveNeutral(){ ledcWrite(L_CHANNEL, PWM_NEUTRAL); ledcWrite(R_CHANNEL, PWM
 void setup(){
   Serial.begin(115200);
   delay(300);
-  pinMode(ENABLE_PIN, INPUT_PULLUP);
 
   ledcSetup(L_CHANNEL, PWM_FREQ, PWM_RES);
   ledcSetup(R_CHANNEL, PWM_FREQ, PWM_RES);
@@ -75,8 +72,7 @@ void setup(){
 
 void loop(){
   BP32.update();
-  bool enabled = (digitalRead(ENABLE_PIN) == LOW);
-  bool active  = enabled && myController && myController->isConnected();
+  bool active = myController && myController->isConnected();
 
   if(active){
     uint8_t dpad = myController->dpad();

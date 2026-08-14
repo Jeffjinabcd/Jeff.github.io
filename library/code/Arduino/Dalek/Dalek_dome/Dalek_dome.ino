@@ -32,6 +32,7 @@ const int DOME_DIR_PIN = 18;
 const int ARM_PWM_PIN  = 19;
 const int ARM_DIR_PIN  = 21;
 const int DOME_DEADZONE = 20;
+const int MODE_PIN = 4;   // switch to GND = "individual" (ignore base); open = follow base
 
 void stopAll(){ analogWrite(DOME_PWM_PIN,0); analogWrite(ARM_PWM_PIN,0); }
 
@@ -40,6 +41,7 @@ void setup(){
   delay(300);
   pinMode(DOME_PWM_PIN,OUTPUT); pinMode(DOME_DIR_PIN,OUTPUT);
   pinMode(ARM_PWM_PIN, OUTPUT); pinMode(ARM_DIR_PIN, OUTPUT);
+  pinMode(MODE_PIN, INPUT_PULLUP);
   stopAll();
 
   SPI.begin(26, 25, 32, 13);        // SCK=26, MISO=25, MOSI=32, SS=13
@@ -58,7 +60,8 @@ void loop(){
     lastRxMs = millis();
   }
 
-  bool live = (millis() - lastRxMs <= FAILSAFE_MS) && rx.active;
+  bool individual = (digitalRead(MODE_PIN) == LOW);   // switch to GND = isolated from base
+  bool live = !individual && (millis() - lastRxMs <= FAILSAFE_MS) && rx.active;
 
   if(live){
     // --- dome ---
