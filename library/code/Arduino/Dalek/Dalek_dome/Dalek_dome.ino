@@ -10,7 +10,7 @@
 #include <nRF24L01.h>
 #include <RF24.h>
 
-RF24 radio(32, 13);                 // CE=32, CSN=13
+RF24 radio(27, 13);                 // CE=27, CSN=13
 const byte address[6] = "DALEK";
 
 // MUST match the Nano sketch (packed = identical byte layout on both boards)
@@ -27,7 +27,7 @@ unsigned long lastRxMs = 0;
 void setup(){
   Serial.begin(115200);
   delay(300);
-  SPI.begin(33, 25, 27, 13);        // SCK=33, MISO=25, MOSI=27, SS=13
+  SPI.begin(26, 25, 32, 13);        // SCK=26, MISO=25, MOSI=32, SS=13
   if(!radio.begin(&SPI)) Serial.println("nRF24 NOT found - check wiring / 3.3V / cap");
   // Chip-detect: NO = the WROOM can't talk to its nRF24 over SPI (wiring/pins/solder)
   Serial.printf("nRF24 chip connected: %s\n", radio.isChipConnected() ? "YES" : "NO");
