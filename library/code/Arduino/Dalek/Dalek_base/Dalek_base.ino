@@ -42,6 +42,7 @@ void setup(){
   radio.stopListening();
 
   BP32.setup(&onConnected, &onDisconnected);
+  BP32.forgetBluetoothKeys();          // clear stale bond so the Xbox re-pairs
   BP32.enableNewBluetoothConnections(true);
   Serial.println("NANO host ready: reading Xbox + sending over nRF24.");
 }
