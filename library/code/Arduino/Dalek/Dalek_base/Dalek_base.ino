@@ -15,8 +15,8 @@
 RF24 radio(47, 48);                 // CE=47, CSN=48
 const byte address[6] = "DALEK";
 
-// MUST match the WROOM sketch
-struct CtrlPacket {
+// MUST match the WROOM sketch (packed = identical byte layout on both boards)
+struct __attribute__((packed)) CtrlPacket {
   bool     connected;
   int16_t  lx, ly, rx, ry;
   int16_t  lt, rt;

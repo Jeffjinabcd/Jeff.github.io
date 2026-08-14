@@ -13,8 +13,8 @@
 RF24 radio(32, 14);                 // CE=32, CSN=14
 const byte address[6] = "DALEK";
 
-// MUST match the Nano sketch
-struct CtrlPacket {
+// MUST match the Nano sketch (packed = identical byte layout on both boards)
+struct __attribute__((packed)) CtrlPacket {
   bool     connected;
   int16_t  lx, ly, rx, ry;
   int16_t  lt, rt;
