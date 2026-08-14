@@ -1,42 +1,76 @@
 /*
- * Addressable WS2811 COB LED TEST — Adafruit NeoPixel version
- * (avoids the FastLED / esp-dsp compile error on the bluepad32 core)
- * Cycles Red/Green/Blue/White, then a Dalek-style flash.
+ * WROOM-32 — DALEK TOP  (RECEIVER)
+ * ------------------------------------------------------------------
+ * Receives dome/arm commands from the base over nRF24 and drives the
+ * dome motor + arm through the MDD10A. No LED / sound / encoder yet.
  *
- * Library: "Adafruit NeoPixel" (Library Manager)
- * Wiring:
- *   Strip +12V -> 12V
- *   Strip GND  -> COMMON GND (tied to WROOM GND!)
- *   Strip DIN  -> WROOM GPIO32 through a 330 ohm resistor  (input end / follow arrows)
+ * Board: "ESP32 Dev Module"
+ * nRF24:  MOSI->27  IRQ->26  MISO->25  SCK->33  CE->32  CSN->14
+ *         VCC->3V3  GND->GND  (+10uF cap)
+ * MDD10A: dome PWM->5, dome DIR->18, arm PWM->19, arm DIR->21
  */
-#include <Adafruit_NeoPixel.h>
+#include <SPI.h>
+#include <nRF24L01.h>
+#include <RF24.h>
 
-#define LED_PIN   32
-#define NUM_LEDS  20          // WS2811 = 3 LEDs per "pixel". Set to your real count.
+RF24 radio(32, 14);                 // CE=32, CSN=14
+const byte address[6] = "DALEK";
 
-// NEO_RGB = color order. If a color looks wrong, try NEO_GRB or NEO_BRG.
-// NEO_KHZ800 = data speed. If nothing/garbled, try NEO_KHZ400.
-Adafruit_NeoPixel strip(NUM_LEDS, LED_PIN, NEO_RGB + NEO_KHZ400);
+// MUST be identical in the base sketch
+struct DalekPacket {
+  bool    active;
+  int16_t domeCmd;
+  uint8_t armState;   // 0 stop, 1 extend, 2 retract
+};
+DalekPacket rx;
+unsigned long lastRxMs = 0;
+const unsigned long FAILSAFE_MS = 300;
 
-void fillAll(uint8_t r, uint8_t g, uint8_t b){
-  for(int i=0;i<NUM_LEDS;i++) strip.setPixelColor(i, strip.Color(r,g,b));
-  strip.show();
-}
+// ===== MDD10A pins =====
+const int DOME_PWM_PIN = 5;
+const int DOME_DIR_PIN = 18;
+const int ARM_PWM_PIN  = 19;
+const int ARM_DIR_PIN  = 21;
+const int DOME_DEADZONE = 20;
+
+void stopAll(){ analogWrite(DOME_PWM_PIN,0); analogWrite(ARM_PWM_PIN,0); }
 
 void setup(){
   Serial.begin(115200);
-  strip.begin();
-  strip.setBrightness(150);   // 0-255
-  strip.show();               // all off
-  Serial.println("LED test running (NeoPixel)");
+  delay(300);
+  pinMode(DOME_PWM_PIN,OUTPUT); pinMode(DOME_DIR_PIN,OUTPUT);
+  pinMode(ARM_PWM_PIN, OUTPUT); pinMode(ARM_DIR_PIN, OUTPUT);
+  stopAll();
+
+  SPI.begin(33, 25, 27, 14);        // SCK=33, MISO=25, MOSI=27, SS=14
+  if(!radio.begin(&SPI)) Serial.println("nRF24 NOT found - check wiring / 3.3V / cap");
+  radio.setPALevel(RF24_PA_LOW);
+  radio.setChannel(100);            // must match base
+  radio.openReadingPipe(0, address);
+  radio.startListening();
+  Serial.println("Top ready: nRF24 receiver + dome/arm.");
 }
 
 void loop(){
-  fillAll(255,0,0);     delay(1000);   // Red
-  fillAll(0,255,0);     delay(1000);   // Green
-  fillAll(0,0,255);     delay(1000);   // Blue
-  fillAll(255,255,255); delay(1000);   // White
+  if(radio.available()){
+    radio.read(&rx, sizeof(rx));
+    lastRxMs = millis();
+  }
 
-  // Dalek-style stutter flash
-  for(int i=0;i<6;i++){ fillAll(255,255,255); delay(80); fillAll(0,0,0); delay(80); }
+  bool live = (millis() - lastRxMs <= FAILSAFE_MS) && rx.active;
+
+  if(live){
+    // --- dome ---
+    if(abs(rx.domeCmd) > DOME_DEADZONE){
+      digitalWrite(DOME_DIR_PIN, rx.domeCmd > 0 ? HIGH : LOW);
+      analogWrite(DOME_PWM_PIN, map(abs(rx.domeCmd),0,1023,0,255));
+    } else analogWrite(DOME_PWM_PIN, 0);
+    // --- arm ---
+    if(rx.armState == 1){ digitalWrite(ARM_DIR_PIN,HIGH); analogWrite(ARM_PWM_PIN,255); }   // extend
+    else if(rx.armState == 2){ digitalWrite(ARM_DIR_PIN,LOW); analogWrite(ARM_PWM_PIN,255); } // retract
+    else analogWrite(ARM_PWM_PIN, 0);
+  } else {
+    stopAll();   // failsafe: no packets or controller off
+  }
+  delay(5);
 }
