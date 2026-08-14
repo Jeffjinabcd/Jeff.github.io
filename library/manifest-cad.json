@@ -1,6 +1,18 @@
 {
-    "generated":  "2026-08-13T20:26:51.1284010Z",
+    "generated":  "2026-08-14T03:49:06.1695810Z",
     "files":  [
+                  {
+                      "name":  "led base.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Lights/led base.STEP",
+                      "relPath":  "Dalek/Dome/Lights/led base.STEP",
+                      "size":  1310924,
+                      "modified":  "2026-08-14T03:42:28.0044377Z",
+                      "label":  "Projects",
+                      "project":  "Dalek",
+                      "isAssembly":  false
+                  },
                   {
                       "name":  "Mirrorright_默认.STEP",
                       "type":  "step",
