@@ -1,6 +1,18 @@
 {
-    "generated":  "2026-08-17T09:11:14.5821222Z",
+    "generated":  "2026-08-18T06:08:57.9025223Z",
     "files":  [
+                  {
+                      "name":  "sanding sheet.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/pboard collections/sanding sheet.STEP",
+                      "relPath":  "pboard collections/sanding sheet.STEP",
+                      "size":  113296,
+                      "modified":  "2026-08-18T03:45:41.3036549Z",
+                      "label":  "Projects",
+                      "project":  "pboard collections",
+                      "isAssembly":  false
+                  },
                   {
                       "name":  "led base.STEP",
                       "type":  "step",
