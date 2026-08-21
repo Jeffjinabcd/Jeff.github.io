@@ -1,29 +1,29 @@
 /*
- * Nano ESP32 (S3) — DALEK BASE  (TRANSMITTER)
+ * Nano ESP32 (S3) — DALEK BASE (transmitter)
  * ------------------------------------------------------------------
- * Xbox host. Drives the drivetrain locally AND sends dome/arm commands
- * to the WROOM over nRF24. Enable switch on A3. No LED / sound.
+ * Xbox host. Drives the drivetrain locally AND sends the FULL controller
+ * state to the WROOM over nRF24 — so the top board can use ANY button
+ * without ever changing this base code again.
  *
  * Board: "Arduino Nano ESP32"
- * nRF24 wiring:  MOSI->D8(GPIO17)  IRQ->D9(GPIO18,unused)  MISO->D10(GPIO21)
- *                SCK->D11(GPIO38)  CE->D12(GPIO47)  CSN->D13(GPIO48)
- *                VCC->3V3  GND->GND  (+10uF cap across VCC/GND)
- * Switch: A3 to GND = drive ENABLED, open = everything OFF (fail-safe).
+ * nRF24: MOSI->D8(17) IRQ->D9(18) MISO->D10(21) SCK->D11(38) CE->D12(47)
+ *        CSN->D13(48)  VCC->3V3  GND->GND  (+10uF cap)
  */
 #include <Bluepad32.h>
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
 
-// ===== nRF24 =====
-RF24 radio(47, 48);                 // CE=GPIO47(D12), CSN=GPIO48(D13)
+RF24 radio(47, 48);                  // CE=47, CSN=48
 const byte address[6] = "DALEK";
 
-// MUST be identical in the WROOM sketch
+// FULL controller state — MUST be byte-identical in the WROOM sketch
 struct __attribute__((packed)) DalekPacket {
-  bool    active;
-  int16_t domeCmd;      // RT - LT, -1023..1023
-  uint8_t armState;     // 0 stop, 1 extend, 2 retract
+  bool     active;                   // controller connected
+  int16_t  lx, ly, rx, ry;           // sticks (-512..511)
+  int16_t  lt, rt;                   // triggers (0..1023)  LT=brake, RT=throttle
+  uint8_t  dpad;                     // bitmask 0x01 up 0x02 down 0x04 right 0x08 left
+  bool     a, b, x, y, l1, r1;       // buttons
 };
 DalekPacket tx;
 
@@ -56,32 +56,32 @@ void setup(){
   ledcAttachPin(R_MOTOR_PINS[1], R_CHANNEL);
   driveNeutral();
 
-  SPI.begin(38, 21, 17, 48);        // SCK=38, MISO=21, MOSI=17, SS=48
+  SPI.begin(38, 21, 17, 48);         // SCK=38, MISO=21, MOSI=17, SS=48
   if(!radio.begin(&SPI)) Serial.println("nRF24 NOT found - check wiring / 3.3V / cap");
   radio.setPALevel(RF24_PA_LOW);
-  radio.setChannel(100);            // must match WROOM
-  radio.setRetries(3, 3);           // short retries so a dropped packet can't stall the loop
+  radio.setChannel(100);
+  radio.setRetries(3, 3);            // short retries so a dropped packet can't stall
   radio.openWritingPipe(address);
   radio.stopListening();
 
   BP32.setup(&onConnected, &onDisconnected);
-  BP32.forgetBluetoothKeys();       // clear stale bond so the Xbox re-pairs
+  BP32.forgetBluetoothKeys();
   BP32.enableNewBluetoothConnections(true);
-  Serial.println("Base ready: drivetrain + nRF24 sender. Flip switch, pair Xbox.");
+  Serial.println("Base ready: drivetrain + full-state nRF24 sender. Pair Xbox.");
 }
 
 void loop(){
   BP32.update();
-  bool active = myController && myController->isConnected();
 
-  if(active){
+  if(myController && myController->isConnected()){
+    // ---- speed limit (dpad up/down) ----
     uint8_t dpad = myController->dpad();
     if((dpad & 0x01) && !(lastDpadState & 0x01)) globalSpeedLimit += 0.10;
     if((dpad & 0x02) && !(lastDpadState & 0x02)) globalSpeedLimit -= 0.10;
     lastDpadState = dpad;
     globalSpeedLimit = constrain(globalSpeedLimit, 0.1, 1.0);
 
-    // --- drivetrain (local) ---
+    // ---- drivetrain (local) ----
     int throttle = myController->axisY();
     int turn     = myController->axisRX();
     if(REVERSE_THROTTLE) throttle = -throttle;
@@ -93,15 +93,22 @@ void loop(){
     ledcWrite(L_CHANNEL, map(constrain(lP,-512,512),-512,512,PWM_MIN,PWM_MAX));
     ledcWrite(R_CHANNEL, map(constrain(rP,-512,512),-512,512,PWM_MAX,PWM_MIN));
 
-    // --- dome + arm commands (sent to WROOM) ---
-    tx.active   = true;
-    tx.domeCmd  = myController->throttle() - myController->brake();     // RT - LT
-    tx.armState = myController->a() ? 1 : (myController->y() ? 2 : 0);  // A=extend, Y=retract
+    // ---- fill the FULL packet ----
+    tx.active = true;
+    tx.lx = myController->axisX();  tx.ly = myController->axisY();
+    tx.rx = myController->axisRX(); tx.ry = myController->axisRY();
+    tx.lt = myController->brake();  tx.rt = myController->throttle();
+    tx.dpad = dpad;
+    tx.a = myController->a(); tx.b = myController->b();
+    tx.x = myController->x(); tx.y = myController->y();
+    tx.l1 = myController->l1(); tx.r1 = myController->r1();
   } else {
     driveNeutral();
-    tx.active = false; tx.domeCmd = 0; tx.armState = 0;
+    tx.active = false;
+    tx.lx=tx.ly=tx.rx=tx.ry=tx.lt=tx.rt=0; tx.dpad=0;
+    tx.a=tx.b=tx.x=tx.y=tx.l1=tx.r1=false;
   }
 
-  radio.write(&tx, sizeof(tx));      // send to WROOM (~50 Hz)
+  radio.write(&tx, sizeof(tx));       // send full state (~50 Hz)
   delay(20);
 }
