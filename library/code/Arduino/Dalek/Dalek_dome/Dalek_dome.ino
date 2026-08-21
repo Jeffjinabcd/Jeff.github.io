@@ -16,7 +16,7 @@
 
 // NEO_KHZ400 = data speed for WS2811 (fixes random/garbled colors).
 // If it's still garbled, try NEO_KHZ800. NEO_RGB = color order (try GRB/BRG if a color is wrong).
-Adafruit_NeoPixel strip(NUM_LEDS, LED_PIN, NEO_RGB + NEO_KHZ800);
+Adafruit_NeoPixel strip(NUM_LEDS, LED_PIN, NEO_RGB + NEO_KHZ400);
 
 void fillAll(uint8_t r, uint8_t g, uint8_t b){
   for(int i=0;i<NUM_LEDS;i++) strip.setPixelColor(i, strip.Color(r,g,b));
