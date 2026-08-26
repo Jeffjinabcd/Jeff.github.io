@@ -1,6 +1,18 @@
 {
-    "generated":  "2026-08-25T09:14:37.6856369Z",
+    "generated":  "2026-08-26T16:44:42.0794124Z",
     "files":  [
+                  {
+                      "name":  "Eye led.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/Eye led.STEP",
+                      "relPath":  "Dalek/Dome/Eye/Eye led.STEP",
+                      "size":  310187,
+                      "modified":  "2026-08-26T00:56:18.4386518Z",
+                      "label":  "Projects",
+                      "project":  "Dalek",
+                      "isAssembly":  false
+                  },
                   {
                       "name":  "sanding sheet.STEP",
                       "type":  "step",
