@@ -1,6 +1,30 @@
 {
-    "generated":  "2026-08-29T22:02:36.0218700Z",
+    "generated":  "2026-08-30T17:13:52.3790991Z",
     "files":  [
+                  {
+                      "name":  "50mm Body.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/50mm VIRAL BORSALLIWALA/50mm Body.STEP",
+                      "relPath":  "Dalek/Dome/Eye/50mm VIRAL BORSALLIWALA/50mm Body.STEP",
+                      "size":  196635,
+                      "modified":  "2026-08-30T03:19:42.1305760Z",
+                      "label":  "Projects",
+                      "project":  "Dalek",
+                      "isAssembly":  false
+                  },
+                  {
+                      "name":  "50mm Rod.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Eye/50mm VIRAL BORSALLIWALA/50mm Rod.STEP",
+                      "relPath":  "Dalek/Dome/Eye/50mm VIRAL BORSALLIWALA/50mm Rod.STEP",
+                      "size":  31052,
+                      "modified":  "2026-08-30T03:19:42.1190636Z",
+                      "label":  "Projects",
+                      "project":  "Dalek",
+                      "isAssembly":  false
+                  },
                   {
                       "name":  "Eye led.STEP",
                       "type":  "step",
