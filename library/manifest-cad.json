@@ -1,6 +1,30 @@
 {
-    "generated":  "2026-08-31T06:45:29.1441972Z",
+    "generated":  "2026-09-01T06:13:15.6257641Z",
     "files":  [
+                  {
+                      "name":  "Moflash_extended+thicken, 1mm, 2mm.STEP",
+                      "type":  "step",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Lights/Moflash_extended+thicken, 1mm, 2mm.STEP",
+                      "relPath":  "Dalek/Dome/Lights/Moflash_extended+thicken, 1mm, 2mm.STEP",
+                      "size":  5512678,
+                      "modified":  "2026-08-31T22:58:31.9257624Z",
+                      "label":  "Projects",
+                      "project":  "Dalek",
+                      "isAssembly":  false
+                  },
+                  {
+                      "name":  "Moflash_extended+thicken, 1mm, 2mm.STL",
+                      "type":  "stl",
+                      "category":  "cad",
+                      "path":  "library/cad/Dalek/Dome/Lights/Moflash_extended+thicken, 1mm, 2mm.STL",
+                      "relPath":  "Dalek/Dome/Lights/Moflash_extended+thicken, 1mm, 2mm.STL",
+                      "size":  543484,
+                      "modified":  "2026-08-31T22:45:31.3029478Z",
+                      "label":  "Projects",
+                      "project":  "Dalek",
+                      "isAssembly":  false
+                  },
                   {
                       "name":  "50mm Body.STEP",
                       "type":  "step",
