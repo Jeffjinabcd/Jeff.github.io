@@ -1,5 +1,5 @@
 {
-    "generated":  "2026-09-07T05:53:50.4361417Z",
+    "generated":  "2026-09-27T01:04:18.3081660Z",
     "files":  [
                   {
                       "name":  "Untitled_Project_2.png",
@@ -11,7 +11,8 @@
                       "modified":  "2026-06-05T00:32:48.3283197Z",
                       "label":  "Projects",
                       "project":  "Dalek",
-                      "isAssembly":  false
+                      "isAssembly":  false,
+                      "glb":  null
                   },
                   {
                       "name":  "Capture.PNG",
@@ -23,7 +24,8 @@
                       "modified":  "2026-06-04T23:33:31.8061854Z",
                       "label":  "Projects",
                       "project":  "Dalek",
-                      "isAssembly":  false
+                      "isAssembly":  false,
+                      "glb":  null
                   },
                   {
                       "name":  "2.PNG",
@@ -35,7 +37,8 @@
                       "modified":  "2026-06-04T23:33:31.7990029Z",
                       "label":  "Projects",
                       "project":  "Dalek",
-                      "isAssembly":  false
+                      "isAssembly":  false,
+                      "glb":  null
                   },
                   {
                       "name":  "TopView.JPG",
@@ -47,7 +50,8 @@
                       "modified":  "2026-06-04T16:29:22.5795542Z",
                       "label":  "Projects",
                       "project":  "Dalek",
-                      "isAssembly":  false
+                      "isAssembly":  false,
+                      "glb":  null
                   },
                   {
                       "name":  "MainImage.JPG",
@@ -59,7 +63,8 @@
                       "modified":  "2026-06-04T16:29:22.5705537Z",
                       "label":  "Projects",
                       "project":  "Dalek",
-                      "isAssembly":  false
+                      "isAssembly":  false,
+                      "glb":  null
                   },
                   {
                       "name":  "board 4-puzzle.svg",
@@ -71,7 +76,8 @@
                       "modified":  "2026-05-21T17:12:28.8342755Z",
                       "label":  "Projects",
                       "project":  "Board game",
-                      "isAssembly":  false
+                      "isAssembly":  false,
+                      "glb":  null
                   },
                   {
                       "name":  "main map.svg",
@@ -83,7 +89,8 @@
                       "modified":  "2026-05-21T13:29:45.9830467Z",
                       "label":  "Projects",
                       "project":  "Board game",
-                      "isAssembly":  false
+                      "isAssembly":  false,
+                      "glb":  null
                   },
                   {
                       "name":  "testtest 100 inkscape.svg",
@@ -95,7 +102,8 @@
                       "modified":  "2026-04-14T17:08:04.8408883Z",
                       "label":  "Projects",
                       "project":  "ssamo",
-                      "isAssembly":  false
+                      "isAssembly":  false,
+                      "glb":  null
                   },
                   {
                       "name":  "mathy.svg",
@@ -107,7 +115,8 @@
                       "modified":  "2026-04-14T02:27:54.3639325Z",
                       "label":  "Projects",
                       "project":  "ssamo",
-                      "isAssembly":  false
+                      "isAssembly":  false,
+                      "glb":  null
                   },
                   {
                       "name":  "ssamo logo.svg",
@@ -119,7 +128,8 @@
                       "modified":  "2026-04-13T17:55:49.1277542Z",
                       "label":  "Projects",
                       "project":  "ssamo",
-                      "isAssembly":  false
+                      "isAssembly":  false,
+                      "glb":  null
                   },
                   {
                       "name":  "nums.svg",
@@ -131,7 +141,8 @@
                       "modified":  "2026-04-13T16:48:30.9962734Z",
                       "label":  "Projects",
                       "project":  "ssamo",
-                      "isAssembly":  false
+                      "isAssembly":  false,
+                      "glb":  null
                   },
                   {
                       "name":  "f6a31ca584ecdcb7eba96887721c31c4.jpg",
@@ -143,7 +154,8 @@
                       "modified":  "2026-04-13T15:54:58.6975599Z",
                       "label":  "Projects",
                       "project":  "ssamo",
-                      "isAssembly":  false
+                      "isAssembly":  false,
+                      "glb":  null
                   }
               ]
 }

@@ -24,6 +24,9 @@ struct __attribute__((packed)) DalekPacket {
   int16_t  lt, rt;                   // triggers (0..1023)  LT=brake, RT=throttle
   uint8_t  dpad;                     // bitmask 0x01 up 0x02 down 0x04 right 0x08 left
   bool     a, b, x, y, l1, r1;       // buttons
+  uint8_t  misc;                     // misc buttons bitmask: View/Menu/Share (miscButtons())
+  bool     demoMode;                 // export -> dome demo (base keeps driving)
+  bool     tuning;                   // View -> color tuning (base drivetrain disabled)
 };
 DalekPacket tx;
 
@@ -39,6 +42,8 @@ bool REVERSE_THROTTLE = false;
 ControllerPtr myController;
 float globalSpeedLimit = 0.5;
 uint8_t lastDpadState = 0;
+bool demoMode = false;                // export toggles the dome demo (base KEEPS driving)
+bool tuning   = false;                // View toggles color tuning -> base drivetrain disabled
 
 void onConnected(ControllerPtr ctl){ if(!myController){ Serial.println(">>> XBOX ONLINE"); myController=ctl; } }
 void onDisconnected(ControllerPtr ctl){ if(myController==ctl){ myController=nullptr; Serial.println(">>> XBOX OFFLINE"); } }
@@ -81,17 +86,34 @@ void loop(){
     lastDpadState = dpad;
     globalSpeedLimit = constrain(globalSpeedLimit, 0.1, 1.0);
 
-    // ---- drivetrain (local) ----
-    int throttle = myController->axisY();
-    int turn     = myController->axisRX();
-    if(REVERSE_THROTTLE) throttle = -throttle;
-    if(abs(throttle) < DEADBAND) throttle = 0;
-    if(abs(turn) < DEADBAND)     turn = 0;
-    throttle = (int)(throttle * globalSpeedLimit);
-    turn     = (int)(turn * globalSpeedLimit);
-    int lP = throttle + turn, rP = throttle - turn;
-    ledcWrite(L_CHANNEL, map(constrain(lP,-512,512),-512,512,PWM_MIN,PWM_MAX));
-    ledcWrite(R_CHANNEL, map(constrain(rP,-512,512),-512,512,PWM_MAX,PWM_MIN));
+    // ---- DEMO toggle (Share) mirrors the dome: hold the drivetrain still while it runs ----
+    // View (0x02) toggles COLOR TUNING -> hold the drivetrain still (sticks tune color, not drive)
+    static bool lastView = false;
+    bool view = myController->miscButtons() & 0x02;
+    if(view && !lastView){ tuning = !tuning; Serial.println(tuning ? "BASE: tuning ON (wheels held)" : "BASE: tuning OFF"); }
+    lastView = view;
+
+    // Export (0x08) toggles the DOME DEMO -> base KEEPS driving (demo is autonomous up top)
+    static bool lastShare = false;
+    bool share = myController->miscButtons() & 0x08;
+    if(share && !lastShare){ demoMode = !demoMode; Serial.println(demoMode ? "BASE: demo ON (still driving)" : "BASE: demo OFF"); }
+    lastShare = share;
+
+    // ---- drivetrain (local): held still ONLY while color tuning ----
+    if(tuning){
+      driveNeutral();
+    } else {
+      int throttle = myController->axisY();
+      int turn     = myController->axisRX();
+      if(REVERSE_THROTTLE) throttle = -throttle;
+      if(abs(throttle) < DEADBAND) throttle = 0;
+      if(abs(turn) < DEADBAND)     turn = 0;
+      throttle = (int)(throttle * globalSpeedLimit);
+      turn     = (int)(turn * globalSpeedLimit);
+      int lP = throttle + turn, rP = throttle - turn;
+      ledcWrite(L_CHANNEL, map(constrain(lP,-512,512),-512,512,PWM_MIN,PWM_MAX));
+      ledcWrite(R_CHANNEL, map(constrain(rP,-512,512),-512,512,PWM_MAX,PWM_MIN));
+    }
 
     // ---- fill the FULL packet ----
     tx.active = true;
@@ -102,11 +124,16 @@ void loop(){
     tx.a = myController->a(); tx.b = myController->b();
     tx.x = myController->x(); tx.y = myController->y();
     tx.l1 = myController->l1(); tx.r1 = myController->r1();
+    tx.misc = myController->miscButtons();   // View / Menu / Share
+    tx.demoMode = demoMode;                  // dome runs its demo
+    tx.tuning   = tuning;                    // dome enters tuning; base already held its wheels
   } else {
     driveNeutral();
     tx.active = false;
     tx.lx=tx.ly=tx.rx=tx.ry=tx.lt=tx.rt=0; tx.dpad=0;
     tx.a=tx.b=tx.x=tx.y=tx.l1=tx.r1=false;
+    tx.misc=0;
+    tx.demoMode=demoMode; tx.tuning=tuning;
   }
 
   radio.write(&tx, sizeof(tx));       // send full state (~50 Hz)
