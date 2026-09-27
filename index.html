@@ -1529,15 +1529,17 @@
   function initViewer(){
     if(initViewerPromise) return initViewerPromise;
     initViewerPromise = (async function(){
-      var [THREE, {STLLoader}, {OrbitControls}, {OBJLoader}] = await Promise.all([
+      var [THREE, {STLLoader}, {OrbitControls}, {OBJLoader}, {GLTFLoader}] = await Promise.all([
         import('three'),
         import('three/addons/loaders/STLLoader.js'),
         import('three/addons/controls/OrbitControls.js'),
-        import('three/addons/loaders/OBJLoader.js')
+        import('three/addons/loaders/OBJLoader.js'),
+        import('three/addons/loaders/GLTFLoader.js')
       ]);
       window._THREE = THREE;
       window._STLLoader = STLLoader;
       window._OBJLoader = OBJLoader;
+      window._GLTFLoader = GLTFLoader;
 
       var canvas = document.getElementById('stl-canvas');
       var w = canvas.clientWidth || 760, h = canvas.clientHeight || 480;
@@ -1626,6 +1628,16 @@
     if(hint) hint.textContent = '';
     var THREE = window._THREE;
     var mat = new THREE.MeshStandardMaterial({ color: 0xb6c2cf, roughness: 0.45, metalness: 0.3, side: THREE.DoubleSide });
+
+    // Fast path: a pre-baked GLB preview exists → load that instead of the raw CAD file
+    if(f.glb){
+      new window._GLTFLoader().load(f.glb, function(gltf){
+        gltf.scene.traverse(function(c){ if(c.isMesh) c.material = mat.clone(); });
+        v3Scene.add(gltf.scene); v3Meshes.push(gltf.scene);
+        fitCamera(v3Meshes); viewerDone(hint);
+      }, undefined, function(){ setLoading(false); if(hint) hint.textContent = 'Could not load preview'; });
+      return;
+    }
 
     if(isSTL(f)){
       new window._STLLoader().load(f.path, function(geo){
