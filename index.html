@@ -1551,6 +1551,7 @@
   // ── 3D viewer (STL + STEP) ──────────────────────────────────────────────────
   var viewerReady = false;
   var v3Scene, v3Camera, v3Renderer, v3Controls, v3Meshes = [], v3Key, v3Fill, v3Rim;
+  var CREASE_ANGLE = 0.8;   // ~46° — faces meeting below this blend into smooth curves; sharper stays crisp
 
   function open3D(f){
     document.getElementById('stl-modal-title').textContent = f.name + (f.isAssembly ? '  — Assembly' : '');
@@ -1567,17 +1568,19 @@
   function initViewer(){
     if(initViewerPromise) return initViewerPromise;
     initViewerPromise = (async function(){
-      var [THREE, {STLLoader}, {OrbitControls}, {OBJLoader}, {GLTFLoader}] = await Promise.all([
+      var [THREE, {STLLoader}, {OrbitControls}, {OBJLoader}, {GLTFLoader}, BufGeo] = await Promise.all([
         import('three'),
         import('three/addons/loaders/STLLoader.js'),
         import('three/addons/controls/OrbitControls.js'),
         import('three/addons/loaders/OBJLoader.js'),
-        import('three/addons/loaders/GLTFLoader.js')
+        import('three/addons/loaders/GLTFLoader.js'),
+        import('three/addons/utils/BufferGeometryUtils.js')
       ]);
       window._THREE = THREE;
       window._STLLoader = STLLoader;
       window._OBJLoader = OBJLoader;
       window._GLTFLoader = GLTFLoader;
+      window._creased = BufGeo.toCreasedNormals;   // smooth curves, keep sharp edges
 
       var canvas = document.getElementById('stl-canvas');
       var w = canvas.clientWidth || 760, h = canvas.clientHeight || 480;
@@ -1681,9 +1684,10 @@
     var hint = document.querySelector('.stl-hint');
     if(hint) hint.textContent = '';
     var THREE = window._THREE;
-    var mat = new THREE.MeshStandardMaterial({ color: 0xf2f3f5, roughness: 0.55, metalness: 0.0, side: THREE.DoubleSide });
-    function shade(obj){ obj.traverse(function(c){ if(c.isMesh){
-      if(c.geometry && !c.geometry.getAttribute('normal')) c.geometry.computeVertexNormals();  // GLBs ship without normals
+    var mat = new THREE.MeshStandardMaterial({ color: 0xf2f3f5, roughness: 0.5, metalness: 0.0, side: THREE.DoubleSide });
+    function crease(geo){ try { return window._creased(geo, CREASE_ANGLE); } catch(e){ geo.computeVertexNormals(); return geo; } }
+    function shade(obj){ obj.traverse(function(c){ if(c.isMesh && c.geometry){
+      c.geometry = crease(c.geometry);
       c.material = mat.clone(); c.castShadow = true; c.receiveShadow = false;
     } }); }
 
@@ -1699,7 +1703,7 @@
 
     if(isSTL(f)){
       new window._STLLoader().load(f.path, function(geo){
-        geo.computeVertexNormals();
+        geo = crease(geo);
         var mesh = new THREE.Mesh(geo, mat); mesh.castShadow = true;
         v3Scene.add(mesh); v3Meshes.push(mesh);
         fitCamera(v3Meshes); viewerDone(hint);
@@ -1718,7 +1722,7 @@
               geo.setAttribute('position', new THREE.Float32BufferAttribute(m.attributes.position.array, 3));
               if(m.attributes.normal) geo.setAttribute('normal', new THREE.Float32BufferAttribute(m.attributes.normal.array, 3));
               if(m.index) geo.setIndex(new THREE.BufferAttribute(new Uint32Array(m.index.array), 1));
-              geo.computeVertexNormals();
+              geo = crease(geo);
               var mesh = new THREE.Mesh(geo, mat.clone()); mesh.castShadow = true;
               v3Scene.add(mesh); v3Meshes.push(mesh);
             });
