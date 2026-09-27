@@ -155,6 +155,14 @@ function Sync-Library {
         }
       }
 
+      # If a pre-baked GLB preview exists, point the entry at it (near-instant load).
+      $glbField = $null
+      if ($cat -eq 'cad') {
+        $glbRel  = $relFwd -replace '(?i)\.(stl|step|stp|obj)$', '.glb'
+        $glbFull = Join-Path $repoRoot ("library\glb\" + ($glbRel -replace '/', '\'))
+        if (Test-Path $glbFull) { $glbField = "library/glb/$glbRel" }
+      }
+
       $files.Add([PSCustomObject]@{
         name       = $file.Name
         type       = $file.Extension.TrimStart('.').ToLower()
@@ -166,6 +174,7 @@ function Sync-Library {
         label      = $mapping.label
         project    = $project
         isAssembly = $isAssembly
+        glb        = $glbField
       })
     }
   }
