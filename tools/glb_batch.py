@@ -9,7 +9,9 @@ for j in jobs:
         if os.path.exists(glb) and os.path.getmtime(glb) >= os.path.getmtime(stl): 
             tot += os.path.getsize(glb); continue
         os.makedirs(os.path.dirname(glb), exist_ok=True)
-        m = trimesh.load(stl, force='mesh'); m.export(glb)
+        m = trimesh.load(stl, force='mesh')
+        _ = m.vertex_normals            # ensure normals are computed so the GLB ships with them
+        m.export(glb, include_normals=True)
         tot += os.path.getsize(glb)
         print("GLB %.2fMB %s" % (os.path.getsize(glb)/1e6, os.path.basename(glb)))
     except Exception as e:
