@@ -530,27 +530,23 @@
   .modal-close:hover{color:var(--accent);}
   .modal-body{flex:1; overflow:auto; position:relative;}
 
-  /* STL/STEP viewer — light studio stage */
-  .stl-stage{
-    flex:1; min-height:0;
-    background:
-      radial-gradient(135% 105% at 50% 0%, #f6f9fc 0%, #e2e9f0 44%, #c4cedb 100%);
-  }
+  /* STL/STEP viewer — pure black studio */
+  .stl-stage{ flex:1; min-height:0; background:#000; }
   #stl-canvas{display:block; width:100%; height:100%; background:transparent;}
   .stl-hint{
     position:absolute; bottom:12px; right:14px;
     font-family:var(--mono); font-size:10px; letter-spacing:0.08em;
-    color:rgba(20,27,39,0.42); pointer-events:none;
+    color:rgba(255,255,255,0.38); pointer-events:none;
   }
   .stl-spinner{
     position:absolute; inset:0; display:none; flex-direction:column; gap:14px;
     align-items:center; justify-content:center; pointer-events:none;
     font-family:var(--mono); font-size:11px; letter-spacing:0.14em; text-transform:uppercase;
-    color:rgba(20,27,39,0.5);
+    color:rgba(255,255,255,0.5);
   }
   .stl-spin{
     width:34px; height:34px; border-radius:50%;
-    border:2px solid rgba(20,27,39,0.14); border-top-color:var(--accent);
+    border:2px solid rgba(255,255,255,0.16); border-top-color:var(--accent);
     animation:stlspin .8s linear infinite;
   }
   @keyframes stlspin{ to{ transform:rotate(360deg); } }
@@ -1554,7 +1550,7 @@
 
   // ── 3D viewer (STL + STEP) ──────────────────────────────────────────────────
   var viewerReady = false;
-  var v3Scene, v3Camera, v3Renderer, v3Controls, v3Meshes = [], v3Key, v3Ground;
+  var v3Scene, v3Camera, v3Renderer, v3Controls, v3Meshes = [], v3Key, v3Fill, v3Rim;
 
   function open3D(f){
     document.getElementById('stl-modal-title').textContent = f.name + (f.isAssembly ? '  — Assembly' : '');
@@ -1571,13 +1567,12 @@
   function initViewer(){
     if(initViewerPromise) return initViewerPromise;
     initViewerPromise = (async function(){
-      var [THREE, {STLLoader}, {OrbitControls}, {OBJLoader}, {GLTFLoader}, {RoomEnvironment}] = await Promise.all([
+      var [THREE, {STLLoader}, {OrbitControls}, {OBJLoader}, {GLTFLoader}] = await Promise.all([
         import('three'),
         import('three/addons/loaders/STLLoader.js'),
         import('three/addons/controls/OrbitControls.js'),
         import('three/addons/loaders/OBJLoader.js'),
-        import('three/addons/loaders/GLTFLoader.js'),
-        import('three/addons/environments/RoomEnvironment.js')
+        import('three/addons/loaders/GLTFLoader.js')
       ]);
       window._THREE = THREE;
       window._STLLoader = STLLoader;
@@ -1589,35 +1584,21 @@
       v3Renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
       v3Renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
       v3Renderer.setSize(w, h, false);
-      v3Renderer.setClearColor(0x000000, 0);              // transparent — CSS studio gradient shows through
-      v3Renderer.shadowMap.enabled = true;
-      v3Renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+      v3Renderer.setClearColor(0x000000, 0);              // transparent — CSS pure-black stage shows through
       v3Renderer.toneMapping = THREE.ACESFilmicToneMapping;
-      v3Renderer.toneMappingExposure = 1.05;
+      v3Renderer.toneMappingExposure = 1.0;
 
       v3Scene = new THREE.Scene();
       v3Camera = new THREE.PerspectiveCamera(40, w / h, 0.01, 100000);
       v3Camera.position.set(0, 0, 5);
 
-      // Soft studio environment → realistic reflections/shading on the parts
-      var pmrem = new THREE.PMREMGenerator(v3Renderer);
-      v3Scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
-
-      // Gentle fill + a strong key light that casts the shadow
-      v3Scene.add(new THREE.HemisphereLight(0xffffff, 0xbcc6d2, 0.5));
-      var key = new THREE.DirectionalLight(0xffffff, 2.3);
-      key.castShadow = true;
-      key.shadow.mapSize.set(2048, 2048);
-      key.shadow.bias = -0.0006;
-      key.shadow.normalBias = 0.02;
-      v3Key = key;
-      v3Scene.add(key); v3Scene.add(key.target);
-
-      // Invisible ground that only catches the contact shadow
-      v3Ground = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.ShadowMaterial({ opacity: 0.26 }));
-      v3Ground.rotation.x = -Math.PI / 2;
-      v3Ground.receiveShadow = true;
-      v3Scene.add(v3Ground);
+      // Studio 3-point rig — a white part reading cleanly on pure black.
+      // Light positions are set per model in fitCamera; targets stay at the origin.
+      v3Scene.add(new THREE.HemisphereLight(0x9aa4b2, 0x0a0a0c, 0.55));  // soft base so shadow sides keep form
+      v3Key  = new THREE.DirectionalLight(0xffffff, 2.1);                // key, upper front-left
+      v3Fill = new THREE.DirectionalLight(0xdfe7f2, 0.55);               // fill, front-right low
+      v3Rim  = new THREE.DirectionalLight(0xffffff, 2.2);               // rim, behind → edge separation
+      v3Scene.add(v3Key, v3Fill, v3Rim);
 
       v3Controls = new OrbitControls(v3Camera, canvas);
       v3Controls.enableDamping = true;
@@ -1656,30 +1637,23 @@
     var size = new THREE.Vector3(); box.getSize(size);
     var maxDim = Math.max(size.x, size.y, size.z) || 1;
 
-    // elevated 3/4 view — reads as a solid object, not a flat blob
+    // recenter the model on the origin so camera + lights are simple and consistent
+    meshes.forEach(function(m){ m.position.sub(center); });
+
+    // elevated 3/4 view with margin
     var dist = maxDim * 2.4;
-    v3Camera.position.set(center.x + dist * 0.62, center.y + dist * 0.5, center.z + dist * 0.82);
+    v3Camera.position.set(dist * 0.62, dist * 0.5, dist * 0.82);
     v3Camera.near = dist * 0.001;
     v3Camera.far  = dist * 100;
     v3Camera.updateProjectionMatrix();
-    v3Controls.target.copy(center);
+    v3Controls.target.set(0, 0, 0);
     v3Controls.update();
 
-    // sit the shadow-catching ground just under the model
-    if(v3Ground){
-      v3Ground.position.set(center.x, box.min.y - maxDim * 0.001, center.z);
-      v3Ground.scale.set(maxDim * 10, maxDim * 10, 1);
-    }
-    // aim the key light from above-front and fit its shadow frustum to the model
-    if(v3Key){
-      v3Key.position.set(center.x + maxDim * 0.9, box.max.y + maxDim * 1.7, center.z + maxDim * 1.0);
-      v3Key.target.position.copy(center); v3Key.target.updateMatrixWorld();
-      var sc = v3Key.shadow.camera, s = maxDim * 1.35;
-      sc.left = -s; sc.right = s; sc.top = s; sc.bottom = -s;
-      sc.near = maxDim * 0.05; sc.far = maxDim * 9;
-      sc.updateProjectionMatrix();
-      if(v3Key.shadow.map){ v3Key.shadow.map.dispose(); v3Key.shadow.map = null; }
-    }
+    // scale the 3-point rig to the model
+    var D = maxDim;
+    if(v3Key)  v3Key.position.set(-D * 1.0, D * 1.4, D * 1.2);
+    if(v3Fill) v3Fill.position.set(D * 1.5, D * 0.25, D * 0.7);
+    if(v3Rim)  v3Rim.position.set(D * 0.3, D * 1.1, -D * 1.7);
     showDimensions(size);
   }
 
@@ -1707,7 +1681,7 @@
     var hint = document.querySelector('.stl-hint');
     if(hint) hint.textContent = '';
     var THREE = window._THREE;
-    var mat = new THREE.MeshStandardMaterial({ color: 0xc3ccd6, roughness: 0.52, metalness: 0.22, envMapIntensity: 1.15, side: THREE.DoubleSide });
+    var mat = new THREE.MeshStandardMaterial({ color: 0xf2f3f5, roughness: 0.55, metalness: 0.0, side: THREE.DoubleSide });
     function shade(obj){ obj.traverse(function(c){ if(c.isMesh){
       if(c.geometry && !c.geometry.getAttribute('normal')) c.geometry.computeVertexNormals();  // GLBs ship without normals
       c.material = mat.clone(); c.castShadow = true; c.receiveShadow = false;
