@@ -1145,7 +1145,7 @@
     // Load all three categories in parallel on first open
     var cats = ['cad','code','images'];
     document.getElementById('lib-count-exp').textContent = 'Loading…';
-    Promise.all(cats.map(loadCategory)).then(function(){ renderExplorer(); renderProjectsBar(); });
+    Promise.all(cats.map(loadCategory)).then(function(){ return loadCuration(); }).then(function(){ renderExplorer(); renderProjectsBar(); });
   }
 
   // ── Featured Sketchfab models ───────────────────────────────────────────────
@@ -1190,8 +1190,35 @@
   // ── Projects quick-access ───────────────────────────────────────────────────
   var activeProject = null;
 
+  // Curation: a private arrangement saved by the Model Organizer. When present,
+  // it overrides the automatic folder grouping (custom groups, names, order).
+  var CURATION = null;
+  function loadCuration(){
+    return fetch('library/curation.json?v='+Date.now())
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(c){ if(c && c.groups && c.groups.length) CURATION = c; })
+      .catch(function(){});
+  }
+
   function projectsIndex(){
     var map = {};
+    if(CURATION){
+      var byPath = {}; allFiles.forEach(function(f){ byPath[f.path] = f; });
+      CURATION.groups.forEach(function(g){ map[g.name] = []; });
+      Object.keys(CURATION.items || {}).forEach(function(p){
+        var it = CURATION.items[p];
+        if(!it.group || it.hidden) return;
+        var g = CURATION.groups.filter(function(x){ return x.id === it.group; })[0];
+        var f = byPath[p];
+        if(!g || !f) return;
+        var f2 = {}; for(var k in f) f2[k] = f[k];
+        if(it.displayName) f2.name = it.displayName;
+        f2._featured = !!it.featured;
+        map[g.name].push(f2);
+      });
+      Object.keys(map).forEach(function(n){ if(!map[n].length) delete map[n]; });
+      return map;
+    }
     allFiles.forEach(function(f){
       var p = f.project || 'Misc';
       (map[p] = map[p] || []).push(f);
@@ -1199,12 +1226,18 @@
     return map;
   }
 
+  function projectOrder(map){
+    if(CURATION){
+      return CURATION.groups.map(function(g){ return g.name; }).filter(function(n){ return map[n]; });
+    }
+    return Object.keys(map).sort(function(a,b){ return map[b].length - map[a].length; });
+  }
+
   function renderProjectsBar(){
     var bar = document.getElementById('projects-bar');
     if(!bar) return;
     var map = projectsIndex();
-    // sort: most files first, but keep it readable
-    var names = Object.keys(map).sort(function(a,b){ return map[b].length - map[a].length; });
+    var names = projectOrder(map);
     bar.innerHTML = '';
     names.forEach(function(name, i){
       var chip = document.createElement('button');
@@ -1362,7 +1395,14 @@
     }
 
     var dl = document.createElement('a');
-    dl.className = 'btn'; dl.href = f.path; dl.download = f.name; dl.textContent = '↓';
+    dl.className = 'btn';
+    // CAD originals live in the separate download archive; code/images stay in-repo.
+    if(f.category === 'cad' && f.relPath){
+      dl.href = 'https://raw.githubusercontent.com/Jeffjinabcd/cad-archive/main/' + f.relPath.split('/').map(encodeURIComponent).join('/');
+    } else {
+      dl.href = f.path;
+    }
+    dl.download = f.name; dl.title = 'Download original'; dl.textContent = '↓';
     actions.appendChild(dl);
     row.appendChild(actions);
     return row;

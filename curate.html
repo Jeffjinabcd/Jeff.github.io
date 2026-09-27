@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Model Organizer</title>
+<style>
+  :root{
+    --bg:#0f131b; --panel:#161c27; --panel2:#1c2430; --line:#2a3342;
+    --ink:#e7ecf3; --ink-soft:#9aa6b6; --ink-faint:#6b7788; --accent:#e0603f; --ok:#3fb27f;
+    --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; --body:system-ui,-apple-system,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:var(--body);background:var(--bg);color:var(--ink);height:100vh;overflow:hidden;display:flex;flex-direction:column;}
+  header{display:flex;align-items:center;gap:14px;padding:12px 18px;border-bottom:1px solid var(--line);background:var(--panel);flex-shrink:0;}
+  header h1{font-size:15px;margin:0;font-family:var(--mono);letter-spacing:.04em;}
+  header .grow{flex:1;}
+  input,select,button{font-family:var(--body);font-size:13px;}
+  .search{background:var(--panel2);border:1px solid var(--line);color:var(--ink);padding:7px 11px;border-radius:6px;width:240px;}
+  .btn{background:var(--panel2);border:1px solid var(--line);color:var(--ink);padding:7px 13px;border-radius:6px;cursor:pointer;}
+  .btn:hover{border-color:var(--accent);}
+  .btn-primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600;}
+  .btn-primary:hover{background:#c94e30;}
+  #savestate{font-family:var(--mono);font-size:11px;color:var(--ink-faint);}
+  main{flex:1;display:grid;grid-template-columns:1fr 360px;min-height:0;}
+  /* left: list */
+  .listwrap{display:flex;flex-direction:column;min-height:0;border-right:1px solid var(--line);}
+  .toolbar{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line);background:var(--panel);flex-wrap:wrap;}
+  .toolbar .sub{font-family:var(--mono);font-size:11px;color:var(--ink-faint);}
+  .list{overflow:auto;flex:1;}
+  .row{display:grid;grid-template-columns:26px 22px 1fr 150px 150px;align-items:center;gap:8px;padding:7px 14px;border-bottom:1px solid rgba(42,51,66,.5);}
+  .row:hover{background:var(--panel);}
+  .row.sel{background:rgba(224,96,63,.10);}
+  .row .nm{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .row .fld{font-family:var(--mono);font-size:10px;color:var(--ink-faint);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .eye{cursor:pointer;color:var(--ink-faint);text-align:center;user-select:none;font-size:14px;}
+  .eye:hover{color:var(--accent);}
+  .row.hidden{opacity:.4;}
+  .dispname{background:var(--panel2);border:1px solid var(--line);color:var(--ink);padding:5px 8px;border-radius:5px;width:100%;}
+  .gsel{background:var(--panel2);border:1px solid var(--line);color:var(--ink);padding:5px 6px;border-radius:5px;width:100%;}
+  .gbadge{font-family:var(--mono);font-size:10px;color:var(--accent);}
+  /* right: preview + groups */
+  .side{display:flex;flex-direction:column;min-height:0;background:var(--panel);}
+  .viewer{height:300px;background:radial-gradient(120% 90% at 50% 15%,#2b3346,#141a26 60%,#0d121b);position:relative;flex-shrink:0;}
+  #cv{width:100%;height:100%;display:block;}
+  .vinfo{position:absolute;left:12px;bottom:10px;font-family:var(--mono);font-size:11px;color:var(--ink-soft);}
+  .groups{flex:1;overflow:auto;padding:12px 14px;}
+  .groups h2{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 10px;}
+  .gitem{display:flex;align-items:center;gap:7px;padding:7px 9px;border:1px solid var(--line);border-radius:6px;margin-bottom:7px;background:var(--panel2);}
+  .gitem input{flex:1;background:none;border:none;color:var(--ink);font-size:13px;}
+  .gitem .cnt{font-family:var(--mono);font-size:10px;color:var(--ink-faint);}
+  .gitem .x{cursor:pointer;color:var(--ink-faint);}.gitem .x:hover{color:var(--accent);}
+  .gitem .mv{cursor:pointer;color:var(--ink-faint);font-size:12px;}.gitem .mv:hover{color:var(--ink);}
+  .addg{display:flex;gap:6px;margin-top:6px;}
+  .addg input{flex:1;background:var(--panel2);border:1px solid var(--line);color:var(--ink);padding:7px 9px;border-radius:6px;}
+  .hint{font-family:var(--mono);font-size:10px;color:var(--ink-faint);padding:0 14px 10px;}
+  .star{cursor:pointer;color:var(--ink-faint);}.star.on{color:#e8b93f;}
+</style>
+<script type="importmap">
+{ "imports": {
+  "three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+}}
+</script>
+</head>
+<body>
+<header>
+  <h1>⬢ Model Organizer</h1>
+  <span class="sub" id="count" style="font-family:var(--mono);font-size:11px;color:var(--ink-faint);"></span>
+  <span class="grow"></span>
+  <input class="search" id="search" placeholder="Search models…" />
+  <span id="savestate"></span>
+  <button class="btn btn-primary" id="save">Save</button>
+</header>
+<main>
+  <div class="listwrap">
+    <div class="toolbar">
+      <label class="sub"><input type="checkbox" id="selall" /> select all shown</label>
+      <span class="sub">assign selected →</span>
+      <select class="gsel" id="bulkg" style="width:160px"><option value="">(pick group)</option></select>
+      <button class="btn" id="bulkassign">Assign</button>
+      <button class="btn" id="bulkhide">Hide</button>
+      <button class="btn" id="bulkshow">Show</button>
+      <span class="grow"></span>
+      <select class="gsel" id="filter" style="width:160px"><option value="all">Show: all</option><option value="ungrouped">Ungrouped only</option></select>
+    </div>
+    <div class="list" id="list"></div>
+  </div>
+  <div class="side">
+    <div class="viewer"><canvas id="cv"></canvas><span class="vinfo" id="vinfo">click 👁 to preview</span></div>
+    <div class="groups">
+      <h2>Groups (drag order with ▲▼)</h2>
+      <div id="glist"></div>
+      <div class="addg"><input id="newg" placeholder="New group name…" /><button class="btn" id="addg">Add</button></div>
+    </div>
+    <p class="hint">Groups become the “Projects” on your site, in this order. Hidden models never show. Featured (★) sort to the top.</p>
+  </div>
+</main>
+
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+let MODELS = [];             // {name, folder, path, glb, size}
+let groups = [];             // {id, name}
+let items = {};              // path -> {group, displayName, hidden, featured}
+let selected = new Set();
+let dirty = false;
+
+const $ = s => document.querySelector(s);
+const uid = () => 'g' + Math.random().toString(36).slice(2, 8);
+
+async function boot(){
+  const man = await (await fetch('library/manifest-cad.json?v='+Date.now())).json();
+  MODELS = man.files.map(f => ({ name:f.name, folder:(f.relPath||'').split('/').slice(0,-1).join('/')||'/', path:f.path, glb:f.glb||null, size:f.size }));
+  MODELS.sort((a,b)=> a.folder.localeCompare(b.folder) || a.name.localeCompare(b.name));
+  try{
+    const cur = await (await fetch('library/curation.json?v='+Date.now())).json();
+    groups = cur.groups || []; items = cur.items || {};
+  }catch(e){ groups = []; items = {}; }
+  // seed items for any model missing an entry
+  MODELS.forEach(m => { if(!items[m.path]) items[m.path] = { group:null, displayName:'', hidden:false, featured:false }; });
+  $('#count').textContent = MODELS.length + ' models';
+  renderGroups(); renderList();
+  initViewer();
+}
+
+function markDirty(){ dirty = true; $('#savestate').textContent = '● unsaved'; $('#savestate').style.color = '#e0603f'; }
+
+// ---------- list ----------
+function groupName(id){ const g = groups.find(g=>g.id===id); return g ? g.name : ''; }
+function visibleModels(){
+  const q = $('#search').value.trim().toLowerCase();
+  const f = $('#filter').value;
+  return MODELS.filter(m=>{
+    if(q && !(m.name.toLowerCase().includes(q) || m.folder.toLowerCase().includes(q))) return false;
+    if(f==='ungrouped' && items[m.path].group) return false;
+    if(f!=='all' && f!=='ungrouped' && items[m.path].group!==f) return false;
+    return true;
+  });
+}
+function renderList(){
+  const list = $('#list'); list.innerHTML='';
+  const gopts = '<option value="">(none)</option>' + groups.map(g=>`<option value="${g.id}">${esc(g.name)}</option>`).join('');
+  visibleModels().forEach(m=>{
+    const it = items[m.path];
+    const row = document.createElement('div');
+    row.className = 'row' + (selected.has(m.path)?' sel':'') + (it.hidden?' hidden':'');
+    row.innerHTML = `
+      <input type="checkbox" class="chk" ${selected.has(m.path)?'checked':''}/>
+      <span class="eye" title="preview">👁</span>
+      <div><div class="nm">${esc(it.displayName||m.name)} <span class="star ${it.featured?'on':''}" title="feature">★</span></div><div class="fld">${esc(m.folder)} · ${esc(m.name)}${m.glb?'':' · ⚠ no preview'}</div></div>
+      <select class="gsel gpick">${gopts}</select>
+      <input class="dispname" placeholder="display name…" value="${esc(it.displayName)}"/>`;
+    row.querySelector('.gpick').value = it.group||'';
+    row.querySelector('.chk').addEventListener('change',e=>{ e.target.checked?selected.add(m.path):selected.delete(m.path); row.classList.toggle('sel',e.target.checked); });
+    row.querySelector('.eye').addEventListener('click',()=>preview(m));
+    row.querySelector('.star').addEventListener('click',e=>{ it.featured=!it.featured; e.target.classList.toggle('on',it.featured); markDirty(); });
+    row.querySelector('.gpick').addEventListener('change',e=>{ it.group=e.target.value||null; markDirty(); renderGroups(); });
+    row.querySelector('.dispname').addEventListener('input',e=>{ it.displayName=e.target.value; markDirty(); });
+    list.appendChild(row);
+  });
+}
+function esc(s){ return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+// ---------- groups ----------
+function renderGroups(){
+  const gl = $('#glist'); gl.innerHTML='';
+  groups.forEach((g,i)=>{
+    const cnt = MODELS.filter(m=>items[m.path].group===g.id && !items[m.path].hidden).length;
+    const el = document.createElement('div'); el.className='gitem';
+    el.innerHTML = `<span class="mv up">▲</span><span class="mv dn">▼</span><input value="${esc(g.name)}"/><span class="cnt">${cnt}</span><span class="x">✕</span>`;
+    el.querySelector('input').addEventListener('input',e=>{ g.name=e.target.value; markDirty(); renderListGroupOptions(); });
+    el.querySelector('.x').addEventListener('click',()=>{ if(confirm('Delete group "'+g.name+'"? Models become ungrouped.')){ MODELS.forEach(m=>{ if(items[m.path].group===g.id) items[m.path].group=null; }); groups.splice(i,1); markDirty(); renderGroups(); renderList(); } });
+    el.querySelector('.up').addEventListener('click',()=>{ if(i>0){ [groups[i-1],groups[i]]=[groups[i],groups[i-1]]; markDirty(); renderGroups(); } });
+    el.querySelector('.dn').addEventListener('click',()=>{ if(i<groups.length-1){ [groups[i+1],groups[i]]=[groups[i],groups[i+1]]; markDirty(); renderGroups(); } });
+    gl.appendChild(el);
+  });
+  renderListGroupOptions();
+}
+function renderListGroupOptions(){
+  const gopts = '<option value="">(pick group)</option>' + groups.map(g=>`<option value="${g.id}">${esc(g.name)}</option>`).join('');
+  $('#bulkg').innerHTML = gopts;
+  // refresh per-row selects to reflect renamed/added groups
+  document.querySelectorAll('.gpick').forEach((sel,idx)=>{});
+  renderList();
+}
+$('#addg').addEventListener('click',()=>{ const n=$('#newg').value.trim(); if(!n) return; groups.push({id:uid(),name:n}); $('#newg').value=''; markDirty(); renderGroups(); });
+$('#newg').addEventListener('keydown',e=>{ if(e.key==='Enter') $('#addg').click(); });
+
+// ---------- bulk ----------
+$('#bulkassign').addEventListener('click',()=>{ const g=$('#bulkg').value; if(!g){alert('pick a group');return;} selected.forEach(p=>items[p].group=g); markDirty(); renderGroups(); renderList(); });
+$('#bulkhide').addEventListener('click',()=>{ selected.forEach(p=>items[p].hidden=true); markDirty(); renderGroups(); renderList(); });
+$('#bulkshow').addEventListener('click',()=>{ selected.forEach(p=>items[p].hidden=false); markDirty(); renderGroups(); renderList(); });
+$('#selall').addEventListener('change',e=>{ if(e.target.checked) visibleModels().forEach(m=>selected.add(m.path)); else selected.clear(); renderList(); });
+$('#search').addEventListener('input',renderList);
+$('#filter').addEventListener('change',renderList);
+
+// ---------- save ----------
+$('#save').addEventListener('click',async ()=>{
+  const payload = JSON.stringify({ groups, items }, null, 1);
+  try{
+    const r = await fetch('/save',{method:'POST',headers:{'Content-Type':'application/json'},body:payload});
+    if(r.ok){ dirty=false; $('#savestate').textContent='✓ saved'; $('#savestate').style.color='#3fb27f'; localStorage.setItem('curation_backup',payload); }
+    else $('#savestate').textContent='save failed';
+  }catch(e){ $('#savestate').textContent='save failed (server off?)'; }
+});
+window.addEventListener('beforeunload',e=>{ if(dirty){ e.preventDefault(); e.returnValue=''; } });
+
+// ---------- 3D preview ----------
+let scene,camera,renderer,controls,mesh;
+function initViewer(){
+  const cv=$('#cv'); const w=cv.clientWidth||360,h=cv.clientHeight||300;
+  renderer=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true}); renderer.setPixelRatio(Math.min(devicePixelRatio,2)); renderer.setSize(w,h,false);
+  scene=new THREE.Scene(); camera=new THREE.PerspectiveCamera(45,w/h,.01,1e5); camera.position.set(0,0,5);
+  scene.add(new THREE.AmbientLight(0xffffff,.7)); const d=new THREE.DirectionalLight(0xffffff,1.2);d.position.set(4,6,5);scene.add(d);
+  const d2=new THREE.DirectionalLight(0x9fc0ff,.5);d2.position.set(-5,-2,-4);scene.add(d2);
+  controls=new OrbitControls(camera,cv); controls.enableDamping=true; controls.autoRotate=true; controls.autoRotateSpeed=1.8;
+  controls.addEventListener('start',()=>controls.autoRotate=false);
+  (function loop(){ requestAnimationFrame(loop); const w=cv.clientWidth,h=cv.clientHeight; if(w&&h&&(w!==renderer.domElement.width||h!==renderer.domElement.height)){renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();} controls.update(); renderer.render(scene,camera); })();
+}
+const gltf=new GLTFLoader();
+function preview(m){
+  $('#vinfo').textContent = m.name;
+  if(mesh){ scene.remove(mesh); mesh=null; }
+  if(!m.glb){ $('#vinfo').textContent = m.name+' — no preview yet'; return; }
+  controls.autoRotate=true;
+  gltf.load(m.glb,g=>{
+    const mat=new THREE.MeshStandardMaterial({color:0xb6c2cf,roughness:.45,metalness:.3,side:THREE.DoubleSide});
+    g.scene.traverse(c=>{ if(c.isMesh) c.material=mat; });
+    mesh=g.scene; scene.add(mesh);
+    const box=new THREE.Box3().setFromObject(mesh); const ctr=box.getCenter(new THREE.Vector3()); const sz=box.getSize(new THREE.Vector3());
+    const md=Math.max(sz.x,sz.y,sz.z)||1; const dist=md*1.9;
+    camera.position.set(ctr.x,ctr.y,ctr.z+dist); camera.near=dist*.001; camera.far=dist*100; camera.updateProjectionMatrix();
+    controls.target.copy(ctr); controls.update();
+  },undefined,()=>{ $('#vinfo').textContent=m.name+' — preview failed'; });
+}
+
+boot();
+</script>
+</body>
+</html>
