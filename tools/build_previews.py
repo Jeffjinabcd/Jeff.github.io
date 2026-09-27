@@ -16,6 +16,10 @@ FREECAD = r"C:\Program Files\FreeCAD 1.1\bin\freecadcmd.exe"
 TOOLS   = os.path.join(REPO, "tools")
 
 def main():
+    force = '--force' in sys.argv           # regenerate everything, ignore up-to-date
+    if force:
+        import shutil
+        shutil.rmtree(STAGE, ignore_errors=True)   # drop stale staging so re-tessellation happens
     jobs = []
     for dp, _, fns in os.walk(CAD):
         for fn in fns:
@@ -25,7 +29,7 @@ def main():
             rel = os.path.relpath(src, CAD)
             base = os.path.splitext(rel)[0]
             glb = os.path.join(GLB, base + ".glb")
-            if os.path.exists(glb) and os.path.getmtime(glb) >= os.path.getmtime(src):
+            if not force and os.path.exists(glb) and os.path.getmtime(glb) >= os.path.getmtime(src):
                 continue                     # already up to date
             jobs.append({"src": src,
                          "stl_tmp": os.path.join(STAGE, base + ".stl"),
